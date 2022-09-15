@@ -150,7 +150,7 @@
           </v-layout>
         </div>
       </v-container>
-    </section><br><br><br><br><br>
+    </section><br><br><br><br><br><br><br>
 
     <section>
       <v-container>
@@ -190,8 +190,104 @@
             
         </div>
       </v-container>
-    </section>
+    </section><br><br><br><br><br><br><br>
 
+
+    <section>
+      <v-container>
+        <div class="hidden-sm-and-down">
+          <v-layout row wrap>
+            <v-flex md7 lg7>
+              <centers>
+                <img class="rounded-circle img5" transition="fade-transition" src="../assets/images/31.png">
+              </centers>
+            </v-flex>
+            <v-flex md5 lg5 >
+              <h2 id="h22">Get access to the Best sellers in the business.</h2><br>
+                <p id="txt5">
+                  Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+                </p>
+            </v-flex>
+            
+          </v-layout>
+        </div>
+        <div class="hidden-md-and-up">
+          <v-flex sm12 xs12 id="con3">
+              <h2 id="h24">Get access to the Best sellers in the business.</h2><br>
+                <p id="txt7">
+                  Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+                </p>
+                
+            </v-flex>
+            <v-flex sm12 xs12>
+              <center>
+                  <img class="rounded-circle img4" src="../assets/images/31.png">
+              </center>
+            </v-flex>
+            
+        </div>
+      </v-container>
+    </section><br><br><br><br><br><br><br>
+
+    <section>
+      <v-container>
+          <div class="hidden-sm-and-down">
+            <h2 id="h25">Don’t just take our word for it.</h2>
+          </div>
+          <div>
+        </div>
+        <div class="hidden-md-and-up" id="con4">
+            <h2 id="h26">Don’t just take our word for it.</h2>
+          </div>
+          <div>
+        </div>
+      </v-container>
+    </section><br><br><br><br><br><br><br>
+
+    <section>
+      <v-container>
+          <div class="hidden-sm-and-down">
+            <h2 id="h25">Our Partners</h2><br><br><br><br><br>
+            <div>
+            <v-layout row wrap>
+              <v-flex md3 lg3>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+              <v-flex md3 lg3>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+              <v-flex md3 lg3>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+              <v-flex md3 lg3>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+            </v-layout>
+          </div>
+          </div>
+          
+        <div class="hidden-md-and-up" id="con4">
+          <h2 id="h26">Our Partners.</h2><br><br><br><br><br>
+            <div>
+            <v-layout row wrap>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex><br><br><br><br><br>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle img5" src="../assets/images/31.png">
+              </v-flex>
+            </v-layout>
+            </div>
+        </div>
+          
+      </v-container>
+    </section><br><br><br><br><br><br><br>
 
 
 
@@ -226,6 +322,15 @@ export default {
 #h23{
   color:#673AB7;font-weight:bold;font-size:26px;line-height:0.7;text-align:center;
 }
+#h24{
+  color:#673AB7;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
+}
+#h25{
+ color:#673AB7;font-weight:bold;font-size:33px;line-height:1.2;text-align:center;
+}
+#h26{
+  color:#673AB7;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
+}
 #btn1{
   background:#673AB7;color:white;
 }
@@ -238,8 +343,14 @@ export default {
 .img3{
 width:800px;height:400px;margin-top:-50px;
 }
+.img5{
+width:600px;height:400px;margin-top:-50px;
+}
 .img4{
-width:100%;height:280px;
+width:100%;height:250px;
+}
+.img5{
+width:100%;height:100px;
 }
 .txt1{
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
@@ -265,6 +376,9 @@ color:#673AB7; font-size:15px;font-weight:bold;
 #txt8{
   text-decoration:underline;font-size:15px;font-weight:bold;color:#673AB7;text-align: center;
 }
+#txt9{
+  text-decoration:underline;font-size:15px;font-weight:bold;color:#673AB7;text-align: center;
+}
 .head1{
   margin-top:200px;
 }
@@ -284,6 +398,12 @@ color:#673AB7; font-size:15px;font-weight:bold;
   margin-top:-40px;
 }
 #con1{
-  margin-top:-55px;
+  margin-top:-100px;
+}
+#con3{
+  margin-top:-100px;
+}
+#con4{
+  margin-top:-100px;
 }
 </style>
