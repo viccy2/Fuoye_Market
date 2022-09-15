@@ -199,7 +199,7 @@
           <v-layout row wrap>
             <v-flex md7 lg7>
               <centers>
-                <img class="rounded-circle img5" transition="fade-transition" src="../assets/images/31.png">
+                <img class="rounded-circle img6" transition="fade-transition" src="../assets/images/31.png">
               </centers>
             </v-flex>
             <v-flex md5 lg5 >
@@ -232,15 +232,129 @@
     <section>
       <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25">Don’t just take our word for it.</h2>
-          </div>
-          <div>
-        </div>
+            <h2 id="h25">Don’t just take our word for it.</h2><br><br><br><br><br>
+            <div>
+              <v-layout row wrap>
+              <v-flex md4 lg4>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               <v-flex md4 lg4>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Mide (Seller)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               <v-flex md4 lg4>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               
+              </v-layout>
+            </div>
+          </div>   
         <div class="hidden-md-and-up" id="con4">
-            <h2 id="h26">Don’t just take our word for it.</h2>
-          </div>
-          <div>
-        </div>
+            <h2 id="h26">Don’t just take our word for it.</h2><br><br>
+            <div>
+              <v-layout row wrap>
+              <v-flex sm12 xs12>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               <v-flex sm12 xs12>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Mide (Seller)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               <v-flex sm12 xs12>
+                <v-card class="ma-3" color="#673AB7" dark >
+              <v-card-text class="text-h6 font-weight-bold">
+              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              </v-card-text>
+              <v-card-actions>
+                <v-list-item class="grow">
+                <v-list-item-avatar color="grey darken-3">
+                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                </v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
+              </v-card-actions>
+             </v-card>
+              </v-flex>
+               
+              </v-layout>
+            </div>
+          </div><br>
       </v-container>
     </section><br><br><br><br><br><br><br>
 
@@ -251,16 +365,16 @@
             <div>
             <v-layout row wrap>
               <v-flex md3 lg3>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="img7" src="../assets/images/pel.jpg">
               </v-flex>
               <v-flex md3 lg3>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="img7 grey" src="../assets/images/vad1.png">
               </v-flex>
               <v-flex md3 lg3>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="rounded-circle img7" src="https://doteightplus.com/images/dot.svg">
               </v-flex>
               <v-flex md3 lg3>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="rounded-circle img7" src="https://dotpedia.com.ng/images/cover.png">
               </v-flex>
             </v-layout>
           </div>
@@ -269,20 +383,22 @@
         <div class="hidden-md-and-up" id="con4">
           <h2 id="h26">Our Partners.</h2><br><br><br><br><br>
             <div>
+            <v-container>
             <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="rounded-lg img5" src="../assets/images/pel.jpg">
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class=" rounded-lg img5 grey " src="../assets/images/vad1.png" style="float:right">
               </v-flex><br><br><br><br><br>
               <v-flex sm6 xs6>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="rounded-lg img5" src="https://doteightplus.com/images/dot.svg">
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle img5" src="../assets/images/31.png">
+                <img class="rounded-lg img5" src="https://dotpedia.com.ng/images/cover.png" style="float:right">
               </v-flex>
             </v-layout>
+            </v-container>
             </div>
         </div>
           
@@ -350,7 +466,13 @@ width:600px;height:400px;margin-top:-50px;
 width:100%;height:250px;
 }
 .img5{
-width:100%;height:100px;
+width:80%;height:80px;
+}
+.img6{
+width:600px;height:400px;margin-top:-50px;
+}
+.img7{
+width:50%;height:80px;
 }
 .txt1{
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
