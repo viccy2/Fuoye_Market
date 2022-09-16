@@ -49,8 +49,8 @@
          <v-layout row wrap>
             <v-flex md4 lg4 sm12 xs12>
               <v-card tile flat height='100' class="ma-5" >
-                <v-btn fab flat small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                <v-btn fab small color='grey lighten-2'>
+                  <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
                 </v-btn>
                 <br><br>
                 <v-card-text class="py-0">
@@ -62,8 +62,8 @@
             </v-flex>
             <v-flex md4 lg4 sm12 xs12>
               <v-card tile flat height='100' class="ma-5" >
-                <v-btn fab flat small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                <v-btn fab  small color='grey lighten-2'>
+                  <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
                 </v-btn>
                 <br><br>
                 <v-card-text class="py-0">
@@ -75,8 +75,8 @@
             </v-flex>
             <v-flex md4 lg4 sm12 xs12>
               <v-card tile flat height='100' class="ma-5" >
-                <v-btn fab flat small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                <v-btn fab  small color='grey lighten-2'>
+                  <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
                 </v-btn>
                 <br><br>
                 <v-card-text class="py-0">
@@ -97,8 +97,8 @@
               <v-card tile flat height='100' class="ma-5" >
                 <v-layout>
                   <v-flex sm3>
-                     <v-btn fab flat small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                     <v-btn fab  small color='grey lighten-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
                     </v-btn>
                   </v-flex>
                   <v-flex sm9>
@@ -115,8 +115,8 @@
               <v-card tile flat height='100' class="ma-5" >
                 <v-layout>
                   <v-flex sm3>
-                     <v-btn fab flat small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                     <v-btn fab small color='grey lighten-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
                     </v-btn>
                   </v-flex>
                   <v-flex sm9>
@@ -133,8 +133,8 @@
               <v-card tile flat height='100' class="ma-5" >
                 <v-layout>
                   <v-flex sm3>
-                     <v-btn fab flat small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account</v-icon>
+                     <v-btn fab  small color='grey lighten-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
                     </v-btn>
                   </v-flex>
                   <v-flex sm9>
@@ -157,7 +157,7 @@
         <div class="hidden-sm-and-down">
           <v-layout row wrap>
             <v-flex md4 lg4 >
-              <h2 id="h22">Grow, Connect, Sell...</h2><br>
+              <h2 id="h22">Grow = Connect + Sell.</h2><br>
                 <p id="txt5">
                   We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br>
                   We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
@@ -198,9 +198,9 @@
         <div class="hidden-sm-and-down">
           <v-layout row wrap>
             <v-flex md7 lg7>
-              <centers>
+              <div>
                 <img class="rounded-circle img6" transition="fade-transition" src="../assets/images/31.png">
-              </centers>
+              </div>
             </v-flex>
             <v-flex md5 lg5 >
               <h2 id="h22">Get access to the Best sellers in the business.</h2><br>
@@ -423,8 +423,9 @@ export default {
   name: 'home',
   components: {HomeNavbar},
   data(){
-     
- 
+    return{
+
+    }
   }
 }
 </script>

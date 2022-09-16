@@ -4,17 +4,29 @@
     <div>
         <v-app-bar fixed  class="" >
             <v-app-bar-nav-icon>
-             <v-icon @click="Go">
-                mdi-account
-            </v-icon> 
+                <v-icon @click="Go">
+                    mdi-arrow-left
+                </v-icon> 
             </v-app-bar-nav-icon>  
             <v-toolbar-title id="name" >FuoyeMarket</v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
-            <div class="icons">
-            <v-btn icon>
-                <v-icon>mdi-account</v-icon>
-            </v-btn>
+           <div class="text-center">
+                 <v-menu offset-y>
+                    <template v-slot:activator="{ on, attrs }">
+                        <v-btn icon v-bind="attrs" v-on="on" >
+                            <v-icon>mdi-account-tie</v-icon>
+                        </v-btn>
+                    </template>
+                    <v-list>
+                        <v-list-item>
+                            <v-list-item-title style="font-size:13px;cursor:pointer"> <span  @click="goProfile">Profile</span> <v-icon small> mdi-account</v-icon></v-list-item-title>
+                        </v-list-item>
+                        <v-list-item>
+                            <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                        </v-list-item>
+                    </v-list>
+                </v-menu>
             </div>
          
         </v-app-bar>
@@ -27,7 +39,10 @@
 export default {
     data(){
         return{
-
+            items : [
+                {title : 'Log-Out'},
+                {title : 'Profile'}
+            ]
         }
     },
     methods : {

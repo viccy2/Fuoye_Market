@@ -8,7 +8,7 @@
                  <v-carousel  height="380" cycle hide-delimiters show-arrows-on-hover>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/d.jpg" style="width:100%;height:100%" >
+                                <img src="../../assets/images/d.jpg" style="width:100%;height:750px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >

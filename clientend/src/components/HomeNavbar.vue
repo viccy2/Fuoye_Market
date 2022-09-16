@@ -11,10 +11,10 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
-            <v-btn flat text class="text-capitalize" style="color:#673AB7;">
+            <v-btn text class="text-capitalize" style="color:#673AB7;">
                Sign In
             </v-btn>
-            <v-btn rounded flat id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
+            <v-btn rounded id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
                Create Account
             </v-btn>
             </div>
@@ -32,10 +32,7 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
-            <!-- <v-btn flat text class="text-capitalize" style="color:#673AB7;">
-               Sign In
-            </v-btn> -->
-            <v-btn rounded flat id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
+            <v-btn rounded id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
                Sign In
             </v-btn>
             </div>
