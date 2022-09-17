@@ -1,8 +1,8 @@
 <template>
-    <div class="navbar">
+    <div class="navbar white">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
     <div>
-        <v-app-bar fixed flat>
+        <v-app-bar fixed flat class="white">
             <v-app-bar-nav-icon><v-btn icon>
                 <img class="rounded-xl"  src="../assets/images/Fm.png" height="45">
               </v-btn>
@@ -19,7 +19,7 @@
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
         <v-btn icon v-bind="attrs" v-on="on" >
-       <v-icon>mdi-account-tie</v-icon>
+       <v-icon class="rounded-circle grey lighten-2" color='#673AB7'>mdi-account-tie</v-icon>
         </v-btn>
       </template>
       <v-list>
@@ -59,6 +59,6 @@ export default {
 </script>
 <style scoped>
 #name{
-      color:#673AB7;font-size:18px;font-weight:bolder;  
+      color:#673AB7;font-size:16px;font-weight:bolder;  
     }
 </style>

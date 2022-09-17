@@ -9,7 +9,7 @@
               <v-layout row wrap>
                 <v-flex md5 lg5 >
                   <h2 id="h21" >Connect with your choice Sellers & Buyers.</h2><br>
-                  <p class="font-weight-bold text--disabled"> We're here to help you connect with your choice Sellers & Buyers around You. Welcome to FuoyMarket!</p>
+                  <p class="font-weight-bold text--black"> We're here to help you connect with your choice Sellers & Buyers around You. Welcome to FuoyMarket!</p>
                   <v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn>
                 </v-flex>
                 <v-flex md7 lg7>
@@ -27,7 +27,7 @@
                 <h2 class="text-center txt1">Connect with your choice Sellers & Buyers.</h2>
               </v-flex>
               <v-flex sm12>
-                <p class="ma-3 text-center txt2">
+                <p class="ma-3 text-center txt2 text--black">
                     We're here to help you connect with your choice Sellers & Buyers around You. Welcome to FuoyeMarket!
                 </p><br>
                 <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>

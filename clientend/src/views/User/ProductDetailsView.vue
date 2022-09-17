@@ -26,7 +26,7 @@
                        
                     </v-card-text>
                     <v-card-text class="grey--text">
-                        <p>This is one of the available laptop products
+                        <p>This is one of the available Samsung S21 products.
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
                         </span>
                         </p>

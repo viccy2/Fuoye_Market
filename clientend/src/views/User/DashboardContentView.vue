@@ -17,7 +17,7 @@
                                     <img src="../../assets/images/h.png" style="width:100%;height:100%" >
                                 </v-flex>
                                 <v-flex md6 lg6 class="">
-                                    <img src="../../assets/images/f.jpg" style="width:100%;height:80%" >
+                                    <img src="../../assets/images/f.jpg" style="width:100%;height:400px" >
                                 </v-flex>
                             </v-layout>
                         </v-carousel-item>
@@ -103,7 +103,7 @@
                       <v-flex lg3 md3 sm6 xs6 >
 
                        <v-card flat class=" ma-1">
-                            <v-img src="../../assets/images/29.jpg" style="height:80px;"></v-img>
+                            <v-img src="../../assets/images/a.jpg" style="height:80px;"></v-img>
                             <v-card-title style="font-size:13px;font-weight:bold;margin-top:-10px;">Zeus.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>

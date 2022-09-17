@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard">
+  <div class="dashboard white">
     <AppNavbar />
     <div style="max-height:infinity;min-height:infinity">
       <DashboardContentView v-show="dashboard"/>
