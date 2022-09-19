@@ -94,13 +94,15 @@
              </v-layout>
          </div>
          </v-container>
+         <Footers />
     </div>
 </template>
 <script>
 import AppPagesNavbar from '../../components/AppPagesNavbar.vue'
+import Footers from '../../components/Footers.vue'
 export default {
    name : 'seller-page',
-   components:{AppPagesNavbar},
+   components:{AppPagesNavbar, Footers},
    data(){
     return {
 

@@ -413,15 +413,16 @@
     
     
 
-
+  <Footers />
   </div>
 </template>
 
 <script>
 import HomeNavbar from '../components/HomeNavbar.vue'
+import Footers from '../components/Footers.vue'
 export default {
   name: 'home',
-  components: {HomeNavbar},
+  components: {HomeNavbar, Footers},
   data(){
     return{
 
