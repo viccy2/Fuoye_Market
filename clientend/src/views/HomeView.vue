@@ -1,5 +1,5 @@
 <template>
-  <div class="home white">
+  <div class="home white" style="width:100%">
     <HomeNavbar />
       <v-container>
         <!-- HEADER SECTION  -->
@@ -299,14 +299,12 @@
               <v-layout row wrap>
               <v-flex sm12 xs12>
                 <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="text-h6 font-weight-bold">
+              <v-card-text class="font-weight-bold" style="font-size:17px">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
@@ -317,14 +315,12 @@
               </v-flex>
                <v-flex sm12 xs12>
                 <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="text-h6 font-weight-bold">
+              <v-card-text class="font-weight-bold" style="font-size:17px">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Mide (Seller)</v-list-item-title>
@@ -335,14 +331,12 @@
               </v-flex>
                <v-flex sm12 xs12>
                 <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="text-h6 font-weight-bold">
+              <v-card-text class="font-weight-bold" style="font-size:17px">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
@@ -354,7 +348,7 @@
                
               </v-layout>
             </div>
-          </div><br>
+          </div><br><br>
       </v-container>
     </section><br><br><br><br><br><br><br>
 
@@ -364,38 +358,37 @@
             <h2 id="h25">Our Partners</h2><br><br><br><br><br>
             <div>
             <v-layout row wrap>
-              <v-flex md3 lg3>
-                <img class="img7" src="../assets/images/pel.jpg">
+              <v-flex md4 lg4>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg">
               </v-flex>
-              <v-flex md3 lg3>
-                <img class="img7 grey" src="../assets/images/vad1.png">
+              <v-flex md4 lg4>
+                <img class="img7 grey rounded-circle" src="../assets/images/vad1.png">
               </v-flex>
-              <v-flex md3 lg3>
+              <v-flex md4 lg4>
                 <img class="rounded-circle img7" src="https://doteightplus.com/images/dot.svg">
-              </v-flex>
-              <v-flex md3 lg3>
-                <img class="rounded-circle img7" src="https://dotpedia.com.ng/images/cover.png">
               </v-flex>
             </v-layout>
           </div>
           </div>
           
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Our Partners.</h2><br><br><br><br><br>
+          <h2 id="h26">Our Partners.</h2><br><br>
             <div>
             <v-container>
             <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-lg img5" src="../assets/images/pel.jpg">
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:120px; width:80%">
               </v-flex>
               <v-flex sm6 xs6>
-                <img class=" rounded-lg img5 grey " src="../assets/images/vad1.png" style="float:right">
-              </v-flex><br><br><br><br><br>
+               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:120px; width:70%">
+              </v-flex>
+            </v-layout><br><br><br>
+            <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-lg img5" src="https://doteightplus.com/images/dot.svg">
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:120px; width:80%">
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-lg img5" src="https://dotpedia.com.ng/images/cover.png" style="float:right">
+               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:120px; width:70%">
               </v-flex>
             </v-layout>
             </v-container>
@@ -403,10 +396,43 @@
         </div>
           
       </v-container>
-    </section><br><br><br><br><br><br><br>
+    </section><br><br><br><br><br><br>
 
 
-
+    <section>
+      <v-container>
+          <div class="">
+            <v-layout row wrap>
+              <v-flex md8 lg8 sm12 xs12>
+                <h2 id="h27">FuoyeMarket</h2><br>
+                <p>Follow us on our social platforms.</p>
+                <div>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-facebook</v-icon>
+                  </v-btn>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
+                  </v-btn>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-whatsapp</v-icon>
+                  </v-btn>
+                </div>
+              </v-flex>
+              <v-flex md4 lg4 sm12 xs12>
+                <h2 id="h27">Contact Us</h2><br>
+                <p>Get in touch with us...</p>
+                <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
+                </v-btn> Call : +234 9072045997 <br>
+                <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
+                </v-btn> Email : fuoyemarket@gmail.com
+              </v-flex>
+              
+            </v-layout>
+          </div>
+        </v-container>
+    </section><br><br><br>
 
 
     </v-container>
@@ -449,20 +475,23 @@ export default {
 #h26{
   color:#673AB7;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
 }
+#h27{
+  color:#673AB7;
+}
 #btn1{
   background:#673AB7;color:white;
 }
 .img1{
-  width:550px;height:400px;margin-top:-50px;
+  width:100%;height:400px;margin-top:-50px;
 }
 .img2{
   width:100%;height:300px;
 }
 .img3{
-width:800px;height:400px;margin-top:-50px;
+width:100%;height:400px;margin-top:-50px;
 }
 .img5{
-width:600px;height:400px;margin-top:-50px;
+width:50%;height:400px;margin-top:-50px;
 }
 .img4{
 width:100%;height:250px;
@@ -471,10 +500,10 @@ width:100%;height:250px;
 width:80%;height:80px;
 }
 .img6{
-width:600px;height:400px;margin-top:-50px;
+width:100%;height:400px;margin-top:-50px;
 }
 .img7{
-width:50%;height:80px;
+width:30%;height:100px;
 }
 .txt1{
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
