@@ -11,12 +11,12 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
-            <v-btn text class="text-capitalize" style="color:#673AB7;">
+            <router-link to="/team" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
                Team
-            </v-btn>
-            <v-btn text class="text-capitalize" style="color:#673AB7;">
+            </v-btn></router-link>
+            <router-link to="/contact-us" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
                Contact Us
-            </v-btn>
+            </v-btn></router-link>
             <v-btn rounded id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
                Sign In
             </v-btn>
