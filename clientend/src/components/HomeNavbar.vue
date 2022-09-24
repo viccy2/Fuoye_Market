@@ -26,7 +26,7 @@
         </v-app-bar>
     </div>
     <div class="hidden-md-and-up white">
-        <v-app-bar fixed flat elevation='1' height="70" class="white">
+        <v-app-bar fixed flat elevation='' height="70" class="white">
             <v-app-bar-nav-icon><v-btn icon>
                 <img class="rounded-xl"  src="../assets/images/Fm.png" height="45"  @click="Go">
               </v-btn>
@@ -35,7 +35,7 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
-            <router-link to="/dashboard" style="text-decoration:none"><v-btn text id="btn" class="text-capitalize" style="color:#673AB7;">
+            <router-link to="/dashboard" style="text-decoration:none"><v-btn rounded id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
                Sign In
             </v-btn></router-link>
             </div>

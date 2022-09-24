@@ -299,7 +299,7 @@
               <v-layout row wrap>
               <v-flex sm12 xs12>
                 <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:black;">
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
@@ -317,7 +317,7 @@
               </v-flex>
                <v-flex sm12 xs12>
                 <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
@@ -335,7 +335,7 @@
               </v-flex>
                <v-flex sm12 xs12>
                 <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
@@ -386,7 +386,7 @@
                 <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:60%">
               </v-flex>
               <v-flex sm6 xs6>
-               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:60%">
+               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:60%;float:right;">
               </v-flex>
             </v-layout><br><br><br>
             

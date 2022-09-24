@@ -11,15 +11,12 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div class="icons">
-            <v-btn icon >
-                
-            </v-btn>
             </div>
              <div class="text-center">
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
         <v-btn icon v-bind="attrs" v-on="on" >
-       <v-icon class="rounded-circle grey lighten-2" color='#673AB7'>mdi-account-tie</v-icon>
+       <v-icon class="" color='grey'>mdi-account-tie</v-icon>
         </v-btn>
       </template>
       <v-list>

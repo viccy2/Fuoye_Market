@@ -4,7 +4,7 @@
     <div>
         <v-app-bar fixed  class="white" >
             <v-app-bar-nav-icon>
-                <v-icon @click="Go" class="rounded-circle grey lighten-2">
+                <v-icon @click="Go" class="">
                     mdi-arrow-left
                 </v-icon> 
             </v-app-bar-nav-icon>  
@@ -15,7 +15,7 @@
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn icon v-bind="attrs" v-on="on" >
-                            <v-icon class="rounded-circle grey lighten-2" color='#673AB7'>mdi-account-tie</v-icon>
+                            <v-icon class="" color='grey'>mdi-account-tie</v-icon>
                         </v-btn>
                     </template>
                     <v-list>
