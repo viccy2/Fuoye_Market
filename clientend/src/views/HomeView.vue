@@ -236,7 +236,7 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="290">
+                <v-card class="ma-3" color="#673AB7" dark height="310">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
@@ -254,7 +254,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="290">
+                <v-card class="ma-3" color="#673AB7" dark height="310">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
@@ -272,7 +272,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="290">
+                <v-card class="ma-3" color="#673AB7" dark height="310">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
@@ -298,13 +298,15 @@
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
-                <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="font-weight-bold" style="font-size:17px">
+                <v-card class="ma-3" color="grey lighten-2" dark >
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black;">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
+                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                  </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
@@ -314,13 +316,15 @@
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="font-weight-bold" style="font-size:17px">
+                <v-card class="ma-3" color="grey lighten-2" dark >
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
+                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                  </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Mide (Seller)</v-list-item-title>
@@ -330,13 +334,15 @@
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" color="#673AB7" dark >
-              <v-card-text class="font-weight-bold" style="font-size:17px">
+                <v-card class="ma-3" color="grey lighten-2" dark >
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
                 <v-list-item-avatar color="grey darken-3">
+                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                  </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
@@ -372,31 +378,24 @@
           </div>
           
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Our Partners.</h2><br><br>
+          <h2 id="h26">Our Partners.</h2><br><br><br>
             <div>
             <v-container>
             <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:120px; width:80%">
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:60%">
               </v-flex>
               <v-flex sm6 xs6>
-               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:120px; width:70%">
+               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:60%">
               </v-flex>
             </v-layout><br><br><br>
-            <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:120px; width:80%">
-              </v-flex>
-              <v-flex sm6 xs6>
-               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:120px; width:70%">
-              </v-flex>
-            </v-layout>
+            
             </v-container>
             </div>
         </div>
           
       </v-container>
-    </section><br><br><br><br><br><br>
+    </section><br>
 
 
     <section>
@@ -509,7 +508,7 @@ width:30%;height:100px;
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
 }
 .txt2{
-  font-size:17px;font-weight:500;
+  font-size:15px;font-weight:500;
 }
 #txt3{
   color:#673AB7; font-size:13px;font-weight:bold;
@@ -536,7 +535,7 @@ color:#673AB7; font-size:15px;font-weight:bold;
   margin-top:200px;
 }
 .head2{
-  margin-top:120px;
+  margin-top:110px;
 }
 .items{
   font-size:12px; margin-top:-15px;
