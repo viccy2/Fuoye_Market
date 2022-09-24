@@ -14,7 +14,7 @@
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -27,7 +27,7 @@
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/j.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -40,7 +40,7 @@
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/m.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -53,7 +53,7 @@
                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/j.jpg" style="height:20vh;"  class="rounded-lg"></v-img>
                         <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -66,7 +66,7 @@
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/d.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -79,7 +79,7 @@
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
+                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
                         <v-toolbar  height='50' style="margin-top:-70px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -225,11 +225,20 @@ export default {
     data(){
         return{
             category:[
-               'Food/Beverages',
-               'Phones/Gadgets/Smart Watches',
-               'Jewelries/Accessories',
-               'Cosmetics/Make-up',
-               'Fashion Designing'
+               'Beauty Services',
+               'Hair Styling / Barbing Services',
+               'House Keeping / Cleaning Services',
+               'Health Care / Nursing Services',
+               'Fashion Designing Services',
+               'Construction Services',
+               'Furniture Services',
+               'Farming & Veterinary Services',
+               'Engenieering / Manufacturing Services',
+               'Arts & Entertainment Services',
+               'Computing & IT Services',
+               'Vehicle / Automobile Services',
+               'Cryptocurrency Trading / Services'
+
 
             ]
         }

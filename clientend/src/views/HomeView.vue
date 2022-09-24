@@ -8,8 +8,8 @@
             <v-container>
               <v-layout row wrap>
                 <v-flex md5 lg5 >
-                  <h2 id="h21" >Connect with your choice Sellers & Buyers.</h2><br>
-                  <p class="font-weight-bold text--black"> We're here to help you connect with your choice Sellers & Buyers around You. Welcome to FuoyMarket!</p>
+                  <h2 id="h21" ><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
+                  <p class="font-weight-bold text--black"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn>
                 </v-flex>
                 <v-flex md7 lg7>
@@ -24,11 +24,11 @@
           <div class="head2 hidden-md-and-up">
             <v-layout row wrap>
               <v-flex sm12 class="ma-3 text-center">
-                <h2 class="text-center txt1">Connect with your choice Sellers & Buyers.</h2>
+                <h2 class="text-center txt1">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
               </v-flex>
               <v-flex sm12>
                 <p class="ma-3 text-center txt2 text--black">
-                    We're here to help you connect with your choice Sellers & Buyers around You. Welcome to FuoyeMarket!
+                    We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!
                 </p><br>
                 <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>
               </v-flex><br><br><br><br><br><br><br>
@@ -157,7 +157,7 @@
         <div class="hidden-sm-and-down">
           <v-layout row wrap>
             <v-flex md4 lg4 >
-              <h2 id="h22">Grow = Connect + Sell.</h2><br>
+              <h2 id="h22"><span style="color:black">Grow </span>= Connect + <span style="color:black">Sell</span>.</h2><br>
                 <p id="txt5">
                   We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br>
                   We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
@@ -174,7 +174,7 @@
         </div>
         <div class="hidden-md-and-up">
           <v-flex sm12 xs12 id="con1">
-              <h2 id="h23">Grow = <br><br> connect + <br><br> sell.</h2><br>
+              <h2 id="h23"><span style="color:black">Grow = </span><br><br> connect + <br><br> <span style="color:black">sell.</span></h2><br>
                 <p id="txt7">
                   We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
                   We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
@@ -203,7 +203,7 @@
               </div>
             </v-flex>
             <v-flex md5 lg5 >
-              <h2 id="h22">Get access to the Best sellers in the business.</h2><br>
+              <h2 id="h22"><span style="color:black">Get access to the</span> Best sellers <span style="color:black">in the business</span>.</h2><br>
                 <p id="txt5">
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
                 </p>
@@ -213,7 +213,7 @@
         </div>
         <div class="hidden-md-and-up">
           <v-flex sm12 xs12 id="con3">
-              <h2 id="h24">Get access to the Best sellers in the business.</h2><br>
+              <h2 id="h24"><span style="color:black">Get access to the</span> Best sellers <span style="color:black">in the business.</span></h2><br>
                 <p id="txt7">
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
                 </p>
@@ -236,7 +236,7 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark >
+                <v-card class="ma-3" color="#673AB7" dark height="290">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
@@ -254,7 +254,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark >
+                <v-card class="ma-3" color="#673AB7" dark height="290">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
@@ -272,7 +272,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark >
+                <v-card class="ma-3" color="#673AB7" dark height="290">
               <v-card-text class="text-h6 font-weight-bold">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
@@ -458,7 +458,7 @@ export default {
 </script>
 <style scoped>
 #h21{
-  color:#673AB7;font-weight:bold;font-size:40px;line-height:1.2;
+  color:black;font-weight:bold;font-size:40px;line-height:1.2;
 }
 #h22{
   color:#673AB7;font-weight:bold;font-size:33px;line-height:1.2;

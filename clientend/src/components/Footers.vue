@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footers">
         <v-footer fixed>
             <v-col class="text-center" cols="12">
                 {{ new Date().getFullYear() }} - <strong style="color:#673AB7;">FuoyeMarket</strong>
@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-    name : 'footer',
+    name : 'footers',
     data(){
         return{
 

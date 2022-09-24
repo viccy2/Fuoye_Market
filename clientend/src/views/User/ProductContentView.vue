@@ -225,11 +225,30 @@ export default {
     data(){
         return{
             category:[
-               'Food/Beverages',
-               'Phones/Gadgets/Smart Watches',
-               'Jewelries/Accessories',
-               'Cosmetics/Make-up',
-               'Fashion Designing'
+                'Drinks / Beverages',
+                'Bakery Products / Snacks / Cereal & Flakes',
+                'Food Items / Foods',
+                'Frozen Food / Fish / Meat / Egg',
+
+                'Male Clothing / Clothing Acessories',
+                'Female Clothing / Clothing Acessories',
+                'Jewelry',
+                'Skincare / Bath & Body',
+                'Make-up / Frangrances',
+                'Hair / Hair Beauty',
+
+                'Drugs / Health Products',
+
+                'Mobile Phones / Tablets / Smart Watches',
+                'Laptops / Computers',
+                'Electronics / Acessories / Gadgets',
+
+                'Furniture / Home appliances',
+
+                'Vehichle / Automobile'
+
+                
+
 
             ]
         }
