@@ -2,10 +2,10 @@
     <div class="content-view" >
         <!-- SAVED SELLER SECTION -->
             <div class="new-sellers">
-                <v-card flat class="rounded-lg grey lighten-2" elevation=''>
+                <v-card flat class="rounded-lg " elevation=''>
                     <v-container fluid>
-                        <div class="select-category grey lighten-2">
-                            <v-text-field rounded solo flat label="Search..." color='#673AB7'></v-text-field>
+                        <div class="select-category">
+                            <v-text-field rounded solo label="Search for sellers..." color='#673AB7;'></v-text-field>
                         </div><br>
                         <v-card-title style="font-weight:bold;margin-top:-50px;"> Saved Seller For You : </v-card-title>
                         <v-card flat class="ma-1 " height="50">

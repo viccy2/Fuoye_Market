@@ -236,8 +236,8 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="310">
-              <v-card-text class="text-h6 font-weight-bold">
+              <v-card class="ma-3" color="" height="310" flat>
+              <v-card-text class="text-h6 font-weight-bold" style="color:black">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
@@ -247,15 +247,15 @@
                 </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7">Ayomide (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="310">
-              <v-card-text class="text-h6 font-weight-bold">
+                <v-card class="ma-3" flat height="310">
+              <v-card-text class="text-h6 font-weight-bold" style="color:black;">
               "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
@@ -265,15 +265,15 @@
                 </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Mide (Seller)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7">Mide (Seller)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" color="#673AB7" dark height="310">
-              <v-card-text class="text-h6 font-weight-bold">
+                <v-card class="ma-3" flat height="310">
+              <v-card-text class="text-h6 font-weight-bold" style="color:black">
               "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
               </v-card-text>
               <v-card-actions>
@@ -283,7 +283,7 @@
                 </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7">Ayomide (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
@@ -298,9 +298,9 @@
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
-                <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
-              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+                <v-card class="ma-3" flat >
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -309,16 +309,16 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7;">Ayomide (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
-              "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                <v-card class="ma-3" flat >
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              <span style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -327,16 +327,16 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Mide (Seller)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7">Mide (Seller)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" color="grey lighten-2" dark >
-              <v-card-text class="font-weight-bold" style="font-size:15px;color:#673AB7">
-              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+                <v-card class="ma-3" flat>
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -345,7 +345,7 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title style="color:#673AB7">Ayomide (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
@@ -382,12 +382,16 @@
             <div>
             <v-container>
             <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:60%">
+              <v-flex sm4 xs4>
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:90%">
               </v-flex>
-              <v-flex sm6 xs6>
-               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:60%;float:right;">
+              <v-flex sm4 xs4>
+               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:90%;">
               </v-flex>
+              <v-flex sm4 xs4>
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:90%;float:right;">
+              </v-flex>
+              
             </v-layout><br><br><br>
             
             </v-container>
@@ -502,7 +506,7 @@ width:80%;height:80px;
 width:100%;height:400px;margin-top:-50px;
 }
 .img7{
-width:30%;height:100px;
+width:28%;height:105px;
 }
 .txt1{
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;

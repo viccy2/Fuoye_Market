@@ -1,7 +1,7 @@
 <template>
     <div class="product-details">
         <AppPagesNavbar />
-        <div class="details1" style="margin-top:35px">
+        <div class="details1" style="margin-top:50px">
            <v-col sm="10" class="pa- mx-auto">
                 <v-card class="pa-2">
                         <v-img src="../../assets/images/f.jpg" style="height:52vh;"> </v-img>

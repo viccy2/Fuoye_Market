@@ -55,7 +55,7 @@
             </v-flex>
              </v-layout>
          </div>
-         <div class="hidden-md-and-up" style="margin-top:40px">
+         <div class="hidden-md-and-up" style="margin-top:50px">
              <v-layout row wrap justify-space-between class="pa-3">
                 <v-flex md12 lg12 sm12 xs12>
                 <v-card class="mx-auto" outlined flat height='200'>
@@ -76,11 +76,11 @@
                     <v-card-text>
                         <v-row>
                             <v-col  sm="4" >
-                                <p class="font-italic" style="text-decoration:none;font-size:12px;font-weight:bold;margin-top:-4px;">Category<br><span>SUV</span>
+                                <p class="font-italic" style="text-decoration:none;font-size:12px;font-weight:bold;margin-top:-4px;">Category<br><span>Mobile Devices</span>
                                 </p>
                             </v-col>
                             <v-col  sm="4" >
-                                <p class="font-italic" style="text-decoration:none;font-size:12px;font-weight:bold;margin-top:-4px;">Location<br><span>SUV</span>
+                                <p class="font-italic" style="text-decoration:none;font-size:12px;font-weight:bold;margin-top:-4px;">Location<br><span>Ikole-Ekiti</span>
                                 </p>
                             </v-col>
                             <v-col  sm="4" >
