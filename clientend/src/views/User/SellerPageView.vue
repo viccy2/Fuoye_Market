@@ -55,7 +55,7 @@
             </v-flex>
              </v-layout>
          </div>
-         <div class="hidden-md-and-up" style="margin-top:50px">
+         <div class="hidden-md-and-up" style="margin-top:45px">
              <v-layout row wrap justify-space-between class="pa-3">
                 <v-flex md12 lg12 sm12 xs12>
                 <v-card class="mx-auto" outlined flat height='200'>

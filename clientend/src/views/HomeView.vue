@@ -237,8 +237,8 @@
               <v-layout row wrap>
               <v-flex md4 lg4>
               <v-card class="ma-3" color="" height="310" flat>
-              <v-card-text class="text-h6 font-weight-bold" style="color:black">
-              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -255,8 +255,8 @@
               </v-flex>
                <v-flex md4 lg4>
                 <v-card class="ma-3" flat height="310">
-              <v-card-text class="text-h6 font-weight-bold" style="color:black;">
-              "FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+               <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              <span style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -273,8 +273,8 @@
               </v-flex>
                <v-flex md4 lg4>
                 <v-card class="ma-3" flat height="310">
-              <v-card-text class="text-h6 font-weight-bold" style="color:black">
-              "FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers."
+              <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -294,7 +294,7 @@
             </div>
           </div>   
         <div class="hidden-md-and-up" id="con4">
-            <h2 id="h26">Don’t just take our word for it.</h2><br><br>
+            <h2 id="h26">Don’t just take our word for it! </h2><br><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
@@ -356,7 +356,7 @@
             </div>
           </div><br><br>
       </v-container>
-    </section><br><br><br><br><br><br><br>
+    </section><br><br><br><br>
 
     <section>
       <v-container>
@@ -374,26 +374,27 @@
                 <img class="rounded-circle img7" src="https://doteightplus.com/images/dot.svg">
               </v-flex>
             </v-layout>
-          </div>
+          </div><br><br><br><br><br>
           </div>
           
         <div class="hidden-md-and-up" id="con4">
           <h2 id="h26">Our Partners.</h2><br><br><br>
             <div>
             <v-container>
+              <center>
             <v-layout row wrap>
-              <v-flex sm4 xs4>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:90%">
+              <v-flex sm12 xs12>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:160px; width:50%;"><br><br><br><br>
               </v-flex>
-              <v-flex sm4 xs4>
-               <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:90%;">
+              <v-flex sm12 xs12>
+               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:160px; width:50%;"><br><br><br><br>
               </v-flex>
-              <v-flex sm4 xs4>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:100px; width:90%;float:right;">
+              <v-flex sm12 xs12>
+                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:160px; width:50%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>
-            
+              </center>
             </v-container>
             </div>
         </div>

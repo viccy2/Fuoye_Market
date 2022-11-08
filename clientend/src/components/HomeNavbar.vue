@@ -12,13 +12,13 @@
             <!-- NAVBAR ICONS -->
             <div >
             <router-link to="/team" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
-               Team
+               Our Team
             </v-btn></router-link>
             <router-link to="/contact-us" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
                Contact Us
             </v-btn></router-link>
-            <v-btn rounded id="btn" class="text-capitalize" style="background-color:#673AB7;color:white">
-               Sign In
+            <v-btn text id="btn" class="text-capitalize" style="color:#673AB7;">
+               Create New Account
             </v-btn>
             </div>
 

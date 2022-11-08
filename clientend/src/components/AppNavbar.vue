@@ -15,7 +15,7 @@
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn icon v-bind="attrs" v-on="on" >
-                        <v-icon class="" color='grey'>mdi-account-tie</v-icon>
+                        <v-icon class="" color='grey'>mdi-account</v-icon>
                       </v-btn>
                     </template>
                     <v-list>

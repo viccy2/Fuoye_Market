@@ -38,7 +38,38 @@
             <!-- DISPLAY ON MEDIUM AND SMALL DEVICES -->
 
             <div class="sliders hidden-md-and-up">
-                  <v-slide-group class="" active-class="success" show-arrow>
+                <v-container>
+                 <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel-item >
+                            <v-layout row wrap>
+                                <img src="../../assets/images/d.jpg" style="width:100%;height:230px" >
+                            </v-layout>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-layout row wrap>
+                                <img src="../../assets/images/h.png" style="width:100%;height:230px" >
+                            </v-layout>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-layout row wrap>
+                                <img src="../../assets/images/f.jpg" style="width:100%;height:230px" >
+                            </v-layout>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-layout row wrap>
+                                <img src="../../assets/images/j.jpg" style="width:100%;height:230px" >
+                            </v-layout>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-layout row wrap>
+                                <img src="../../assets/images/z.jpg" style="width:100%;height:230px" >
+                            </v-layout>
+                        </v-carousel-item>
+                        
+                         
+                </v-carousel>
+                </v-container>
+                  <!-- <v-slide-group class="" active-class="success" show-arrow>
                     <v-slide-item >
                        <div  class="ma-2" height="100" width="" >
                             <img src="../../assets/images/d.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
@@ -65,7 +96,7 @@
                         </div>
                     </v-slide-item>
                    
-                </v-slide-group>
+                </v-slide-group> -->
              
             </div>
 
