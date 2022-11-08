@@ -371,7 +371,7 @@
                 <img class="img7 grey rounded-circle" src="../assets/images/vad1.png">
               </v-flex>
               <v-flex md4 lg4>
-                <img class="rounded-circle img7" src="https://doteightplus.com/images/dot.svg">
+                <img class="rounded-circle img7 grey" src="https://dothost.com.ng/img/white.svg">
               </v-flex>
             </v-layout>
           </div><br><br><br><br><br>
@@ -390,7 +390,7 @@
                <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:160px; width:50%;"><br><br><br><br>
               </v-flex>
               <v-flex sm12 xs12>
-                <img class="rounded-circle" src="https://doteightplus.com/images/dot.svg" style="height:160px; width:50%;"><br><br><br><br>
+                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:160px; width:50%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>
