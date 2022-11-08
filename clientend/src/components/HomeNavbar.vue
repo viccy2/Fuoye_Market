@@ -18,7 +18,7 @@
                Contact Us
             </v-btn></router-link>
             <v-btn text id="btn" class="text-capitalize" style="color:#673AB7;">
-               Create new account
+               New account
             </v-btn>
             </div>
 
