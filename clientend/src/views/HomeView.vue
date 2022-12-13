@@ -274,7 +274,7 @@
                <v-flex md4 lg4>
                 <v-card class="ma-3" flat height="310">
               <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
-              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -336,7 +336,7 @@
                <v-flex sm12 xs12>
                 <v-card class="ma-3" flat>
               <v-card-text class="font-weight-bold" style="font-size:15px;color:black">
-              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+              "<span style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
               <v-card-actions>
                 <v-list-item class="grow">
@@ -384,13 +384,13 @@
               <center>
             <v-layout row wrap>
               <v-flex sm12 xs12>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:160px; width:50%;"><br><br><br><br>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:30%;"><br><br><br><br>
               </v-flex>
               <v-flex sm12 xs12>
-               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:160px; width:50%;"><br><br><br><br>
+               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:100px; width:30%;"><br><br><br><br>
               </v-flex>
               <v-flex sm12 xs12>
-                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:160px; width:50%;"><br><br><br><br>
+                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:100px; width:30%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>

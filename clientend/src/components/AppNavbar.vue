@@ -5,7 +5,7 @@
             <v-app-bar-nav-icon><v-btn icon>
                 <img class="rounded-xl"  src="../assets/images/Fm.png" height="45">
               </v-btn>
-            </v-app-bar-nav-icon>  
+            </v-app-bar-nav-icon>  <v-spacer></v-spacer>
             <v-toolbar-title id="name">FuoyeMarket</v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->

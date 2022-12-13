@@ -38,31 +38,31 @@
             <!-- DISPLAY ON MEDIUM AND SMALL DEVICES -->
 
             <div class="sliders hidden-md-and-up">
-                <v-container>
-                 <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
-                        <v-carousel-item >
-                            <v-layout row wrap>
-                                <img src="../../assets/images/d.jpg" style="width:100%;height:230px" >
+                <v-container><br>
+                 <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel-item  class="rounded-lg">
+                            <v-layout row wrap class="rounded-lg">
+                                <img class="rounded-lg" src="../../assets/images/d.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/h.png" style="width:100%;height:230px" >
+                                <img src="../../assets/images/h.png" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/f.jpg" style="width:100%;height:230px" >
+                                <img src="../../assets/images/f.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/j.jpg" style="width:100%;height:230px" >
+                                <img src="../../assets/images/j.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/z.jpg" style="width:100%;height:230px" >
+                                <img src="../../assets/images/z.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         
