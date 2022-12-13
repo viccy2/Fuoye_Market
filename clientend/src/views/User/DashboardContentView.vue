@@ -47,22 +47,22 @@
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/h.png" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/h.png" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/f.jpg" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/f.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/j.jpg" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/j.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/z.jpg" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/z.jpg" style="width:100%;height:180px" >
                             </v-layout>
                         </v-carousel-item>
                         
