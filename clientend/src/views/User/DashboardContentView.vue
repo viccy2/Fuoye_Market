@@ -8,19 +8,10 @@
                  <v-carousel  height="380" cycle hide-delimiters show-arrows-on-hover>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img src="../../assets/images/d.jpg" style="width:100%;height:750px" >
+                                <img src="../../assets/images/d.jpg" style="width:100%;height:750px;margin-top:-50px;" >
                             </v-layout>
                         </v-carousel-item>
-                        <v-carousel-item >
-                              <v-layout row wrap>
-                                <v-flex md6 lg6 class="pa-1">
-                                    <img src="../../assets/images/h.png" style="width:100%;height:100%" >
-                                </v-flex>
-                                <v-flex md6 lg6 class="">
-                                    <img src="../../assets/images/f.jpg" style="width:100%;height:400px" >
-                                </v-flex>
-                            </v-layout>
-                        </v-carousel-item>
+                        
                         <v-carousel-item >
                               <v-layout row wrap>
                                 <v-flex md6 lg6 class="pa-1">
@@ -38,31 +29,17 @@
             <!-- DISPLAY ON MEDIUM AND SMALL DEVICES -->
 
             <div class="sliders hidden-md-and-up">
-                <v-container><br>
-                 <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                        <v-carousel-item  class="rounded-lg">
-                            <v-layout row wrap class="rounded-lg">
-                                <img class="rounded-lg" src="../../assets/images/d.jpg" style="width:100%;height:180px" >
-                            </v-layout>
-                        </v-carousel-item>
+                <v-container>
+                 <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/h.png" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/d.jpg" style="width:100%;height:230px" >
                             </v-layout>
                         </v-carousel-item>
+                        
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/f.jpg" style="width:100%;height:180px" >
-                            </v-layout>
-                        </v-carousel-item>
-                        <v-carousel-item >
-                            <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/j.jpg" style="width:100%;height:180px" >
-                            </v-layout>
-                        </v-carousel-item>
-                        <v-carousel-item >
-                            <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/z.jpg" style="width:100%;height:180px" >
+                                <img class="rounded-lg" src="../../assets/images/17.jpg" style="width:100%;height:230px;margin-top:0px;" >
                             </v-layout>
                         </v-carousel-item>
                         
@@ -146,7 +123,7 @@
                       <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-1">
-                            <v-img src="../../assets/images/m.jpg" style="height:80px;"></v-img>
+                            <v-img src="../../assets/images/12.jpg" style="height:80px;"></v-img>
                             <v-card-title style="font-size:13px;font-weight:bold;margin-top:-10px;">Zeus.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>

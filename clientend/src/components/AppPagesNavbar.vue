@@ -2,10 +2,10 @@
     <div class="navbar">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
     <div>
-        <v-app-bar fixed  class="white" >
+        <v-app-bar fixed flat  class="white" >
             <v-app-bar-nav-icon>
                 <v-icon @click="Go" class="">
-                    mdi-arrow-left
+                    mdi-arrow-left-thick
                 </v-icon> 
             </v-app-bar-nav-icon>  
             <v-toolbar-title id="name" ></v-toolbar-title>          
@@ -15,7 +15,13 @@
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn icon v-bind="attrs" v-on="on" >
-                            <v-icon class="" color='grey'>mdi-account</v-icon>
+                            <template>
+                          <v-row>
+                            <v-avatar color="#673AB7">
+                              <span class="white--text text-h6">CJ</span>
+                            </v-avatar>
+                          </v-row>
+                        </template>
                         </v-btn>
                     </template>
                     <v-list>

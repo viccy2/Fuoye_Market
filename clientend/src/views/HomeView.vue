@@ -14,7 +14,7 @@
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
-                      <img class="rounded-circle img1" transition="fade-transition" src="../assets/images/l.png">
+                      <img class="rounded-circle img1" transition="fade-transition" src="../assets/images/17.jpg">
                   </center>
                 </v-flex>
               </v-layout>
@@ -33,7 +33,7 @@
                 <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>
               </v-flex><br><br><br><br><br><br><br>
               <center>
-                      <img class="rounded-circle img2" transition="fade-transition" src="../assets/images/l.png">
+                      <img class="rounded-circle img2" transition="fade-transition" src="../assets/images/17.jpg">
               </center>
             </v-layout>
           </div>
@@ -167,7 +167,7 @@
             </v-flex>
             <v-flex md8 lg8>
               <center>
-                <img class="rounded-circle img3" transition="fade-transition" src="../assets/images/33.png">
+                <img class="rounded-circle img3" transition="fade-transition" src="../assets/images/12.jpg">
               </center>
             </v-flex>
           </v-layout>
@@ -184,13 +184,13 @@
             </v-flex>
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4" src="../assets/images/33.png">
+                  <img class="rounded-circle img4" src="../assets/images/12.jpg">
               </center>
             </v-flex>
             
         </div>
       </v-container>
-    </section><br><br><br><br><br><br><br>
+    </section><br><br><br><br><br><br><br><br>
 
 
     <section>
@@ -199,7 +199,7 @@
           <v-layout row wrap>
             <v-flex md7 lg7>
               <div>
-                <img class="rounded-circle img6" transition="fade-transition" src="../assets/images/31.png">
+                <img class="rounded-circle img6" transition="fade-transition" src="../assets/images/13.jpg">
               </div>
             </v-flex>
             <v-flex md5 lg5 >
@@ -221,7 +221,7 @@
             </v-flex>
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4" src="../assets/images/31.png">
+                  <img class="rounded-circle img4" src="../assets/images/13.jpg">
               </center>
             </v-flex>
             
@@ -384,13 +384,13 @@
               <center>
             <v-layout row wrap>
               <v-flex sm12 xs12>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:100px; width:30%;"><br><br><br><br>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:90px; width:28%;"><br><br><br><br>
               </v-flex>
               <v-flex sm12 xs12>
-               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:100px; width:30%;"><br><br><br><br>
+               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:90px; width:28%;"><br><br><br><br>
               </v-flex>
               <v-flex sm12 xs12>
-                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:100px; width:30%;"><br><br><br><br>
+                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:90px; width:28%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>
@@ -492,19 +492,19 @@ export default {
   width:100%;height:300px;
 }
 .img3{
-width:100%;height:400px;margin-top:-50px;
+width:100%;height:500px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;
 }
 .img4{
-width:100%;height:250px;
+width:100%;height:300px;
 }
 .img5{
 width:80%;height:80px;
 }
 .img6{
-width:100%;height:400px;margin-top:-50px;
+width:100%;height:600px;margin-top:-250px;
 }
 .img7{
 width:28%;height:105px;

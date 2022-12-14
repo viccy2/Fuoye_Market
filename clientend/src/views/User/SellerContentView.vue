@@ -3,12 +3,10 @@
         <!-- SAVED SELLER SECTION -->
             <div class="new-sellers">
                 <v-card flat class="rounded-lg " elevation=''>
-                    <v-container fluid><br>
+                    <v-container fluid>
                         <div class="select-category">
-                            <v-text-field rounded grey  label="Search for sellers..." color='#673AB7;' elevation="12">
-                                <v-icon right dark>
-                                    mdi-close-circle-outline
-                                </v-icon>
+                            <v-text-field rounded grey append-icon="mdi-magnify" label="Search for sellers..." color='#673AB7;' elevation="12">
+                                
                             </v-text-field>
                         </div><br><br>
                         <v-card-title style="font-weight:bold;margin-top:-50px;"> Saved Seller For You : </v-card-title>
