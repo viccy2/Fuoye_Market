@@ -14,7 +14,7 @@
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
-                      <img class="rounded-circle img1" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class="rounded-circle img1 animated bounce" transition="fade-transition" src="../assets/images/17.jpg">
                   </center>
                 </v-flex>
               </v-layout>
