@@ -221,7 +221,7 @@
             </v-flex>
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4" src="../assets/images/13.jpg">
+                  <img class="rounded-circle img4" src="../assets/images/13.jpg" style="margin-top:-20px;">
               </center>
             </v-flex>
             
@@ -400,7 +400,7 @@
         </div>
           
       </v-container>
-    </section><br>
+    </section>
 
 
     <section>
@@ -489,7 +489,7 @@ export default {
   width:100%;height:400px;margin-top:-50px;
 }
 .img2{
-  width:100%;height:300px;
+  width:100%;height:250px;
 }
 .img3{
 width:100%;height:500px;margin-top:-150px;
