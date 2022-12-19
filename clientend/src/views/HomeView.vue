@@ -23,6 +23,7 @@
 
           <div class="head2 hidden-md-and-up">
             <v-layout row wrap>
+              <center>
               <v-flex sm12 class="ma-3 text-center">
                 <h2 class="text-center txt1">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
               </v-flex>
@@ -31,10 +32,11 @@
                     We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!
                 </p><br>
                 <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>
-              </v-flex><br><br><br><br><br><br><br>
+              </v-flex><br>
               <center>
                       <img class="rounded-circle img2" transition="fade-transition" src="../assets/images/17.jpg">
               </center>
+            </center>
             </v-layout>
           </div>
         </section><br><br>
@@ -228,11 +230,107 @@
         </div>
       </v-container>
     </section><br><br><br><br><br><br><br>
+     <section id="team">
+      <v-container>
+          <div class="hidden-sm-and-down">
+            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br><br><br><br>
+            <div>
+            <v-layout row wrap>
+              <v-flex md6 lg6>
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/po.jpg" style="width:20%; height:115px;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                <h2 id="h26" style="font-size:14px;"> (Founder)  </h2>
+                </center>
+              </v-flex>
+              <v-flex md6 lg6>
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:16%; height:90px;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
+                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
+                </center>              
+              </v-flex>
+            </v-layout><br><br><br>
+            <v-layout row wrap>
+              <v-flex md4 lg4>
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
+                <h2 id="h26" style="font-size:14px;"> (Founder / Team Lead SDE)  </h2>
+                </center>
+              </v-flex>
+              <v-flex md4 lg4>
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
+                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
+                </center>              
+              </v-flex>
+              <v-flex md4 lg4>
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
+                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
+                </center>              
+              </v-flex>
+            </v-layout><br><br><br>
+          </div><br><br><br><br><br>
+          </div>
+          
+        <div class="hidden-md-and-up" id="con4">
+          <h2 id="h26">Meet the<span style="color:#673AB7"> Team.</span></h2><br><br><br>
+            <div>
+            <v-container>
+              <center>
+            <v-layout row wrap>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle" src="../assets/images/po.jpg" style="height:110px; width:60%;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                <h2 id="h26" style="font-size:14px;"> (Founder / Team Lead SDE)  </h2>
+                <br><br><br>
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
+                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
+                <br><br><br>
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
+                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                <br><br><br>              
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
+                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                <br><br><br>                 
+              </v-flex>
+              
+              <v-flex sm12 xs12>
+                <center>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:30%;">
+                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
+                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                <br><br><br><br> 
+                </center>                 
+              </v-flex>
+              
+              
+            </v-layout><br><br><br>
+              </center>
+            </v-container>
+            </div>
+        </div>
+          
+      </v-container>
+    </section>
 
     <section>
       <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25">Don’t just take our word for it.</h2><br><br><br><br><br>
+              <h2 id="h25">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br><br><br><br>
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
@@ -294,7 +392,7 @@
             </div>
           </div>   
         <div class="hidden-md-and-up" id="con4">
-            <h2 id="h26">Don’t just take our word for it! </h2><br><br>
+            <h2 id="h26">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
@@ -353,44 +451,53 @@
               </v-flex>
                
               </v-layout>
-            </div>
-          </div><br><br>
+            </div><br><br><br><br><br><br>
+          </div>
       </v-container>
-    </section><br><br><br><br>
+    </section>
 
     <section>
       <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25">Our Partners</h2><br><br><br><br><br>
+            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md4 lg4>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg">
+                <center>
+                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" >
+                </center> 
               </v-flex>
               <v-flex md4 lg4>
-                <img class="img7 grey rounded-circle" src="../assets/images/vad1.png">
+                <center>
+                <img class="img7 rounded-circle grey" src="../assets/images/vad1.png" >
+                </center> 
               </v-flex>
               <v-flex md4 lg4>
+                <center>
                 <img class="rounded-circle img7 grey" src="https://dothost.com.ng/img/white.svg">
+                </center>
               </v-flex>
             </v-layout>
           </div><br><br><br><br><br>
           </div>
           
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Our Partners.</h2><br><br><br>
+          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br><br>
             <div>
             <v-container>
               <center>
             <v-layout row wrap>
-              <v-flex sm12 xs12>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:90px; width:28%;"><br><br><br><br>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:85px; width:50%;"><br><br><br><br>
               </v-flex>
-              <v-flex sm12 xs12>
-               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:90px; width:28%;"><br><br><br><br>
+              <v-flex sm6 xs6>
+               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:85px; width:50%;"><br><br><br><br>
               </v-flex>
-              <v-flex sm12 xs12>
-                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:90px; width:28%;"><br><br><br><br>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:50%;"><br><br><br><br>
+              </v-flex>
+              <v-flex sm6 xs6>
+                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:50%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>
@@ -401,6 +508,8 @@
           
       </v-container>
     </section>
+
+    
 
 
     <section>
@@ -474,10 +583,10 @@ export default {
   color:#673AB7;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
 }
 #h25{
- color:#673AB7;font-weight:bold;font-size:33px;line-height:1.2;text-align:center;
+ color:black;font-weight:bold;font-size:33px;line-height:1.2;text-align:center;
 }
 #h26{
-  color:#673AB7;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
+  color:black;font-weight:bold;font-size:26px;line-height:1.5;text-align:center;
 }
 #h27{
   color:#673AB7;

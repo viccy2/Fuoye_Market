@@ -97,7 +97,7 @@
           <div class="service2 hidden-md-and-up" style="margin-top:10px">
             <v-container fluid>
             <v-layout row wrap>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -110,7 +110,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/f.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -123,20 +123,8 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/h.png" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -149,7 +137,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/f.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -162,7 +150,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/d.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -175,7 +163,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -188,7 +176,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/f.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
@@ -201,7 +189,7 @@
                         </v-toolbar>
                     </v-card>
                 </v-flex>
-                <v-flex sm4 xs4 class="pa-1 ">
+                <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/h.png" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>

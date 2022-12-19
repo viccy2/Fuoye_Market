@@ -11,14 +11,14 @@
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
-            <router-link to="/team" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
+            <!-- <router-link to="#team" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
                Our Team
             </v-btn></router-link>
             <router-link to="/contact-us" style="text-decoration:none"><v-btn text class="text-capitalize" style="color:#673AB7;">
                Contact Us
-            </v-btn></router-link>
-            <v-btn text id="btn" class="text-capitalize" style="color:#673AB7;">
-               New account
+            </v-btn></router-link> -->
+            <v-btn rounded  id="btn" class="text-capitalize" style="background-color:#673AB7;color:white;">
+               Sign In
             </v-btn>
             </div>
 
@@ -27,10 +27,13 @@
     </div>
     <div class="hidden-md-and-up white">
         <v-app-bar fixed flat elevation='' height="70" class="white">
-            <v-app-bar-nav-icon><v-btn icon>
-                <img class="rounded-xl"  src="../assets/images/Fm.png" height="45"  @click="Go">
+            <!-- <v-app-bar-nav-icon><v-btn icon>
+                <v-container fluid>
+                    <img class="rounded-xl"  src="../assets/images/Fm.png" height="45"  @click="Go">
+                </v-container>
               </v-btn>
-            </v-app-bar-nav-icon>  
+            </v-app-bar-nav-icon> -->
+            <!-- <h3 id="name"> FuoyeMarket</h3> -->
             <v-toolbar-title id="name">FuoyeMarket</v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
