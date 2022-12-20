@@ -3,7 +3,7 @@
     <!-- DISPLAY ONLY ON ALL DEVICES -->
     <div class="hidden-sm-and-down white">
         <v-app-bar fixed flat class="white"> 
-            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="50"  @click="Go"></v-toolbar-title>          
+            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="60"  @click="Go"></v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
@@ -17,7 +17,7 @@
     </div>
     <div class="hidden-md-and-up white">
         <v-app-bar fixed flat elevation='' height="70" class="white">
-            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="50"  @click="Go"></v-toolbar-title>          
+            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="60"  @click="Go"></v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >

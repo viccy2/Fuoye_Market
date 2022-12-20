@@ -249,7 +249,7 @@
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;"> Electronics </h2>
                 </center> 
-              </v-flex>
+              </v-flex><br>
               <v-flex md2 lg2>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
@@ -320,7 +320,7 @@
           </div>
           
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26"><span style="color:#673AB7">Explore Popular Categories.</span></h2><br><br><br>
+          <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br><br><br>
             <div>
             <v-container>
               <center>
@@ -334,7 +334,7 @@
                   <v-carousel-item >
                     <img src="../assets/images/product-7.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;"> Electronics </h2>
                 </center> 
               </v-flex><br>
@@ -347,10 +347,10 @@
                   <v-carousel-item >
                     <img src="../assets/images/product-8.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;">Devices / Gadgets</h2>
                 </center> 
-              </v-flex><br>
+              </v-flex>
               <v-flex sm6 xs6>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
@@ -360,7 +360,7 @@
                   <v-carousel-item >
                     <img src="../assets/images/product-2-2.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;">Male clothing / Accessories </h2>
                 </center>
               </v-flex><br>
@@ -373,7 +373,7 @@
                   <v-carousel-item >
                     <img src="../assets/images/product-8-2.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;"> Female Clothing / Accessories </h2>
                 </center>
               </v-flex><br>
@@ -386,7 +386,7 @@
                   <v-carousel-item >
                     <img src="../assets/images/7.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;"> Computing Devices / Accessories</h2>
                 </center> 
               </v-flex><br>
@@ -399,14 +399,14 @@
                   <v-carousel-item >
                     <img src="../assets/images/product-2-22.jpg" style="width:80%;height:100%;margin-top:px;" >
                   </v-carousel-item>
-                </v-carousel><br>
+                </v-carousel>
                 <h2 id="h26" style="font-size:11px;">Furnitures / Home appliances </h2>
                 </center> 
               </v-flex><br><br><br><br>
               
             </v-layout><br><br><br>
               </center>
-            </v-container>
+            </v-container><br><br><br><br>
             </div>
         </div>
           
@@ -511,20 +511,7 @@
                   <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" style="font-size:14px;"> (Team Lead Strategy, Planning & People)  </h2>
                 <br><br><br>                 
-              </v-flex>
-              
-              <v-flex sm12 xs12>
-                <center>
-                  <v-card flat class=" ma-1" >
-                    <v-img class="rounded-lg" src="../assets/images/pel.jpg" style="width:140px;height:150px;"></v-img>
-                  </v-card>
-                  <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
-                  <h2 id="h26" style="font-size:14px;"> (Team Lead Marketing)  </h2>
-                <br><br><br><br> 
-                </center>                 
-              </v-flex>
-              
-              
+              </v-flex>  
             </v-layout><br><br><br>
               </center>
             </v-container>
@@ -694,20 +681,16 @@
             <v-container>
               <center>
             <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <img class="" src="../assets/images/pel.jpg" style="height:85px; width:70%;"><br><br><br><br>
+              <v-flex sm4 xs4>
+                <img class="" src="../assets/images/pel.jpg" style="height:70px; width:70%;">
               </v-flex>
-              <v-flex sm6 xs6>
-               <img class="" src="../assets/images/vad1.png" style="height:85px; width:70%;"><br><br><br><br>
+              <v-flex sm4 xs4>
+               <img class="" src="../assets/images/pel.jpg" style="height:70px; width:70%;">
               </v-flex>
-              <v-flex sm6 xs6>
-                <img class="" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:70%;"><br><br><br><br>
+              <v-flex sm4 xs4>
+                <img class="" src="../assets/images/pel.jpg" style="height:70px; width:70%;">
               </v-flex>
-              <v-flex sm6 xs6>
-                <img class=" grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:70%;"><br><br><br><br>
-              </v-flex>
-              
-            </v-layout><br><br><br>
+             </v-layout><br><br><br>
               </center>
             </v-container>
             </div>
@@ -728,7 +711,7 @@
                   <img class="hidden-sm-and-down" src="../assets/images/logo1.png" style="height:80px; width:30%;">
                 </div>
                 <div>
-                  <img class="hidden-md-and-up" src="../assets/images/logo1.png" style="height:80px; width:60%;">
+                  <img class="hidden-md-and-up" src="../assets/images/logo1.png" style="height:90px; width:80%;">
                 </div>
                 <!-- <h2 id="h27">FuoyeMarket</h2><br> -->
                 <p>Follow us on our social platforms.</p>
