@@ -1,5 +1,5 @@
 <template>
-    <div class="product" style="margin-top:33px;"><br>
+    <div class="product" style="margin-top:40px;">
         <SellerContentView />
     </div>
 </template>

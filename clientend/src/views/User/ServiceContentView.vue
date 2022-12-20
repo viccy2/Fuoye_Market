@@ -1,30 +1,27 @@
 <template>
     <div class="service-content">
-         <v-card height='40' tile fixed-top>
+
             <div class="select-category">
                 <v-select  solo flat label="Select Service Category" color='#673AB7' :items="category" style="cursor:pointer"></v-select>
             </div>
-        </v-card>
-        <div class="nav items">
-            <hr>
+       
+        <div class="nav items" style="margin-top:-30px">
+            <hr><br>
             <v-container fluid>
                 <v-layout row wrap>
                     <v-flex lg6 md6 sm6  class="pa-1"  >    
-                        <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">View</span></v-btn>
+                        <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded  class="text-capitalize" style="width:100%; margin-top:-20px"><span style="color:white">View</span></v-btn>
                     </v-flex>
                     <v-flex lg6 md6 sm6  class="pa-1"  >  
-                        <v-btn grey small :to="{name : 'seller-page'}"  color='' rounded  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">View</span></v-btn>
+                        <v-btn grey small :to="{name : 'seller-page'}"  color='' rounded  class="text-capitalize" style="width:100%; margin-top:-20px"><span style="color:white">View</span></v-btn>
                     </v-flex>
                 </v-layout><br>
-                <div class="search">
-                    <v-text-field rounded grey append-icon="mdi-magnify" label="Search for sellers..." color='#673AB7;' elevation="12">
-                    </v-text-field>
-                </div>
+               
             </v-container>    
         </div>
         <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
     
-        <div class="service1 hidden-sm-and-down" style="margin-top:10px">
+        <div class="service1 hidden-sm-and-down" style="margin-top:-20px">
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex lg2 md2  class="pa-1"  >
@@ -111,7 +108,7 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-          <div class="service2 hidden-md-and-up" style="margin-top:10px">
+          <div class="service2 hidden-md-and-up" style="margin-top:-20px">
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex sm6 xs6 class="pa-1 ">

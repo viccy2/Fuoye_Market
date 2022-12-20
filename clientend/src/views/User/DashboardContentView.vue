@@ -33,47 +33,20 @@
                  <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/d.jpg" style="width:100%;height:230px" >
+                                <img class="rounded-lg" src="../../assets/images/d.jpg" style="width:100%;height:200px" >
                             </v-layout>
                         </v-carousel-item>
                         
                         <v-carousel-item >
                             <v-layout row wrap>
-                                <img class="rounded-lg" src="../../assets/images/17.jpg" style="width:100%;height:230px;margin-top:0px;" >
+                                <img class="rounded-lg" src="../../assets/images/17.jpg" style="width:100%;height:200px;margin-top:0px;" >
                             </v-layout>
                         </v-carousel-item>
                         
                          
                 </v-carousel>
                 </v-container>
-                  <!-- <v-slide-group class="" active-class="success" show-arrow>
-                    <v-slide-item >
-                       <div  class="ma-2" height="100" width="" >
-                            <img src="../../assets/images/d.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
-                        </div>
-                    </v-slide-item>
-                    <v-slide-item >
-                       <div  class="ma-2" height="100" width="" >
-                            <img src="../../assets/images/h.png" style="width:300px;height:180px;margin-top:10px" class="rounded-lg">
-                        </div>
-                    </v-slide-item>
-                    <v-slide-item >
-                       <div  class="ma-2" height="100" width="" >
-                            <img src="../../assets/images/f.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
-                        </div>
-                    </v-slide-item>
-                    <v-slide-item >
-                        <div  class="ma-2" height="100" width="" >
-                            <img src="../../assets/images/j.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
-                        </div>
-                    </v-slide-item>
-                     <v-slide-item >
-                        <div  class="ma-2" height="100" width="300" >
-                            <img src="../../assets/images/z.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
-                        </div>
-                    </v-slide-item>
-                   
-                </v-slide-group> -->
+                 
              
             </div>
             
@@ -139,6 +112,40 @@
             </div><br>
             <!-- END TOP SELLER SECTION -->
 
+            <!-- START SLIDER -->
+            <div class="sliders">
+                <v-slide-group class="" active-class="success" show-arrow>
+                    <v-slide-item >
+                       <div  class="ma-2" height="100" width="" >
+                            <img src="../../assets/images/d.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
+                        </div>
+                    </v-slide-item>
+                    <v-slide-item >
+                       <div  class="ma-2" height="100" width="" >
+                            <img src="../../assets/images/h.png" style="width:300px;height:180px;margin-top:10px" class="rounded-lg">
+                        </div>
+                    </v-slide-item>
+                    <v-slide-item >
+                       <div  class="ma-2" height="100" width="" >
+                            <img src="../../assets/images/f.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
+                        </div>
+                    </v-slide-item>
+                    <v-slide-item >
+                        <div  class="ma-2" height="100" width="" >
+                            <img src="../../assets/images/j.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
+                        </div>
+                    </v-slide-item>
+                     <v-slide-item >
+                        <div  class="ma-2" height="100" width="300" >
+                            <img src="../../assets/images/z.jpg" style="width:300px;height:170px;margin-top:10px" class="rounded-lg">
+                        </div>
+                    </v-slide-item>
+                   
+                </v-slide-group>
+            </div>
+
+            <!-- END SLIDER -->
+            
             <!-- NEW SELLER SECTION -->
             <div class="new-sellers">
                 <v-card flat class="rounded-lg" elevation=''>

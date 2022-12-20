@@ -8,7 +8,7 @@
             <v-container>
               <v-layout row wrap>
                 <v-flex md5 lg5 >
-                  <h2 id="h21" ><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
+                  <h2 id="h21" class="animate_animated animate_fadeInLeft"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn>
                 </v-flex>
@@ -96,7 +96,7 @@
         <div class="body2 hidden-md-and-up">
           <v-layout row wrap>
             <v-flex sm12 xs12>
-              <v-card tile flat height='100' class="ma-5" >
+              <v-card tile flat height='100' class="ma-5">
                 <v-layout>
                   <v-flex sm3>
                      <v-btn fab  small color='grey lighten-2'>
@@ -230,6 +230,189 @@
         </div>
       </v-container>
     </section><br><br><br><br><br><br><br>
+
+    <section>
+      <v-container>
+          <div class="hidden-sm-and-down">
+            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br><br><br>
+            <div>
+            <v-layout row wrap>
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-5.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-7.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
+                </center> 
+              </v-flex>
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Male clothing / Accessories </h2>
+                </center>  
+              </v-flex>
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Female Clothing / Accessories </h2>
+                </center>  
+              </v-flex>
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-6.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Devices / Gadgets</h2>
+                </center> 
+              </v-flex>
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/3.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/7.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Computing Devices / Accessories</h2>
+                </center> 
+              </v-flex>
+               <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-3.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-22.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Furnitures / Home appliances </h2>
+                </center>  
+              </v-flex>
+            </v-layout>
+          </div><br><br><br><br><br>
+          </div>
+          
+        <div class="hidden-md-and-up" id="con4">
+          <h2 id="h26"><span style="color:#673AB7">Explore Popular Categories.</span></h2><br><br><br>
+            <div>
+            <v-container>
+              <center>
+            <v-layout row wrap>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-5.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-7.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
+                </center> 
+              </v-flex><br>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-6.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Devices / Gadgets</h2>
+                </center> 
+              </v-flex><br>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Male clothing / Accessories </h2>
+                </center>
+              </v-flex><br>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-8-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Female Clothing / Accessories </h2>
+                </center>
+              </v-flex><br>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/3.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/7.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;"> Computing Devices / Accessories</h2>
+                </center> 
+              </v-flex><br>
+              <v-flex sm6 xs6>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-3.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-2-22.jpg" style="width:80%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Furnitures / Home appliances </h2>
+                </center> 
+              </v-flex><br><br><br><br>
+              
+            </v-layout><br><br><br>
+              </center>
+            </v-container>
+            </div>
+        </div>
+          
+      </v-container>
+    </section>
+
      <section id="team">
       <v-container>
           <div class="hidden-sm-and-down">
@@ -238,40 +421,50 @@
             <v-layout row wrap>
               <v-flex md6 lg6>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/po.jpg" style="width:20%; height:115px;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
-                <h2 id="h26" style="font-size:14px;"> (Founder)  </h2>
+                  <v-card flat class=" ma-1" >
+                    <v-img src="../assets/images/po.jpg" style="width:200px;height:200px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Founder, Team Lead Engineering)  </h2>
                 </center>
               </v-flex>
               <v-flex md6 lg6>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:16%; height:90px;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
-                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
-                </center>              
+                  <v-card flat class=" ma-1" >
+                    <v-img src="../assets/images/23.jpeg" style="width:200px;height:200px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">David</h2>
+                  <h2 id="h26" style="font-size:14px;"> (Co-Founder, Chief Finacial Officer)  </h2>
+                </center>             
               </v-flex>
             </v-layout><br><br><br>
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
-                <h2 id="h26" style="font-size:14px;"> (Founder / Team Lead SDE)  </h2>
+                  <v-card flat class=" ma-1" >
+                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:200px;height:200px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 </center>
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
-                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
-                </center>              
+                  <v-card flat class=" ma-1" >
+                    <v-img src="../assets/images/pel.jpg" style="width:200px;height:200px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Strategy, Planning & People)  </h2>
+                </center>             
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" style="width:24%; height:90px;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
-                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
-                </center>              
+                  <v-card flat class=" ma-1" >
+                    <v-img src="../assets/images/pel.jpg" style="width:200px;height:200px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Marketing)  </h2>
+                </center>             
               </v-flex>
             </v-layout><br><br><br>
           </div><br><br><br><br><br>
@@ -284,35 +477,49 @@
               <center>
             <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="../assets/images/po.jpg" style="height:110px; width:60%;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
-                <h2 id="h26" style="font-size:14px;"> (Founder / Team Lead SDE)  </h2>
+               
+                  <v-card flat class=" ma-1" >
+                    <v-img class="rounded-lg" src="../assets/images/po.jpg" style="width:200px;height:150px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Founder, Team Lead Engineering)  </h2>
+                
                 <br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Hakodite </h2>
-                <h2 id="h26" style="font-size:14px;"> (Co-Founder)  </h2>
+                <center>
+                  <v-card flat class=" ma-1" >
+                    <v-img class="rounded-lg" src="../assets/images/23.jpeg" style="width:200px;height:150px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">David</h2>
+                  <h2 id="h26" style="font-size:14px;"> (Co-Founder, Chief Finacial Officer)  </h2>
+                </center>
                 <br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
-                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                <v-card flat class=" ma-1" >
+                    <v-img class="rounded-lg" src="../assets/images/afolabisalawu.jpg" style="width:200px;height:150px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 <br><br><br>              
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:60%;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
-                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                <v-card flat class=" ma-1" >
+                    <v-img class="rounded-lg" src="../assets/images/23.jpeg" style="width:200px;height:150px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Strategy, Planning & People)  </h2>
                 <br><br><br>                 
               </v-flex>
               
               <v-flex sm12 xs12>
                 <center>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:110px; width:30%;">
-                <h2 id="h26" style="font-size:15px;color:#673AB7">Salawu Afolabi</h2>
-                <h2 id="h26" style="font-size:14px;"> (Team Lead Backend Developers)  </h2>
+                  <v-card flat class=" ma-1" >
+                    <v-img class="rounded-lg" src="../assets/images/pel.jpg" style="width:140px;height:150px;"></v-img>
+                  </v-card>
+                  <h2 id="h26" style="font-size:15px;color:#673AB7">Victor Aremu David </h2>
+                  <h2 id="h26" style="font-size:14px;"> (Team Lead Marketing)  </h2>
                 <br><br><br><br> 
                 </center>                 
               </v-flex>
@@ -464,17 +671,17 @@
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 rounded-circle" src="../assets/images/pel.jpg" >
+                <img class="img7 " src="../assets/images/pel.jpg" >
                 </center> 
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 rounded-circle grey" src="../assets/images/vad1.png" >
+                <img class="img7  grey" src="../assets/images/vad1.png" >
                 </center> 
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="rounded-circle img7 grey" src="https://dothost.com.ng/img/white.svg">
+                <img class="img7 grey" src="https://dothost.com.ng/img/white.svg">
                 </center>
               </v-flex>
             </v-layout>
@@ -488,16 +695,16 @@
               <center>
             <v-layout row wrap>
               <v-flex sm6 xs6>
-                <img class="rounded-circle" src="../assets/images/pel.jpg" style="height:85px; width:50%;"><br><br><br><br>
+                <img class="" src="../assets/images/pel.jpg" style="height:85px; width:70%;"><br><br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
-               <img class="rounded-circle grey" src="../assets/images/vad1.png" style="height:85px; width:50%;"><br><br><br><br>
+               <img class="" src="../assets/images/vad1.png" style="height:85px; width:70%;"><br><br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:50%;"><br><br><br><br>
+                <img class="" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:70%;"><br><br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
-                <img class="rounded-circle grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:50%;"><br><br><br><br>
+                <img class=" grey" src="https://dothost.com.ng/img/white.svg" style="height:85px; width:70%;"><br><br><br><br>
               </v-flex>
               
             </v-layout><br><br><br>
@@ -517,7 +724,13 @@
           <div class="">
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
-                <h2 id="h27">FuoyeMarket</h2><br>
+                <div>
+                  <img class="hidden-sm-and-down" src="../assets/images/logo1.png" style="height:80px; width:30%;">
+                </div>
+                <div>
+                  <img class="hidden-md-and-up" src="../assets/images/logo1.png" style="height:80px; width:60%;">
+                </div>
+                <!-- <h2 id="h27">FuoyeMarket</h2><br> -->
                 <p>Follow us on our social platforms.</p>
                 <div>
                   <v-btn fab  small color='grey lighten-2 ma-2'>
@@ -616,7 +829,7 @@ width:80%;height:80px;
 width:100%;height:600px;margin-top:-250px;
 }
 .img7{
-width:28%;height:105px;
+width:30%;height:75px;
 }
 .txt1{
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;

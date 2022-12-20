@@ -2,11 +2,9 @@
   <div class="navbar white">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
         <v-app-bar fixed flat class="white">
-            <v-app-bar-nav-icon><v-btn icon>
-                <img class="rounded-xl"  src="../assets/images/Fm.png" height="45">
-              </v-btn>
-            </v-app-bar-nav-icon>  <v-spacer></v-spacer>
-            <v-toolbar-title id="name">FM</v-toolbar-title>          
+          
+            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="50"  @click="Go"></v-toolbar-title>         
+                  
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div class="icons">
@@ -18,7 +16,7 @@
                         <template>
                           <v-row>
                             <v-avatar color="#673AB7">
-                              <span class="white--text text-h6">CJ</span>
+                              <span class="white--text " style="font-size:13px;">CJ</span>
                             </v-avatar>
                           </v-row>
                         </template>
@@ -52,6 +50,9 @@ export default {
         }
     },
     methods : {
+      Go(){
+            this.$router.push({name : 'dashboard'})
+        },
         goProfile(){
             this.$router.push({name : 'profile'})
         }

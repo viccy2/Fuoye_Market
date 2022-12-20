@@ -18,7 +18,7 @@
                             <template>
                           <v-row>
                             <v-avatar color="#673AB7">
-                              <span class="white--text text-h6">CJ</span>
+                              <span class="white--text " style="font-size:13px;">CJ</span>
                             </v-avatar>
                           </v-row>
                         </template>

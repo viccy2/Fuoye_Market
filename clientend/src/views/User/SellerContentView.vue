@@ -9,7 +9,7 @@
                                 
                             </v-text-field>
                         </div><br><br>
-                        <v-card-title style="font-weight:bold;margin-top:-50px;"> Saved Seller For You : </v-card-title>
+                        <v-card-title style="font-weight:bold;margin-top:-60px;"> Saved Seller For You : </v-card-title>
                         <v-card flat class="ma-1 " height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
