@@ -3,7 +3,7 @@
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
         <v-app-bar fixed flat class="white">
           
-            <v-toolbar-title id="name"><img class="rounded-xl"  src="../assets/images/logo1.png" height="50"  @click="Go"></v-toolbar-title>         
+            <v-toolbar-title id="name"><img class="rounded-circle"  src="../assets/images/logo1.png" height="70"  @click="Go"></v-toolbar-title>         
                   
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
