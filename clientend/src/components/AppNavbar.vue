@@ -2,9 +2,10 @@
   <div class="navbar white">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
         <v-app-bar fixed flat class="white">
-          
-            <v-toolbar-title id="name"><img class="rounded-circle"  src="../assets/images/logo1.png" height="70"  @click="Go"></v-toolbar-title>         
-                  
+          <v-app-bar-nav-icon>
+                <img class="rounded-circle"  src="../assets/images/logo11.png" style="height:50px;"  @click="Go">
+            </v-app-bar-nav-icon>  
+            <v-toolbar-title id="name">FuoyeMarket</v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div class="icons">
