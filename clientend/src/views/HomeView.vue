@@ -741,7 +741,7 @@
           </div>
           
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br><br>
+          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br>
             <div>
             <v-container>
               <center>
@@ -755,7 +755,7 @@
               <v-flex sm4 xs4>
                 <img class="" src="../assets/images/8.png" style="height:35px;">
               </v-flex>
-             </v-layout><br><br><br>
+             </v-layout><br><br><br><br>
               </center>
             </v-container>
             </div>
@@ -776,7 +776,7 @@
                   <img class="hidden-sm-and-down" src="../assets/images/logo1.png" style="height:80px; width:30%;">
                 </div>
                 <div>
-                  <img class="hidden-md-and-up rounded-circle" src="../assets/images/logo1.png" style="height:60px; width:50%;">
+                  <img class="hidden-md-and-up rounded-circle" src="../assets/images/logo1.png" style="height:70px; width:60%;">
                 </div>
                 <!-- <h2 id="h27">FuoyeMarket</h2><br> -->
                 <p style="font-size:13px">Follow us on our social platforms.</p>
@@ -799,7 +799,7 @@
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
                 </v-btn> <span style="font-size:13px">Call : +234 9072045997</span> <br>
                 <v-btn fab  small color='grey lighten-2 ma-2'>
-                      <v-icon small class="pa-3" id="icon"> <span style="font-size:13px">mdi-mail</span></v-icon>
+                      <v-icon small class="pa-3" id="icon"> <span style="font-size:13px">mdi-gmail</span></v-icon>
                 </v-btn> <span style="font-size:13px">Email : fuoyemarket@gmail.com</span>
               </v-flex>
               
