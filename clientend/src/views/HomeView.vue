@@ -497,7 +497,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1" >
-                    <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/po.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
@@ -506,7 +506,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1" >
-                    <v-img src="../assets/images/23.jpeg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/23.jpeg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Finacial Officer)  </h2>
@@ -515,7 +515,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1" >
-                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -525,7 +525,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1" >
-                    <v-img src="../assets/images/n12.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/n12.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX)  </h2>
@@ -799,7 +799,7 @@
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
                 </v-btn> <span style="font-size:13px">Call : +234 9072045997</span> <br>
                 <v-btn fab  small color='grey lighten-2 ma-2'>
-                      <v-icon small class="pa-3" id="icon"> <span style="font-size:13px">mdi-gmail</span></v-icon>
+                      <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
                 </v-btn> <span style="font-size:13px">Email : fuoyemarket@gmail.com</span>
               </v-flex>
               
