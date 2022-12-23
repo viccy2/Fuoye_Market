@@ -8,13 +8,13 @@
             <v-container>
               <v-layout row wrap>
                 <v-flex md5 lg5 >
-                  <h2 id="h21" class="animate_animated animate_fadeInLeft"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
+                  <h2 id="h21" class="animate__animated animate__bounceIn"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black" style="font-size:14px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn>
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
-                      <img class="rounded-circle img1 animated bounce" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class="rounded-circle img1 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
                   </center>
                 </v-flex>
               </v-layout>
@@ -25,7 +25,7 @@
             <v-layout row wrap>
               <center>
               <v-flex sm12 class="ma-3 text-center">
-                <h2 class="text-center txt1">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
+                <h2 class="text-center txt1 animate__animated animate__bounceIn">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
               </v-flex>
               <v-flex sm12>
                 <p class="ma-3 text-center txt2 text--black">
@@ -34,7 +34,7 @@
                 <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>
               </v-flex><br>
               <center>
-                      <img class="rounded-circle img2" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class="rounded-circle img2 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
               </center>
             </center>
             </v-layout>
@@ -110,8 +110,8 @@
                       <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
-                      <div class="item pa-3" id="txt4">
-                        Connect with top Sellers around you.
+                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
+                        Create account, get access to top sellers around you.
                       </div>
                     </v-card-text>
                     </center>
@@ -130,7 +130,7 @@
                       <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
-                      <div class="item pa-3" id="txt4">
+                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
                         Get access to unlimited choice products.
                       </div>
                     </v-card-text>
@@ -150,7 +150,7 @@
                       <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
-                      <div class="item pa-3" id="txt4">
+                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
                         Create seller's account, get access to showcase your products.
                       </div>
                     </v-card-text>
@@ -186,8 +186,8 @@
         </div>
         <div class="hidden-md-and-up">
           <v-flex sm12 xs12 id="con1">
-              <h2 id="h23"><span style="color:black">Grow = </span><br><br> connect + <br><br> <span style="color:black">sell.</span></h2><br>
-                <p id="txt7">
+              <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> connect + <br><br> <span style="color:black">sell.</span></h2><br>
+                <p id="txt7" class="animate__animated animate__fadeIn">
                   We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
                   We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                   Also, for users to create account and have medium to add their products and connect with the sellers.
@@ -196,7 +196,7 @@
             </v-flex>
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4" src="../assets/images/12.jpg">
+                  <img class="rounded-circle img4 animate__animated animate__bounceIn" src="../assets/images/12.jpg">
               </center>
             </v-flex>
             
@@ -215,8 +215,8 @@
               </div>
             </v-flex>
             <v-flex md5 lg5 >
-              <h2 id="h22"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
-                <p id="txt5">
+              <h2 id="h22" class="animate__animated animate__fadeIn"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
+                <p id="txt5" class="animate__animated animate__fadeIn">
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
                 </p>
             </v-flex>
@@ -233,7 +233,7 @@
             </v-flex>
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4" src="../assets/images/13.jpg" style="margin-top:-20px;">
+                  <img class="rounded-circle img4 animate__animated animate__bounceIn" src="../assets/images/13.jpg" style="margin-top:-20px;">
               </center>
             </v-flex><br><br>
             
@@ -496,7 +496,7 @@
             <v-layout row wrap>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1" >
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/po.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
@@ -505,7 +505,7 @@
               </v-flex>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1" >
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/23.jpeg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
@@ -514,7 +514,7 @@
               </v-flex>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1" >
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
@@ -524,7 +524,7 @@
              
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1" >
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/n12.jpg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
@@ -541,40 +541,40 @@
             <v-container>
               <center>
             <v-layout row wrap>
-              <v-flex sm12 xs12>
+              <v-flex sm6 xs6>
                
-                  <v-card flat class=" ma-1" >
-                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:350px;"></v-img>
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
+                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:250px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
                 
                 <br><br><br>
               </v-flex>
-              <v-flex sm12 xs12>
+              <v-flex sm6 xs6>
                 <center>
-                  <v-card flat class=" ma-1" >
-                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:350px;"></v-img>
+                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
+                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:250px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>
                 <br><br><br>
               </v-flex>
-              <v-flex sm12 xs12>
-                <v-card flat class=" ma-1" >
-                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:350px;"></v-img>
+              <v-flex sm6 xs6>
+                <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
+                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:250px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 <br><br><br>              
               </v-flex>
-              <v-flex sm12 xs12>
-                <v-card flat class=" ma-1" >
-                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:350px;"></v-img>
+              <v-flex sm6 xs6>
+                <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
+                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:250px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead UI / UX )  </h2>
                 <br><br><br>                 
               </v-flex>  
             </v-layout><br><br><br><br>
@@ -593,7 +593,7 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-              <v-card class="ma-3" color="" height="310" flat>
+              <v-card class="ma-3 animate__animated animate__fadeIn" color="" height="310" flat>
               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
@@ -611,7 +611,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" flat height="310">
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
                <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
@@ -629,7 +629,7 @@
              </v-card>
               </v-flex>
                <v-flex md4 lg4>
-                <v-card class="ma-3" flat height="310">
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
@@ -655,7 +655,7 @@
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
-                <v-card class="ma-3" flat >
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
@@ -666,14 +666,14 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px;">Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px;">Dan (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" flat >
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
               </v-card-text>
@@ -684,14 +684,14 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Mide (Seller)</v-list-item-title>
+                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Mide (Seller)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
              </v-card>
               </v-flex>
                <v-flex sm12 xs12>
-                <v-card class="ma-3" flat>
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat>
               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
               "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
               </v-card-text>
@@ -702,7 +702,7 @@
                   </v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
+                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Ayomide (Buyer)</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
               </v-card-actions>
@@ -723,17 +723,17 @@
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 " src="../assets/images/4.png" >
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/4.png" >
                 </center> 
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 " src="../assets/images/7.png" >
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/7.png" >
                 </center> 
               </v-flex>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 " src="../assets/images/8.png">
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/8.png">
                 </center>
               </v-flex>
             </v-layout>
@@ -820,6 +820,7 @@
 <script>
 import HomeNavbar from '../components/HomeNavbar.vue'
 import Footers from '../components/Footers.vue'
+import 'animate.css'
 export default {
   name: 'home',
   components: {HomeNavbar, Footers},

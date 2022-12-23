@@ -22,8 +22,8 @@
         <v-app-bar fixed flat elevation='' height="70" class="white">
             <v-app-bar-nav-icon>
                 <img class="rounded-circle"  src="../assets/images/logo11.png" style="height:50px;"  @click="Go">
-            </v-app-bar-nav-icon>  
-            <v-toolbar-title id="name">FuoyeMarket</v-toolbar-title>          
+            </v-app-bar-nav-icon>  <v-spacer></v-spacer>
+            <v-toolbar-title id="name">FM</v-toolbar-title>          
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
