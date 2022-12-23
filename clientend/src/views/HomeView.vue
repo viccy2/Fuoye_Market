@@ -509,7 +509,7 @@
                     <v-img src="../assets/images/23.jpeg" style="width:90%;height:200px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Finacial Officer)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>             
               </v-flex>
               <v-flex md3 lg3>
@@ -557,7 +557,7 @@
                     <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:350px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Finacial Officer)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>
                 <br><br><br>
               </v-flex>
