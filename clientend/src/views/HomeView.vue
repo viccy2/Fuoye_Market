@@ -119,7 +119,7 @@
                 </v-layout>
               </v-card>
             </v-flex>
-          </v-layout><br><br>
+          </v-layout><br><br><br>
           <v-layout row wrap>
            <v-flex sm12 xs12 id="con">
               <v-card tile flat height='100' class="ma-5" >
