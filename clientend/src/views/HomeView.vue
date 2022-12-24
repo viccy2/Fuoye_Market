@@ -757,7 +757,7 @@
               <v-flex sm4 xs4>
                 <img class="" src="../assets/images/8.png" style="height:35px;">
               </v-flex>
-             </v-layout><br><br><br><br>
+             </v-layout><br><br><br>
               </center>
             </v-container>
             </div>
