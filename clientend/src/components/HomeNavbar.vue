@@ -21,7 +21,7 @@
     <div class="hidden-md-and-up white">
         <v-app-bar fixed flat elevation='' height="70" class="white">
             <v-app-bar-nav-icon>
-                <img class="rounded-circle grey"  src="../assets/images/logo11.png" style="height:40px;background-color:grey"  @click="Go">
+                <img elevation="2" class="rounded-circle grey"  src="../assets/images/logo11.png" style="height:40px;background-color:grey"  @click="Go">
             </v-app-bar-nav-icon>        
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
