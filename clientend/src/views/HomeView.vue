@@ -478,7 +478,7 @@
                 <h2 id="h26" style="font-size:11px;"> Female Clothing </h2>
                 </center> 
               </v-flex>
-              </v-layout><br><br><br><br>
+              </v-layout><br><br><br>
 
               </center>
             </v-container><br><br><br><br>
@@ -674,9 +674,9 @@
               <v-flex sm6 xs6>
                
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:200px;"></v-img>
+                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:180px;"></v-img>
                   </v-card>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2><br>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
                 
                 <br><br><br>
@@ -684,7 +684,7 @@
               <v-flex sm6 xs6>
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:190px;"></v-img>
+                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:180px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -693,7 +693,7 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:190px;"></v-img>
+                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:180px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -701,7 +701,7 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:190px;"></v-img>
+                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:180px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
