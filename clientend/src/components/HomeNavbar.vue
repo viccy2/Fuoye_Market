@@ -22,7 +22,7 @@
         <v-app-bar fixed flat elevation='' height="70" class="white">
             <v-app-bar-nav-icon class="grey lighten-2" elevation='2'>
                 <img elevation="2" class="rounded-circle"  src="../assets/images/logo11.png" style="height:40px;"  @click="Go"> 
-            </v-app-bar-nav-icon> <span style="color:#673AB7;font-weight:"> | FuoyeMarket</span>        
+            </v-app-bar-nav-icon> <span style="color:#673AB7;font-weight:"></span>        
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->
             <div >
