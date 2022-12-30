@@ -1,16 +1,26 @@
 <template>
+  <!-- Landing Page Start  -->
   <div class="home white" style="width:100%">
+
+    <!-- NAVBAR SECTION  -->
     <HomeNavbar />
+    <!-- END NAVBAR SECTION  -->
+
       <v-container>
+
         <!-- HEADER SECTION  -->
         <section class="header">
+          <!-- DISPLAY ON LARGER DEVICES  -->
           <div class="head1 hidden-sm-and-down" style="margin-top:200px">
             <v-container>
               <v-layout row wrap>
                 <v-flex md5 lg5 >
                   <h2 id="h21" class="animate__animated animate__bounceIn"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black" style="font-size:14px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
-                  <v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn>
+                  <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
+                    <span style="">Get Started </span>
+                    <v-icon small class="pa-3" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                  </v-btn>
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
@@ -20,93 +30,109 @@
               </v-layout>
             </v-container>
           </div>
+          <!-- END DISPLAY ON LARGER DEVICES -->
 
+          <!-- DISPLAY ON SMALL DEVICES  -->
           <div class="head2 hidden-md-and-up">
             <v-layout row wrap>
               <center>
-              <v-flex sm12 class="ma-3 text-center">
-                <h2 class="text-center txt1 animate__animated animate__bounceIn">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
-              </v-flex>
-              <v-flex sm12>
-                <p class="ma-3 text-center txt2 text--black">
+                <v-flex sm12 class="ma-3 text-center">
+                  <h2 class="text-center txt1 animate__animated animate__bounceIn">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
+                </v-flex>
+
+                <v-flex sm12>
+                  <p class="ma-3 text-center txt2 text--black">
                     We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!
-                </p><br>
-                <center ><v-btn class="rounded-xl" id="btn1" large>Get Started</v-btn></center>
-              </v-flex><br>
+                  </p><br>
+                <center >
+                  <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
+                    <span style="">Get Started </span>
+                    <v-icon small class="pa-3" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                  </v-btn>
+                </center>
+              </v-flex><br><br>
+
               <center>
-                      <img class="rounded-circle img2 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class=" img2 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
               </center>
+
             </center>
             </v-layout>
           </div>
-        </section><br><br>
-      <!-- HEADER ENDS -->
+          <!-- END DISPLAY ON SMALL DEVICES -->
 
-    <!-- SECTION BODY -->
-      <section class="body">
+        </section><br><br><br>
+      <!-- END HEADER SECTION  -->
+
+    <!--  BODY -->
+
+      <!-- AIM SECTION  -->
+      <section class="aim">
         <v-container>
-        <!-- DISPLAY ON LARGE DEVICES -->
+          <!-- DISPLAY ON LARGE DEVICES -->
+          <div class="body1 hidden-sm-and-down">
+            <v-layout row wrap>
+              <v-flex md4 lg4 sm12 xs12>
+                <v-card tile flat height='100' class="ma-5" >
+                  <center>
+                    <v-btn fab small color='grey lighten-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
+                    </v-btn>
+                    <br><br><br>
+                    <v-card-text class="py-0">
+                      <div class="items " id="txt3">
+                        Create account, get access to top sellers around you.
+                        </div>
+                    </v-card-text>
+                  </center>
+                </v-card>
+              </v-flex>
 
-        <div class="body1 hidden-sm-and-down">
-         <v-layout row wrap>
-            <v-flex md4 lg4 sm12 xs12>
-              <v-card tile flat height='100' class="ma-5" >
-              <center>
-                <v-btn fab small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
-                </v-btn>
-                <br><br>
-                <v-card-text class="py-0">
-                  <div class="items " id="txt3">
-                     Connect with top Sellers around you.
-                  </div>
-                </v-card-text>
-              </center>
-              </v-card>
-            </v-flex>
-            <v-flex md4 lg4 sm12 xs12>
-              <v-card tile flat height='100' class="ma-5" >
-                <center>
-                <v-btn fab  small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
-                </v-btn>
-                <br><br>
-                <v-card-text class="py-0">
-                  <div class="items " id="txt3">
-                     Get access to unlimited choice products.
-                  </div>
-                </v-card-text>
-                </center>
-              </v-card>
-            </v-flex>
-            <v-flex md4 lg4 sm12 xs12>
-              <v-card tile flat height='100' class="ma-5" >
-                <center>
-                <v-btn fab  small color='grey lighten-2'>
-                  <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
-                </v-btn>
-                <br><br>
-                <v-card-text class="py-0">
-                  <div class="items " id="txt3">
+              <v-flex md4 lg4 sm12 xs12>
+                <v-card tile flat height='100' class="ma-5" >
+                  <center>
+                    <v-btn fab  small color='grey lighten-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
+                    </v-btn>
+                    <br><br><br>
+                    <v-card-text class="py-0">
+                      <div class="items " id="txt3">
+                        Get access to unlimited choice products.
+                      </div>
+                    </v-card-text>
+                  </center>
+                </v-card>
+              </v-flex>
+
+              <v-flex md4 lg4 sm12 xs12>
+                <v-card tile flat height='100' class="ma-5" >
+                  <center>
+                  <v-btn fab  small color='grey lighten-2'>
+                    <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
+                  </v-btn>
+                  <br><br><br>
+                  <v-card-text class="py-0">
+                    <div class="items " id="txt3">
                      Create seller's account, get access to showcase your products.
-                  </div>
-                </v-card-text>
-                </center>
-              </v-card>
-            </v-flex>
-        </v-layout>
+                    </div>
+                  </v-card-text>
+                  </center>
+                </v-card>
+              </v-flex>
+
+        </v-layout><br>
       </div>
+      <!-- END DISPLAY ON LARGE DEVICE  -->
 
-        <!-- ON SMALL MOBILE DEVICES -->
-
-        <div class="body2 hidden-md-and-up">
-          <v-layout row wrap>
-            <v-flex sm12 xs12>
-              <v-card tile flat height='100' class="ma-5">
-                <v-layout>
-                  <v-flex sm12>
-                    <center>
-                     <v-btn fab  small color='grey lighten-2'>
+        <!-- DISPLAY ON SMALL MOBILE DEVICES -->
+      <div class="body2 hidden-md-and-up">
+        <v-layout row wrap>
+          <v-flex sm12 xs12>
+            <v-card tile flat height='100' class="ma-5">
+              <v-layout>
+                <v-flex sm12>
+                  <center>
+                    <v-btn fab  small color='grey lighten-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
@@ -119,218 +145,193 @@
                 </v-layout>
               </v-card>
             </v-flex>
-          </v-layout><br><br><br>
+          </v-layout><br><br>
+
           <v-layout row wrap>
-           <v-flex sm12 xs12 id="con">
-              <v-card tile flat height='100' class="ma-5" >
-                <v-layout>
-                  <v-flex sm12>
-                    <center>
-                     <v-btn fab small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
-                    </v-btn><br><br>
-                    <v-card-text class="py-0">
-                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
-                        Get access to unlimited choice products.
-                      </div>
-                    </v-card-text>
-                    </center>
-                  </v-flex>
-                </v-layout>
-              </v-card>
-            </v-flex>
-            </v-layout><br><br><br>
-            <v-layout row wrap>
             <v-flex sm12 xs12 id="con">
               <v-card tile flat height='100' class="ma-5" >
                 <v-layout>
                   <v-flex sm12>
                     <center>
-                     <v-btn fab  small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
-                    </v-btn><br><br>
-                    <v-card-text class="py-0">
-                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
-                        Create seller's account, get access to showcase your products.
-                      </div>
-                    </v-card-text>
+                      <v-btn fab small color='grey lighten-2'>
+                        <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
+                      </v-btn><br><br>
+                      <v-card-text class="py-0">
+                        <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
+                          Get access to unlimited choice products.
+                        </div>
+                      </v-card-text>
                     </center>
                   </v-flex>
-                </v-layout><br><br>
+                </v-layout>
               </v-card>
             </v-flex>
-          </v-layout>
-        </div>
-      </v-container>
-    </section><br><br><br><br><br><br><br>
+            </v-layout><br><br>
 
-    <section>
-      <v-container>
-        <div class="hidden-sm-and-down">
-          <v-layout row wrap>
-            <v-flex md4 lg4 >
-              <h2 id="h22"><span style="color:black">Grow </span>= Connect + <span style="color:black">Sell</span>.</h2><br>
-                <p id="txt5">
-                  We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br>
-                  We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
-                  Also, for users to create account and have medium to add their products and connect with the sellers.
-                </p>
-                <p id="txt6">Create Account with Us ></p>
-            </v-flex>
-            <v-flex md8 lg8>
-              <center>
-                <img class="rounded-circle img3" transition="fade-transition" src="../assets/images/12.jpg">
-              </center>
-            </v-flex>
-          </v-layout>
-        </div>
-        <div class="hidden-md-and-up">
-          <v-flex sm12 xs12 id="con1">
+            <v-layout row wrap>
+              <v-flex sm12 xs12 id="con">
+                <v-card tile flat height='100' class="ma-5" >
+                  <v-layout>
+                    <v-flex sm12>
+                      <center>
+                        <v-btn fab  small color='grey lighten-2'>
+                          <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
+                        </v-btn><br><br>
+                        <v-card-text class="py-0">
+                          <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
+                            Create seller's account, get access to showcase your products.
+                        </div>
+                        </v-card-text>
+                      </center>
+                    </v-flex>
+                  </v-layout><br><br>
+                </v-card>
+              </v-flex>
+            </v-layout><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES  -->
+
+        </v-container>
+      </section><br><br><br><br><br>
+      <!-- END AIM SECTION  -->
+
+
+      <!-- GROW SECTION  -->
+      <section>
+        <v-container>
+
+        <!-- DISPLAY ON LARGE DEVICES  -->
+          <div class="hidden-sm-and-down">
+            <v-container fluid>
+              <v-layout row wrap>
+                <v-flex md4 lg4 >
+                  <h2 id="h22"><span style="color:black">Grow </span>= Connect + <span style="color:black">Sell</span>.</h2><br>
+                  <p id="txt5">
+                    We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br>
+                    We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
+                    Also, for users to create account and have medium to add their products and connect with the sellers.
+                  </p>
+                  <p id="txt6">Create Account with Us ></p>
+                </v-flex>
+
+                <v-flex md8 lg8>
+                  <center>
+                    <img class="img3" transition="fade-transition" src="../assets/images/12.jpg">
+                  </center>
+                </v-flex>
+
+              </v-layout>
+            </v-container>
+          </div>
+          <!-- END DISPLAY ON LARGE DEVICES  -->
+
+          <!-- DISPLAY ON SMALL DEVICES -->
+          <div class="hidden-md-and-up">
+            <v-flex sm12 xs12 id="con1">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> connect + <br><br> <span style="color:black">sell.</span></h2><br>
-                <p id="txt7" class="animate__animated animate__fadeIn">
-                  We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
-                  We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
-                  Also, for users to create account and have medium to add their products and connect with the sellers.
-                </p>
-                <p id="txt8">Create Account with Us ></p>
+              <p id="txt7" class="animate__animated animate__fadeIn">
+                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
+                We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
+                Also, for users to create account and have medium to add their products and connect with the sellers.
+              </p>
+              <p id="txt8">Create Account with Us ></p>
             </v-flex>
+
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4 animate__animated animate__bounceIn" src="../assets/images/12.jpg">
+                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/12.jpg">
               </center>
             </v-flex>
-            
-        </div>
-      </v-container>
-    </section><br><br><br><br><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES -->
+
+        </v-container>
+      </section><br><br><br><br>
+    <!-- END GROWTH SECTION  -->
 
 
-    <section>
-      <v-container>
-        <div class="hidden-sm-and-down">
-          <v-layout row wrap>
-            <v-flex md7 lg7>
-              <div>
-                <img class="rounded-circle img6" transition="fade-transition" src="../assets/images/13.jpg">
-              </div>
-            </v-flex>
-            <v-flex md5 lg5 >
-              <h2 id="h22" class="animate__animated animate__fadeIn"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
-                <p id="txt5" class="animate__animated animate__fadeIn">
+    <!-- ACCESS SECTION  -->
+      <section>
+        <v-container>
+
+          <!-- DISPLAY ON LARGE DEVICES -->
+          <div class="hidden-sm-and-down">
+            <center>
+              <h2 id="h22" class="animate__animated animate__fadeIn">
+                <span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.
+              </h2><br>
+              <p id="txt5" class="animate__animated animate__fadeIn">
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
-                </p>
-            </v-flex>
-            
-          </v-layout>
-        </div>
-        <div class="hidden-md-and-up">
-          <v-flex sm12 xs12 id="con3">
+              </p>
+              <img class="img6 animate__animated animate__bounceIn" src="../assets/images/12.jpg" style="margin-top:0px;">
+            </center>
+          </div>
+          <!-- END DISPLAY ON LARGE DEVICES -->
+
+          <!-- DISPLAY ON SMALL DEVICES  -->
+          <div class="hidden-md-and-up"><br><br>
+            <v-flex sm12 xs12 id="con3">
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
-                <p id="txt7">
-                  Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
-                </p>
-                
+              <p id="txt7">
+                Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+              </p>
             </v-flex>
+
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded-circle img4 animate__animated animate__bounceIn" src="../assets/images/13.jpg" style="margin-top:-20px;">
+                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/13.jpg" style="margin-top:0px;">
               </center>
             </v-flex><br><br>
-            
-        </div>
-      </v-container>
-    </section><br><br><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES  -->
 
-    <section>
-      <v-container>
+        </v-container>
+      </section><br><br><br><br>
+
+      <!-- END ACCESS SECTION  -->
+
+
+      <!-- CATEGORIES SECTION  -->
+      <section>
+        <v-container>
+
+          <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br>
-            <div>
+            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br>
+
+          <div>
             <v-layout row wrap>
-              <v-flex md3 lg3>
+              <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="250" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-5.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
-                </center> 
-              </v-flex><br>
-              <v-flex md3 lg3>
-                <center>
-                <v-carousel  height="250" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/product-8.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;"> Devices </h2>
-                </center>  
-              </v-flex>
-              <v-flex md3 lg3>
-                <center>
-                <v-carousel  height="250" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n10.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Gadgets</h2>
-                </center> 
-              </v-flex> 
-              <v-flex md3 lg3>
-                <center>
-                <v-carousel  height="250" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n5.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Furnitures </h2>
+                <h2 id="h26" style="font-size:11px;"> Computing </h2>
                 </center> 
-              </v-flex>
-            </v-layout><br><br><br>
+              </v-flex><br>
 
-            <v-layout row wrap>
-              <v-flex md3 lg3>
+              <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/n1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n2.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n32.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">BagPack</h2>
-                </center> 
-              </v-flex>
-              <v-flex md3 lg3>
-                <center>
-                <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n8.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n9.jpg" style="width:100%;height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Male clothing </h2>
+                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
                 </center>  
               </v-flex>
-              <v-flex md3 lg3>
+
+              <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/n3.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -338,297 +339,437 @@
                     <img src="../assets/images/n4.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;"> Female Clothing </h2>
-                </center>  
+                <h2 id="h26" style="font-size:11px;">Fashion</h2>
+                </center> 
               </v-flex>
-              <v-flex md3 lg3>
+
+              <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="230" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/product-2-22.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-8a.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n6.jpg" style="width:90%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Home appliances</h2>
+                <h2 id="h26" style="font-size:11px;">Gaming</h2>
                 </center> 
               </v-flex>
-            </v-layout>
-          </div><br><br><br><br><br><br>
+
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/n6.jpg" style="width:100%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Home & Offices</h2>
+                </center> 
+              </v-flex>
+
+              <v-flex md2 lg2>
+                <center>
+                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                  <v-carousel-item >
+                    <img src="../assets/images/n39.jpg" style="width:100%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/n33.jpg" style="width:100%;height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Phones / Smart watches  </h2>
+                </center>  
+              </v-flex>
+
+            </v-layout><br><br>
           </div>
-          
-        <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
+          </div>
+          <!-- END DISPLAY ON LARGE DEVICE -->
+
+          <!-- DISPLAY ON SMALL DEVICE -->
+          <div class="hidden-md-and-up" id="con4">
+            <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
-            <v-container>
-              <center>
-            <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-5.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-10.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
-                </center> 
-              </v-flex>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-3b.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-8.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Devices</h2>
-                </center> 
-              </v-flex>
-              </v-layout><br><br><br>
 
-              <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n10.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n7.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Gadgets</h2>
-                </center> 
-              </v-flex>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-3.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n5.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Furnitures</h2>
-                </center>
-              </v-flex>
-              </v-layout><br><br><br>
+              <v-container>
+                <v-card flat>
+                <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Computing : </v-card-title>
+                  </v-container>
 
-              
-              <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="170" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n1.jpg" style="width:100%;height:80%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n2.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Bagpack</h2>
-                </center> 
-              </v-flex>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="170" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-2-22.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n6.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Home appliances</h2>
-                </center>
-              </v-flex>
-              </v-layout><br><br><br>
+                  <v-layout row wrap>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                    
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                  </v-layout>
+                </v-card>
+              </v-container>
 
-              <v-layout row wrap>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n8.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n9.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;">Male clothing  </h2>
-                </center> 
-              </v-flex>
-              <v-flex sm6 xs6>
-                <center>
-                <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
-                  <v-carousel-item >
-                    <img src="../assets/images/n3.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/n4.jpg" style="width:100%;height:90%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel>
-                <h2 id="h26" style="font-size:11px;"> Female Clothing </h2>
-                </center> 
-              </v-flex>
-              </v-layout><br><br><br>
+              <v-container>
+                <v-card flat>
+                  <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Electronics : </v-card-title>
+                  </v-container>
+                  <v-layout row wrap>
 
-              </center>
-            </v-container><br><br><br><br>
-            </div>
-        </div>
-          
-      </v-container>
-    </section>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n32.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n30.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n31.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                  </v-layout>
+                </v-card>
+              </v-container>
+
+              <v-container>
+                <v-card flat>
+                  <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Fashion : </v-card-title>
+                  </v-container>
+                  <v-layout row wrap>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n4.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n35.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n36.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                  </v-layout>
+
+                </v-card>
+              </v-container>
+
+              <v-container>
+                <v-card flat>
+                  <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Gaming : </v-card-title>
+                  </v-container>
+                  <v-layout row wrap>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-8a.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-8a.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                  </v-layout>
+
+                </v-card>
+              </v-container>
+
+              <v-container>
+                <v-card flat>
+                  <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Home & Offices : </v-card-title>
+                  </v-container>
+                  <v-layout row wrap>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n5.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n6.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/product-2-22.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                  </v-layout>
+
+                </v-card>
+              </v-container>
+
+              <v-container>
+                <v-card flat>
+                  <v-container fluid>
+                  <v-card-title style="font-weight:bold; font-size:16px;"> Phones / Smart Watches : </v-card-title>
+                  </v-container>
+                  <v-layout row wrap>
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n39.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n40.jpg" style="width:100%;height:100%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+
+                    <v-flex sm6 xs6>
+                    <center>
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                      <v-carousel-item >
+                        <img src="../assets/images/n33.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <img src="../assets/images/n34.jpg" style="width:100%;height:90%;margin-top:px;" >
+                      </v-carousel-item>
+                    </v-carousel>
+                    </center> 
+                    </v-flex>
+                  </v-layout>
+
+                </v-card>
+              </v-container>
+
+            </div><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES -->
+        </v-container>
+      </section><br><br><br><br>
      
-    
-    <section>
-      <v-container>
+
+      <!-- TESTIMOLIAL  SECTION  -->
+      <section>
+        <v-container>
+
+          <!-- DISPLAY ON LARGE DEVICES  -->
           <div class="hidden-sm-and-down">
-              <h2 id="h25">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br><br><br><br>
+            <h2 id="h25">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br><br>
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-              <v-card class="ma-3 animate__animated animate__fadeIn" color="" height="310" flat>
-              <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
+                <v-card class="ma-3 animate__animated animate__fadeIn" color="" height="310" flat>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-card-actions>
+                </v-card>
               </v-flex>
-               <v-flex md4 lg4>
+
+              <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
-               <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Mide (Seller)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Mide (Seller)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                    </v-card-actions>
+                </v-card>
               </v-flex>
-               <v-flex md4 lg4>
+
+              <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
-              <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-card-actions>
+                </v-card>
               </v-flex>
-               
-              </v-layout>
-            </div>
-          </div>   
+            </v-layout>
+          </div>
+        </div> 
+        <!-- END DISPLAY ON LARGE DEVICE  --> 
+
+        <!-- DISPLAY ON SMALL DEVICE --> 
         <div class="hidden-md-and-up" id="con4">
-            <h2 id="h26">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br>
+          <h2 id="h26">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat >
-              <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                  </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px;">Dan (Buyer)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px;">Dan (Buyer)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-card-actions>
+                </v-card>
               </v-flex>
-               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
-              <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                  </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Mide (Seller)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
-              </v-flex>
-               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat>
-              <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-              "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
-              </v-card-text>
-              <v-card-actions>
-                <v-list-item class="grow">
-                <v-list-item-avatar color="grey darken-3">
-                  <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                  </v-img>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Ayomide (Buyer)</v-list-item-title>
-                </v-list-item-content>
-                </v-list-item>
-              </v-card-actions>
-             </v-card>
-              </v-flex>
-               
-              </v-layout>
-            </div><br><br><br><br><br><br>
-          </div>
-      </v-container>
-    </section>
 
-     <section id="team">
-      <v-container>
+              <v-flex sm12 xs12>
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Mide (Seller)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+
+              <v-flex sm12 xs12>
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:12px">Ayomide (Buyer)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout><br><br><br>
+          </div><br><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICE  -->
+        </v-container>
+      </section>
+      <!-- END CATEGORY SECTION  -->
+
+      <!-- TEAM SECTION  -->
+      <section id="team">
+        <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br><br><br><br>
+            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;"></v-img>
-                  </v-card>
+                  </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2><br>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
                 </center>
@@ -661,12 +802,14 @@
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX)  </h2>
                 </center>             
               </v-flex>
-            </v-layout><br><br><br>
+            </v-layout>
           </div><br><br><br>
           </div>
-          
-        <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Meet the<span style="color:#673AB7"> Team.</span></h2><br><br>
+          <!-- END DISPLAY ON LARGE DEVICE -->
+
+          <!-- DISPLAY ON SMALL DEVICE -->
+          <div class="hidden-md-and-up" id="con4">
+            <h2 id="h26">Meet the<span style="color:#673AB7"> Team.</span></h2><br><br>
             <div>
             
               <center>
@@ -705,20 +848,24 @@
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
-                <br><br><br>                 
+                                
               </v-flex>  
-            </v-layout><br><br><br><br>
+            </v-layout>
               </center>
            
-            </div>
+            </div><br>
         </div>
+        <!-- END DISPLAY ON SMALL DEVICE -->
           
-      </v-container>
-    </section>
+        </v-container>
+      </section><br><br><br>
+      <!-- END TEAM  SECTION  -->
 
 
-    <section>
-      <v-container>
+      <!-- PARTNERS SECTION  -->
+      <section>
+        <v-container>
+          <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down">
             <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br><br><br>
             <div>
@@ -739,9 +886,11 @@
                 </center>
               </v-flex>
             </v-layout>
-          </div><br><br><br><br><br>
+          </div><br><br><br>
           </div>
-          
+        <!-- END DISPLAY ON LARGE DEVICE  -->
+
+        <!-- DISPLAY ON SMALL DEVICES  -->
         <div class="hidden-md-and-up" id="con4">
           <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br>
             <div>
@@ -757,18 +906,17 @@
               <v-flex sm4 xs4>
                 <img class="" src="../assets/images/8.png" style="height:35px;">
               </v-flex>
-             </v-layout><br><br><br>
+             </v-layout>
               </center>
             </v-container>
             </div>
         </div>
-          
+      <!-- END DISPLAY ON SMALL DEVICES -->
       </v-container>
-    </section>
+    </section><br><br><br>
+    <!-- END PARTNER SECTION  -->
 
-    
-
-
+<!-- CONTACT SECTION  -->
     <section>
       <v-container>
           <div class="">
@@ -809,7 +957,7 @@
           </div>
         </v-container>
     </section><br><br><br>
-
+  <!-- END CONTACT SECTION  -->
 
     </v-container>
     
@@ -862,10 +1010,10 @@ export default {
   width:100%;height:400px;margin-top:-50px;
 }
 .img2{
-  width:100%;height:200px;
+  width:100%;height:250px;
 }
 .img3{
-width:100%;height:500px;margin-top:-150px;
+width:100%;height:480px;margin-top:-50px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;
@@ -873,11 +1021,8 @@ width:50%;height:400px;margin-top:-50px;
 .img4{
 width:100%;height:300px;
 }
-.img5{
-width:80%;height:80px;
-}
 .img6{
-width:100%;height:600px;margin-top:-250px;
+width:50%;height:480px;
 }
 .img7{
 height:45px;
