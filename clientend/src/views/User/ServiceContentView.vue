@@ -52,7 +52,7 @@
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/12.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                        <v-img src="../../assets/images/n53.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
                             <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
@@ -139,7 +139,7 @@
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/12.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                        <v-img src="../../assets/images/n53.jpg" style="height:20vh;" class="rounded-lg"></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>

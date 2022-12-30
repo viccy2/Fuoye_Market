@@ -216,7 +216,7 @@
 
                 <v-flex md8 lg8>
                   <center>
-                    <img class="img3" transition="fade-transition" src="../assets/images/12.jpg">
+                    <img class="img3" transition="fade-transition" src="../assets/images/n61.jpg">
                   </center>
                 </v-flex>
 
@@ -239,7 +239,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/12.jpg">
+                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/n61.jpg">
               </center>
             </v-flex>
           </div>
@@ -263,7 +263,7 @@
               <p id="txt5" class="animate__animated animate__fadeIn">
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
               </p>
-              <img class="img6 animate__animated animate__bounceIn" src="../assets/images/12.jpg" style="margin-top:0px;">
+              <img class="img6 animate__animated animate__bounceIn" src="../assets/images/n63.jpg" style="margin-top:0px;">
             </center>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES -->
@@ -279,7 +279,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/13.jpg" style="margin-top:0px;">
+                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
             </v-flex><br><br>
           </div>
@@ -419,10 +419,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -458,7 +458,7 @@
                         <img src="../assets/images/n30.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n31.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n50.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -478,10 +478,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n55.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n4.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n56.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -514,10 +514,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n7.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n7.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -553,7 +553,7 @@
                         <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n5.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n53.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -563,10 +563,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n6.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n51.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/product-2-22.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n52.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -586,10 +586,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n39.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n39.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n40.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n40.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -1013,7 +1013,7 @@ export default {
   width:100%;height:250px;
 }
 .img3{
-width:100%;height:480px;margin-top:-50px;
+width:100%;height:500px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;

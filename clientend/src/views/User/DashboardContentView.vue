@@ -97,7 +97,7 @@
                       <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-1">
-                            <v-img src="../../assets/images/12.jpg" style="height:80px;"></v-img>
+                            <v-img src="../../assets/images/n53.jpg" style="height:80px;"></v-img>
                             <v-card-title style="font-size:13px;font-weight:bold;margin-top:-10px;">Zeus.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
