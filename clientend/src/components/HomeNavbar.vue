@@ -22,13 +22,7 @@
     </div>
     <div class="hidden-md-and-up white">
         <v-app-bar fixed flat elevation='' height="70" class="white">
-<<<<<<< HEAD
-            <v-app-bar-title id="names" class="font-weight-bold">FuoyeMarket</v-app-bar-title>    
-=======
-            <v-app-bar-nav-icon class="grey lighten-2" elevation='2'>
-                <img elevation="2" class="rounded-circle"  src="../assets/images/logo11.png" style="height:40px;"  @click="Go"> 
-            </v-app-bar-nav-icon> <span style="color:#673AB7;font-weight:"></span>        
->>>>>>> 533d7c4f289acca16c975b7831715d49e990197e
+            <v-app-bar-title id="names" class="font-weight-bold">FuoyeMarket</v-app-bar-title>         
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->   
             <div >
