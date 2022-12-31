@@ -417,9 +417,9 @@
                     
                     <v-flex sm6 xs6>
                     <center>
-                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                    <v-carousel  height="180" cycle hide-delimiters >
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
                         <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
