@@ -43,7 +43,7 @@
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
                     We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!
-                  </p><br>
+                  </p>
                 <center >
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Get Started </span>
