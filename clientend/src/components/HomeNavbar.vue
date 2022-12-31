@@ -22,7 +22,7 @@
     </div>
     <div class="hidden-md-and-up white">
         <v-app-bar fixed flat elevation='' height="70" class="white">
-            <v-app-bar-title id="names" class="font-weight-bold">FuoyeMarket</v-app-bar-title>         
+            <v-app-bar-title id="names" class="font-weight-bold">FuoyeMarket.</v-app-bar-title>         
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->   
             <div >

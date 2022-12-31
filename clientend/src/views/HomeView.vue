@@ -47,10 +47,10 @@
                 <center >
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Get Started </span>
-                    <v-icon small class="pa-3" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                    <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
                 </center>
-              </v-flex><br><br>
+              </v-flex><br>
 
               <center>
                       <img class=" img2 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
@@ -422,7 +422,7 @@
                         <img src="../assets/images/7.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -478,10 +478,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n55.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/n3.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n56.jpg" style="width:100%;height:80%;margin-top:px;" >
+                        <img src="../assets/images/n4.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -586,10 +586,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n39.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n39.jpg" style="width:100%;height:85%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/n40.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n40.jpg" style="width:100%;height:85%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
