@@ -255,8 +255,8 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICES -->
-          <div class="hidden-sm-and-down">
-            <center>
+          <div class="hidden-sm-and-down" >
+            <!-- <center>
               <h2 id="h22" class="animate__animated animate__fadeIn">
                 <span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.
               </h2><br>
@@ -264,7 +264,7 @@
                   Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
               </p>
               <img class="img6 animate__animated animate__bounceIn" src="../assets/images/n63.jpg" style="margin-top:0px;">
-            </center>
+            </center> -->
           </div>
           <!-- END DISPLAY ON LARGE DEVICES -->
 
@@ -296,14 +296,14 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICE -->
-          <div class="hidden-sm-and-down">
-            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br>
+          <div class="hidden-sm-and-down" style="margin-top:-100px">
+            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br><br>
 
           <div>
             <v-layout row wrap>
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -317,7 +317,7 @@
 
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -331,7 +331,7 @@
 
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/n3.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -345,7 +345,7 @@
 
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/product-8a.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -359,7 +359,7 @@
 
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -373,7 +373,7 @@
 
               <v-flex md2 lg2>
                 <center>
-                <v-carousel  height="200" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
                     <img src="../assets/images/n39.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -398,7 +398,7 @@
               <v-container>
                 <v-card flat>
                 <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Computing : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Computing : </v-card-title>
                   </v-container>
 
                   <v-layout row wrap>
@@ -406,10 +406,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:90%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -417,7 +417,7 @@
                     
                     <v-flex sm6 xs6>
                     <center>
-                    <v-carousel  height="180" cycle hide-delimiters >
+                    <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
                         <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
@@ -434,7 +434,7 @@
               <v-container>
                 <v-card flat>
                   <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Electronics : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Electronics : </v-card-title>
                   </v-container>
                   <v-layout row wrap>
 
@@ -471,7 +471,7 @@
               <v-container>
                 <v-card flat>
                   <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Fashion : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Fashion : </v-card-title>
                   </v-container>
                   <v-layout row wrap>
                     <v-flex sm6 xs6>
@@ -491,7 +491,7 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n35.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n35.jpg" style="width:100%;height:80%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
                         <img src="../assets/images/n36.jpg" style="width:100%;height:90%;margin-top:px;" >
@@ -507,7 +507,7 @@
               <v-container>
                 <v-card flat>
                   <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Gaming : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Gaming : </v-card-title>
                   </v-container>
                   <v-layout row wrap>
                     <v-flex sm6 xs6>
@@ -543,7 +543,7 @@
               <v-container>
                 <v-card flat>
                   <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Home & Offices : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Home & Offices : </v-card-title>
                   </v-container>
                   <v-layout row wrap>
                     <v-flex sm6 xs6>
@@ -579,7 +579,7 @@
               <v-container>
                 <v-card flat>
                   <v-container fluid>
-                  <v-card-title style="font-weight:bold; font-size:16px;"> Phones / Smart Watches : </v-card-title>
+                  <v-card-title style="font-weight:bold; font-size:13px;"> Phones / Smart Watches : </v-card-title>
                   </v-container>
                   <v-layout row wrap>
                     <v-flex sm6 xs6>
@@ -770,7 +770,7 @@
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
                     <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2><br>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
                 </center>
               </v-flex>
@@ -817,37 +817,37 @@
               <v-flex sm6 xs6>
                
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:180px;"></v-img>
+                    <v-img class="" src="../assets/images/po.jpg" style="width:100%;height:170px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
+                  <h2 class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
                 
                 <br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:180px;"></v-img>
+                    <v-img class="" src="../assets/images/23.jpeg" style="width:100%;height:170px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
+                  <h2 class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>
                 <br><br><br>
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:180px;"></v-img>
+                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:100%;height:170px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
+                  <h2 class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 <br><br><br>              
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:180px;"></v-img>
+                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:170px;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
+                  <h2 class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
                                 
               </v-flex>  
             </v-layout>
@@ -959,14 +959,19 @@
     </section><br><br><br>
   <!-- END CONTACT SECTION  -->
 
+   <!-- END CONTAINER  -->
     </v-container>
-    
-    
 
+  <!-- FOOTER SECTION  -->
   <Footers />
+  <!-- END FOOTER SECTION  -->
+
   </div>
 </template>
 
+
+
+ <!-- SCRIPT  -->
 <script>
 import HomeNavbar from '../components/HomeNavbar.vue'
 import Footers from '../components/Footers.vue'
@@ -981,6 +986,10 @@ export default {
   }
 }
 </script>
+
+
+ <!-- STYLES -->
+
 <style scoped>
 #h21{
   color:black;font-weight:bold;font-size:40px;line-height:1.2;
@@ -1013,7 +1022,7 @@ export default {
   width:100%;height:250px;
 }
 .img3{
-width:100%;height:500px;margin-top:-150px;
+width:100%;height:520px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;
