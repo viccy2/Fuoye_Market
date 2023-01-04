@@ -10,12 +10,13 @@
 
         <!-- HEADER SECTION  -->
         <section class="header">
+
           <!-- DISPLAY ON LARGER DEVICES  -->
           <div class="head1 hidden-sm-and-down" style="margin-top:200px">
             <v-container>
               <v-layout row wrap>
                 <v-flex md5 lg5 >
-                  <h2 id="h21" class="animate__animated animate__bounceIn"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
+                  <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black" style="font-size:14px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Get Started </span>
@@ -24,7 +25,7 @@
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
                   </center>
                 </v-flex>
               </v-layout>
@@ -37,7 +38,7 @@
             <v-layout row wrap>
               <center>
                 <v-flex sm12 class="ma-3 text-center">
-                  <h2 class="text-center txt1 animate__animated animate__bounceIn">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
+                  <h2 class="text-center txt1 animate__animated animate__bounceIn animate__slower">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
                 </v-flex>
 
                 <v-flex sm12>
@@ -53,7 +54,7 @@
               </v-flex><br>
 
               <center>
-                      <img class=" img2 animate__animated animate__bounceIn" transition="fade-transition" src="../assets/images/17.jpg">
+                      <img class=" img2 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
               </center>
 
             </center>
@@ -69,6 +70,7 @@
       <!-- AIM SECTION  -->
       <section class="aim">
         <v-container>
+
           <!-- DISPLAY ON LARGE DEVICES -->
           <div class="body1 hidden-sm-and-down">
             <v-layout row wrap>
@@ -216,7 +218,7 @@
 
                 <v-flex md8 lg8>
                   <center>
-                    <img class="img3" transition="fade-transition" src="../assets/images/n61.jpg">
+                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
                   </center>
                 </v-flex>
 
@@ -239,7 +241,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/n61.jpg">
+                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
               </center>
             </v-flex>
           </div>
@@ -279,7 +281,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__bounceIn" src="../assets/images/n63.jpg" style="margin-top:-10px;">
+                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
             </v-flex><br><br>
           </div>
@@ -308,7 +310,7 @@
                     <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n212.jpg" style="width:100%;height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;"> Computing </h2>
@@ -395,7 +397,7 @@
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
 
-              <v-container>
+              <v-container class="animate__animated animate__zoomIn animate__slower">
                 <v-card flat>
                 <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Computing : </v-card-title>
@@ -406,10 +408,10 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
@@ -419,19 +421,17 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
+                        <img src="../assets/images/n212.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
-                        <img src="../assets/images/7.jpg" style="width:100%;height:80%;margin-top:px;" >
+                        <img src="../assets/images/n212.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                     </v-carousel>
                     </center> 
                     </v-flex>
                   </v-layout>
                 </v-card>
-              </v-container>
 
-              <v-container>
                 <v-card flat>
                   <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Electronics : </v-card-title>
@@ -455,7 +455,7 @@
                     <center>
                     <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
                       <v-carousel-item >
-                        <img src="../assets/images/n30.jpg" style="width:100%;height:90%;margin-top:px;" >
+                        <img src="../assets/images/n30.jpg" style="width:100%;height:100%;margin-top:px;" >
                       </v-carousel-item>
                       <v-carousel-item >
                         <img src="../assets/images/n50.jpg" style="width:100%;height:90%;margin-top:px;" >
@@ -466,9 +466,7 @@
 
                   </v-layout>
                 </v-card>
-              </v-container>
 
-              <v-container>
                 <v-card flat>
                   <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Fashion : </v-card-title>
@@ -502,9 +500,7 @@
                   </v-layout>
 
                 </v-card>
-              </v-container>
 
-              <v-container>
                 <v-card flat>
                   <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Gaming : </v-card-title>
@@ -538,9 +534,7 @@
                   </v-layout>
 
                 </v-card>
-              </v-container>
 
-              <v-container>
                 <v-card flat>
                   <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Home & Offices : </v-card-title>
@@ -574,9 +568,7 @@
                   </v-layout>
 
                 </v-card>
-              </v-container>
 
-              <v-container>
                 <v-card flat>
                   <v-container fluid>
                   <v-card-title style="font-weight:bold; font-size:13px;"> Phones / Smart Watches : </v-card-title>
@@ -610,6 +602,7 @@
                   </v-layout>
 
                 </v-card>
+
               </v-container>
 
             </div><br><br>
@@ -932,7 +925,7 @@
                 <p style="font-size:13px">Follow us on our social platforms.</p>
                 <div>
                   <v-btn fab  small color='grey lighten-2 ma-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-facebook</v-icon>
+                      <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn>
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
