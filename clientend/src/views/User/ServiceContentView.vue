@@ -1,103 +1,79 @@
 <template>
     <div class="service-content">
 
-            <div class="select-category">
+            <!-- <div class="select-category">
                 <v-select  solo flat label="Select Service Category" color='#673AB7' :items="category" style="cursor:pointer"></v-select>
-            </div>
+            </div> -->
        
-        <div class="nav items" style="margin-top:-30px">
-            <hr><br>
-            <v-container fluid>
-                <v-layout row wrap>
-                    <v-flex lg6 md6 sm6  class="pa-1"  >    
-                        <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded  class="text-capitalize" style="width:100%; margin-top:-20px"><span style="color:white">View</span></v-btn>
-                    </v-flex>
-                    <v-flex lg6 md6 sm6  class="pa-1"  >  
-                        <v-btn grey small :to="{name : 'seller-page'}"  color='' rounded  class="text-capitalize" style="width:100%; margin-top:-20px"><span style="color:white">View</span></v-btn>
-                    </v-flex>
-                </v-layout><br>
-               
-            </v-container>    
-        </div>
+        
         <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
-    
-        <div class="service1 hidden-sm-and-down" style="margin-top:-20px">
+            
+        <div class="service1 hidden-sm-and-down" style="margin-top:0px">
+            <br>
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex lg2 md2  class="pa-1"  >
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Mitchelle</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
                         <v-img src="../../assets/images/j.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                       <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                       
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Zed Catering</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n53.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/8.png" style="height:20vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Lilly cake</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                   <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/j.jpg" style="height:20vh;"  class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                   <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/4.png" style="height:20vh;"  class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Zola</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/d.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/7.png" style="height:20vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Ade Saloon</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:15px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/8.png" style="height:20vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Bola Store</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
@@ -108,109 +84,93 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-          <div class="service2 hidden-md-and-up" style="margin-top:-20px">
+          <div class="service2 hidden-md-and-up" style="margin-top:0px">
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/7.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">David's Saloon</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/a.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/8.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Adele Catering</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n53.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/4.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Bola Store</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/8.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Scent</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/a.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/7.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">K studio</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/d.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/8.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">MD</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/7.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Lolly</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/a.jpg" style="height:20vh;" class="rounded-lg"></v-img>
-                        <v-card-title>
-                            <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
-                        </v-card-title>
-                        <v-toolbar  height='50' style="margin-top:-70px;" flat>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/4.png" style="height:18vh;" class="rounded-lg"></v-img>
+                        
+                        <v-toolbar  height='50' style="margin-top:0px;" flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">coil cake</span>
+                                <span style="font-size:10px">Zidane</span>
                             </v-btn>
                         </v-toolbar>
                     </v-card>

@@ -2,7 +2,7 @@
     <div class="navbar">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
     <div>
-        <v-app-bar fixed flat  class="white" >
+        <v-app-bar fixed flat  class="white" height="70" >
             <v-app-bar-nav-icon>
                 <v-icon @click="Go" class="">
                     mdi-arrow-left-thick

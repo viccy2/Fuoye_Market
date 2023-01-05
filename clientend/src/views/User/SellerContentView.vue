@@ -4,12 +4,7 @@
             <div class="new-sellers">
                 <v-card flat class="rounded-lg " elevation=''>
                     <v-container fluid>
-                        <div class="select-category">
-                            <v-text-field rounded grey append-icon="mdi-magnify" label="Search for sellers..." color='#673AB7;' elevation="12">
-                                
-                            </v-text-field>
-                        </div><br><br>
-                        <v-card-title style="font-weight:bold;margin-top:-60px;"> Saved Seller For You : </v-card-title>
+                        <v-card-title style="font-weight:bold;margin-top:-10px;font-size:13px;"> Saved Sellers For You : </v-card-title>
                         <v-card flat class="ma-1 " height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
@@ -18,7 +13,7 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
+                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
                                                 Continental - Contiecocontact 5
                                             </div>
                                         </v-card-text>
@@ -40,7 +35,7 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
+                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
                                                 Continental - Contiecocontact 5
                                             </div>
                                         </v-card-text>
@@ -62,7 +57,7 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
+                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
                                                 Continental - Contiecocontact 5
                                             </div>
                                         </v-card-text>

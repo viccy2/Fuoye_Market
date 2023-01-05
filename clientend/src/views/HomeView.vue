@@ -1015,7 +1015,7 @@ export default {
   width:100%;height:250px;
 }
 .img3{
-width:100%;height:520px;margin-top:-150px;
+width:100%;height:550px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;

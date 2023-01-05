@@ -2,29 +2,19 @@
     <div class="navbar">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
     <div class="navbar1 hidden-sm-and-down">
-        <v-app-bar fixed>
-            <v-app-bar-nav-icon><v-btn icon>
-                <img class="rounded-xl"  src="../assets/images/Fm.png" height="35"  @click="Go">
-              </v-btn>
-            </v-app-bar-nav-icon>  
-            <v-toolbar-title style="color:#673AB7;font-size:15px" >FuoyeMarket</v-toolbar-title>          
-            <v-spacer></v-spacer>
-         
-        </v-app-bar>
+        <v-app-bar fixed flat height="70">
+            <v-text-field outlined grey append-icon="mdi-magnify" label="Search..." style="color='#673AB7;margin-top:40px;" >
+                </v-text-field>         
+        </v-app-bar><br>
     </div>
-    <div class="navbar2 hidden-md-and-up">
-        <v-app-bar fixed>
-            <v-app-bar-nav-icon><v-btn icon>
-                <img class="rounded-xl"  src="../assets/images/Fm.png" height="35"  @click="Go">
-              </v-btn>
-            </v-app-bar-nav-icon>  
-            <v-toolbar-title style="color:#673AB7;font-size:15px" >FM</v-toolbar-title>          
-            <v-spacer></v-spacer>
-         
-        </v-app-bar>
+
+    <div class="navbar2 hidden-md-and-up" >
+        <v-app-bar fixed flat height="70">
+            <v-text-field outlined grey append-icon="mdi-magnify" label="Search..." style="color='#673AB7;margin-top:40px;" >
+                </v-text-field>         
+        </v-app-bar><br>
     </div>
     
-
     </div>
 </template>
 <script>
