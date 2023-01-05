@@ -32,8 +32,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class=" ma-2">
-                            <v-img src="../../assets/images/b.jpg" style="height:80px;"></v-img>
-                            <v-card-title style="font-size:12px;font-weight:bold;margin-top:-10px;">Adele Store.</v-card-title>
+                            <v-img src="../../assets/images/b.jpg" style="height:70px;"></v-img>
+                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Adele Store.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -44,8 +44,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-2">
-                            <v-img src="../../assets/images/pel.jpg" style="height:80px;"></v-img>
-                            <v-card-title style="font-size:12px;font-weight:bold;margin-top:-10px;">Pelvix.</v-card-title>
+                            <v-img src="../../assets/images/pel.jpg" style="height:70px;"></v-img>
+                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Pelvix.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -56,8 +56,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class=" ma-1">
-                            <v-img src="../../assets/images/a.jpg" style="height:80px;"></v-img>
-                            <v-card-title style="font-size:12px;font-weight:bold;margin-top:-10px;">Zeus.</v-card-title>
+                            <v-img src="../../assets/images/a.jpg" style="height:70px;"></v-img>
+                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Zeus Shop.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -68,8 +68,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-1">
-                            <v-img src="../../assets/images/17.jpg" style="height:80px;"></v-img>
-                            <v-card-title style="font-size:12px;font-weight:bold;margin-top:-10px;">Clara .</v-card-title>
+                            <v-img src="../../assets/images/17.jpg" style="height:70px;"></v-img>
+                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Clara Foods.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -247,7 +247,7 @@
                                 <img src="../../assets/images/n1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-7-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;"> Bag </p>
