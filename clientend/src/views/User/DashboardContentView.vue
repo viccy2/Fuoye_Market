@@ -26,14 +26,14 @@
             <div class="top-seller">
                 <v-card flat elevation=''>
                     <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;"> Top Sellers : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:12px;"> Top sellers : </v-card-title>
                 <v-layout row wrap class="pa-3" style="margin-top:-20px">
 
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class=" ma-2">
-                            <v-img src="../../assets/images/b.jpg" style="height:70px;"></v-img>
-                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Adele Store.</v-card-title>
+                            <v-img src="../../assets/images/b.jpg" style="height:60px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Adele Store.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -44,8 +44,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-2">
-                            <v-img src="../../assets/images/pel.jpg" style="height:70px;"></v-img>
-                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Pelvix.</v-card-title>
+                            <v-img src="../../assets/images/pel.jpg" style="height:60px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Pelvix.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -56,8 +56,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class=" ma-1">
-                            <v-img src="../../assets/images/a.jpg" style="height:70px;"></v-img>
-                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Zeus Shop.</v-card-title>
+                            <v-img src="../../assets/images/a.jpg" style="height:60px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Zeus Shop.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -68,8 +68,8 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-1">
-                            <v-img src="../../assets/images/17.jpg" style="height:70px;"></v-img>
-                            <v-card-title style="font-size:11px;font-weight:bold;margin-top:-10px;">Clara Foods.</v-card-title>
+                            <v-img src="../../assets/images/17.jpg" style="height:60px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Clara Foods.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%">Connect</v-btn>
                             </v-card-actions>
@@ -89,7 +89,7 @@
             <div class="featured-products">
                 <v-card flat elevation=''>
                     <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;"> Featured Products : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:12px;"> Featured products : </v-card-title>
                 
 
                     <!-- DISPLAY ON LARGE DEVICE -->
@@ -186,9 +186,9 @@
                 <!-- DISPLAY ON SMALL DEVICE -->
                 <div class="hidden-md-and-up">
                 <v-layout row wrap style="margin-top:-20px">
-                    <v-flex sm6 xs6 >
+                    <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -199,9 +199,9 @@
                         <p class="text-center " style="font-size:11px;">TVs </p>
                     </v-flex>
 
-                    <v-flex sm6 xs6 >
+                    <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -213,9 +213,9 @@
 
                     </v-flex>
 
-                    <v-flex sm6 xs6 >
+                    <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -226,9 +226,9 @@
                         <p class="text-center " style="font-size:11px;"> Wingback Chair </p>
                     </v-flex>
 
-                     <v-flex sm6 xs6 >
+                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/product-16-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -240,9 +240,9 @@
 
                     </v-flex>
 
-                    <v-flex sm6 xs6 >
+                    <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/n1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -253,22 +253,22 @@
                         <p class="text-center " style="font-size:11px;"> Bag </p>
                     </v-flex>
 
-                     <v-flex sm6 xs6 >
+                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/product-11-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-11-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n35.jpg" style="width:70%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;"> Hooded Top </p>
 
                     </v-flex>
-                    <v-flex sm6 xs6 >
+                    <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
                                 <img src="../../assets/images/product-12.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -279,17 +279,31 @@
                         <p class="text-center " style="font-size:11px;"> Footwear</p>
                     </v-flex>
 
-                     <v-flex sm6 xs6 >
+                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="120" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-120.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-140.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;"> Gaming </p>
+
+                    </v-flex>
+
+                    <v-flex sm4 xs4 >
+
+                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                            <v-carousel-item >
+                                <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/n32.jpg" style="width:80%;height:100%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;"> Head set</p>
 
                     </v-flex>
                     
@@ -310,7 +324,7 @@
             <div class="new-sellers">
                 <v-card flat class="rounded-lg" elevation=''>
                     <v-container fluid>
-                        <v-card-title style="font-weight:bold;font-size:13px;"> New Sellers For You : </v-card-title>
+                        <v-card-title style="font-weight:bold;font-size:12px;"> New sellers for you : </v-card-title>
                         <v-card flat class="ma-1 grey lighten-3" height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
@@ -319,8 +333,8 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
-                                                Continental - Contiecocontact 5
+                                            <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
+                                                Continental - Contiecocontact 
                                             </div>
                                         </v-card-text>
                                     </v-list-item>
@@ -341,8 +355,8 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
-                                                Continental - Contiecocontact 5
+                                            <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
+                                                Continental - Contiecocontact 
                                             </div>
                                         </v-card-text>
                                     </v-list-item>
@@ -363,8 +377,8 @@
                                             <img  src="../../assets/images/Fm.png" >
                                         </v-list-item-avatar>
                                         <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
-                                                Continental - Contiecocontact 5
+                                            <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
+                                                Continental - Contiecocontact 
                                             </div>
                                         </v-card-text>
                                     </v-list-item>

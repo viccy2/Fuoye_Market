@@ -3,9 +3,9 @@
   <!-- DISPLAY ONLY ON LARGE DEVICES -->
 
   <div class="hidden-sm-and-down white">
-      <v-app-bar fixed flat elevation='' height="70" class="grey lighten-3">
+      <v-app-bar fixed flat elevation='' height="65" class="grey lighten-3">
           <v-container>
-          <v-toolbar-title @click="Go" id="name" class="font-weight-bold"><v-container>F<span class="font-italic">uoye</span>M<span class="font-italic">arket.</span> </v-container></v-toolbar-title>     
+          <v-toolbar-title @click="Go" id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
           </v-container>
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
@@ -38,8 +38,8 @@
 
 <!-- DISPLAY ONLY ON SMALL DEVICES -->
   <div class="hidden-md-and-up white">
-      <v-app-bar fixed flat elevation='' height="70" class="white">
-          <v-app-bar-title @click="Go" id="names" class="font-weight-bold">F<span class="font-italic">uoye</span>M<span class="font-italic">arket.</span> </v-app-bar-title>         
+      <v-app-bar fixed flat elevation='' height="65" class="white">
+          <v-app-bar-title @click="Go" id="names" class="font-weight-bold">FuoyeMarket.</v-app-bar-title>         
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
           <div class="text-center">
