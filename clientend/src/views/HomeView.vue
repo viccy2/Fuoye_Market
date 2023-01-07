@@ -130,7 +130,7 @@
       <div class="body2 hidden-md-and-up">
         <v-layout row wrap>
           <v-flex sm12 xs12>
-            <v-card tile flat height='100' class="ma-5">
+            <v-card tile flat height='' class="ma-5">
               <v-layout>
                 <v-flex sm12>
                   <center>
@@ -151,7 +151,7 @@
 
           <v-layout row wrap>
             <v-flex sm12 xs12 id="con">
-              <v-card tile flat height='100' class="ma-5" >
+              <v-card tile flat height='' class="ma-5" >
                 <v-layout>
                   <v-flex sm12>
                     <center>
@@ -172,7 +172,7 @@
 
             <v-layout row wrap>
               <v-flex sm12 xs12 id="con">
-                <v-card tile flat height='100' class="ma-5" >
+                <v-card tile flat height='' class="ma-5" >
                   <v-layout>
                     <v-flex sm12>
                       <center>
@@ -230,12 +230,18 @@
           <!-- DISPLAY ON SMALL DEVICES -->
           <div class="hidden-md-and-up">
             <v-flex sm12 xs12 id="con1">
-              <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> connect + <br><br> <span style="color:black">sell.</span></h2><br>
+              <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
+              <center>
               <p id="txt7" class="animate__animated animate__fadeIn">
-                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
+                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.
+              </p>
+              <p id="txt7" class="animate__animated animate__fadeIn">
                 We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
+              </p>
+              <p id="txt7" class="animate__animated animate__fadeIn">
                 Also, for users to create account and have medium to add their products and connect with the sellers.
               </p>
+              </center>
               <p id="txt8">Create Account with Us ></p>
             </v-flex>
 
@@ -411,7 +417,7 @@
                             <img src="../assets/images/n212.jpg" style="width:100%;height:100%;" >
                           </v-carousel-item>
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-28px;">Computing.</v-card-title>
+                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Computing.</v-card-title>
                       </v-card>
                     </center> 
                     </v-flex>
@@ -562,7 +568,7 @@
 
           <!-- DISPLAY ON LARGE DEVICES  -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br><br><br>
+            <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br><br>
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
@@ -577,7 +583,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -596,7 +602,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Mide (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                     </v-card-actions>
@@ -615,7 +621,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:13px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -628,7 +634,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE --> 
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26">Don’t just take <span style="color:#673AB7"> our word</span> for it! </h2><br>
+          <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
@@ -708,7 +714,7 @@
                     <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Founder, Team Lead Engineering)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
                 </center>
               </v-flex>
               <v-flex md3 lg3>
@@ -717,7 +723,7 @@
                     <v-img src="../assets/images/23.jpeg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Co-Founder, Chief Financial Officer)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>             
               </v-flex>
               <v-flex md3 lg3>
@@ -726,17 +732,17 @@
                     <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead Development & Engineering (Backend))  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 </center>
               </v-flex>
              
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/n12.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/as.jpg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
-                  <h2 id="h26" class="font-italic" style="font-size:12px;"> (Team Lead UI / UX)  </h2>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Hope Michealson</h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design)  </h2>
                 </center>             
               </v-flex>
             </v-layout>
@@ -777,14 +783,14 @@
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 <br><br><br>              
               </v-flex>
-              <!-- <v-flex sm6 xs6>
+              <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/n12.jpg" style="width:100%;height:170px;"></v-img>
+                    <v-img class="" src="../assets/images/as.jpg" style="width:;height:100%;"></v-img>
                   </v-card>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Dada Lekan </h2>
-                  <h2 class="font-italic" style="font-size:12px;"> (Team Lead UI / UX )  </h2>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Hope Michealson</h2>
+                  <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
                                 
-              </v-flex>   -->
+              </v-flex>  
             </v-layout>
               </center>
            
@@ -854,16 +860,12 @@
 <!-- CONTACT SECTION  -->
     <section>
       <v-container>
-          <div class="">
+          <div class="hidden-sm-and-down">
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
-                  <img class="hidden-sm-and-down" src="../assets/images/logo1.png" style="height:80px; width:30%;">
+                  <img class="" src="../assets/images/logo1.png" style="height:80px; width:30%;">
                 </div>
-                <div>
-                  <img class="hidden-md-and-up rounded-circle" src="../assets/images/logo1.png" style="height:70px; width:60%;">
-                </div>
-                <!-- <h2 id="h27">FuoyeMarket</h2><br> -->
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
                   <v-btn fab  small color='grey lighten-2 ma-2'>
@@ -878,7 +880,41 @@
                 </div>
               </v-flex>
               <v-flex md4 lg4 sm12 xs12>
+                <h2 id="h27" >Contact Us</h2><br><br>
+                <p style="font-size:12px">Get in touch with us...</p>
+                <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
+                </v-btn> <span style="font-size:12px">Call : +234 9072045997</span> <br>
+                <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
+                </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
+              </v-flex>
+              
+            </v-layout>
+          </div>
+
+          <div class="hidden-md-and-up">
+            <v-layout row wrap>
+              <v-flex md8 lg8 sm12 xs12>
+                <div>
+                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:70px; width:60%;">
+                </div>
+                <br>
                 <h2 id="h27" >Contact Us</h2><br>
+                <p style="font-size:12px">Follow us on our social platforms.</p>
+                <div>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
+                  </v-btn>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
+                  </v-btn>
+                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                      <v-icon small class="pa-3" id="icon"> mdi-whatsapp</v-icon>
+                  </v-btn>
+                </div>
+              </v-flex>
+              <v-flex md4 lg4 sm12 xs12>
                 <p style="font-size:12px">Get in touch with us...</p>
                 <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
@@ -975,7 +1011,7 @@ height:45px;
   color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
 }
 .txt2{
-  font-size:12px;font-weight:500;
+  font-size:13px;font-weight:500;
 }
 #txt3{
   color:#673AB7; font-size:13px;font-weight:bold;
