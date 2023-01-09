@@ -12,8 +12,8 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex lg2 md2  class="pa-1"  >
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/b.jpg" flat style="height:100px;" class=""></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
@@ -25,8 +25,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/j.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/j.jpg" flat style="height:100px;" class=""></v-img>
                        <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #100,000</span><br><br>
                         </v-card-title>
@@ -38,8 +38,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/h.png" style="height:20vh;" class="rounded-lg"></v-img>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/h.png" flat style="height:100px;" class=""></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
@@ -51,8 +51,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                   <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/j.jpg" style="height:20vh;"  class="rounded-lg"></v-img>
+                   <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/j.jpg" flat style="height:100px;"  class=""></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
@@ -64,8 +64,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/d.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/d.jpg" flat style="height:100px;" class=""></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>
@@ -77,8 +77,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-1" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:20vh;" class="rounded-lg"></v-img>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                        <v-img src="../../assets/images/b.jpg" flat style="height:100px;" class=""></v-img>
                         <v-card-title>
                             <span style="font-size:10px;margin-top:-70px">Price : #10,000</span><br><br>
                         </v-card-title>

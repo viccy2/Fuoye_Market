@@ -1,11 +1,11 @@
 <template>
 <div class="profile">
-    <AppPagesNavbar />
-   <v-container style="margin-top:20px;">
+    <AppPagesNavbar /><br>
+   <v-container style="margin-top:px;">
         <v-row no-gutters>
             <v-col sm="10" class="mx-auto">
                 <v-card class="">
-                    <v-card-title style="color:#673AB7;font-size:16px;">My Profile</v-card-title>
+                    <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">My Profile</v-card-title>
                     <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                         {{this.$route.params.message}}
                     </v-alert>
