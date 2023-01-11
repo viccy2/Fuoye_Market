@@ -1,24 +1,70 @@
 <template>
-    <div class="dashboard" style="margin-top:50px;">
+    <div class="dashboard"><br><br><br>
        
-            
-            <!-- DISPLAY ON LARGE AND MEDIUM DEVICES -->
+        <!-- PROFILE SECTION -->
+      <section>     
+        <!-- DISPLAY ON LARGE DEVICE --> 
+        <div class="hidden-sm-and-down" >
+             <v-layout row wrap justify-space-between class="pa-3">
+                <v-flex md12 lg12 >
+                <v-card class="mx-auto grey lighten-2"  flat outlined >
+                  
+                    <v-list-item three-line style="">
 
-            <div class="sliders hidden-sm-and-down" style="margin-top:20px;">
-                <v-container>
-                 
-                </v-container>
+                        <v-list-item-avatar flat  height="60" width="60" >
+                          <img class="" src="../../assets/images/pel.jpg" >
+                        </v-list-item-avatar>
+                        
+                        <v-list-item-content>
+                            
+                        </v-list-item-content> 
 
-            </div>
+                    </v-list-item>
 
-            <!-- DISPLAY ON MEDIUM AND SMALL DEVICES -->
+                </v-card>
+            </v-flex>
+             </v-layout>
+         </div>
+         <!-- END DISPLAY ON LARGE DEVICE -->
 
-            <div class="sliders hidden-md-and-up">
-                <v-container>
-                 
-                </v-container>
-                 
-            </div>
+         <!-- DISPLAY ON SMALL DEVICE -->
+         <div class="hidden-md-and-up">
+             <v-layout row wrap justify-space-between class="pa-3">
+                <v-flex  sm12 xs12>
+                <v-card class="mx-auto #673AB7"  flat outlined  height="120">
+                
+                    <v-list-item three-line >
+
+                        <v-list-item-avatar  height="70" width="70" color="grey darken-3">
+                            
+                            <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                            </v-img>      
+
+                        </v-list-item-avatar>
+
+                        <v-list-item-content>
+
+                            <v-row><br>
+                                <v-col  md="2"  lg="2"></v-col>
+                                <v-col  md="10"  lg="10">
+                                    <br>
+                                    <div class="items  font-weight-bold" style="font-size:12px;color:#673AB7;">
+                                        Welcome back, Victor! 
+                                    </div><br>
+                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Profile</v-btn>
+                                </v-col>
+                            </v-row>
+                            
+                        </v-list-item-content>    
+                    </v-list-item>
+       
+                </v-card>
+            </v-flex>
+             </v-layout>
+         </div>
+         <!-- END DISPLAY ON SMALL DEVICE -->
+        </section>
+        <!-- END PROFILE SECTION  -->
 
             
             <!-- TOP SELLER SECTION -->

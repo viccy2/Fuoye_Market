@@ -29,8 +29,8 @@
                     </v-card-text>
                     <v-card-text class="grey--text">
                         <span class="text-color-black text-capitalize font-weight-bold " style="color:black" >
-                           Details :
-                        </span><br><br>
+                          Product Details :
+                        </span><br>
                         <p>
                             This is one of the available Samsung S21 products. 
                             vThis is one of the available Samsung S21 products. 
@@ -79,8 +79,8 @@
                     </v-card-text>
                     <v-card-text class="grey--text">
                         <span class="text-color-black text-capitalize font-weight-bold " style="font-size:11px;color:black;" >
-                          Details :
-                        </span><br><br>
+                          Product Details :
+                        </span><br>
                         <p style="font-size:10px;">
                             This is one of the available Samsung S21 products. 
                             vThis is one of the available Samsung S21 products. 
