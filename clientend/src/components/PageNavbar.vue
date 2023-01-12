@@ -1,20 +1,27 @@
 <template>
     <div class="navbar">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
-    <div class="navbar1 hidden-sm-and-down">
-        <v-app-bar fixed flat height="65">
-            <v-text-field outlined grey append-icon="mdi-magnify" label="Search..." style="color='#673AB7;margin-top:40px;" >
-                </v-text-field>         
-        </v-app-bar><br>
-    </div>
-
-    <div class="navbar2 hidden-md-and-up" >
-        <v-app-bar fixed flat height="65">
-            <!-- <v-text-field small  grey append-icon="mdi-magnify" label="Enter your search..." style="color='#673AB7;margin-top:40px;" >
-                </v-text-field>          -->
-        </v-app-bar><br>
-    </div>
+    <div>
+        <v-app-bar fixed flat  class="white" height="55" >
+            <v-app-bar-nav-icon>
+                <v-icon @click="Go" class="">
+                    mdi-arrow-left-thick
+                </v-icon> 
+            </v-app-bar-nav-icon>  
+            <v-toolbar-title id="name" ></v-toolbar-title>          
+            <v-spacer></v-spacer><br><br>
+            <!-- <v-text-field solo label="Search here" clearable ></v-text-field> -->
+            <v-spacer></v-spacer>
+            <!-- NAVBAR ICONS -->
+            <v-app-bar-nav-icon>
+                <v-icon class="">
+                    mdi-search
+                </v-icon> 
+            </v-app-bar-nav-icon>  
+        </v-app-bar>
+    </div><br>
     
+
     </div>
 </template>
 <script>

@@ -21,8 +21,8 @@
         </v-app-bar>
     </div>
     <div class="hidden-md-and-up white">
-        <v-app-bar fixed flat elevation='' height="65" class="white">
-            <v-app-bar-title @click="Go" id="names" class="font-weight-bold">FuoyeMarket.</v-app-bar-title>         
+        <v-app-bar fixed flat elevation='' height="55" class="white">
+            <v-toolbar-title @click="Go" id="names" class="font-weight-bold">FuoyeMarket.</v-toolbar-title>         
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->   
             <div >

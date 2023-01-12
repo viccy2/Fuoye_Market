@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard"><br><br><br>
+    <div class="dashboard"><br><br>
        
         <!-- PROFILE SECTION -->
       <section>     
@@ -64,7 +64,7 @@
             <div class="top-seller">
                 <v-card flat elevation=''>
                     <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:12px;"> Top sellers : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:12px;"> Our top sellers : </v-card-title>
                 <v-layout row wrap class="pa-3" style="margin-top:-20px">
 
                     <v-flex lg3 md3 sm6 xs6 >

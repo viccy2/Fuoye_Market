@@ -51,7 +51,7 @@
 
          <div class="hidden-md-and-up">
         
-                <v-card class="mx-auto grey lighten-3 animate__animated animate__zoomIn animate__slower"  flat height="160">
+                <v-card class="mx-auto animate__animated animate__zoomIn animate__slower"  flat height="160">
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >

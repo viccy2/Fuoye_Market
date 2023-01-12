@@ -54,7 +54,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
         <div class="details1 hidden-md-and-up">
-           <v-col sm="10" class="pa- mx-auto"><br><br>
+           <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                         <v-img src="../../assets/images/f.jpg" style="height:100%;"> </v-img>
                     <v-card-actions class="pb-0">

@@ -2,7 +2,7 @@
     <div class="navbar">
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
     <div>
-        <v-app-bar fixed flat  class="white" height="65" >
+        <v-app-bar fixed flat  class="white" height="55" >
             <v-app-bar-nav-icon>
                 <v-icon @click="Go" class="">
                     mdi-arrow-left-thick
@@ -14,15 +14,9 @@
            <div class="text-center">
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
-                        <v-btn icon v-bind="attrs" v-on="on" >
-                            <template>
-                          <v-row>
-                            <v-avatar color="#673AB7">
-                              <span class="white--text " style="font-size:13px;">CJ</span>
-                            </v-avatar>
-                          </v-row>
-                        </template>
-                        </v-btn>
+                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7">
+                      <span style="color:whitesmoke">VD</span>
+                    </v-btn>
                     </template>
                     <v-list>
                         <v-list-item>
