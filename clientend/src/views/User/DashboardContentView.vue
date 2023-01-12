@@ -29,39 +29,31 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
          <div class="hidden-md-and-up">
-             <v-layout row wrap justify-space-between class="pa-3">
-                <v-flex  sm12 xs12>
-                <v-card class="mx-auto #673AB7"  flat outlined  height="120">
-                
-                    <v-list-item three-line >
-
-                        <v-list-item-avatar  height="70" width="70" color="grey darken-3">
-                            
-                            <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                            </v-img>      
-
-                        </v-list-item-avatar>
-
-                        <v-list-item-content>
-
-                            <v-row><br>
-                                <v-col  md="2"  lg="2"></v-col>
-                                <v-col  md="10"  lg="10">
-                                    <br>
-                                    <div class="items  font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                        Welcome back, Victor! 
-                                    </div><br>
-                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Profile</v-btn>
-                                </v-col>
-                            </v-row>
-                            
-                        </v-list-item-content>    
-                    </v-list-item>
-       
-                </v-card>
-            </v-flex>
-             </v-layout>
-         </div>
+            <v-container>
+            <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
+                <v-container>
+                <v-list-item>
+                    <v-list-item-avatar  height="55" width="55" color="grey darken-3">
+                        <v-img  class="elevation-6 animate__animated animate__zoomIn animate__slower" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>      
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                        <v-row>
+                            <v-col  sm="6"  xs="6"></v-col>
+                            <v-col  sm="6"  xs="6">
+                            <br>
+                            <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:10px;color:whitesmoke;">
+                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;"> Victor David! </span>
+                            </div><br>
+                            <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke">View Profile</v-btn>
+                            </v-col>
+                        </v-row>
+                    </v-list-item-content>    
+                </v-list-item>
+            </v-container>
+            </v-card>
+            </v-container>
+        </div>
          <!-- END DISPLAY ON SMALL DEVICE -->
         </section>
         <!-- END PROFILE SECTION  -->
@@ -447,14 +439,18 @@
 </template>
 
 <script>
+import 'animate.css'
 export default {
     name : 'dashboard',
     data(){
         return{
             show : false,
             name : true,
-          
-         
+        }
+    },
+    methods:{
+        goProfile(){
+            this.$router.push({name : 'profile'})
         }
     }
 }

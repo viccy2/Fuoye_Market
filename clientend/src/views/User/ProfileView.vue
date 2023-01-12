@@ -2,9 +2,8 @@
 <div class="profile">
     <AppPagesNavbar /><br>
    <v-container style="margin-top:px;">
-        <v-row no-gutters>
-            <v-col sm="10" class="mx-auto">
-                <v-card class="">
+        
+                <v-card flat>
                     <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">My Profile</v-card-title>
                     <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                         {{this.$route.params.message}}
@@ -23,8 +22,7 @@
                     <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined> Update Profile</v-btn>
                     </v-form>
                 </v-card>
-            </v-col>
-        </v-row>
+            
     </v-container><br><br><br>
 </div>
   

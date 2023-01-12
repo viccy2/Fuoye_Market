@@ -17,7 +17,7 @@
               <v-layout row wrap>
                 <v-flex md5 lg5 >
                   <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
-                  <p class="font-weight-bold text--black" style="font-size:14px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
+                  <p class="font-weight-bold text--black" style="font-size:12px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Get Started </span>
                     <v-icon small class="pa-3" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
@@ -189,7 +189,7 @@
                   </v-layout><br><br>
                 </v-card>
               </v-flex>
-            </v-layout><br><br>
+            </v-layout>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
@@ -309,87 +309,87 @@
 
           <div>
             <v-layout row wrap>
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/product-3b.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-3b.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n212.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n212.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;"> Computing </h2>
+                <h2 id="h26" style="font-size:11px;"> Computing. </h2>
                 </center> 
               </v-flex><br>
 
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-10.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n32.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-15.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;"> Electronics </h2>
+                <h2 id="h26" style="font-size:11px;"> Electronics. </h2>
                 </center>  
               </v-flex>
 
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/n3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n4.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-161.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Fashion</h2>
+                <h2 id="h26" style="font-size:11px;">Fashion.</h2>
                 </center> 
               </v-flex>
 
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/product-8a.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-8a.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n7.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n7.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Gaming</h2>
+                <h2 id="h26" style="font-size:11px;">Gaming.</h2>
                 </center> 
               </v-flex>
 
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/product-3.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n6.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/product-14-1.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Home & Offices</h2>
+                <h2 id="h26" style="font-size:11px;">Home & Offices.</h2>
                 </center> 
               </v-flex>
 
-              <v-flex md2 lg2>
+              <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="160" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
                   <v-carousel-item >
-                    <img src="../assets/images/n39.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n39.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/n33.jpg" style="width:100%;height:100%;margin-top:px;" >
+                    <img src="../assets/images/n33.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Phones / Smart watches  </h2>
+                <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2>
                 </center>  
               </v-flex>
 
@@ -897,7 +897,7 @@
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
-                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:70px; width:60%;">
+                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:80px; width:60%;">
                 </div>
                 <br>
                 <h2 id="h27" >Contact Us</h2><br>
@@ -963,10 +963,10 @@ export default {
 
 <style scoped>
 #h21{
-  color:black;font-weight:bold;font-size:40px;line-height:1.2;
+  color:black;font-weight:bold;font-size:30px;line-height:1.2;
 }
 #h22{
-  color:#673AB7;font-weight:bold;font-size:33px;line-height:1.2;
+  color:#673AB7;font-weight:bold;font-size:25px;line-height:1.2;
 }
 #h23{
   color:#673AB7;font-weight:bold;font-size:20px;line-height:0.7;text-align:center;
@@ -975,7 +975,7 @@ export default {
   color:#673AB7;font-weight:bold;font-size:20px;line-height:1.5;text-align:center;
 }
 #h25{
- color:black;font-weight:bold;font-size:33px;line-height:1.2;text-align:center;
+ color:black;font-weight:bold;font-size:25px;line-height:1.2;text-align:center;
 }
 #h26{
   color:black;font-weight:bold;font-size:20px;line-height:1.5;text-align:center;
@@ -1029,7 +1029,7 @@ color:#673AB7; font-size:12px;font-weight:bold;
   font-size:12px;font-weight:normal;
 }
 #txt8{
-  text-decoration:underline;font-size:14px;font-weight:bold;color:#673AB7;text-align: center;
+  text-decoration:underline;font-size:11px;font-weight:bold;color:#673AB7;text-align: center;
 }
 #txt9{
   text-decoration:underline;font-size:15px;font-weight:bold;color:#673AB7;text-align: center;
