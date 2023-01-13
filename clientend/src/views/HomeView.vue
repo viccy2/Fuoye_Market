@@ -47,7 +47,7 @@
                   </p>
                 <center >
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="">Get Started </span>
+                    <span style="font-size:12px;">Get Started </span>
                     <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
                 </center>
@@ -409,7 +409,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel :show-arrows="false" height="" cycle hide-delimiters >
                           <v-carousel-item >
                             <img src="../assets/images/product-3b.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -425,7 +425,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/product-10.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -441,7 +441,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/n7.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -457,7 +457,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/product-41.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -473,7 +473,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/product-14-2.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -489,7 +489,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/n36.jpg" style="width:100%;height:90%;" >
                           </v-carousel-item>
@@ -505,7 +505,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/n39.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -521,7 +521,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/product-18.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -537,7 +537,7 @@
                     <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
-                        <v-carousel  height="" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
                             <img src="../assets/images/product-191.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
@@ -897,7 +897,7 @@
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
-                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:80px; width:60%;">
+                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:75px; width:60%;">
                 </div>
                 <br>
                 <h2 id="h27" >Contact Us</h2><br>

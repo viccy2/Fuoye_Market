@@ -6,7 +6,9 @@
         <div class="details1 hidden-sm-and-down">
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
-                        <v-img src="../../assets/images/n50.jpg" style="height:400px;"> </v-img>
+                    <center>
+                        <img src="../../assets/images/n34.jpg" style="height:100%;"> 
+                    </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
@@ -56,7 +58,9 @@
         <div class="details1 hidden-md-and-up">
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
-                        <v-img src="../../assets/images/f.jpg" style="height:100%;"> </v-img>
+                    <center>
+                        <img src="../../assets/images/n33.jpg" style="height:100%;"> 
+                    </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
@@ -68,7 +72,7 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>S21 Ultra</h3>
+                      <h4>Smart Watch</h4>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
@@ -82,10 +86,12 @@
                           Product Details :
                         </span><br>
                         <p style="font-size:10px;">
-                            This is one of the available Samsung S21 products. 
-                            vThis is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p class="font-weight-bold " style="font-size:11px;">
                             Quantity available : 200 pieces 

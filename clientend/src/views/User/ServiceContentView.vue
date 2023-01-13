@@ -89,7 +89,7 @@
             <v-layout row wrap>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -100,7 +100,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -111,7 +111,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/4.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -122,7 +122,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -133,7 +133,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -144,7 +144,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -155,7 +155,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
@@ -166,7 +166,7 @@
                 </v-flex>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/4.png" style="height:160px;width:100%;"></v-img>
+                        <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">

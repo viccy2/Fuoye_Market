@@ -14,14 +14,11 @@
            <div class="text-center">
                  <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
-                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7">
-                      <span style="color:whitesmoke">VD</span>
+                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
+                      <span style="color:whitesmoke;font-size:12px;">VD</span>
                     </v-btn>
                     </template>
                     <v-list>
-                        <v-list-item>
-                            <v-list-item-title style="font-size:13px;cursor:pointer"> <span  @click="goProfile">Profile</span> <v-icon small> mdi-account</v-icon></v-list-item-title>
-                        </v-list-item>
                         <v-list-item>
                             <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                         </v-list-item>
@@ -57,6 +54,6 @@ export default {
 </script>
 <style scoped>
 #name{
-     color:#673AB7;font-size:18px;font-weight:bolder;  
+     color:#673AB7;font-size:15px;font-weight:bolder;  
 }
 </style>

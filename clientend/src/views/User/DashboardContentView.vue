@@ -4,26 +4,33 @@
         <!-- PROFILE SECTION -->
       <section>     
         <!-- DISPLAY ON LARGE DEVICE --> 
-        <div class="hidden-sm-and-down" >
-             <v-layout row wrap justify-space-between class="pa-3">
-                <v-flex md12 lg12 >
-                <v-card class="mx-auto grey lighten-2"  flat outlined >
-                  
-                    <v-list-item three-line style="">
-
-                        <v-list-item-avatar flat  height="60" width="60" >
-                          <img class="" src="../../assets/images/pel.jpg" >
-                        </v-list-item-avatar>
-                        
-                        <v-list-item-content>
-                            
-                        </v-list-item-content> 
-
-                    </v-list-item>
-
+        <div class="hidden-sm-and-down" ><br>
+            <v-layout row wrap justify-space-between class="pa-3">
+            <v-container fluid>
+                <v-card class="mx-auto" height="140" color="" flat>
+                
+                <v-list-item >
+                    <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
+                        <v-img  class="elevation-6 animate__animated animate__zoomIn animate__slower" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>      
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                        <v-row>
+                            <v-col  sm="9"  xs="9"></v-col>
+                            <v-col  sm="3"  xs="3"><br>
+                           
+                            <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:13px;color:black">
+                                Welcome back, <br><span class="font-weight-bold" style="color:#673AB7;font-size:16px;"> Victor David! </span>
+                            </div><br>
+                            <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower"  outlined style="color:#673AB7;font-size:11px;">My Profile</v-btn>
+                            </v-col>
+                        </v-row>
+                    </v-list-item-content>    
+                </v-list-item>
+                
                 </v-card>
-            </v-flex>
-             </v-layout>
+            </v-container>
+            </v-layout>
          </div>
          <!-- END DISPLAY ON LARGE DEVICE -->
 
@@ -45,7 +52,7 @@
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:10px;color:whitesmoke;">
                                 Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;"> Victor David! </span>
                             </div><br>
-                            <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke">View Profile</v-btn>
+                            <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke;font-size:11px;">My Profile</v-btn>
                             </v-col>
                         </v-row>
                     </v-list-item-content>    
@@ -134,87 +141,171 @@
                     <div class="hidden-sm-and-down">
                     <v-layout row wrap>
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-10.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">TVs </p>
-
+                        </center>
                     </v-flex>
 
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n33.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n34.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n34.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Smart watch </p>
-
+                        </center>
                     </v-flex>
 
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-2.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
+
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
+
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
+
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-14-2.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Wingback Chair</p>
-
+                        </center>
                     </v-flex>
 
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-16-1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-16-2.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-161.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Cushion Set</p>
-
+                        <p class="text-center " style="font-size:11px;">Top</p>
+                        </center>
                     </v-flex>
 
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-11-1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-18.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-11-2.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-21.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Hooded Top</p>
-
+                        <p class="text-center " style="font-size:11px;">Blender</p>
+                        </center>
                     </v-flex>
 
                     <v-flex lg2 md2 >
-
-                        <v-carousel  height="180" cycle hide-delimiters show-arrows-on-hover>
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-120.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-140.jpg" style="width:100%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Gaming</p>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
 
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
+
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
+                    </v-flex>
+
+                    <v-flex lg2 md2 >
+                        <center>
+                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-10.jpg" style="width:80%;height:90%;margin-top:px;" >
+                            </v-carousel-item>
+                        </v-carousel>
+                        <p class="text-center " style="font-size:11px;">TVs </p>
+                        </center>
                     </v-flex>
                     
                     </v-layout>
@@ -226,7 +317,7 @@
                 <v-layout row wrap style="margin-top:-20px">
                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -239,7 +330,7 @@
 
                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -253,7 +344,7 @@
 
                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -266,7 +357,7 @@
 
                      <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/product-16-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -280,7 +371,7 @@
 
                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/n1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -293,15 +384,15 @@
 
                      <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-11-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n35.jpg" style="width:70%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-161.jpg" style="width:70%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;"> Hooded Top </p>
+                        <p class="text-center " style="font-size:11px;">Top </p>
 
                     </v-flex>
                     <v-flex sm4 xs4 >
@@ -319,7 +410,7 @@
 
                      <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
@@ -333,7 +424,7 @@
 
                     <v-flex sm4 xs4 >
 
-                        <v-carousel  height="100" cycle hide-delimiters show-arrows-on-hover>
+                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
                                 <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>

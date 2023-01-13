@@ -61,10 +61,10 @@ export default {
 </script>
 <style scoped>
     #name{
-      color:#673AB7;font-size:20px;
+      color:#673AB7;font-size:18px;
     }
     #names{
-      color:#673AB7;font-size:18px;
+      color:#673AB7;font-size:15px;
     }
     #btn{
         color:#673AB7;

@@ -3,35 +3,26 @@
   <!-- DISPLAY ONLY ON LARGE DEVICES -->
 
   <div class="hidden-sm-and-down white">
-      <v-app-bar fixed flat elevation='' height="65" class="grey lighten-3">
+      <v-app-bar fixed flat elevation='' height="55" class="grey lighten-3">
           <v-container>
           <v-toolbar-title @click="Go" id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
           </v-container>
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
-              <div class="text-center">
+          <div class="text-center">
                 <v-menu offset-y>
                   <template v-slot:activator="{ on, attrs }">
-                    <v-btn icon v-bind="attrs" v-on="on" >
-                  <template>
-                  <v-row>
-                    <v-avatar color="#673AB7">
-                      <span class="white--text " style="font-size:13px;">CJ</span>
-                    </v-avatar>
-                  </v-row>
-                  </template>
+                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
+                      <span style="color:whitesmoke;font-size:12px;">VD</span>
                     </v-btn>
                   </template>
                   <v-list>
-                    <v-list-item>
-                        <v-list-item-title style="font-size:13px;cursor:pointer"> <span  @click="goProfile">Profile</span> <v-icon small> mdi-account</v-icon></v-list-item-title>
-                    </v-list-item>
                     <v-list-item>
                       <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                     </v-list-item>
                   </v-list>
                 </v-menu>
-              </div>
+          </div>
 
       </v-app-bar>
   </div>
@@ -45,14 +36,11 @@
           <div class="text-center">
                 <v-menu offset-y>
                   <template v-slot:activator="{ on, attrs }">
-                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7">
-                      <span style="color:whitesmoke">VD</span>
+                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
+                      <span style="color:whitesmoke;font-size:12px;">VD</span>
                     </v-btn>
                   </template>
                   <v-list>
-                    <v-list-item>
-                        <v-list-item-title style="font-size:13px;cursor:pointer"> <span  @click="goProfile">Profile</span> <v-icon small> mdi-account</v-icon></v-list-item-title>
-                    </v-list-item>
                     <v-list-item>
                       <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                     </v-list-item>
@@ -91,10 +79,10 @@ export default {
 
 <style scoped>
  #name{
-      color:#673AB7;font-size:20px;
+      color:#673AB7;font-size:18px;
     }
     #names{
-      color:#673AB7;font-size:18px;
+      color:#673AB7;font-size:15px;
     }
 </style>
 

@@ -1,57 +1,57 @@
 <template>
     <div class="seller-page">
          <AppPagesNavbar />
-         <v-container fluid><br>
+         <v-container fluid>
+
          <div class="hidden-sm-and-down" >
-             <v-layout row wrap justify-space-between class="pa-3">
-                <v-flex md12 lg12 >
-                <v-card class="mx-auto grey lighten-2"  flat outlined >
-                  
-                    <v-list-item three-line style="">
 
-                        <v-list-item-avatar flat  height="60" width="60" >
-                          <img class="" src="../../assets/images/pel.jpg" >
-                        </v-list-item-avatar>
+            <v-card class="mx-auto mt-1"  flat height="160" >
+                <v-list-item three-line >
+                    <v-list-item-avatar  height="60" width="60" >
+                    <img class="" src="../../assets/images/pel.jpg" >
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                        <v-row><br>
+
+                            <v-col  md="10"  lg="10">
+                                
+                            </v-col>
+                            <v-col  md="2"  lg="2">
+                                <br>
+                                <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
+                                    Pelvix Buy'N Sell 
+                                </div><br>
+                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
+                            </v-col>
+                        </v-row>
                         
-                        <v-list-item-content>
-                            <v-list-item-title class="text-h5">
-                               <v-row><br>
-                                <v-col  md="1"  lg="1"></v-col>
-                                <v-col  md="2"  lg="2">
-                                    <div style="text-decoration:none;font-size:12px;">Company<br><br><span class="font-weight-bold" style="color:#673AB7;">Pelvix Buy'N Sell </span>
-                                    </div>
-                                </v-col>
-                                 <v-col  md="1"  lg="1"></v-col>
-                                <v-col  md="2" lg="2">
-                                  <div  style="text-decoration:none;font-size:12px;">Category <br><br><span>10k</span>
-                                  </div>
-                                </v-col>
-                                <v-col  md="2" lg="2">
-                                 <div style="text-decoration:none;font-size:12px;">Location <br><br> <span> 340</span>
-                                 </div>
-                                </v-col>
-                                <v-col  md="2" lg="2">
-                                  <div  style="text-decoration:none;font-size:12px;">Status <br><br><span><v-icon color="success">mdi-check-circle</v-icon></span>
-                                  </div>
-                                </v-col>
-                                <v-col  md="2" lg="2">
-                                  <div  style="text-decoration:none;font-size:12px;">Status <br><br><span><v-icon color="success">mdi-check-circle</v-icon></span>
-                                  </div>
-                                </v-col>
-                               </v-row>
-                            </v-list-item-title>
-                        </v-list-item-content> 
-
-                    </v-list-item>
-
+                    </v-list-item-content>    
+                </v-list-item>
+                <v-card-text>
+                    <v-row>
+                        <v-col  lg="3" md="3" >
+                            
+                        </v-col>
+                        <v-col  lg="3" md="3" >
+                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Category<br><span>Mobile Devices</span>
+                            </p>
+                        </v-col>
+                        <v-col  lg="3" md="3" >
+                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Location<br><span>Ikole-Ekiti</span>
+                            </p>
+                        </v-col>
+                        <v-col  lg="3" md="3" >
+                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Status<br><span><v-icon color="success">mdi-check-circle</v-icon></span>
+                            </p>
+                        </v-col>
+                    </v-row>             
+                </v-card-text>
                 </v-card>
-            </v-flex>
-             </v-layout>
          </div>
 
          <div class="hidden-md-and-up">
         
-                <v-card class="mx-auto animate__animated animate__zoomIn animate__slower"  flat height="160">
+                <v-card class="mx-auto  mt-1"  flat height="160" >
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >

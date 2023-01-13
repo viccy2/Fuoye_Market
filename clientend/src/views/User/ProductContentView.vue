@@ -99,11 +99,11 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" >
-                        <v-img src="../../assets/images/product-140.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/product-140.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #90,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Game</span>
@@ -112,11 +112,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n55.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/n55.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #10,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50'  flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Top</span>
@@ -126,11 +126,11 @@
                 </v-flex><br><br>
                 
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n7.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/n7.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #80,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span>PS</span>
@@ -139,11 +139,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n50.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/n50.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #10,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span>Headset</span>
@@ -152,11 +152,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/product-4.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/product-4.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #60,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Nike</span>
@@ -165,11 +165,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/product-10.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/product-10.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #100,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Tv</span>
@@ -178,11 +178,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/n32.jpg" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/n32.jpg" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #10,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50' flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">earbud</span>
@@ -191,11 +191,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
-                        <v-img src="../../assets/images/h.png" style="height:160px;" class=""></v-img>
-                        <v-card-title>
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}" height="200">
+                        <v-img src="../../assets/images/h.png" style="height:145px;" class=""></v-img>
+                        <v-card-text>
                             <span class="font-weight-bold" style="font-size:11px;">Price : #300,000</span><br><br>
-                        </v-card-title>
+                        </v-card-text>
                         <v-toolbar  height='50'  flat>
                             <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Iphone</span>
