@@ -311,7 +311,7 @@
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3b.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -325,7 +325,7 @@
 
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-10.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -339,7 +339,7 @@
 
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -353,7 +353,7 @@
 
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-8a.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -367,7 +367,7 @@
 
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -381,7 +381,7 @@
 
               <v-flex md4 lg4>
                 <center>
-                <v-carousel  height="150" cycle hide-delimiters show-arrows-on-hover>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/n39.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>

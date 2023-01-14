@@ -13,7 +13,7 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex lg2 md2  class="pa-1"  >
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/b.jpg" style="height:100px;" class=""></v-img>
                         
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -24,7 +24,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/j.jpg" style="height:100px;" class=""></v-img>
                        
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -35,7 +35,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/8.png" style="height:100px;" class=""></v-img>
                         
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -46,7 +46,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                   <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                   <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/4.png" style="height:100px;"  class=""></v-img>
                         
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -57,7 +57,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/7.png" style="height:100px;" class=""></v-img>
                         
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -68,7 +68,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/8.png" style="height:100px;" class=""></v-img>
                         
                         <v-toolbar  height='50' style="margin-top:0px;" flat>
@@ -88,7 +88,7 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -99,7 +99,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -110,7 +110,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -121,7 +121,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -132,7 +132,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -143,7 +143,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -154,7 +154,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>
@@ -165,7 +165,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'product-details'}">
+                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
                         
                         <v-toolbar  height='50' flat>

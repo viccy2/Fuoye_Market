@@ -7,7 +7,7 @@
 
             <v-card class="mx-auto mt-1"  flat height="160" >
                 <v-list-item three-line >
-                    <v-list-item-avatar  height="60" width="60" >
+                    <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
                     <img class="" src="../../assets/images/pel.jpg" >
                     </v-list-item-avatar>
                     <v-list-item-content>
@@ -105,35 +105,29 @@
                     <!-- DISPLAY ON LARGE DEVICE -->
                     <div class="hidden-sm-and-down">
                     <v-layout row wrap>
-
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/product-15.jpg" style="height:30%;" >
-                        <p class="text-center " style="font-size:11px;">TVs </p>
+                    
+                    
+                    <v-flex lg4 md4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
+                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        
+                        </v-card>
                     </v-flex>
 
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/n34.jpg" style="height:30%;" >
-                        <p class="text-center " style="font-size:11px;">TVs </p>
-                    </v-flex>
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/product-14.jpg" style="height:30%;" >
-                        <p class="text-center " style="font-size:11px;">TVs </p>
+                    <v-flex lg4 md4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
+                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        
+                        </v-card>
                     </v-flex>
 
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/product-16-1.jpg" style="height:30%;" >
-                        <p class=" " style="font-size:11px;">TVs </p>
+                    <v-flex lg4 md4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
+                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        
+                        </v-card>
                     </v-flex>
-
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/product-11-1.jpg" style="height:30%;" >
-                        <p class="text-center " style="font-size:11px;">TVs </p>
-                    </v-flex>
-
-                    <v-flex lg2 md2 >
-                        <img src="../../assets/images/product-120.jpg" style="height:30%;" >
-                        <p class="text-center " style="font-size:11px;">TVs </p>
-                    </v-flex>
+                
                     
                     </v-layout>
                 </div>
@@ -142,49 +136,68 @@
                 <!-- DISPLAY ON SMALL DEVICE -->
                 <div class="hidden-md-and-up">
                 <v-layout row wrap style="margin-top:-20px">
-                    <v-flex sm4 xs4 >
+                    
+                    <v-flex sm4 xs4>
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-15.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> TVs </p>
+                        </v-card>
                     </v-flex>
-
+                   
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/n33.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;">Smart watch</p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> Wingback chair </p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-16-1.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> Cushion set </p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/n1.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> Bag </p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-11-1.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;">Hooded top</p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-12.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;">Footwear </p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/product-8a.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> Gaming</p>
+                        </v-card>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
+                        <v-card :to="{name : 'product-details-seller'}" flat>
                         <img src="../../assets/images/n50.jpg" style="width:80%;height:70%;margin-top:px;" >
                         <p class="text-center " style="font-size:11px;"> Heaadset </p>
+                        </v-card>
                     </v-flex>
                     
                 </v-layout>
