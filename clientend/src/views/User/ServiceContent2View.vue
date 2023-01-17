@@ -239,7 +239,7 @@
                       
                     </v-flex>
                     
-                </v-layout>
+                </v-layout><br><br><br><br>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->
                

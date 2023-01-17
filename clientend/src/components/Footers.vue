@@ -1,6 +1,6 @@
 <template>
     <div class="footers">
-        <v-footer fixed>
+        <v-footer fixed class="white">
             <v-col class="text-center" cols="12">
                 {{ new Date().getFullYear() }} - <strong style="color:#673AB7;font-size:13px">FuoyeMarket</strong>
             </v-col>

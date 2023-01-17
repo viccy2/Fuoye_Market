@@ -2,7 +2,7 @@
     <div class="home-navbar">
     <!-- DISPLAY ONLY ON ALL DEVICES -->
     <div class="hidden-sm-and-down white">
-        <v-app-bar fixed flat elevation='' height="70" class="grey lighten-3">
+        <v-app-bar fixed flat elevation='' height="70" class="white">
             <v-container>
             <v-toolbar-title @click="Go" id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
             </v-container>

@@ -55,12 +55,12 @@
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/product-14-1.jpg" style="height:100%;"> 
+                        <img src="../../assets/images/product-10.jpg" style="height:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #150,000</v-btn>
+                                <v-btn small outlined color ="#673AB7"> #350,000</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
                                 <v-btn style="background-color:#673AB7;color:white"  tile @click="Buy">Message</v-btn>
@@ -68,12 +68,12 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h4>Smart Watch</h4>
+                      <h5>Smart TV</h5>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            Samsung
+                            Sony
                         </span>
                        
                     </v-card-text>

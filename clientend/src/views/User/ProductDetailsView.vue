@@ -59,7 +59,7 @@
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/n33.jpg" style="height:100%;"> 
+                        <img src="../../assets/images/product-90.jpg" style="height:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
@@ -72,12 +72,12 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h4>Smart Watch</h4>
+                      <h5>Smart Watch</h5>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            Samsung
+                            Apple
                         </span>
                        
                     </v-card-text>
