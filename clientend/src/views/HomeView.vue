@@ -309,7 +309,7 @@
 
           <div>
             <v-layout row wrap>
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -323,7 +323,7 @@
                 </center> 
               </v-flex><br>
 
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -337,7 +337,7 @@
                 </center>  
               </v-flex>
 
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -351,7 +351,7 @@
                 </center> 
               </v-flex>
 
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -365,7 +365,7 @@
                 </center> 
               </v-flex>
 
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -379,7 +379,7 @@
                 </center> 
               </v-flex>
 
-              <v-flex md4 lg4>
+              <v-flex md3 lg3>
                 <center>
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
@@ -390,6 +390,34 @@
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2>
+                </center>  
+              </v-flex>
+
+              <v-flex md3 lg3>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/product-18.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-21.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Appliances.  </h2>
+                </center>  
+              </v-flex>
+
+              <v-flex md3 lg3>
+                <center>
+                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/product-191.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-201.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Grocery.  </h2>
                 </center>  
               </v-flex>
 

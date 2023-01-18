@@ -98,6 +98,30 @@
 
                     </v-flex>
 
+                    <v-flex lg3 md3 sm6 xs6 >
+
+                        <v-card flat class="ma-2" >
+                            <v-img class="rounded-lg" src="../../assets/images/pel.jpg" style="height:90px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Pelvix Buy'N Sell.</v-card-title>
+                            <v-card-actions style="margin-top:-20px">
+                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
+                            </v-card-actions>
+                        </v-card>
+
+                    </v-flex>
+
+                    <v-flex lg3 md3 sm6 xs6 >
+
+                        <v-card flat class="ma-2" >
+                            <v-img class="rounded-lg" src="../../assets/images/pel.jpg" style="height:90px;"></v-img>
+                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Pelvix Buy'N Sell.</v-card-title>
+                            <v-card-actions style="margin-top:-20px">
+                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
+                            </v-card-actions>
+                        </v-card>
+
+                    </v-flex>
+
                     
                     
                 </v-layout>
