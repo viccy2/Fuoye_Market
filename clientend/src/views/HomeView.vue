@@ -538,10 +538,10 @@
                             <img src="../assets/images/n39.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/n40.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-90.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Phones</v-card-title>
+                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Smart device</v-card-title>
                       </v-card>
                     </center> 
                     </v-flex>
@@ -551,10 +551,10 @@
                       <v-card flat class=" ma-1">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/product-18.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-5-1.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/product-21.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-5-2.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                         </v-carousel>
                         <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Appliances.</v-card-title>
@@ -1021,7 +1021,7 @@ export default {
   width:100%;height:250px;
 }
 .img3{
-width:100%;height:550px;margin-top:-150px;
+width:100%;height:580px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;

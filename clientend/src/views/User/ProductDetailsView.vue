@@ -15,7 +15,7 @@
                                 <v-btn small outlined color ="#673AB7"> #250,000</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile @click="Buy">Connect</v-btn>
+                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
@@ -67,7 +67,7 @@
                                 <v-btn small outlined color ="#673AB7"> #250,000</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile @click="Buy">Connect</v-btn>
+                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>

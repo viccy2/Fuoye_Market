@@ -99,8 +99,8 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/product-140.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/product-140.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Game</span>
@@ -109,8 +109,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/n55.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/n55.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Top</span>
@@ -120,8 +120,8 @@
                 </v-flex><br><br>
                 
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/n7.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/n7.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">TOP</span>
@@ -130,8 +130,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/n50.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/n50.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Headset</span>
@@ -140,8 +140,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/product-4.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/product-4.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Nike</span>
@@ -150,8 +150,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/product-10.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/product-10.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px"> Smart Tv</span>
@@ -160,8 +160,8 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/n32.jpg" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/n32.jpg" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
                                 <span style="font-size:10px">Earbud</span>
@@ -170,11 +170,11 @@
                     </v-card>
                 </v-flex>
                 <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="200">
-                        <v-img src="../../assets/images/h.png" style="height:145px;" class=""></v-img>
+                    <v-card flat class="ma-2" :to="{name : 'product-details'}" height="230">
+                        <v-img src="../../assets/images/h.png" style="height:145px;" class=""></v-img><br>
                         <span class="font-weight-bold pa-2" style="font-size:12px;">Price : #10,000</span><br>  
                             <v-btn small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Iphone</span>
+                                <span style="font-size:10px">{{"Iphone 12 Pro".substring(0,100)+"..."}}</span>
                             </v-btn>
                         
                     </v-card>
