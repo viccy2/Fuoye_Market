@@ -364,7 +364,7 @@
                                 <img src="../../assets/images/product-5-2.jpg" style="width:100%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;"> Home / Office -  Petite Table Lamp </p>
+                        <p class="text-center ma-1" style="font-size:9px;"> Home / Office -  Petits Table Lamp </p>
 
                     </v-flex>
 
