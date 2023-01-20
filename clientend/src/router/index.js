@@ -77,14 +77,14 @@ const routes = [
 
     // Account routes
   {
-    path: '/account',
-    name: 'account',
-    component: () => import(/* webpackChunkName: "account" */ '../views/Account/AccountView.vue')
+    path: '/new-account',
+    name: 'new-account',
+    component: () => import(/* webpackChunkName: "new-account" */ '../views/Account/SignUpView.vue')
   },
   {
     path: '/sign-in',
     name: 'sign-in',
-    component: () => import(/* webpackChunkName: "sign-in" */ '../views/Account/SignView.vue')
+    component: () => import(/* webpackChunkName: "sign-in" */ '../views/Account/SignInView.vue')
   },
   {
     path: '/:catchAll(.*)',

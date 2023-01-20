@@ -10,7 +10,7 @@
             <!-- NAVBAR ICONS -->   
             <div >
                 
-            <router-link to="/dashboard" style="text-decoration:none">
+            <router-link to="/sign-in" style="text-decoration:none">
                 <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Sign In</span>
                 </v-btn>
@@ -27,7 +27,7 @@
             <!-- NAVBAR ICONS -->   
             <div >
                 
-            <router-link to="/dashboard" style="text-decoration:none">
+            <router-link to="/sign-in" style="text-decoration:none">
                 <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="">Sign In</span>
                 </v-btn>

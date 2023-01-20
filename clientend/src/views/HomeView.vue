@@ -18,10 +18,12 @@
                 <v-flex md5 lg5 >
                   <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black" style="font-size:12px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
+                  <router-link to="/new-account" style="text-decoration:none">
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="">Get Started </span>
-                    <v-icon small class="pa-3" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                    <span style="font-size:12px;">Get Started </span>
+                    <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
+                  </router-link>
                 </v-flex>
                 <v-flex md7 lg7>
                   <center>
@@ -46,10 +48,12 @@
                     We're here to <span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
                   </p>
                 <center >
+                  <router-link to="/new-account" style="text-decoration:none">
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="font-size:12px;">Get Started </span>
                     <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
+                  </router-link>
                 </center>
               </v-flex><br>
 
