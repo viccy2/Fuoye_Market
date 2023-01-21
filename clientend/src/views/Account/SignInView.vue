@@ -36,19 +36,19 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:50%;height:180px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:80%;height:195px;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
-                        <v-card flat>
-                            <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Sign In</v-card-title>
+                        <v-card flat><br>
+                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Sign In Here</v-card-title> -->
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
-                                <v-text-field :rules="rules" label="Email" type="email" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
-                                <v-text-field :rules="rules" label="Password" type="password" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
+                                <v-text-field :rules="rules" label="email" type="email" color="#673AB7" clearable flat solo outlined prepend-inner-icon="mdi-gmail"></v-text-field>
+                                <v-text-field :rules="rules" label="password" type="password" color="#673AB7" clearable flat solo outlined prepend-inner-icon="mdi-eye" ></v-text-field>
                                 <v-btn type="submit" class="text-capitalize" rounded outlined style="width:100%;color:#673AB7">Sign In</v-btn>
                              </v-form>
-                             <p class="container" style="font-size:12px">Create new account ? <a href="/new-account">Here</a></p>
+                             <p class="container pa-5" style="font-size:10px">Create new account ? <a href="/new-account">Here</a></p>
 
                         </v-card><br><br>
                     </v-flex>

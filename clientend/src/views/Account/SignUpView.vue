@@ -43,25 +43,25 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:50%;height:180px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:80%;height:195px;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
-                        <v-card flat>
-                           <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Create New Account </v-card-title>
+                        <v-card flat><br>
+                           <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Create New Account </v-card-title> -->
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>
                             <v-form ref="form" @submit.prevent="createAccount" class="pa-5" style="margin-top:-10px" enctype="multi-part/form-data">
-                                <v-text-field label="Username" :rules="rules" v-model="post.username" color="#673AB7" small flat solo rounded prepend-inner-icon="mdi-account" right></v-text-field>
-                                <v-text-field label="Email" :rules="rules" v-model="post.email" color="#673AB7"  small flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
-                                <v-text-field type="password" :rules="rules" v-model="post.password" label="Password" color="#673AB7"  small flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
-                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType"  small solo flat rounded label="Account type" :items="account"></v-select>
+                                <v-text-field label="username" :rules="rules" v-model="post.username" color="#673AB7" clearable small flat solo outlined prepend-inner-icon="mdi-account" right></v-text-field>
+                                <v-text-field label="email" :rules="rules" v-model="post.email" color="#673AB7" clearable  small flat solo outlined prepend-inner-icon="mdi-gmail"></v-text-field>
+                                <v-text-field type="password" :rules="rules" v-model="post.password" label="password" color="#673AB7" clearable  small flat solo outlined prepend-inner-icon="mdi-eye" ></v-text-field>
+                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType"  small solo flat outlined label="account type" :items="account"></v-select>
                                 <v-btn type="submit" class="text-capitalize" rounded outlined style="width:100%;color:#673AB7;font-size:13px;">Create Account</v-btn>
                             </v-form>
 
-                             <p class="container" style="font-size:12px">Already have an account ? <a href="/sign-in">Here</a></p>
+                             <p class="container pa-5" style="font-size:10px">Already have an account ? <a href="/sign-in">Here</a></p>
 
                         </v-card><br><br>
                     </v-flex>
@@ -83,12 +83,8 @@ export default {
     data(){
         return {
             account : [
-                'User',
+                'Buyer',
                 'Seller'
-            ],
-            location : [
-                'Ikole',
-                'Oye'
             ],
             rules : [(value) => !! value || '*This field is required'],
             post : {

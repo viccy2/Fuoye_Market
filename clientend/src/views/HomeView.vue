@@ -819,7 +819,7 @@
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
                     <v-img class="" src="../assets/images/as.jpg" style="width:;height:100%;"></v-img>
                   </v-card>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Hope Michealson</h2>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Clara Ray</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
                                 
               </v-flex>  
