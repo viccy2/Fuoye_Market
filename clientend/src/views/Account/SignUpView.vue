@@ -49,7 +49,7 @@
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                           <v-card-title class="pa-5" style="color:#673AB7;font-size:14px;">Create New Account </v-card-title>
+                           <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Create New Account </v-card-title>
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>

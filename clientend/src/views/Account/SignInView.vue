@@ -42,7 +42,7 @@
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                            <v-card-title class="pa-5" style="color:#673AB7;font-size:14px;">Sign In</v-card-title>
+                            <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field :rules="rules" label="Email" type="email" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
                                 <v-text-field :rules="rules" label="Password" type="password" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
