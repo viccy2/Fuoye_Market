@@ -43,13 +43,13 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:80%;height:300px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:50%;height:180px;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                           <v-card-title class="pa-5" style="color:#673AB7;font-size:13px;">Create New Account </v-card-title>
+                           <v-card-title class="pa-5" style="color:#673AB7;font-size:14px;">Create New Account </v-card-title>
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>

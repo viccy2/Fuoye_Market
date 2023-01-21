@@ -36,13 +36,13 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:80%;height:300px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:50%;height:180px;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                            <v-card-title class="pa-5" style="color:#673AB7;font-size:13px;">Sign In</v-card-title>
+                            <v-card-title class="pa-5" style="color:#673AB7;font-size:14px;">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field :rules="rules" label="Email" type="email" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
                                 <v-text-field :rules="rules" label="Password" type="password" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
