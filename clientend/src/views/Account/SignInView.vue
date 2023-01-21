@@ -8,14 +8,13 @@
             <v-container>
                <v-layout row wrap>
 
-                    <v-flex lg6 md6 sm12 xs12>
+                    <v-flex lg6 md6 >
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;height
-                      :100%;margin-top:-50px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;margin-top:-50px;">
                   </center>
                     </v-flex>
 
-                    <v-flex lg6 md6 sm12 xs12>
+                    <v-flex lg6 md6 >
                         <v-card flat style="margin-top:80px;">
                             <v-card-title class="pa-5" style="color:#673AB7">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
@@ -37,19 +36,19 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:80%;height:300px;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                            <v-card-title class="pa-5" style="color:#673AB7">Sign In</v-card-title>
+                            <v-card-title class="pa-5" style="color:#673AB7;font-size:13px;">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field :rules="rules" label="Email" type="email" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
                                 <v-text-field :rules="rules" label="Password" type="password" color="#673AB7" flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
                                 <v-btn type="submit" class="text-capitalize" rounded outlined style="width:100%;color:#673AB7">Sign In</v-btn>
                              </v-form>
-                             <p class="container" style="font-size:15px">Create new account ? <a href="/new-account">Here</a></p>
+                             <p class="container" style="font-size:12px">Create new account ? <a href="/new-account">Here</a></p>
 
                         </v-card><br><br>
                     </v-flex>

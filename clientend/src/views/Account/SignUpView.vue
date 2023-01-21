@@ -10,7 +10,7 @@
 
                     <v-flex lg6 md6 sm12 xs12>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;height
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;height
                       :100%;margin-top:-50px;">
                   </center>
                     </v-flex>
@@ -43,7 +43,7 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:80%;height:300px;">
                   </center>
                     </v-flex>
 

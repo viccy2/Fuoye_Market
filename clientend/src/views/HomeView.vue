@@ -545,7 +545,7 @@
                             <img src="../assets/images/product-90.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Smart device</v-card-title>
+                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Device</v-card-title>
                       </v-card>
                     </center> 
                     </v-flex>
@@ -561,7 +561,7 @@
                             <img src="../assets/images/product-5-2.jpg" style="width:100%;height:80%;" >
                           </v-carousel-item>
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Appliances.</v-card-title>
+                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Appliance.</v-card-title>
                       </v-card>
                     </center> 
                     </v-flex>
