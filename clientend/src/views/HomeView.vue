@@ -865,7 +865,7 @@
 
         <!-- DISPLAY ON SMALL DEVICES  -->
         <div class="hidden-md-and-up" id="con4">
-          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br>
+          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br><br>
             <div>
             <v-container>
               <center>
@@ -1022,7 +1022,7 @@ export default {
   width:100%;height:400px;margin-top:-50px;
 }
 .img2{
-  width:100%;height:250px;
+  width:100%;
 }
 .img3{
 width:100%;height:580px;margin-top:-150px;
@@ -1031,7 +1031,7 @@ width:100%;height:580px;margin-top:-150px;
 width:50%;height:400px;margin-top:-50px;
 }
 .img4{
-width:100%;height:300px;
+width:100%;
 }
 .img6{
 width:50%;height:480px;

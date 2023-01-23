@@ -22,14 +22,14 @@
                                     Account created successfully, check email for activation link
                                 </v-alert>
                             <v-form ref="form" @submit.prevent="createAccount" class="pa-5" style="margin-top:-10px" enctype="multi-part/form-data">
-                                <v-text-field label="Username" :rules="rules" v-model="post.username" color="#673AB7" small flat solo rounded prepend-inner-icon="mdi-account" right></v-text-field>
-                                <v-text-field label="Email" :rules="rules" v-model="post.email" color="#673AB7"  small flat solo rounded prepend-inner-icon="mdi-gmail"></v-text-field>
-                                <v-text-field type="password" :rules="rules" v-model="post.password" label="Password" color="#673AB7"  small flat solo rounded prepend-inner-icon="mdi-eye" ></v-text-field>
-                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType"  small solo flat rounded label="Account type" :items="account"></v-select>
+                                <v-text-field label="Username" :rules="rules" v-model="post.username" color="#673AB7"  prepend-inner-icon="mdi-account" right></v-text-field>
+                                <v-text-field label="Email" :rules="rules" v-model="post.email" color="#673AB7"   prepend-inner-icon="mdi-gmail"></v-text-field>
+                                <v-text-field type="password" :rules="rules" v-model="post.password" label="Password" color="#673AB7"  prepend-inner-icon="mdi-eye" ></v-text-field>
+                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType"   label="Account type" :items="account"></v-select><br>
                                 <v-btn type="submit" class="text-capitalize" rounded outlined style="width:100%;color:#673AB7;font-size:13px;">Create Account</v-btn>
                             </v-form>
 
-                             <p class="container" style="font-size:12px">Already have an account ? <a href="/sign-in">Here</a></p>
+                             <p class="container pa-5" style="font-size:12px">Already have an account ? <a href="/sign-in">Here</a></p>
 
                         </v-card>
                     </v-flex>
@@ -54,14 +54,14 @@
                                     Account created successfully, check email for activation link
                                 </v-alert>
                             <v-form ref="form" @submit.prevent="createAccount" class="pa-5" style="margin-top:-10px" enctype="multi-part/form-data">
-                                <v-text-field label="username" :rules="rules" v-model="post.username" color="#673AB7" clearable small flat solo outlined prepend-inner-icon="mdi-account" right></v-text-field>
-                                <v-text-field label="email" :rules="rules" v-model="post.email" color="#673AB7" clearable  small flat solo outlined prepend-inner-icon="mdi-gmail"></v-text-field>
-                                <v-text-field type="password" :rules="rules" v-model="post.password" label="password" color="#673AB7" clearable  small flat solo outlined prepend-inner-icon="mdi-eye" ></v-text-field>
-                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType"  small solo flat outlined label="account type" :items="account"></v-select>
+                                <v-text-field label="Username" :rules="rules" v-model="post.username" color="#673AB7" clearable prepend-inner-icon="mdi-account" right></v-text-field>
+                                <v-text-field label="Email" :rules="rules" v-model="post.email" color="#673AB7" clearable prepend-inner-icon="mdi-gmail"></v-text-field>
+                                <v-text-field type="password" :rules="rules" v-model="post.password" label="Password" color="#673AB7" clearable prepend-inner-icon="mdi-eye" ></v-text-field>
+                                <v-select prepend-inner-icon="mdi-account-group-outline" :rules="rules" v-model="post.accountType" label="Account type" :items="account"></v-select><br>
                                 <v-btn type="submit" class="text-capitalize" rounded outlined style="width:100%;color:#673AB7;font-size:13px;">Create Account</v-btn>
                             </v-form>
 
-                             <p class="container pa-5" style="font-size:10px">Already have an account ? <a href="/sign-in">Here</a></p>
+                             <p class="container pa-5" style="font-size:11px">Already have an account ? <a href="/sign-in">Here</a></p>
 
                         </v-card><br><br>
                     </v-flex>
