@@ -24,25 +24,25 @@
                                 <v-text-field 
                                 :rules="[rules.required]" 
                                 v-model="post.username"
-                                label="Username" type="text" color="#673AB7" 
+                                label="Username" type="text" color="#673AB7"  clearalble
                                 prepend-icon="mdi-account" class="small">
                                 </v-text-field>
 
                                 <v-text-field 
                                 :rules="[rules.required]"
                                 v-model="post.email" 
-                                label="Email" type="email" color="#673AB7" 
+                                label="Email" type="email" color="#673AB7"  clearalble
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 v-model="post.password" 
-                                name="input-10-2" label="Password"  hint="At least 8 characters" 
+                                name="input-10-2" label="Password"  hint="At least 8 characters"  clearalble
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
                                 </v-text-field>
 
-                                <v-select prepend-icon="mdi-account-group-outline" class="small"
+                                <v-select prepend-icon="mdi-account-group-outline" class="small" clearalble
                                 :rules="rules"
                                 v-model="post.accountType" 
                                 label="Account type" :items="account">
@@ -75,7 +75,7 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:80%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:90%;">
                   </center>
                     </v-flex>
 
@@ -89,26 +89,26 @@
                                 <v-text-field 
                                 :rules="[rules.required]" 
                                 v-model="post.username"
-                                label="Username" type="text" color="#673AB7" 
+                                label="Username" type="text" color="#673AB7"  clearalble
                                 prepend-icon="mdi-account" class="small">
                                 </v-text-field>
 
                                 <v-text-field 
                                 :rules="[rules.required]"
                                 v-model="post.email" 
-                                label="Email" type="email" color="#673AB7" 
+                                label="Email" type="email" color="#673AB7"  clearalble
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
-                                v-model="post.password" 
+                                v-model="post.password" color="#673AB7"  clearalble
                                 name="input-10-2" label="Password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
-                                :rules="rules"
+                                :rules="rules" color="#673AB7"  clearalble
                                 v-model="post.accountType" 
                                 label="Account type" :items="account">
                                 </v-select>

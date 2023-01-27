@@ -20,12 +20,12 @@
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
                                 :rules="[rules.required]" 
-                                label="Email" type="email" color="#673AB7" 
+                                label="Email" type="email" color="#673AB7" clearable
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
+                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
                                 name="input-10-2" label="Password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
                                 </v-text-field>  
@@ -50,7 +50,7 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:80%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:90%;">
                   </center>
                     </v-flex>
 
@@ -60,13 +60,13 @@
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
                                 :rules="[rules.required]" 
-                                label="Email" type="email" color="#673AB7" 
+                                label="Email" type="email" color="#673AB7" clearable
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
-                                name="input-10-2" label="Password"  hint="At least 8 characters" 
+                                name="input-10-2" label="Password"  hint="At least 8 characters" color="#673AB7" clearable
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
                                 </v-text-field>  
                                 <br>
