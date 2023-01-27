@@ -4,7 +4,7 @@
     <!-- NAVBAR SECTION  -->
         <HomeNavbar />
     <!-- END NAVBAR SECTION  -->
-    <div class="hidden-sm-and-down" style="margin-top:100px">
+    <div class="hidden-sm-and-down" style="margin-top:100px;">
             <v-container>
                <v-layout row wrap>
 
