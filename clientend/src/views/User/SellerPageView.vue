@@ -91,7 +91,7 @@
                         </v-row>             
                     </v-card-text>
                 </v-card>
-         </div>
+         </div><br>
 
         <!-- OTHER PRODUCTS SECTION -->
         <section>
@@ -109,21 +109,21 @@
                     
                     <v-flex lg4 md4 >
                         <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        <img src="../../assets/images/product-15.jpg" style="width:70%;" >
                         
                         </v-card>
                     </v-flex>
 
                     <v-flex lg4 md4 >
                         <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        <img src="../../assets/images/product-15.jpg" style="width:70%;" >
                         
                         </v-card>
                     </v-flex>
 
                     <v-flex lg4 md4 >
                         <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-15.jpg" style="height:100%;" >
+                        <img src="../../assets/images/product-15.jpg" style="width:70%;" >
                         
                         </v-card>
                     </v-flex>

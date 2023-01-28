@@ -10,12 +10,12 @@
 
                     <v-flex lg6 md6 >
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%;margin-top:-50px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:100%;margin-top:30px;">
                   </center>
                     </v-flex>
 
                     <v-flex lg6 md6 >
-                        <v-card flat style="margin-top:80px;">
+                        <v-card flat style="margin-top:40px;">
                             <v-card-title class="pa-5" style="color:#673AB7">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
@@ -27,7 +27,7 @@
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
                                 name="input-10-2" label="Password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>  
                                 <br>
                                 <v-btn type="submit" class="text-capitalize" 
@@ -67,7 +67,7 @@
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
                                 name="input-10-2" label="Password"  hint="At least 8 characters" color="#673AB7"
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>  
                                 <br>
                                 <v-btn type="submit" class="text-capitalize" 
@@ -97,10 +97,7 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
-            show1: false,
             show2: true,
-            show3: false,
-            show4: false,
             password: 'Password',
             rules: {
             required: value => !!value || 'This field is required.',

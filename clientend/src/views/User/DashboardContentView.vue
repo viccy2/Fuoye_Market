@@ -146,10 +146,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:10px;">Samsung -55" Class LED 2160p Smart</p>
@@ -160,10 +160,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-90.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-90.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n33.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Apple Watch Series 4   </p>
@@ -172,12 +172,12 @@
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="180" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n32.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n32.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n50.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Bose - SoundSport wireless headphones </p>
@@ -188,10 +188,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:60%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:60%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Microsoft - Refurbish Xbox One S 500GB</p>
@@ -202,10 +202,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n30.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n30.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Sony - Alpha a5100 Mirrorless Camera </p>
@@ -216,10 +216,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-14-1.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-2.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-14-2.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Wingback Chair</p>
@@ -230,10 +230,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-41.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-161.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-161.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Top</p>
@@ -244,10 +244,10 @@
                         <center>
                         <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-18.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-18.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-21.jpg" style="width:80%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-21.jpg" style="width:60%;height:80%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:11px;">Blender</p>

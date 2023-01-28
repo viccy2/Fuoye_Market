@@ -75,6 +75,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "seller-page" */ '../views/User/SellerPageView.vue')
   },
 
+  {
+    path: '/market',
+    name: 'market',
+    component: () => import(/* webpackChunkName: "market" */ '../views/User/MarketView.vue')
+  },
+
     // Account routes
   {
     path: '/new-account',

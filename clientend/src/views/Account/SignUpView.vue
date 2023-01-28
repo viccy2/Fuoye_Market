@@ -10,13 +10,13 @@
 
                     <v-flex lg6 md6 sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/n60.jpg" style="width:100%; margin-top:-50px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:100%; margin-top:30px;">
                   </center>
                     </v-flex>
 
                     <v-flex lg6 md6 sm12 xs12>
                         <v-card flat>
-                           <v-card-title class="pa-5" style="color:#673AB7;">Create New Account </v-card-title>
+                           <v-card-title class="pa-5" style="color:#673AB7;">Welcome, create new account. </v-card-title>
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>
@@ -39,7 +39,7 @@
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 v-model="post.password" 
                                 name="input-10-2" label="Password"  hint="At least 8 characters"  
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
@@ -56,7 +56,7 @@
 
                                 <v-btn type="submit" class="text-capitalize" 
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                Create Account
+                                create account
                                 </v-btn>
 
                             </v-form>
@@ -104,7 +104,7 @@
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 v-model="post.password" color="#673AB7"  
                                 name="input-10-2" label="Password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-eye"> 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
@@ -121,7 +121,7 @@
 
                                 <v-btn type="submit" class="text-capitalize" 
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                Create Account
+                                sign up
                                 </v-btn>
 
                             </v-form>
@@ -147,10 +147,13 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
+            message:"",
             account : [
                 'Buyer',
                 'Seller'
             ],
+            show2: true,
+            password: 'Password',
             rules: {
             required: value => !!value || 'This field is required.',
             min: v => v.length >= 8 || 'Min 8 characters',
@@ -161,23 +164,12 @@ export default {
                 email : "",
                 password : "",
                 accountType : "",
-                location : "",
-                image : "",
-                code : "",
-                status : ""
             },
-            image : "",
-            message : false,
         }
     },
     methods : {
-       selectFile(file){
-            this.image = file[0];
-       },
        async createAccount(){
             try {
-                this.code = 2000 + Math.random() * 5000;
-                this.status = 0;
                 const Form = new FormData();
                 Form.append("username", this.post.username);
                 Form.append("email", this.post.email);
@@ -186,7 +178,7 @@ export default {
                
                 if(this.$refs.form.validate()){
                     const response = await API.newUser(Form);
-                    this.message = true;
+                    this.message = response;
                      setTimeout(function(){
                      window.location.href = '/activate-account';
                     },5000);

@@ -217,7 +217,7 @@
                     We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                     Also, for users to create account and have medium to add their products and connect with the sellers.
                   </p>
-                  <p id="txt6">Create Account with Us ></p>
+                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
                 </v-flex>
 
                 <v-flex md8 lg8>
@@ -246,7 +246,7 @@
                 Also, for users to create account and have medium to add their products and connect with the sellers.
               </p>
               </center>
-              <p id="txt8">Create Account with Us ></p>
+              <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex>
 
             <v-flex sm12 xs12>
@@ -752,7 +752,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/23.jpeg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/f.jpeg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -771,9 +771,9 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/as.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/k2.jpg" style="width:90%;height:300px;"></v-img>
                   </v-card><br>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Hope Michealson</h2>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design)  </h2>
                 </center>             
               </v-flex>
@@ -801,7 +801,7 @@
               <v-flex sm6 xs6>
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/23.jpeg" style="width:;height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/f2.jpeg" style="width:;height:100%;"></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -817,9 +817,9 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/as.jpg" style="width:;height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/k23.jpg" style="height:100%;"></v-img>
                   </v-card>
-                  <h2 id="h26" style="font-size:14px;color:#673AB7">Clara Ray</h2>
+                  <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
                                 
               </v-flex>  

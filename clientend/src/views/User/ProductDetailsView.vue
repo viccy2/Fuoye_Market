@@ -7,7 +7,7 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/n34.jpg" style="height:100%;"> 
+                        <img src="../../assets/images/product-90.jpg" style="height:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
@@ -20,12 +20,12 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>S21 Ultra</h3>
+                      <h3>Apple Watch</h3>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            Samsung
+                            Apple
                         </span>
                        
                     </v-card-text>
@@ -34,10 +34,10 @@
                           Product Details :
                         </span><br>
                         <p>
-                            This is one of the available Samsung S21 products. 
-                            vThis is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
+                            This is one of the available Apple products. 
+                            This is one of the available Apple products. 
+                            This is one of the available Apple products. 
+                            This is one of the available Apple products. 
                         </p>
                         <p class="font-weight-bold ">
                             Quantity available : 200 pieces 
