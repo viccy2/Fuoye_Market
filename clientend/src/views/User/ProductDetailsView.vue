@@ -20,7 +20,7 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>Apple Watch</h3>
+                      <h3>Apple Watch Series 4</h3>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
@@ -72,7 +72,7 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h5>Smart Watch</h5>
+                      <h5>Apple Watch Series 4</h5>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         

@@ -69,7 +69,9 @@
             <!-- TOP SELLER SECTION -->
 
             <div class="top-seller">
-                <v-card flat elevation=''>
+                <!-- DISPLAY ON LARGEDEVICE -->
+                <div class="hidden-sm-and-down">
+                    <v-card flat elevation=''>
                  <v-container fluid>
                  <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
                     <v-layout row wrap class="pa-3" style="margin-top:-20px">
@@ -77,7 +79,7 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class=" ma-2">
-                            <v-img class="" src="../../assets/images/b.jpg" style="height:100px;"></v-img>
+                            <v-img class="" src="../../assets/images/4.png" style="height:100px;"></v-img>
                             <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Clara's Eatery.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
@@ -89,7 +91,7 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-2" >
-                            <v-img class="" src="../../assets/images/pel.jpg" style="height:100px;"></v-img>
+                            <v-img class="" src="../../assets/images/7.png" style="height:100px;"></v-img>
                             <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Pelvix Buy'N Sell.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
@@ -101,7 +103,7 @@
                     <v-flex lg3 md3 sm6 xs6 >
 
                         <v-card flat class="ma-2" >
-                            <v-img class="" src="../../assets/images/about-img-1.jpg" style="height:100px;"></v-img>
+                            <v-img class="" src="../../assets/images/8.png" style="height:100px;"></v-img>
                             <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Dan's Photography.</v-card-title>
                             <v-card-actions style="margin-top:-20px">
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
@@ -127,6 +129,76 @@
                 </v-layout>
                 </v-container>
                 </v-card>
+                </div>
+                <!-- END DISPLAY ON LARGE DEVICE -->
+
+
+                <!-- DISPLAY ON SMALL DEVICE -->
+                <div class="hidden-md-and-up">
+                    <v-card flat elevation=''>
+                 <v-container fluid>
+                 <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
+                    <v-layout row wrap class="pa-3" style="margin-top:-20px">
+
+                    <v-flex sm6 xs6  >
+
+                        <v-card class="ma-2 grey lighten-2" height="200">
+                            <v-img class="" src="../../assets/images/b.jpg" style="height:50%;"></v-img>
+                            <v-layout row wrap>
+                                <v-flex sm8 xs8>
+                                    <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Bola foods.</v-card-title>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                   <span><v-icon color="success" style="margin-top:20px;">mdi-check-circle</v-icon></span>
+                                </v-flex>
+                                <v-flex sm2 xs2>
+                                
+                                </v-flex>
+                            </v-layout>
+                            <v-card-actions style="margin-top:0px">
+                                <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
+                            </v-card-actions>
+                        </v-card>
+
+                    </v-flex>
+
+                    <v-flex sm6 xs6  >
+
+                        <v-card class="ma-2 grey lighten-2" height="200" >
+                            <v-img class="" src="../../assets/images/pel.jpg" style="height:50%;"></v-img>
+                            <v-layout row wrap>
+                                <v-flex sm8 xs8>
+                                    <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Pelvix Sell.</v-card-title>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                   <span><v-icon color="success" style="margin-top:20px;">mdi-check-circle</v-icon></span>
+                                </v-flex>
+                                <v-flex sm2 xs2>
+                                
+                                </v-flex>
+                            </v-layout>
+                            <v-card-actions style="margin-top:0px">
+                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
+                            </v-card-actions>
+                        </v-card>
+
+                    </v-flex>
+
+
+                    
+                    
+                </v-layout>
+                </v-container>
+                </v-card>
+                </div>
+                <!-- END DISPLAY ON SMALL DEVICE -->
+                
             </div>
             <!-- END TOP SELLER SECTION -->
 
@@ -144,12 +216,12 @@
                     <v-layout row wrap>
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-15.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
                         <p class="text-center " style="font-size:10px;">Samsung -55" Class LED 2160p Smart</p>
@@ -158,99 +230,99 @@
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-90.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-90.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/n33.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Apple Watch Series 4   </p>
+                        <p class="text-center " style="font-size:10px;">Apple Watch Series 4   </p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n32.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/n32.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n50.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/n50.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Bose - SoundSport wireless headphones </p>
+                        <p class="text-center " style="font-size:10px;">Bose - SoundSport wireless headphones </p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:60%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:60%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Microsoft - Refurbish Xbox One S 500GB</p>
+                        <p class="text-center " style="font-size:10px;">Microsoft - Refurbish Xbox One S 500GB</p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/n30.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/n30.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Sony - Alpha a5100 Mirrorless Camera </p>
+                        <p class="text-center " style="font-size:10px;">Sony - Alpha a5100 Mirrorless Camera </p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-1.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-17.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-14-2.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-17.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Wingback Chair</p>
+                        <p class="text-center " style="font-size:10px;">Google - Home Hub with Google Assistant </p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-41.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-41.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-161.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-161.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Top</p>
+                        <p class="text-center " style="font-size:10px;">Men / Women - Fashion Tops </p>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-18.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-5-1.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-21.jpg" style="width:60%;height:80%;margin-top:px;" >
+                                <img src="../../assets/images/product-5-2.jpg" style="width:50%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                         </v-carousel>
-                        <p class="text-center " style="font-size:11px;">Blender</p>
+                        <p class="text-center " style="font-size:10px;"> Home / Office -  Petits Table Lamp </p>
                         </center>
                     </v-flex>
                     

@@ -7,7 +7,7 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/product-14-1.jpg" style="height:100%;"> 
+                        <img src="../../assets/images/product-15.jpg" style="height:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
@@ -20,7 +20,7 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>S21 Ultra</h3>
+                      <h3>Smart Tv</h3>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
@@ -55,7 +55,7 @@
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/product-10.jpg" style="height:100%;"> 
+                        <img src="../../assets/images/product-15.jpg" style="height:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">

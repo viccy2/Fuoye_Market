@@ -55,7 +55,7 @@
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                          <img class="" src="../../assets/images/n30.jpg" >
+                          <img class="" src="../../assets/images/z.jpg" >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>

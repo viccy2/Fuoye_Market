@@ -128,7 +128,7 @@
                 </v-card>
               </v-flex>
 
-        </v-layout><br><br><br>
+        </v-layout><br><br><br><br>
       </div>
       <!-- END DISPLAY ON LARGE DEVICE  -->
 
@@ -226,12 +226,12 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                    <img class="img3 rounded-circle animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
+                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
                   </center>
                 </v-flex>
 
               </v-layout>
-            </v-container>
+            </v-container><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
@@ -272,15 +272,24 @@
 
           <!-- DISPLAY ON LARGE DEVICES -->
           <div class="hidden-sm-and-down" >
-            <!-- <center>
-              <h2 id="h22" class="animate__animated animate__fadeIn">
-                <span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.
-              </h2><br>
-              <p id="txt5" class="animate__animated animate__fadeIn">
-                  Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
-              </p>
-              <img class="img6 animate__animated animate__bounceIn" src="../assets/images/n63.jpg" style="margin-top:0px;">
-            </center> -->
+            <v-layout row wrap>
+              <v-flex md5 lg5>
+                  <center>
+                    <img class="img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/n63.jpg">
+                  </center>
+              </v-flex>
+              <v-flex md2 lg2>
+
+              </v-flex>
+              <v-flex md5 lg5 >
+                  <h2 id="h22"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
+                  <p id="txt5">
+                    Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+                  </p>
+                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
+              </v-flex>
+      
+              </v-layout><br><br><br><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES -->
 
@@ -904,15 +913,19 @@
                 </div>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
+                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
-                  </v-btn>
+                  </v-btn></a>
+                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
-                  </v-btn>
+                  </v-btn></a>
+                  <a href="https://twitter.com/fuoyemarket" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-whatsapp</v-icon>
+                      <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
                   </v-btn>
+                  </a>
                 </div>
               </v-flex>
               <v-flex md4 lg4 sm12 xs12>
@@ -939,15 +952,18 @@
                 <h2 id="h27" >Contact Us</h2><br>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
+                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
-                  </v-btn>
+                  </v-btn></a>
+                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
-                  </v-btn>
+                  </v-btn></a>
+                  <a href="https://twitter.com/fuoyemarket" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-whatsapp</v-icon>
-                  </v-btn>
+                      <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
+                  </v-btn></a>
                 </div>
               </v-flex>
               <v-flex md4 lg4 sm12 xs12>
@@ -1038,7 +1054,7 @@ width:50%;height:400px;margin-top:-50px;
 width:100%;
 }
 .img6{
-width:50%;height:480px;
+  width:100%;height:500px;margin-top:-200px;
 }
 .img7{
 height:45px;

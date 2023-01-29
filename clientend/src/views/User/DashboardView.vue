@@ -12,23 +12,23 @@
     
     <v-bottom-navigation grow color="#673AB7" fixed height="55">
       <v-btn @click="home" active>
-        <span style="font-size:11px">Home</span>
-        <v-icon>mdi-home-account</v-icon>
+        <span style="font-size:10px">Home</span>
+        <v-icon small>mdi-home-account</v-icon>
       </v-btn>
 
       <v-btn @click="products"> 
-        <span style="font-size:11px">Products</span>
-        <v-icon>mdi-cart-variant</v-icon>
+        <span style="font-size:10px">Products</span>
+        <v-icon small>mdi-cart-variant</v-icon>
       </v-btn>
 
       <v-btn @click="services">
-        <span style="font-size:11px">Services</span>
-        <v-icon>mdi-list-box-outline</v-icon>
+        <span style="font-size:10px">Services</span>
+        <v-icon small>mdi-list-box-outline</v-icon>
       </v-btn>
 
       <v-btn @click="sellers">
-        <span style="font-size:11px">Sellers</span>
-        <v-icon>mdi-account-group-outline</v-icon>
+        <span style="font-size:10px">Sellers</span>
+        <v-icon small>mdi-account-group-outline</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
