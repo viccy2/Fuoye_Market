@@ -16,7 +16,7 @@
 
                     <v-flex lg6 md6 sm12 xs12>
                         <v-card flat>
-                           <v-card-title class="pa-5" style="color:#673AB7;">Welcome, create new account. </v-card-title>
+                           <v-card-title class="pa-5" style="color:#673AB7;">Welcome, create an account. </v-card-title>
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>

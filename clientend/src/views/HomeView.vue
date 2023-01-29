@@ -15,7 +15,7 @@
           <div class="head1 hidden-sm-and-down" style="margin-top:200px">
             <v-container>
               <v-layout row wrap>
-                <v-flex md5 lg5 >
+                <v-flex md4 lg4 >
                   <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
                   <p class="font-weight-bold text--black" style="font-size:12px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <router-link to="/new-account" style="text-decoration:none">
@@ -25,13 +25,15 @@
                   </v-btn>
                   </router-link>
                 </v-flex>
-                <v-flex md7 lg7>
+                <v-flex md2 lg2>
+                </v-flex>
+                <v-flex md6 lg6>
                   <center>
                       <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
                   </center>
                 </v-flex>
               </v-layout>
-            </v-container>
+            </v-container><br><br>
           </div>
           <!-- END DISPLAY ON LARGER DEVICES -->
 
@@ -126,7 +128,7 @@
                 </v-card>
               </v-flex>
 
-        </v-layout><br>
+        </v-layout><br><br><br>
       </div>
       <!-- END DISPLAY ON LARGE DEVICE  -->
 
@@ -219,10 +221,12 @@
                   </p>
                   <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
                 </v-flex>
+                <v-flex md2 lg2>
 
-                <v-flex md8 lg8>
+                </v-flex>
+                <v-flex md6 lg6>
                   <center>
-                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
+                    <img class="img3 rounded-circle animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
                   </center>
                 </v-flex>
 
@@ -425,7 +429,7 @@
                 </center>  
               </v-flex>
 
-            </v-layout><br><br>
+            </v-layout><br><br><br><br>
           </div>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
@@ -660,7 +664,7 @@
                 </v-card>
               </v-flex>
             </v-layout>
-          </div>
+          </div><br><br>
         </div> 
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
@@ -743,7 +747,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
@@ -752,7 +756,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/f.jpeg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/f.jpeg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -761,7 +765,7 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -771,14 +775,14 @@
               <v-flex md3 lg3>
                 <center>
                   <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/k2.jpg" style="width:90%;height:300px;"></v-img>
+                    <v-img src="../assets/images/k2.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design)  </h2>
                 </center>             
               </v-flex>
             </v-layout>
-          </div><br><br><br>
+          </div><br><br><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
 
@@ -792,7 +796,7 @@
               <v-flex sm6 xs6>
                
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/po.jpg" style="width:;height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/po.jpg" style="width:;height:100%;" ></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
@@ -801,7 +805,7 @@
               <v-flex sm6 xs6>
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/f2.jpeg" style="width:;height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/f2.jpeg" style="width:;height:100%;" ></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -809,7 +813,7 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;" ></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -817,7 +821,7 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/k23.jpg" style="height:100%;"></v-img>
+                    <v-img class="" src="../assets/images/k23.jpg" style="height:100%;" ></v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
@@ -859,7 +863,7 @@
                 </center>
               </v-flex>
             </v-layout>
-          </div><br><br><br>
+          </div><br><br><br><br><br>
           </div>
         <!-- END DISPLAY ON LARGE DEVICE  -->
 
@@ -1019,13 +1023,13 @@ export default {
   background:#673AB7;color:white;
 }
 .img1{
-  width:100%;height:400px;margin-top:-50px;
+  width:100%;height:400px;margin-top:-80px;
 }
 .img2{
   width:100%;
 }
 .img3{
-width:100%;height:580px;margin-top:-150px;
+width:100%;height:500px;margin-top:-150px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;

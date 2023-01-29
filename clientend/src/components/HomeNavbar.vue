@@ -12,7 +12,7 @@
                 
             <router-link to="/sign-in" style="text-decoration:none">
                 <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="">Sign In</span>
+                    <span style="font-size:12px;">Sign In</span>
                 </v-btn>
             </router-link>
             </div>
@@ -29,7 +29,7 @@
                 
             <router-link to="/sign-in" style="text-decoration:none">
                 <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="">Sign In</span>
+                    <span style="font-size:12px;">Sign In</span>
                 </v-btn>
             </router-link>
             </div>
