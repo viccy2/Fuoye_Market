@@ -11,14 +11,11 @@
                     <v-divider></v-divider>
                     <v-form ref="form" @submit.prevent="updateForm" class="pa-5" enctype="multi-part/form-data" >
                    <center> <v-img class="image-rounded" :src="`/${post.image}`" rounded width="120"></v-img></center>
-                    <v-text-field class="small" label="Name" prepend-icon="mdi-account" :rules="rules" v-model="post.name" color="#673AB7"></v-text-field>
-                    <v-text-field class="small" label="Username" prepend-icon="mdi-view-list" :rules="rules" v-model="post.username" color="#673AB7"></v-text-field>
-                    <v-text-field class="small" label="Email" disabled prepend-icon="mdi-view-list" :rules="rules" v-model="post.email" color="#673AB7"></v-text-field>
-                    <v-text-field class="small" label="Account" disabled prepend-icon="mdi-view-list" :rules="rules" v-model="post.accountType" color="#673AB7"></v-text-field>
-
-                    <v-select class="small ma-5" prepend-inner-icon="mdi-eye" :rules="rules" v-model="post.location" label="Select location" :items="location"></v-select>
-                    <v-file-input class="small"  @change="selectFile" show-size counter multiple label="Profile picture"></v-file-input>
-                    
+                   <v-text-field class="small" label="Name" prepend-icon="mdi-account" :rules="rules" v-model="post.name" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Username" prepend-icon="mdi-account-edit" :rules="rules" v-model="post.username" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Email" disabled prepend-icon="mdi-email-edit-outline" :rules="rules" v-model="post.email" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Account" disabled prepend-icon="mdi-account-group" :rules="rules" v-model="post.accountType" color="#673AB7"></v-text-field>
+                    <v-select class="small" prepend-icon="mdi-map-marker" :rules="rules" v-model="post.location" label="Select location" :items="location"></v-select>                    
                     <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined> Update Profile</v-btn>
                     </v-form>
                 </v-card>

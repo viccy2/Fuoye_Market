@@ -78,22 +78,29 @@
 
                     <v-flex lg3 md3 sm6 xs6 >
 
-                        <v-card flat class=" ma-2">
-                            <v-img class="" src="../../assets/images/4.png" style="height:100px;"></v-img>
-                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Clara's Eatery.</v-card-title>
-                            <v-card-actions style="margin-top:-20px">
-                                <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card>
+                        <v-card
+                            class="ma-3 "
+                            max-width="400"
+                        >
+                            <v-img
+                            class="white--text align-end"
+                            height="200px"
+                            src="../../assets/images/17.jpg"
+                            >
+                            <v-card-title>Top 10 Australian beaches</v-card-title>
+                            </v-img>
 
-                    </v-flex>
+                            <v-card-subtitle class="pb-0">
+                            Number 10
+                            </v-card-subtitle>
 
-                    <v-flex lg3 md3 sm6 xs6 >
+                            <v-card-text class="text--primary">
+                            <div>Whitehaven Beach</div>
 
-                        <v-card flat class="ma-2" >
-                            <v-img class="" src="../../assets/images/7.png" style="height:100px;"></v-img>
-                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Pelvix Buy'N Sell.</v-card-title>
-                            <v-card-actions style="margin-top:-20px">
+                            <div>Whitsunday Island, Whitsunday Islands</div>
+                            </v-card-text>
+
+                            <v-card-actions>
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
                             </v-card-actions>
                         </v-card>
@@ -102,10 +109,29 @@
 
                     <v-flex lg3 md3 sm6 xs6 >
 
-                        <v-card flat class="ma-2" >
-                            <v-img class="" src="../../assets/images/8.png" style="height:100px;"></v-img>
-                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Dan's Photography.</v-card-title>
-                            <v-card-actions style="margin-top:-20px">
+                        <v-card
+                            class="ma-3 "
+                            max-width="400"
+                        >
+                            <v-img
+                            class="white--text align-end"
+                            height="200px"
+                            src="../../assets/images/17.jpg"
+                            >
+                            <v-card-title>Top 10 Australian beaches</v-card-title>
+                            </v-img>
+
+                            <v-card-subtitle class="pb-0">
+                            Number 10
+                            </v-card-subtitle>
+
+                            <v-card-text class="text--primary">
+                            <div>Whitehaven Beach</div>
+
+                            <div>Whitsunday Island, Whitsunday Islands</div>
+                            </v-card-text>
+
+                            <v-card-actions>
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
                             </v-card-actions>
                         </v-card>
@@ -114,10 +140,60 @@
 
                     <v-flex lg3 md3 sm6 xs6 >
 
-                        <v-card flat class="ma-2" >
-                            <v-img class="" src="../../assets/images/17.jpg" style="height:100px;"></v-img>
-                            <v-card-title style="font-size:10px;font-weight:bold;margin-top:-10px;">Bola's Store.</v-card-title>
-                            <v-card-actions style="margin-top:-20px">
+                        <v-card
+                            class="ma-3 "
+                            max-width="400"
+                        >
+                            <v-img
+                            class="white--text align-end"
+                            height="200px"
+                            src="../../assets/images/17.jpg"
+                            >
+                            <v-card-title>Top 10 Australian beaches</v-card-title>
+                            </v-img>
+
+                            <v-card-subtitle class="pb-0">
+                            Number 10
+                            </v-card-subtitle>
+
+                            <v-card-text class="text--primary">
+                            <div>Whitehaven Beach</div>
+
+                            <div>Whitsunday Island, Whitsunday Islands</div>
+                            </v-card-text>
+
+                            <v-card-actions>
+                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
+                            </v-card-actions>
+                        </v-card>
+
+                    </v-flex>
+
+                    <v-flex lg3 md3 sm6 xs6 >
+
+                        <v-card
+                            class="ma-3 "
+                            max-width="400"
+                        >
+                            <v-img
+                            class="white--text align-end"
+                            height="200px"
+                            src="../../assets/images/pel.jpg"
+                            >
+                            <v-card-title>Top 10 Australian beaches</v-card-title>
+                            </v-img>
+
+                            <v-card-subtitle class="pb-0">
+                            Number 10
+                            </v-card-subtitle>
+
+                            <v-card-text class="text--primary">
+                            <div>Whitehaven Beach</div>
+
+                            <div>Whitsunday Island, Whitsunday Islands</div>
+                            </v-card-text>
+
+                            <v-card-actions>
                                 <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
                             </v-card-actions>
                         </v-card>
@@ -142,8 +218,8 @@
 
                     <v-flex sm6 xs6  >
 
-                        <v-card class="ma-2 grey lighten-2" height="200">
-                            <v-img src="../../assets/images/b.jpg" style="height:50%;"
+                        <v-card class="ma-2 grey lighten-2">
+                            <v-img src="../../assets/images/b.jpg" 
                             lazy-src="../../assets/images/b.jpg"
                             aspect-ratio="1"
                             class="grey lighten-2"
@@ -184,8 +260,8 @@
 
                     <v-flex sm6 xs6  >
 
-                        <v-card class="ma-2 grey lighten-2" height="200" >
-                            <v-img src="../../assets/images/pel.jpg" style="height:50%;"
+                        <v-card class="ma-2 grey lighten-2" >
+                            <v-img src="../../assets/images/pel.jpg"
                             lazy-src="../../assets/images/pel.jpg"
                             aspect-ratio="1"
                             class="grey lighten-2"
@@ -658,7 +734,7 @@
                             <v-layout row wrap>
                                 
                                 <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Furniture - Elephant Armchair ...</p>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Furniture - Elephant ...</p>
                                     <p class="ma-5 text-center " style="font-size:10px;float:right;"># 60, 000</p>
                                 </v-flex>
                             
@@ -684,7 +760,7 @@
                             <v-layout row wrap>
                                 
                                 <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Home / Office -  Petits Table...</p>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Home / Office -Light</p>
                                     <p class="ma-5 text-center " style="font-size:10px;float:right;"># 50, 000</p>
                                 </v-flex>
                             
@@ -710,7 +786,7 @@
                             <v-layout row wrap>
                                 
                                 <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Men / Women - Fashion Tops</p>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Women - Fashion Tops</p>
                                     <p class="ma-5 text-center " style="font-size:10px;float:right;"># 20, 000</p>
                                 </v-flex>
                             

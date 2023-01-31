@@ -99,6 +99,34 @@
 
           <div class="service2 hidden-md-and-up" style="margin-top:10px">
             <v-container fluid>
+              <div>
+                
+                  <v-combobox
+                    v-model="select"
+                    :items="items"
+                    label="I use a scoped slot"
+                    multiple
+                    chips
+                  >
+                    <template v-slot:selection="data">
+                      <v-chip
+                        :key="JSON.stringify(data.item)"
+                        v-bind="data.attrs"
+                        :input-value="data.selected"
+                        :disabled="data.disabled"
+                        @click:close="data.parent.selectItem(data.item)"
+                      >
+                        <v-avatar
+                          class="accent white--text"
+                          left
+                          v-text="data.item.slice(0, 1).toUpperCase()"
+                        ></v-avatar>
+                        {{ data.item }}
+                      </v-chip>
+                    </template>
+                  </v-combobox>
+               
+              </div>
             <v-layout row wrap>
                 <v-flex sm6 xs6 >
                     <v-card flat class="ma-2 grey lighten-2" :to="{name : 'product-details'}" height="300">
@@ -334,6 +362,13 @@ export default {
     name : 'product-content',
     data(){
         return{
+          select: ['Vuetify', 'Programming'],
+          items: [
+            'Programming',
+            'Design',
+            'Vue',
+            'Vuetify',
+          ],
             category:[
                 'Drinks / Beverages',
                 'Bakery Products / Snacks / Cereal & Flakes',
