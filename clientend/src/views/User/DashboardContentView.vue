@@ -143,7 +143,24 @@
                     <v-flex sm6 xs6  >
 
                         <v-card class="ma-2 grey lighten-2" height="200">
-                            <v-img class="" src="../../assets/images/b.jpg" style="height:50%;"></v-img>
+                            <v-img src="../../assets/images/b.jpg" style="height:50%;"
+                            lazy-src="../../assets/images/b.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                             <v-layout row wrap>
                                 <v-flex sm8 xs8>
                                     <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Bola foods.</v-card-title>
@@ -168,7 +185,24 @@
                     <v-flex sm6 xs6  >
 
                         <v-card class="ma-2 grey lighten-2" height="200" >
-                            <v-img class="" src="../../assets/images/pel.jpg" style="height:50%;"></v-img>
+                            <v-img src="../../assets/images/pel.jpg" style="height:50%;"
+                            lazy-src="../../assets/images/pel.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                             <v-layout row wrap>
                                 <v-flex sm8 xs8>
                                     <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Pelvix Sell.</v-card-title>
@@ -215,114 +249,236 @@
                     <div class="hidden-sm-and-down">
                     <v-layout row wrap>
                     <v-flex lg3 md3 >
+                         <center>
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;" >
+                            </v-carousel-item>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Samsung -55" Class LED 2160p Smart.</v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:10px;"># 700, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                        
+                    </v-flex>
+
+                    <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-90.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Samsung -55" Class LED 2160p Smart</p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Apple Watch Series 4 . </v-card-title>
+                                </v-flex>
+                            
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                         <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-90.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n32.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Apple Watch Series 4   </p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Bose - SoundSport wireless headphone. </v-card-title>
+                                </v-flex>
+                               
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n32.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n50.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Bose - SoundSport wireless headphones </p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Microsoft - Refurbish Xbox One S 500GB.</v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
+                       </center>
+                    </v-flex>
+
+                    <v-flex lg3 md3 >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
+                            <v-carousel-item >
+                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
+                            </v-carousel-item>
+                            <v-carousel-item >
+                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
+                            </v-carousel-item>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Sony - Alpha a5100 Mirrorless Camera.</v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 120, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                            
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-17.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-17.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Microsoft - Refurbish Xbox One S 500GB</p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Google - Home Hub with Google Assist...</v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 120, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-161.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Sony - Alpha a5100 Mirrorless Camera </p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Men / Women - Fashion Tops. </v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 20, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
 
                     <v-flex lg3 md3 >
                         <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
+                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
                             <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-5-1.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
                             <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:50%;height:100%;margin-top:px;" >
+                                <img src="../../assets/images/product-5-2.jpg" style="width:80%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Google - Home Hub with Google Assistant </p>
-                        </center>
-                    </v-flex>
-
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-41.jpg" style="width:50%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-161.jpg" style="width:50%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;">Men / Women - Fashion Tops </p>
-                        </center>
-                    </v-flex>
-
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-1.jpg" style="width:50%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-2.jpg" style="width:50%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center " style="font-size:10px;"> Home / Office -  Petits Table Lamp </p>
+                            </v-carousel><br>
+                            <v-layout row wrap>
+                                <v-flex sm9 xs9>
+                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Home / Office -  Petits Table Lamp. </v-card-title>
+                                </v-flex>
+                                
+                                <v-flex sm2 xs2>
+                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 10, 000</p>
+                                </v-flex>
+                                <v-flex sm1 xs1>
+                                
+                                </v-flex>
+                                
+                            </v-layout>
+                           
+                        </v-card>
                         </center>
                     </v-flex>
                     
@@ -334,124 +490,235 @@
                 <div class="hidden-md-and-up">
                 <v-layout row wrap style="margin-top:-20px">
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-15.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;margin-top:px;" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-15.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>  
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Samsung -55" Class LED 2160p Smart</p>
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Samsung -55" LED...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 700, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                    </center>
                     </v-flex>
 
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-90.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-90.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Apple Watch Series 4  </p>
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/n33.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;">Apple Watch Series 4</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
 
                     </v-flex>
 
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/n32.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/n32.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;"> Bose - SoundSport wireless headphones </p>
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/n50.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;">Bose - SoundSport...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                    
                     </v-flex>
 
                      <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-8a.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Microsoft - Refurbish Xbox One S 500GB</p>
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-8a.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Microsoft - Refurbish...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
 
                     </v-flex>
 
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/n30.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;"> Sony - Alpha a5100 Mirrorless Camera </p>
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/n30.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Sony - Alpha Camera...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                        
                     </v-flex>
 
                      <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-17.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:70%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Google - Home Hub with Google Assistant </p>
-
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-17.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Google - Home Hub...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                       
                     </v-flex>
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-6-1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-6-1.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-6-2.jpg" style="width:100%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Furniture - Elephant Armchair </p>
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-6-2.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Furniture - Elephant Armchair ...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 60, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                      
                     </v-flex>
 
                      <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-1.jpg" style="width:100%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-5-1.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-2.jpg" style="width:100%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;"> Home / Office -  Petits Table Lamp </p>
-
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-5-2.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Home / Office -  Petits Table...</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 50, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                   
                     </v-flex>
 
                     <v-flex sm4 xs4 >
-
-                        <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-161.jpg" style="width:80%;height:100%;margin-top:px;" >
+                        <center>
+                        <v-card class="ma-2 grey lighten-2" height="200" flat>
+                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-161.jpg" style="width:90%;height:100%;margin-top:px;" >
                             </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                        </v-carousel>
-                        <p class="text-center ma-1" style="font-size:9px;">Men / Women - Fashion Tops </p>
-
+                            <v-carousel-item style="margin-top:5px;">
+                                <img src="../../assets/images/product-41.jpg" style="width:90%;height:100%;margin-top:px;" >
+                            </v-carousel-item>  
+                            </v-carousel><br>
+                            
+                            <v-layout row wrap>
+                                
+                                <v-flex sm12 xs12>
+                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Men / Women - Fashion Tops</p>
+                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 20, 000</p>
+                                </v-flex>
+                            
+                            </v-layout>
+                           
+                        </v-card>
+                        </center>
+                       
                     </v-flex>
 
                     

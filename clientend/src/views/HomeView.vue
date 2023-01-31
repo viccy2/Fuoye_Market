@@ -755,8 +755,26 @@
             <v-layout row wrap>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/po.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
+                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                    <v-img
+                        src="../assets/images/po.jpg"
+                        lazy-src="../assets/images/po.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
@@ -764,8 +782,26 @@
               </v-flex>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/f.jpeg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
+                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                    <v-img
+                        src="../assets/images/f2.jpeg"
+                        lazy-src="../assets/images/f2.jpeg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -773,8 +809,26 @@
               </v-flex>
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/afolabisalawu.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
+                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                    <v-img
+                        src="../assets/images/afolabisalawu.jpg"
+                        lazy-src="../assets/images/afolabisalawu.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -783,8 +837,26 @@
              
               <v-flex md3 lg3>
                 <center>
-                  <v-card flat class=" ma-1 animate__animated animate__fadeIn" >
-                    <v-img src="../assets/images/k2.jpg" style="width:90%;height:300px;" class="rounded-xl"></v-img>
+                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                    <v-img
+                        src="../assets/images/k23.jpg"
+                        lazy-src="../assets/images/k23.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design)  </h2>
@@ -805,7 +877,26 @@
               <v-flex sm6 xs6>
                
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/po.jpg" style="width:;height:100%;" ></v-img>
+                    <v-img src="../assets/images/po.jpg" style="width:;height:100%;" 
+                      lazy-src="../assets/images/po.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                    >
+                    
+                      <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+              
+                    </v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
@@ -814,7 +905,26 @@
               <v-flex sm6 xs6>
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/f2.jpeg" style="width:;height:100%;" ></v-img>
+                    <v-img  src="../assets/images/f2.jpeg" style="width:;height:100%;" 
+                    lazy-src="../assets/images/f2.jpeg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                    >
+                    
+                      <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+              
+                    </v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
@@ -822,7 +932,26 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;" ></v-img>
+                    <v-img  src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;" 
+                        lazy-src="../assets/images/afolabisalawu.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                    >
+                    
+                      <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+              
+                    </v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
@@ -830,7 +959,26 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
-                    <v-img class="" src="../assets/images/k23.jpg" style="height:100%;" ></v-img>
+                    <v-img src="../assets/images/k23.jpg" style="height:100%;" 
+                      lazy-src="../assets/images/k23.jpg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                    >
+                    
+                      <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+              
+                    </v-img>
                   </v-card>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
