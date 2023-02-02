@@ -100,13 +100,18 @@
           <div class="service2 hidden-md-and-up" style="margin-top:10px">
             <v-container fluid>
               <div>
-                
+                <v-layout row wrap>
+                  <v-flex sm12 xs12>
+
                   <v-combobox
                     v-model="select"
                     :items="items"
-                    label="I use a scoped slot"
+                    label=""
                     multiple
                     chips
+                    rounded
+                    class="ma-2"
+                    style="width:100%"
                   >
                     <template v-slot:selection="data">
                       <v-chip
@@ -115,17 +120,21 @@
                         :input-value="data.selected"
                         :disabled="data.disabled"
                         @click:close="data.parent.selectItem(data.item)"
+                        style="font-size:10px;width:100%;"
                       >
                         <v-avatar
                           class="accent white--text"
                           left
                           v-text="data.item.slice(0, 1).toUpperCase()"
+                          style="font-size:10px;"
                         ></v-avatar>
                         {{ data.item }}
                       </v-chip>
                     </template>
                   </v-combobox>
-               
+                </v-flex>
+
+                </v-layout>
               </div>
             <v-layout row wrap>
                 <v-flex sm6 xs6 >
@@ -362,15 +371,9 @@ export default {
     name : 'product-content',
     data(){
         return{
-          select: ['Vuetify', 'Programming'],
-          items: [
-            'Programming',
-            'Design',
-            'Vue',
-            'Vuetify',
-          ],
-            category:[
-                'Drinks / Beverages',
+          select: [ 'Bakery Products / Snacks / Cereal & Flakes'],
+          items:[
+                'Grocery',
                 'Bakery Products / Snacks / Cereal & Flakes',
                 'Food Items / Foods',
                 'Frozen Food / Fish / Meat / Egg',
@@ -395,7 +398,12 @@ export default {
                 
 
 
-            ]
+            ],
+            select2: ['Ikole'],
+            items2 : [
+                'Ikole',
+                'Oye',
+            ],
         }
     }
 }

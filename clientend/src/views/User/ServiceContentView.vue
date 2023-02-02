@@ -87,6 +87,41 @@
           <div class="service2 hidden-md-and-up" style="margin-top:0px">
             <v-container fluid>
             <v-layout row wrap>
+                  <v-flex sm12 xs12>
+
+                  <v-combobox
+                    v-model="select"
+                    :items="items"
+                    label=""
+                    multiple
+                    chips
+                    rounded
+                    class="ma-2"
+                    style="width:100%"
+                  >
+                    <template v-slot:selection="data">
+                      <v-chip
+                        :key="JSON.stringify(data.item)"
+                        v-bind="data.attrs"
+                        :input-value="data.selected"
+                        :disabled="data.disabled"
+                        @click:close="data.parent.selectItem(data.item)"
+                        style="font-size:10px;width:100%;"
+                      >
+                        <v-avatar
+                          class="accent white--text"
+                          left
+                          v-text="data.item.slice(0, 1).toUpperCase()"
+                          style="font-size:10px;"
+                        ></v-avatar>
+                        {{ data.item }}
+                      </v-chip>
+                    </template>
+                  </v-combobox>
+                </v-flex>
+
+            </v-layout>
+            <v-layout row wrap>
                 <v-flex sm6 xs6>
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
                         <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
@@ -185,7 +220,8 @@ export default {
     name : 'service-content',
     data(){
         return{
-            category:[
+            select: [ 'Engenieering / Manufacturing Services'],
+            items:[
                'Beauty Services',
                'Hair Styling / Barbing Services',
                'House Keeping / Cleaning Services',
