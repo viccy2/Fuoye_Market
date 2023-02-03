@@ -337,8 +337,8 @@
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;"> Computing. </h2>
-                </center> 
-              </v-flex><br>
+                </center> <br><br><br><br>
+              </v-flex>
 
               <v-flex md3 lg3>
                 <center>
@@ -347,11 +347,11 @@
                     <img src="../assets/images/img8.jpg" style="height:70%;margin-top:px;" >
                   </v-carousel-item>
                   <v-carousel-item >
-                    <img src="../assets/images/img10.jpg" style="height:70%;margin-top:px;" >
+                    <img src="../assets/images/img10.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;"> Electronics. </h2>
-                </center>  
+                </center><br><br><br><br>
               </v-flex>
 
               <v-flex md3 lg3>
@@ -365,7 +365,7 @@
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;">Fashion.</h2>
-                </center> 
+                </center> <br><br><br><br>
               </v-flex>
 
               <v-flex md3 lg3>
@@ -379,7 +379,7 @@
                   </v-carousel-item>
                 </v-carousel><br>
                 <h2 id="h26" style="font-size:11px;">Gaming.</h2>
-                </center> 
+                </center> <br><br><br><br>
               </v-flex>
 
               <v-flex md3 lg3>
@@ -451,7 +451,7 @@
               <v-container class="animate__animated animate__zoomIn animate__slower">
 
                   <v-layout row wrap>
-                    <v-flex sm4 xs4>
+                    <!-- <v-flex sm4 xs4>
                     <center>
                       <v-card flat class=" ma-1">
                         <v-carousel :show-arrows="false" height="" cycle hide-delimiters >
@@ -465,132 +465,125 @@
                         <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Computing.</v-card-title>
                       </v-card>
                     </center> 
-                    </v-flex>
+                    </v-flex> -->
                     
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3" >
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/product-10.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-10.jpg" style="width:100%;" >
                           </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-15.jpg" style="width:100%;height:80%;" >
-                          </v-carousel-item>
+                          
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Electronics.</v-card-title>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Electronics.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/n7.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-8a.jpg" style="width:100%;" >
                           </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-8a.jpg" style="width:100%;height:80%;" >
-                          </v-carousel-item>
+                          
                         </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Gaming.</v-card-title>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Gaming.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/product-41.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-41.jpg" style="width:100%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/product-161.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-161.jpg" style="width:100%;" >
                           </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-15px;">Fashion.</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;margin-top:-15px;">Fashion.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/product-14-2.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-14-2.jpg" style="width:100%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/product-14-1.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-14-1.jpg" style="width:100%;" >
                           </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Furniture.</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;margin-top:-26px;">Furniture.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/n36.jpg" style="width:100%;height:90%;" >
+                            <img src="../assets/images/n36.jpg" style="width:100%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/product-3-21.jpg" style="width:100%;height:90%;" >
+                            <img src="../assets/images/product-3-21.jpg" style="width:100%;" >
                           </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-25px;">Sporting.</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Sporting.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/n39.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/img7.jpg" style="width:100%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/product-90.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/product-90.jpg" style="width:100%;" >
                           </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Device</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Device</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/product-5-1.jpg" style="width:100%;height:80%;" >
+                            <img src="../assets/images/img9.jpg" style="width:100%;" >
                           </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-5-2.jpg" style="width:100%;height:80%;" >
-                          </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Appliance.</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Appliance.</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
 
-                    <v-flex sm4 xs4>
+                    <v-flex sm6 xs6>
                     <center>
-                      <v-card flat class=" ma-1">
+                      <v-card flat class=" ma-3">
                         <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                           <v-carousel-item >
-                            <img src="../assets/images/img4.jpg" style="width:100%;height:100%;" >
+                            <img src="../assets/images/img4.jpg" style="width:100%;" >
                           </v-carousel-item>
                           <v-carousel-item >
-                            <img src="../assets/images/img5.jpg" style="width:100%;height:100%;" >
+                            <img src="../assets/images/img5.jpg" style="width:100%;" >
                           </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:6px;">Grocery</v-card-title>
+                        </v-carousel><br>
+                        <v-card-text style="font-size:11px;font-weight:bold;">Grocery</v-card-text>
                       </v-card>
                     </center> 
                     </v-flex>
