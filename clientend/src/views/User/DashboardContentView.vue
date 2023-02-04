@@ -76,206 +76,263 @@
                  <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
                     <v-layout row wrap class="pa-3" style="margin-top:-20px">
 
-                    <v-flex lg3 md3 sm6 xs6 class="ma-2">
-                        <template>
-  <v-card
-    :loading="loading"
-    class="mx-auto my-12"
-    max-width="374"
-  >
-    <template slot="progress">
-      <v-progress-linear
-        color="deep-purple"
-        height="10"
-        indeterminate
-      ></v-progress-linear>
-    </template>
-
-    <v-img
-      height="250"
-      src="../../assets/images/17.jpg"
-    ></v-img>
-
-    <v-card-title>Cafe Badilico</v-card-title>
-
-    <v-card-text>
-      <v-row
-        align="center"
-        class="mx-0"
-      >
-        <v-rating
-          :value="4.5"
-          color="amber"
-          dense
-          half-increments
-          readonly
-          size="14"
-        ></v-rating>
-
-        <div class="grey--text ms-4">
-          4.5 (413)
-        </div>
-      </v-row>
-
-      <div class="my-4 text-subtitle-1">
-        $ • Italian, Cafe
-      </div>
-
-      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-    </v-card-text>
-
-    <v-divider class="mx-4"></v-divider>
-
-    <v-card-title>Tonight's availability</v-card-title>
-
-    <v-card-text>
-      <v-chip-group
-        v-model="selection"
-        active-class="deep-purple accent-4 white--text"
-        column
-      >
-        <v-chip>5:30PM</v-chip>
-
-        <v-chip>7:30PM</v-chip>
-
-        <v-chip>8:00PM</v-chip>
-
-        <v-chip>9:00PM</v-chip>
-      </v-chip-group>
-    </v-card-text>
-
-    <v-card-actions>
-      <v-btn
-        color="deep-purple lighten-2"
-        text
-        @click="reserve"
-      >
-        Reserve
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</template>
-                        <!-- <v-card
-                            class="ma-3 "
-                            max-width="400"
-                        >
+                    <v-flex lg4 md4 class="">
+                      
+                            <v-card
+                                :loading="loading"
+                                class="mx-auto my-12"
+                                max-width="374" >
+                            <template slot="progress">
+                                <v-progress-linear
+                                    color="deep-purple"
+                                    height="10"
+                                    indeterminate>
+                                </v-progress-linear>
+                            </template>
                             <v-img
-                            class="white--text align-end"
-                            height="200px"
-                            src="../../assets/images/17.jpg"
-                            >
-                            <v-card-title>Top 10 Australian beaches</v-card-title>
+                                height="250"
+                                src="../../assets/images/b.jpg">
                             </v-img>
+                            <v-card-title>Adele foods</v-card-title>
 
-                            <v-card-subtitle class="pb-0">
-                            Number 10
-                            </v-card-subtitle>
+                            <v-card-text>
+                            <v-row
+                            align="center"
+                            class="mx-0">
+                            <v-rating
+                                :value="4.5"
+                                color="amber"
+                                dense
+                                half-increments
+                                readonly
+                                size="14"
+                                ></v-rating>
 
-                            <v-card-text class="text--primary">
-                            <div>Whitehaven Beach</div>
+                                <div class="grey--text ms-4">
+                                4.5 
+                                </div>
+                            </v-row>
 
-                            <div>Whitsunday Island, Whitsunday Islands</div>
+                            <div class="my-4 text-subtitle-1">
+                                 • Location : Ikole-Ekiti
+                            </div>
+
+                            <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
                             </v-card-text>
 
-                            <v-card-actions>
-                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card> -->
+                            <v-divider class="mx-4"></v-divider>
 
-                    </v-flex>
+                            <v-card-title>Availability</v-card-title>
 
-                    <v-flex lg3 md3 sm6 xs6 >
-
-                        <v-card
-                            class="ma-3 "
-                            max-width="400"
-                        >
-                            <v-img
-                            class="white--text align-end"
-                            height="200px"
-                            src="../../assets/images/17.jpg"
+                            <v-card-text>
+                            <p> Days : </p>
+                            <v-chip-group
+                                
+                                active-class="deep-purple accent-4 white--text"
+                                column
                             >
-                            <v-card-title>Top 10 Australian beaches</v-card-title>
-                            </v-img>
-
-                            <v-card-subtitle class="pb-0">
-                            Number 10
-                            </v-card-subtitle>
-
-                            <v-card-text class="text--primary">
-                            <div>Whitehaven Beach</div>
-
-                            <div>Whitsunday Island, Whitsunday Islands</div>
+                                
+                                <v-chip>Monday</v-chip>
+                                <v-chip>Tuesday</v-chip>
+                                <v-chip>Wednesday</v-chip>
+                                <v-chip>Thursday</v-chip>
+                                <v-chip>Friday</v-chip>
+                                <v-chip>Saturday</v-chip>
+                            </v-chip-group><br>
+                            <p> Time : </p>
+                            <v-chip-group
+                                
+                                active-class="deep-purple accent-4 white--text"
+                                column
+                            >
+                               <v-layout row wrap>
+                                <v-flex lg6 md6 class="pa-3">
+                                    <v-chip>12:00AM</v-chip>
+                                </v-flex>
+                                <v-flex lg6 md6 class="pa-3">
+                                    <v-chip>12:00PM</v-chip>
+                                </v-flex>
+                               </v-layout>
+                            
+                            </v-chip-group>
                             </v-card-text>
 
-                            <v-card-actions>
-                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
                         </v-card>
 
                     </v-flex>
 
-                    <v-flex lg3 md3 sm6 xs6 >
+                    
+                    <v-flex lg4 md4 class="">
+                      
+                      <v-card
+                          :loading="loading"
+                          class="mx-auto my-12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="250"
+                          src="../../assets/images/about-img-1.jpg">
+                      </v-img>
+                      <v-card-title>Dan Photography</v-card-title>
 
-                        <v-card
-                            class="ma-3 "
-                            max-width="400"
-                        >
-                            <v-img
-                            class="white--text align-end"
-                            height="200px"
-                            src="../../assets/images/17.jpg"
-                            >
-                            <v-card-title>Top 10 Australian beaches</v-card-title>
-                            </v-img>
+                      <v-card-text>
+                      <v-row
+                      align="center"
+                      class="mx-0">
+                      <v-rating
+                          :value="4.5"
+                          color="amber"
+                          dense
+                          half-increments
+                          readonly
+                          size="14"
+                          ></v-rating>
 
-                            <v-card-subtitle class="pb-0">
-                            Number 10
-                            </v-card-subtitle>
+                          <div class="grey--text ms-4">
+                          4.5 
+                          </div>
+                      </v-row>
 
-                            <v-card-text class="text--primary">
-                            <div>Whitehaven Beach</div>
+                      <div class="my-4 text-subtitle-1">
+                           • Location : Oye-Ekiti
+                      </div>
 
-                            <div>Whitsunday Island, Whitsunday Islands</div>
-                            </v-card-text>
+                      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      </v-card-text>
 
-                            <v-card-actions>
-                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card>
+                      <v-divider class="mx-4"></v-divider>
 
-                    </v-flex>
+                      <v-card-title>Availability</v-card-title>
 
-                    <v-flex lg3 md3 sm6 xs6 >
+                      <v-card-text>
+                      <p> Days : </p>
+                      <v-chip-group
+                          
+                          active-class="deep-purple accent-4 white--text"
+                          column
+                      >
+                          
+                          <v-chip>Monday</v-chip>
+                          <v-chip>Tuesday</v-chip>
+                          <v-chip>Wednesday</v-chip>
+                          <v-chip>Thursday</v-chip>
+                          <v-chip>Friday</v-chip>
+                          <v-chip>Saturday</v-chip>
+                          <v-chip>Sunday</v-chip>
+                      </v-chip-group><br>
+                      <p> Time : </p>
+                      <v-chip-group
+                          
+                          active-class="deep-purple accent-4 white--text"
+                          column
+                      >
+                         <v-layout row wrap>
+                          <v-flex lg6 md6 class="pa-3">
+                              <v-chip>08:00AM</v-chip>
+                          </v-flex>
+                          <v-flex lg6 md6 class="pa-3">
+                              <v-chip>10:00PM</v-chip>
+                          </v-flex>
+                         </v-layout>
+                      
+                      </v-chip-group>
+                      </v-card-text>
 
-                        <v-card
-                            class="ma-3 "
-                            max-width="400"
-                        >
-                            <v-img
-                            class="white--text align-end"
-                            height="200px"
-                            src="../../assets/images/pel.jpg"
-                            >
-                            <v-card-title>Top 10 Australian beaches</v-card-title>
-                            </v-img>
+                  </v-card>
 
-                            <v-card-subtitle class="pb-0">
-                            Number 10
-                            </v-card-subtitle>
+              </v-flex>
 
-                            <v-card-text class="text--primary">
-                            <div>Whitehaven Beach</div>
 
-                            <div>Whitsunday Island, Whitsunday Islands</div>
-                            </v-card-text>
+              <v-flex lg4 md4 class="">
+                      
+                      <v-card
+                          :loading="loading"
+                          class="mx-auto my-12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="250"
+                          src="../../assets/images/17.jpg">
+                      </v-img>
+                      <v-card-title>Bola Store</v-card-title>
 
-                            <v-card-actions>
-                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card>
+                      <v-card-text>
+                      <v-row
+                      align="center"
+                      class="mx-0">
+                      <v-rating
+                          :value="4.5"
+                          color="amber"
+                          dense
+                          half-increments
+                          readonly
+                          size="14"
+                          ></v-rating>
 
-                    </v-flex>
+                          <div class="grey--text ms-4">
+                          4.5 
+                          </div>
+                      </v-row>
+
+                      <div class="my-4 text-subtitle-1">
+                           • Location : Oye-Ekiti
+                      </div>
+
+                      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      </v-card-text>
+
+                      <v-divider class="mx-4"></v-divider>
+
+                      <v-card-title>Availability</v-card-title>
+
+                      <v-card-text>
+                      <p> Days : </p>
+                      <v-chip-group
+                          
+                          active-class="deep-purple accent-4 white--text"
+                          column
+                      >
+                          
+                          <v-chip>Monday</v-chip>
+                          <v-chip>Tuesday</v-chip>
+                          <v-chip>Wednesday</v-chip>
+                          <v-chip>Thursday</v-chip>
+                          <v-chip>Friday</v-chip>
+                         
+                      </v-chip-group><br>
+                      <p> Time : </p>
+                      <v-chip-group
+                          
+                          active-class="deep-purple accent-4 white--text"
+                          column
+                      >
+                         <v-layout row wrap>
+                          <v-flex lg6 md6 class="pa-3">
+                              <v-chip>10:00AM</v-chip>
+                          </v-flex>
+                          <v-flex lg6 md6 class="pa-3">
+                              <v-chip>06:00PM</v-chip>
+                          </v-flex>
+                         </v-layout>
+                      
+                      </v-chip-group>
+                      </v-card-text>
+
+                  </v-card>
+
+              </v-flex>
 
                     
                     
@@ -293,11 +350,23 @@
                  <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
                     <v-layout row wrap class="pa-3" style="margin-top:-20px">
 
-                    <v-flex sm6 xs6  >
-
-                        <v-card class="ma-2 grey lighten-2">
-                            <v-img src="../../assets/images/b.jpg" 
-                            lazy-src="../../assets/images/b.jpg"
+                        <v-flex sm6 xs6 class="pa-1">
+                      
+                      <v-card
+                          :loading="loading"
+                          class="mx-auto my-12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/17.jpg"
+                          lazy-src="../../assets/images/17.jpg"
                             aspect-ratio="1"
                             class="grey lighten-2"
                       >
@@ -313,33 +382,58 @@
                             ></v-progress-circular>
                           </v-row>
                         </template>
-                      </v-img>
-                            <v-layout row wrap>
-                                <v-flex sm8 xs8>
-                                    <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Bola foods.</v-card-title>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                   <span><v-icon color="success" style="margin-top:20px;">mdi-check-circle</v-icon></span>
-                                </v-flex>
-                                <v-flex sm2 xs2>
-                                
-                                </v-flex>
-                            </v-layout>
-                            <v-card-actions style="margin-top:0px">
-                                <v-btn small :to="{name : 'seller-page'}" color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card>
+                        </v-img>
+                      <v-card-title>Bola Store</v-card-title>
 
-                    </v-flex>
+                      <v-card-text>
+                      <v-row
+                      align="center"
+                      class="mx-0">
+                      <v-rating
+                          :value="4.5"
+                          color="amber"
+                          dense
+                          half-increments
+                          readonly
+                          size="14"
+                          ></v-rating>
 
-                    <v-flex sm6 xs6  >
+                          <div class="grey--text ms-4">
+                          4.5 
+                          </div>
+                      </v-row>
 
-                        <v-card class="ma-2 grey lighten-2" >
-                            <v-img src="../../assets/images/pel.jpg"
-                            lazy-src="../../assets/images/pel.jpg"
+                      <div class="my-4 " style="font-size:11px;">
+                           • Location : Oye-Ekiti
+                      </div>
+
+                      <div style="font-size:10px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      </v-card-text>
+
+                      <v-divider class="mx-4"></v-divider>
+
+                  </v-card>
+
+              </v-flex>
+
+                    
+              <v-flex sm6 xs6 class="pa-1">
+                      
+                      <v-card
+                          :loading="loading"
+                          class="mx-auto my-12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/pel.jpg"
+                          lazy-src="../../assets/images/pel.jpg"
                             aspect-ratio="1"
                             class="grey lighten-2"
                       >
@@ -355,27 +449,39 @@
                             ></v-progress-circular>
                           </v-row>
                         </template>
-                      </v-img>
-                            <v-layout row wrap>
-                                <v-flex sm8 xs8>
-                                    <v-card-title class="ma-1"  style="font-size:10px;font-weight:bold;">Pelvix Sell.</v-card-title>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                   <span><v-icon color="success" style="margin-top:20px;">mdi-check-circle</v-icon></span>
-                                </v-flex>
-                                <v-flex sm2 xs2>
-                                
-                                </v-flex>
-                            </v-layout>
-                            <v-card-actions style="margin-top:0px">
-                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded outlined class="text-capitalize" style="width:100%;font-size:11px;">Connect</v-btn>
-                            </v-card-actions>
-                        </v-card>
+                        </v-img>
+                      <v-card-title>Pelvix</v-card-title>
 
-                    </v-flex>
+                      <v-card-text>
+                      <v-row
+                      align="center"
+                      class="mx-0">
+                      <v-rating
+                          :value="4.5"
+                          color="amber"
+                          dense
+                          half-increments
+                          readonly
+                          size="14"
+                          ></v-rating>
+
+                          <div class="grey--text ms-4">
+                          4.5 
+                          </div>
+                      </v-row>
+
+                      <div class="my-4 " style="font-size:11px;">
+                           • Location : Ikole-Ekiti
+                      </div>
+
+                      <div style="font-size:10px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      </v-card-text>
+
+                      <v-divider class="mx-4"></v-divider>
+
+                  </v-card>
+
+              </v-flex>
 
 
                     
@@ -401,286 +507,352 @@
                     <!-- DISPLAY ON LARGE DEVICE -->
                     <div class="hidden-sm-and-down">
                     <v-layout row wrap>
-                    <v-flex lg3 md3 class="ma-2">
+                    <v-flex lg4 md4 class="">
                          <center>
-                            <template>
-  <v-card
-    class="mx-auto "
-    max-width="344"
-  >
-    <v-img
-      src="../../assets/images/product-15.jpg"
-      height="200px"
-    ></v-img>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-15.jpg"
+                                    height="200px"
+                                    ></v-img>
 
-    <v-card-title style="font-size:14px;">
-        Samsung -55" Class LED 2160p Smart
-    </v-card-title>
+                                    <v-card-title style="font-size:14px;">
+                                        Samsung -55" Class LED 2160p Smart
+                                    </v-card-title>
 
-    <v-card-subtitle>
-      # 500, 000
-    </v-card-subtitle>
+                                    <v-card-subtitle>
+                                    # 500, 000
+                                    </v-card-subtitle>
 
-    <v-card-actions>
-      <v-btn
-        color="orange lighten-2"
-        text
-      >
-        Explore
-      </v-btn>
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
 
-      <v-spacer></v-spacer>
+                                    <v-spacer></v-spacer>
 
-      <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-      </v-btn>
-    </v-card-actions>
+                                    </v-card-actions>
 
-    <v-expand-transition>
-      <div v-show="show">
-        <v-divider></v-divider>
+                                   
+                                </v-card>
 
-        <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-        </v-card-text>
-      </div>
-    </v-expand-transition>
-  </v-card>
-</template>
-                        <!-- <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-15.jpg" style="width:80%;height:100%;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Samsung -55" Class LED 2160p Smart.</v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:10px;"># 700, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card> -->
+                        </center><br>
+                        
+                    </v-flex>
+
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-90.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Apple Smart Watch Series 4
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br>
+                        
+                    </v-flex>
+                    
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/n32.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Bose - SoundSport wireless headphone.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br>
+                        
+                    </v-flex>
+                  
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-8a.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Microsoft - Refurbish Xbox One S 500GB.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br>
+                        
+                    </v-flex>
+                   
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/n30.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Sony - Alpha a5100 Mirrorless Camera.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br>
+                        
+                    </v-flex>
+             
+                
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-17.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Google - Home Hub with Google Assistant.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br><br>
+                        
+                    </v-flex>
+                    
+
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-161.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Men / Women - Fashion Tops. 
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 20, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center><br>
+                        
+                    </v-flex>
+                   
+
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-5-1.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Home / Office -  Petits Table Lamp.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 15, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
                         </center>
                         
                     </v-flex>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-90.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n33.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Apple Watch Series 4 . </v-card-title>
-                                </v-flex>
-                            
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    </v-flex>
+                    <v-flex lg4 md4 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-16-2.jpg"
+                                    height="200px"
+                                    ></v-img>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                         <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/n32.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n50.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Bose - SoundSport wireless headphone. </v-card-title>
-                                </v-flex>
-                               
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    </v-flex>
+                                    <v-card-title style="font-size:14px;">
+                                        Home / Office -  Table Lamp.
+                                    </v-card-title>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-8a.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Microsoft - Refurbish Xbox One S 500GB.</v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 150, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                       </center>
-                    </v-flex>
+                                    <v-card-subtitle>
+                                    # 15, 000
+                                    </v-card-subtitle>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/n30.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Sony - Alpha a5100 Mirrorless Camera.</v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 120, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    </v-flex>
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                            
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-17.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Google - Home Hub with Google Assist...</v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 120, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    </v-flex>
+                                    <v-spacer></v-spacer>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-41.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-161.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Men / Women - Fashion Tops. </v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 20, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    </v-flex>
+                                    </v-card-actions>
 
-                    <v-flex lg3 md3 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="300" ><br>
-                            <v-carousel  height="200" cycle hide-delimiters :show-arrows="false">
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-1.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item >
-                                <img src="../../assets/images/product-5-2.jpg" style="width:80%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            </v-carousel><br>
-                            <v-layout row wrap>
-                                <v-flex sm9 xs9>
-                                    <v-card-title class="ma-1"  style="font-size:11px;font-weight:bold;">Home / Office -  Petits Table Lamp. </v-card-title>
-                                </v-flex>
-                                
-                                <v-flex sm2 xs2>
-                                    <p class="text-center " style="font-size:11px;margin-top:20px;"># 10, 000</p>
-                                </v-flex>
-                                <v-flex sm1 xs1>
-                                
-                                </v-flex>
-                                
-                            </v-layout>
-                           
-                        </v-card>
+                                </v-card>
+
                         </center>
+                        
                     </v-flex>
+                    
                     
                     </v-layout>
                 </div>
@@ -689,239 +861,315 @@
                 <!-- DISPLAY ON SMALL DEVICE -->
                 <div class="hidden-md-and-up">
                 <v-layout row wrap style="margin-top:-20px">
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-15.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-15.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Samsung -55" LED...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 700, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                    </center>
-                    </v-flex>
 
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-90.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/n33.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;">Apple Watch Series 4</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-15.jpg"
+                                    height="200px"
+                                    ></v-img>
 
-                    </v-flex>
+                                    <v-card-title style="font-size:14px;">
+                                        Samsung -55" Class 
+                                    </v-card-title>
 
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/n32.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/n50.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;">Bose - SoundSport...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                    
-                    </v-flex>
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
 
-                     <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-8a.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-8a.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Microsoft - Refurbish...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
 
-                    </v-flex>
+                                    <v-spacer></v-spacer>
 
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/n30.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/n30.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Sony - Alpha Camera...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
+                                    </v-card-actions>
+
+                                </v-card>
+
                         </center>
                         
                     </v-flex>
-
-                     <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-17.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-17.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Google - Home Hub...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 100, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                       
-                    </v-flex>
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-6-1.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-6-2.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Furniture - Elephant ...</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 60, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                      
-                    </v-flex>
-
-                     <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-5-1.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-5-2.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Home / Office -Light</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 50, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                   
-                    </v-flex>
-
-                    <v-flex sm4 xs4 >
-                        <center>
-                        <v-card class="ma-2 grey lighten-2" height="200" flat>
-                            <v-carousel  height="100" cycle hide-delimiters :show-arrows="false" >
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-161.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>
-                            <v-carousel-item style="margin-top:5px;">
-                                <img src="../../assets/images/product-41.jpg" style="width:90%;height:100%;margin-top:px;" >
-                            </v-carousel-item>  
-                            </v-carousel><br>
-                            
-                            <v-layout row wrap>
-                                
-                                <v-flex sm12 xs12>
-                                    <p class="ma-2 text-center " style="font-size:8px;margin-top:-50px;">Women - Fashion Tops</p>
-                                    <p class="ma-5 text-center " style="font-size:10px;float:right;"># 20, 000</p>
-                                </v-flex>
-                            
-                            </v-layout>
-                           
-                        </v-card>
-                        </center>
-                       
-                    </v-flex>
-
                     
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-90.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Apple Watch Series 4
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                    
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/n50.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Bose - SoundSport .
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 50, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-8a.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Microsoft - Xbox.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 300, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                  
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/n30.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Sony - Alpha Camera.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 200, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                    
+                    
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-17.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Google - Home Hub.
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 150, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                    
+                     
+                        <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-6-1.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Furniture - Elephant 
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 35, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                  
+                    
+
+                    <v-flex sm6 xs6 class="">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto "
+                                    max-width="344"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-5-1.jpg"
+                                    height="200px"
+                                    ></v-img>
+
+                                    <v-card-title style="font-size:14px;">
+                                        Home / Office -Light
+                                    </v-card-title>
+
+                                    <v-card-subtitle>
+                                    # 15, 000
+                                    </v-card-subtitle>
+
+                                    <v-card-actions>
+                                    <v-btn
+                                        color="#673AB7 "
+                                        text
+                                    >
+                                        Explore
+                                    </v-btn>
+
+                                    <v-spacer></v-spacer>
+
+                                    </v-card-actions>
+
+                                </v-card>
+
+                        </center>
+                        
+                    </v-flex>
+                 
                 </v-layout>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->
@@ -1025,7 +1273,7 @@ export default {
             name : true,
             show: false,
             loading: false,
-            selection: 1,
+           
         }
     },
     methods:{
