@@ -451,140 +451,283 @@
               <v-container class="animate__animated animate__zoomIn animate__slower">
 
                   <v-layout row wrap>
-                    <!-- <v-flex sm4 xs4>
+                    <v-flex sm6 xs6 class="pa-1">
                     <center>
-                      <v-card flat class=" ma-1">
-                        <v-carousel :show-arrows="false" height="" cycle hide-delimiters >
-                          <v-carousel-item >
-                            <img src="../assets/images/product-3b.jpg" style="width:100%;height:80%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/n212.jpg" style="width:100%;height:80%;" >
-                          </v-carousel-item>
-                        </v-carousel>
-                        <v-card-title style="font-size:11px;font-weight:bold;margin-top:-26px;">Computing.</v-card-title>
-                      </v-card>
-                    </center> 
-                    </v-flex> -->
-                    
-                    <v-flex sm6 xs6>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-3b.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/n212.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Computing.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
                     <center>
-                      <v-card flat class=" ma-3" >
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/product-10.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          
-                        </v-carousel>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Electronics.</v-card-text>
-                      </v-card>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-10.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img10.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Electronics.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img1.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img2.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Gaming.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-11-1.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/n35.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Fashion - Men & Women.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-3.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/n52.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Home & Office.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-4.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-51.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Sporting.
+                        </v-card-title>
+                    </v-card>
+
                     </center> 
                     </v-flex>
 
-                    <v-flex sm6 xs6>
+                    <v-flex sm6 xs6 class="pa-1">
                     <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/product-8a.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          
-                        </v-carousel>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Gaming.</v-card-text>
-                      </v-card>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img7.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-90.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Mobile / Smart device.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img3.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img9.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                           Appliance - Home.
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm6 xs6 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
+
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img4.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/img5.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                         Grocery.
+                        </v-card-title>
+                    </v-card>
+
                     </center> 
                     </v-flex>
 
-                    <v-flex sm6 xs6>
+                    <v-flex sm6 xs6 class="pa-1">
                     <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/product-41.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-161.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;margin-top:-15px;">Fashion.</v-card-text>
-                      </v-card>
-                    </center> 
-                    </v-flex>
+                    <v-card
+                      class="mx-auto"
+                      max-width="344">
 
-                    <v-flex sm6 xs6>
-                    <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/product-14-2.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-14-1.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;margin-top:-26px;">Furniture.</v-card-text>
-                      </v-card>
-                    </center> 
-                    </v-flex>
+                      <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-2-1.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                        <v-carousel-item >
+                            <v-img
+                              src="../assets/images/product-9.jpg"
+                              height="120px">
+                            </v-img>
+                        </v-carousel-item>
+                      </v-carousel>
+                      <v-card-title style="font-size:10px;">
+                          Footwear.
+                        </v-card-title>
+                    </v-card>
 
-                    <v-flex sm6 xs6>
-                    <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/n36.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-3-21.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Sporting.</v-card-text>
-                      </v-card>
-                    </center> 
-                    </v-flex>
-
-                    <v-flex sm6 xs6>
-                    <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/img7.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/product-90.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Device</v-card-text>
-                      </v-card>
-                    </center> 
-                    </v-flex>
-
-                    <v-flex sm6 xs6>
-                    <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/img9.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Appliance.</v-card-text>
-                      </v-card>
-                    </center> 
-                    </v-flex>
-
-                    <v-flex sm6 xs6>
-                    <center>
-                      <v-card flat class=" ma-3">
-                        <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
-                          <v-carousel-item >
-                            <img src="../assets/images/img4.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                          <v-carousel-item >
-                            <img src="../assets/images/img5.jpg" style="width:100%;" >
-                          </v-carousel-item>
-                        </v-carousel><br>
-                        <v-card-text style="font-size:11px;font-weight:bold;">Grocery</v-card-text>
-                      </v-card>
                     </center> 
                     </v-flex>
 
