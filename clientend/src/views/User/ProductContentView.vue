@@ -137,33 +137,52 @@
                 </v-layout>
               </div>
             <v-layout row wrap>
-                <v-flex sm6 xs6 >
-                    <v-card flat class="ma-2 grey lighten-2" :to="{name : 'product-details'}" height="300">
-                        <v-img src="../../assets/images/product-51.jpg" style="height:200px;" 
-                        lazy-src="../../assets/images/product-51.jpg"
-                        aspect-ratio="1"
-                        class="grey lighten-2"
-                      >
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                        </template>
-                      </v-img><br>
-                        <span class="font-weight-bold ma-3" style="font-size:12px;">Price : #50,000</span><br><br>  
-                            <v-btn small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Helment</span>
-                            </v-btn>
+              <v-flex sm6 xs6 class="pa-2">
+                         <center>
+                                                        
+                                <v-card
+                                    class="mx-auto grey lighten-2"
+                                    max-width="344"
+                                    :to="{name : 'product-details'}"
+                                >
+                                    <v-img
+                                    src="../../assets/images/product-51.jpg"
+                                    height="200px"
+                                    lazy-src="../../assets/images/product-51.jpg"
+                                    aspect-ratio="1"
+                                    class="grey lighten-2"
+                                  >
+                                    <template v-slot:placeholder>
+                                      <v-row
+                                        class="fill-height ma-0"
+                                        align="center"
+                                        justify="center"
+                                      >
+                                        <v-progress-circular
+                                          indeterminate
+                                          color="grey lighten-5"
+                                        ></v-progress-circular>
+                                      </v-row>
+                                    </template>
+                                  </v-img>
+
+                                    <v-card-title style="font-size:12px;">
+                                        Helmet
+                                    </v-card-title>
+
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                                    # 15, 000
+                                    </v-card-subtitle>
+                                    <v-card-text style="font-size:10px;">
+                                      • Location : Ikole-Ekiti.
+                                    </v-card-text>
+
+                                </v-card>
+
+                        </center>
                         
-                    </v-card>
-                </v-flex>
+                    </v-flex>
+                
                 <v-flex sm6 xs6 >
                     <v-card flat class="ma-2 grey lighten-2" :to="{name : 'product-details'}" height="300">
                         <v-img src="../../assets/images/product-6-1.jpg" style="height:200px;" 

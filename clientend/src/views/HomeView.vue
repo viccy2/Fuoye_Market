@@ -454,24 +454,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Computing.
                         </v-card-title>
                     </v-card>
@@ -482,24 +482,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Electronics.
                         </v-card-title>
                     </v-card>
@@ -510,24 +510,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Gaming.
                         </v-card-title>
                     </v-card>
@@ -538,24 +538,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Fashion - Men & Women.
                         </v-card-title>
                     </v-card>
@@ -566,24 +566,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Home & Office.
                         </v-card-title>
                     </v-card>
@@ -594,24 +594,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-4.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-51.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Sporting.
                         </v-card-title>
                     </v-card>
@@ -622,25 +622,25 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img7.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
-                          Mobile / Smart device.
+                      <v-card-title style="font-size:10px;color:#673AB7;">
+                          Smart device.
                         </v-card-title>
                     </v-card>
 
@@ -650,24 +650,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                            Appliance - Home.
                         </v-card-title>
                     </v-card>
@@ -678,24 +678,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                          Grocery.
                         </v-card-title>
                     </v-card>
@@ -706,24 +706,24 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto"
+                      class="mx-auto grey lighten-2"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="120px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;">
+                      <v-card-title style="font-size:10px;color:#673AB7;">
                           Footwear.
                         </v-card-title>
                     </v-card>
@@ -1197,11 +1197,11 @@
                 </div>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
-                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
+                  <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
-                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
+                  <a href="https://www.instagram.com/fuoye_market/" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
                   </v-btn></a>
@@ -1236,11 +1236,11 @@
                 <h2 id="h27" >Contact Us</h2><br>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
-                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
+                  <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
-                  <a href="https://www.facebook.com/profile.php?id=100035539115115" style="text-decoration:none">
+                  <a href="https://www.instagram.com/fuoye_market/" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-2 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
                   </v-btn></a>

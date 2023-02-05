@@ -348,9 +348,9 @@
                     <v-card flat elevation=''>
                  <v-container fluid>
                  <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
-                    <v-layout row wrap class="pa-3" style="margin-top:-20px">
+                    <v-layout row wrap style="margin-top:-40px">
 
-                        <v-flex sm6 xs6 class="pa-1">
+                        <v-flex sm6 xs6 class="pa-2">
                       
                       <v-card
                           :loading="loading"
@@ -383,14 +383,14 @@
                           </v-row>
                         </template>
                         </v-img>
-                      <v-card-title>Bola Store</v-card-title>
+                      <v-card-title style="font-size:13px;">Bola Store</v-card-title>
 
                       <v-card-text>
                       <v-row
                       align="center"
                       class="mx-0">
                       <v-rating
-                          :value="4.5"
+                          :value="5.0"
                           color="amber"
                           dense
                           half-increments
@@ -399,16 +399,21 @@
                           ></v-rating>
 
                           <div class="grey--text ms-4">
-                          4.5 
+                          5.0
                           </div>
                       </v-row>
 
-                      <div class="my-4 " style="font-size:11px;">
-                           • Location : Oye-Ekiti
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Oye-Ekiti.
+                      </div>
+                      <div class="my-4 " style="font-size:10px;">
+                           • Category : Grocery.
                       </div>
 
-                      <div style="font-size:10px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-                      </v-card-text>
+                      <div>
+                        <v-btn small :to="{name : 'seller-page'}" outlined color='#673AB7' rounded  class="text-capitalize" style="width:100%;"><span style="color:#673AB7">Connect</span></v-btn>
+                      </div>                      
+                    </v-card-text>
 
                       <v-divider class="mx-4"></v-divider>
 
@@ -417,7 +422,7 @@
               </v-flex>
 
                     
-              <v-flex sm6 xs6 class="pa-1">
+              <v-flex sm6 xs6 class="pa-2">
                       
                       <v-card
                           :loading="loading"
@@ -450,14 +455,14 @@
                           </v-row>
                         </template>
                         </v-img>
-                      <v-card-title>Pelvix</v-card-title>
+                      <v-card-title style="font-size:13px;">Pelvix.</v-card-title>
 
                       <v-card-text>
                       <v-row
                       align="center"
                       class="mx-0">
                       <v-rating
-                          :value="4.5"
+                          :value="5.0"
                           color="amber"
                           dense
                           half-increments
@@ -466,18 +471,23 @@
                           ></v-rating>
 
                           <div class="grey--text ms-4">
-                          4.5 
+                         5.0.
                           </div>
                       </v-row>
 
-                      <div class="my-4 " style="font-size:11px;">
-                           • Location : Ikole-Ekiti
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Ikole-Ekiti.
+                      </div>
+                      <div class="my-4 " style="font-size:10px;">
+                           • Category : Mobile device.
                       </div>
 
-                      <div style="font-size:10px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      <div>
+                        <v-btn small :to="{name : 'seller-page'}" outlined color='#673AB7' rounded  class="text-capitalize" style="width:100%;"><span style="color:#673AB7">Connect</span></v-btn>
+                      </div>
                       </v-card-text>
 
-                      <v-divider class="mx-4"></v-divider>
+                 
 
                   </v-card>
 
@@ -859,35 +869,38 @@
                 <!-- END DISPLAY ON LARGE DEVICE -->
 
                 <!-- DISPLAY ON SMALL DEVICE -->
-                <div class="hidden-md-and-up">
+ <br>               <div class="hidden-md-and-up">
                 <v-layout row wrap style="margin-top:-20px">
 
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-15.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
-                                        Samsung -55" Class 
+                                    <v-card-title style="font-size:12px;">
+                                        Samsung -55" Class.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 150, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -896,36 +909,39 @@
 
                                 </v-card>
 
-                        </center>
+                        </center><br>
                         
                     </v-flex>
                     
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-90.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
-                                        Apple Watch Series 4
+                                    <v-card-title style="font-size:12px;">
+                                        Apple Watch Series 4.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 150, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -934,36 +950,39 @@
 
                                 </v-card>
 
-                        </center>
+                        </center><br>
                         
                     </v-flex>
                     
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/n50.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
+                                    <v-card-title style="font-size:12px;">
                                         Bose - SoundSport .
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 50, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -972,36 +991,39 @@
 
                                 </v-card>
 
-                        </center>
+                        </center><br>
                         
                     </v-flex>
                 
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-8a.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
+                                    <v-card-title style="font-size:12px;">
                                         Microsoft - Xbox.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 300, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -1010,36 +1032,39 @@
 
                                 </v-card>
 
-                        </center>
+                        </center><br>
                         
                     </v-flex>
                   
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/n30.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
-                                        Sony - Alpha Camera.
+                                    <v-card-title style="font-size:12px;">
+                                        Sony -  Camera.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 200, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -1049,36 +1074,39 @@
                                 </v-card>
 
                         </center>
-                        
+                        <br>
                     </v-flex>
                     
                     
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-17.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
+                                    <v-card-title style="font-size:12px;">
                                         Google - Home Hub.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 150, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -1088,36 +1116,39 @@
                                 </v-card>
 
                         </center>
-                        
+                        <br>
                     </v-flex>
                     
                      
-                        <v-flex sm6 xs6 class="">
+                        <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-6-1.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
-                                        Furniture - Elephant 
+                                    <v-card-title style="font-size:12px;">
+                                        Furniture - Elephant.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 35, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -1127,37 +1158,40 @@
                                 </v-card>
 
                         </center>
-                        
+                        <br>
                     </v-flex>
                   
                     
 
-                    <v-flex sm6 xs6 class="">
+                    <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto "
+                                    class="mx-auto grey lighten-2"
                                     max-width="344"
                                 >
                                     <v-img
                                     src="../../assets/images/product-5-1.jpg"
-                                    height="200px"
+                                    height="120px"
                                     ></v-img>
 
-                                    <v-card-title style="font-size:14px;">
-                                        Home / Office -Light
+                                    <v-card-title style="font-size:12px;">
+                                        Home / Office -Light.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
+                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                                     # 15, 000
                                     </v-card-subtitle>
 
                                     <v-card-actions>
                                     <v-btn
+                                        class="text-capitalize"
                                         color="#673AB7 "
-                                        text
+                                        outlined
+                                        :to="{name : 'product-details'}"
+                                        style="font-size:10px;"
                                     >
-                                        Explore
+                                        Connect
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -1170,7 +1204,7 @@
                         
                     </v-flex>
                  
-                </v-layout>
+                </v-layout><br>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->
                
