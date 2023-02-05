@@ -876,7 +876,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -897,10 +897,12 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
 
                                     <v-spacer></v-spacer>
@@ -917,7 +919,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -938,11 +940,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -958,7 +963,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -979,11 +984,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -999,7 +1007,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -1020,11 +1028,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -1040,7 +1051,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -1061,11 +1072,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -1082,7 +1096,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -1103,11 +1117,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -1124,7 +1141,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -1145,11 +1162,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 
@@ -1167,7 +1187,7 @@
                          <center>
                                                         
                                 <v-card
-                                    class="mx-auto grey lighten-2"
+                                    class="mx-auto grey lighten-5"
                                     max-width="344"
                                 >
                                     <v-img
@@ -1188,11 +1208,14 @@
                                         class="text-capitalize"
                                         color="#673AB7 "
                                         outlined
+                                        rounded 
+                                        small
                                         :to="{name : 'product-details'}"
-                                        style="font-size:10px;"
+                                        style="font-size:10px;width:100%"
                                     >
-                                        Connect
+                                        View Product
                                     </v-btn>
+
 
                                     <v-spacer></v-spacer>
 

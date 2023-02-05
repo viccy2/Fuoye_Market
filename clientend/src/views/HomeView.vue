@@ -140,7 +140,7 @@
               <v-layout>
                 <v-flex sm12>
                   <center>
-                    <v-btn fab  small color='grey lighten-2'>
+                    <v-btn fab  small color='grey lighten-5'>
                       <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
@@ -161,7 +161,7 @@
                 <v-layout>
                   <v-flex sm12>
                     <center>
-                      <v-btn fab small color='grey lighten-2'>
+                      <v-btn fab small color='grey lighten-5'>
                         <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
                       </v-btn><br><br>
                       <v-card-text class="py-0">
@@ -182,7 +182,7 @@
                   <v-layout>
                     <v-flex sm12>
                       <center>
-                        <v-btn fab  small color='grey lighten-2'>
+                        <v-btn fab  small color='grey lighten-5'>
                           <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
                         </v-btn><br><br>
                         <v-card-text class="py-0">
@@ -454,7 +454,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -482,7 +482,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -510,7 +510,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -538,7 +538,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -566,7 +566,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -594,7 +594,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -622,7 +622,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -650,7 +650,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -678,7 +678,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -706,7 +706,7 @@
                     <v-flex sm6 xs6 class="pa-1">
                     <center>
                     <v-card
-                      class="mx-auto grey lighten-2"
+                      class="mx-auto grey lighten-5"
                       max-width="344">
 
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
@@ -1198,15 +1198,15 @@
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
                   <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
                   <a href="https://www.instagram.com/fuoye_market/" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
                   </v-btn></a>
                   <a href="https://twitter.com/fuoyemarket" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
                   </v-btn>
                   </a>
@@ -1215,10 +1215,10 @@
               <v-flex md4 lg4 sm12 xs12>
                 <h2 id="h27" >Contact Us</h2><br><br>
                 <p style="font-size:12px">Get in touch with us...</p>
-                <v-btn fab  small color='grey lighten-2 ma-2'>
+                <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
                 </v-btn> <span style="font-size:12px">Call : +234 9072045997</span> <br>
-                <v-btn fab  small color='grey lighten-2 ma-2'>
+                <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
                 </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
               </v-flex>
@@ -1237,25 +1237,25 @@
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
                   <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
                   <a href="https://www.instagram.com/fuoye_market/" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
                   </v-btn></a>
                   <a href="https://twitter.com/fuoyemarket" style="text-decoration:none">
-                  <v-btn fab  small color='grey lighten-2 ma-2'>
+                  <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
                   </v-btn></a>
                 </div>
               </v-flex>
               <v-flex md4 lg4 sm12 xs12>
                 <p style="font-size:12px">Get in touch with us...</p>
-                <v-btn fab  small color='grey lighten-2 ma-2'>
+                <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
                 </v-btn> <span style="font-size:12px">Call : +234 9072045997</span> <br>
-                <v-btn fab  small color='grey lighten-2 ma-2'>
+                <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
                 </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
               </v-flex>
