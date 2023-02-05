@@ -511,7 +511,7 @@
             <div class="featured-products">
                 <v-card flat elevation=''>
                     <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;"> Featured products : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-50px;"> Popular Brand : </v-card-title>
                 
 
                     <!-- DISPLAY ON LARGE DEVICE -->
@@ -870,7 +870,7 @@
 
                 <!-- DISPLAY ON SMALL DEVICE -->
  <br>               <div class="hidden-md-and-up">
-                <v-layout row wrap style="margin-top:-20px">
+                <v-layout row wrap style="margin-top:0px">
 
                     <v-flex sm6 xs6 class="pa-2">
                          <center>
@@ -881,33 +881,13 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-15.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Samsung -55" Class.
+                                        Samsung.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -924,34 +904,14 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-90.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Apple Watch Series 4.
+                                        Apple.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
+                                 
 
                                 </v-card>
 
@@ -968,34 +928,13 @@
                                 >
                                     <v-img
                                     src="../../assets/images/n50.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Bose - SoundSport .
+                                        LG.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 50, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -1012,34 +951,14 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-8a.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Microsoft - Xbox.
+                                        Oriamo.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 300, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
+                                   
 
                                 </v-card>
 
@@ -1056,34 +975,14 @@
                                 >
                                     <v-img
                                     src="../../assets/images/n30.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Sony -  Camera.
+                                        Dell.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 200, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
+                                  
 
                                 </v-card>
 
@@ -1101,34 +1000,14 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-17.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Google - Home Hub.
+                                        Nike.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
+                                  
 
                                 </v-card>
 
@@ -1146,34 +1025,14 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-6-1.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Furniture - Elephant.
+                                        Loui Vuitton.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 35, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
+                                  
 
                                 </v-card>
 
@@ -1192,34 +1051,13 @@
                                 >
                                     <v-img
                                     src="../../assets/images/product-5-1.jpg"
-                                    height="120px"
+                                    height="110px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Home / Office -Light.
+                                       Dior.
                                     </v-card-title>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 15, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        class="text-capitalize"
-                                        color="#673AB7 "
-                                        outlined
-                                        rounded 
-                                        small
-                                        :to="{name : 'product-details'}"
-                                        style="font-size:10px;width:100%"
-                                    >
-                                        View Product
-                                    </v-btn>
-
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -1227,7 +1065,7 @@
                         
                     </v-flex>
                  
-                </v-layout><br>
+                </v-layout>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->
                
@@ -1244,7 +1082,7 @@
             <div class="new-sellers">
                 <v-card flat class="rounded-lg" elevation=''>
                     <v-container fluid>
-                        <v-card-title style="font-weight:bold;font-size:13px;"> New sellers for you : </v-card-title>
+                        <v-card-title style="font-weight:bold;font-size:13px;margin-top:-20px;"> New sellers for you : </v-card-title>
                         <v-card flat class="ma-1" height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>

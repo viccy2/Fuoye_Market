@@ -461,13 +461,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -489,13 +489,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -517,13 +517,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -545,13 +545,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -573,13 +573,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -601,13 +601,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-4.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-51.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -629,13 +629,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img7.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -657,13 +657,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -685,7 +685,7 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
@@ -713,13 +713,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>

@@ -174,7 +174,7 @@
                                     # 300, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Oye-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Oye-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -219,7 +219,7 @@
                                     # 505, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Oye-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Oye-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -264,7 +264,7 @@
                                     # 15, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -310,7 +310,7 @@
                                     # 30, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -356,7 +356,7 @@
                                     # 20, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -401,7 +401,7 @@
                                     # 10, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon">mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -446,7 +446,7 @@
                                     # 15, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>
@@ -492,7 +492,7 @@
                                     # 130, 000
                                     </v-card-subtitle>
                                     <v-card-text style="font-size:10px;">
-                                      <v-icon small class="pa-3" id="icon"> mdi-location-on</v-icon> Location : Ikole-Ekiti.
+                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                                     </v-card-text>
 
                                 </v-card>

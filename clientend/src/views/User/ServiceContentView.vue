@@ -122,94 +122,201 @@
 
             </v-layout>
             <v-layout row wrap>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">David's Saloon</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Adele Catering</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Bola Store</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Scent</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">K studio</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">MD</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Lolly</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex sm6 xs6>
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/4.png" style="height:145px;width:100%;"></v-img>
-                        
-                        <v-toolbar  height='50' flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Zidane</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
+                <v-flex sm6 xs6 class="pa-2">
+                      
+                      <v-card
+                          :to="{name : 'service-content-details'}"
+                          :loading="loading"
+                          class="mx-auto my-1"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/pel.jpg"
+                          lazy-src="../../assets/images/pel.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                        </v-img>
+                      <v-card-title style="font-size:13px;">Pelvix.</v-card-title>
+
+                      <v-card-text>
+                    
+
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Ikole-Ekiti.
+                      </div>
+                  
+                      </v-card-text>
+
+                  </v-card>
+
+              </v-flex>
+                
+              <v-flex sm6 xs6 class="pa-2">
+                      
+                      <v-card
+                          :to="{name : 'service-content-details'}"
+                          :loading="loading"
+                          class="mx-auto my12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/b.jpg"
+                          lazy-src="../../assets/images/b.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                        </v-img>
+                      <v-card-title style="font-size:13px;">Adele Catering.</v-card-title>
+
+                      <v-card-text>
+                    
+
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Oye-Ekiti.
+                      </div>
+                  
+                      </v-card-text>
+
+                  </v-card>
+
+              </v-flex>
+              <v-flex sm6 xs6 class="pa-2">
+                      
+                      <v-card
+                          :to="{name : 'service-content-details'}"
+                          :loading="loading"
+                          class="mx-auto my12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/8.png"
+                          lazy-src="../../assets/images/8.png"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                        </v-img>
+                      <v-card-title style="font-size:13px;">Bola Store.</v-card-title>
+
+                      <v-card-text>
+                    
+
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Ikole-Ekiti.
+                      </div>
+                  
+                      </v-card-text>
+
+                  </v-card>
+
+              </v-flex>
+              <v-flex sm6 xs6 class="pa-2">
+                      
+                      <v-card
+                          :to="{name : 'service-content-details'}"
+                          :loading="loading"
+                          class="mx-auto my12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/about-img-1.jpg"
+                          lazy-src="../../assets/images/about-img-1.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                        </v-img>
+                      <v-card-title style="font-size:13px;">Dan Photos.</v-card-title>
+
+                      <v-card-text>
+                    
+
+                      <div class="my-4 " style="font-size:10px;">
+                           • Location : Oye-Ekiti.
+                      </div>
+                  
+                      </v-card-text>
+
+                  </v-card>
+
+              </v-flex>
+               
+                
             </v-layout>
             </v-container>
         </div><br><br><br><br>
