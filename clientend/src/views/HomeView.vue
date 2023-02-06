@@ -628,7 +628,7 @@
                       <v-carousel  height="" cycle hide-delimiters :show-arrows="false">
                         <v-carousel-item >
                             <v-img
-                              src="../assets/images/img7.jpg"
+                              src="../assets/images/phone.png"
                               height="110px">
                             </v-img>
                         </v-carousel-item>
@@ -691,7 +691,7 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="100px">
+                              height="110px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -724,7 +724,7 @@
                         </v-carousel-item>
                       </v-carousel>
                       <v-card-title style="font-size:10px;color:#673AB7;">
-                          Footwear.
+                         Shoe - Men / Women.
                         </v-card-title>
                     </v-card>
 

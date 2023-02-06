@@ -10,7 +10,7 @@
 
                     <v-flex lg6 md6 sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:100%; margin-top:30px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:100%; margin-top:30px;">
                   </center>
                     </v-flex>
 
@@ -75,13 +75,13 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:90%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:50%;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
-                        <v-card flat><br>
-                           <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Create New Account </v-card-title> -->
+                        <v-card class="ma-2"><br>
+                           <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;">Create New Account </v-card-title> -->
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
                                 </v-alert>

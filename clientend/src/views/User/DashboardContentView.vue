@@ -100,7 +100,7 @@
                             align="center"
                             class="mx-0">
                             <v-rating
-                                :value="4.5"
+                                :value="5.0"
                                 color="amber"
                                 dense
                                 half-increments
@@ -109,36 +109,36 @@
                                 ></v-rating>
 
                                 <div class="grey--text ms-4">
-                                4.5 
+                                5.0 
                                 </div>
                             </v-row>
 
-                            <div class="my-4 text-subtitle-1">
-                                 • Location : Ikole-Ekiti
-                            </div>
+                            <div class="my-4 " style="font-size:13px;">
+                           • Location : Ikole-Ekiti
+                      </div>
 
-                            <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-                            </v-card-text>
+                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      </v-card-text>
 
-                            <v-divider class="mx-4"></v-divider>
+                      <v-divider class="mx-4"></v-divider>
 
-                            <v-card-title>Availability</v-card-title>
+                      <v-card-title>Availability</v-card-title>
 
-                            <v-card-text>
-                            <p> Days : </p>
-                            <v-chip-group
-                                
-                                active-class="deep-purple accent-4 white--text"
-                                column
-                            >
-                                
-                                <v-chip>Monday</v-chip>
-                                <v-chip>Tuesday</v-chip>
-                                <v-chip>Wednesday</v-chip>
-                                <v-chip>Thursday</v-chip>
-                                <v-chip>Friday</v-chip>
-                                <v-chip>Saturday</v-chip>
-                            </v-chip-group><br>
+                      <v-card-text>
+                      <p> Days : </p>
+                      <v-chip-group
+                          
+                          active-class="deep-purple accent-4 white--text"
+                          column 
+                      >
+                          
+                          <v-chip style="font-size:13px;">Monday</v-chip>
+                          <v-chip style="font-size:13px;">Tuesday</v-chip>
+                          <v-chip style="font-size:13px;">Wednesday</v-chip>
+                          <v-chip style="font-size:13px;">Thursday</v-chip>
+                          <v-chip style="font-size:13px;">Friday</v-chip>
+                         
+                      </v-chip-group><br>
                             <p> Time : </p>
                             <v-chip-group
                                 
@@ -186,7 +186,7 @@
                       align="center"
                       class="mx-0">
                       <v-rating
-                          :value="4.5"
+                          :value="5.0"
                           color="amber"
                           dense
                           half-increments
@@ -195,15 +195,15 @@
                           ></v-rating>
 
                           <div class="grey--text ms-4">
-                          4.5 
+                          5.0 
                           </div>
                       </v-row>
 
-                      <div class="my-4 text-subtitle-1">
+                      <div class="my-4 " style="font-size:13px;">
                            • Location : Oye-Ekiti
                       </div>
 
-                      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
                       </v-card-text>
 
                       <v-divider class="mx-4"></v-divider>
@@ -215,16 +215,15 @@
                       <v-chip-group
                           
                           active-class="deep-purple accent-4 white--text"
-                          column
+                          column 
                       >
                           
-                          <v-chip>Monday</v-chip>
-                          <v-chip>Tuesday</v-chip>
-                          <v-chip>Wednesday</v-chip>
-                          <v-chip>Thursday</v-chip>
-                          <v-chip>Friday</v-chip>
-                          <v-chip>Saturday</v-chip>
-                          <v-chip>Sunday</v-chip>
+                          <v-chip style="font-size:13px;">Monday</v-chip>
+                          <v-chip style="font-size:13px;">Tuesday</v-chip>
+                          <v-chip style="font-size:13px;">Wednesday</v-chip>
+                          <v-chip style="font-size:13px;">Thursday</v-chip>
+                          <v-chip style="font-size:13px;">Friday</v-chip>
+                         
                       </v-chip-group><br>
                       <p> Time : </p>
                       <v-chip-group
@@ -273,7 +272,7 @@
                       align="center"
                       class="mx-0">
                       <v-rating
-                          :value="4.5"
+                          :value="5.0"
                           color="amber"
                           dense
                           half-increments
@@ -282,15 +281,15 @@
                           ></v-rating>
 
                           <div class="grey--text ms-4">
-                          4.5 
+                          5.0 
                           </div>
                       </v-row>
 
-                      <div class="my-4 text-subtitle-1">
+                      <div class="my-4 " style="font-size:13px;">
                            • Location : Oye-Ekiti
                       </div>
 
-                      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
+                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
                       </v-card-text>
 
                       <v-divider class="mx-4"></v-divider>
@@ -302,14 +301,14 @@
                       <v-chip-group
                           
                           active-class="deep-purple accent-4 white--text"
-                          column
+                          column 
                       >
                           
-                          <v-chip>Monday</v-chip>
-                          <v-chip>Tuesday</v-chip>
-                          <v-chip>Wednesday</v-chip>
-                          <v-chip>Thursday</v-chip>
-                          <v-chip>Friday</v-chip>
+                          <v-chip style="font-size:13px;">Monday</v-chip>
+                          <v-chip style="font-size:13px;">Tuesday</v-chip>
+                          <v-chip style="font-size:13px;">Wednesday</v-chip>
+                          <v-chip style="font-size:13px;">Thursday</v-chip>
+                          <v-chip style="font-size:13px;">Friday</v-chip>
                          
                       </v-chip-group><br>
                       <p> Time : </p>
@@ -348,7 +347,7 @@
                     <v-card flat elevation=''>
                  <v-container fluid>
                  <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
-                    <v-layout row wrap style="margin-top:-40px">
+                    <v-layout row wrap style="margin-top:-50px">
 
                         <v-flex sm6 xs6 class="pa-2">
                       
@@ -525,31 +524,14 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-15.jpg"
+                                    src="../../assets/images/samsungs.jpg"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Samsung -55" Class LED 2160p Smart
+                                        Samsung.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
-                                    # 500, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
-
-                                   
                                 </v-card>
 
                         </center><br>
@@ -564,29 +546,14 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-90.jpg"
+                                    src="../../assets/images/apple.png"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Apple Smart Watch Series 4
+                                        Apple.
                                     </v-card-title>
 
-                                    <v-card-subtitle>
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -602,29 +569,13 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/n32.jpg"
+                                    src="../../assets/images/lgs.png"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Bose - SoundSport wireless headphone.
+                                       LG.
                                     </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -640,29 +591,13 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-8a.jpg"
+                                    src="../../assets/images/nike.png"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Microsoft - Refurbish Xbox One S 500GB.
+                                       Nike.
                                     </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -678,29 +613,13 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/n30.jpg"
+                                    src="../../assets/images/hp.jpg"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Sony - Alpha a5100 Mirrorless Camera.
+                                        Hewlet Packard.
                                     </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
@@ -717,160 +636,27 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-17.jpg"
+                                    src="../../assets/images/lv.jpg"
                                     height="200px"
                                     ></v-img>
 
                                     <v-card-title style="font-size:14px;">
-                                        Google - Home Hub with Google Assistant.
+                                        Louis Vuitton.
                                     </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 150, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
 
                                 </v-card>
 
                         </center><br><br>
                         
                     </v-flex>
-                    
-
-                    <v-flex lg4 md4 class="">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto "
-                                    max-width="344"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-161.jpg"
-                                    height="200px"
-                                    ></v-img>
-
-                                    <v-card-title style="font-size:14px;">
-                                        Men / Women - Fashion Tops. 
-                                    </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 20, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
-
-                                </v-card>
-
-                        </center><br>
-                        
-                    </v-flex>
-                   
-
-                    <v-flex lg4 md4 class="">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto "
-                                    max-width="344"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-5-1.jpg"
-                                    height="200px"
-                                    ></v-img>
-
-                                    <v-card-title style="font-size:14px;">
-                                        Home / Office -  Petits Table Lamp.
-                                    </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 15, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex>
-
-                    <v-flex lg4 md4 class="">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto "
-                                    max-width="344"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-16-2.jpg"
-                                    height="200px"
-                                    ></v-img>
-
-                                    <v-card-title style="font-size:14px;">
-                                        Home / Office -  Table Lamp.
-                                    </v-card-title>
-
-                                    <v-card-subtitle>
-                                    # 15, 000
-                                    </v-card-subtitle>
-
-                                    <v-card-actions>
-                                    <v-btn
-                                        color="#673AB7 "
-                                        text
-                                    >
-                                        Explore
-                                    </v-btn>
-
-                                    <v-spacer></v-spacer>
-
-                                    </v-card-actions>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex>
-                    
-                    
+            
                     </v-layout>
                 </div>
                 <!-- END DISPLAY ON LARGE DEVICE -->
 
                 <!-- DISPLAY ON SMALL DEVICE -->
  <br>               <div class="hidden-md-and-up">
-                <v-layout row wrap style="margin-top:0px">
+                <v-layout row wrap style="margin-top:-40px">
 
                     <v-flex sm6 xs6 class="pa-2">
                          <center>
@@ -880,8 +666,10 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-15.jpg"
+                                    src="../../assets/images/samsungs.jpg"
                                     height="110px"
+                                    style="width:100%"
+                                    
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
@@ -903,8 +691,9 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-90.jpg"
+                                    src="../../assets/images/apple.png"
                                     height="110px"
+                                    style="width:100%"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
@@ -927,19 +716,21 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/n50.jpg"
+                                    src="../../assets/images/hp.jpg"
                                     height="110px"
+                                    style="width:100%"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        LG.
+                                       Hewlet Packard
                                     </v-card-title>
 
+                                  
 
                                 </v-card>
 
-                        </center><br>
-                        
+                        </center>
+                        <br>
                     </v-flex>
                 
                     <v-flex sm6 xs6 class="pa-2">
@@ -950,8 +741,9 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-8a.jpg"
+                                    src="../../assets/images/oriamo.png"
                                     height="110px"
+                                    style="width:100%"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
@@ -966,6 +758,7 @@
                         
                     </v-flex>
                   
+              
                     <v-flex sm6 xs6 class="pa-2">
                          <center>
                                                         
@@ -974,33 +767,9 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/n30.jpg"
+                                    src="../../assets/images/nike.png"
                                     height="110px"
-                                    ></v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                        Dell.
-                                    </v-card-title>
-
-                                  
-
-                                </v-card>
-
-                        </center>
-                        <br>
-                    </v-flex>
-                    
-                    
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-5"
-                                    max-width="344"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-17.jpg"
-                                    height="110px"
+                                    style="width:100%"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
@@ -1024,12 +793,13 @@
                                     max-width="344"
                                 >
                                     <v-img
-                                    src="../../assets/images/product-6-1.jpg"
+                                    src="../../assets/images/lv.jpg"
                                     height="110px"
+                                    style="width:100%"
                                     ></v-img>
 
                                     <v-card-title style="font-size:12px;">
-                                        Loui Vuitton.
+                                        Louis Vuitton.
                                     </v-card-title>
 
                                   
@@ -1039,32 +809,7 @@
                         </center>
                         <br>
                     </v-flex>
-                  
-                    
-
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-5"
-                                    max-width="344"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-5-1.jpg"
-                                    height="110px"
-                                    ></v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                       Dior.
-                                    </v-card-title>
-
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex>
-                 
+         
                 </v-layout>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->

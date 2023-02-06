@@ -10,7 +10,7 @@
 
                     <v-flex lg6 md6 >
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:100%;margin-top:30px;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:100%;margin-top:30px;">
                   </center>
                     </v-flex>
 
@@ -50,13 +50,13 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/17.jpg" style="width:90%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:80%;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
-                        <v-card flat><br>
-                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:16px;">Sign In Here</v-card-title> -->
+                        <v-card flat>
+                            <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;text-align:center;">Sign In </v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
                                 :rules="[rules.required]" 

@@ -13,15 +13,50 @@
             <v-container fluid>
             <v-layout row wrap>
                 <v-flex lg2 md2  class="pa-1"  >
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/b.jpg" style="height:150px;" class=""></v-img>
-                        
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Mitchelle</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
+                  <v-card
+                          :to="{name : 'service-content-details'}"
+                          :loading="loading"
+                          class="mx-auto my12"
+                          max-width="374" >
+                      <template slot="progress">
+                          <v-progress-linear
+                              color="deep-purple"
+                              height="10"
+                              indeterminate>
+                          </v-progress-linear>
+                      </template>
+                      <v-img
+                          height="150"
+                          src="../../assets/images/about-img-1.jpg"
+                          lazy-src="../../assets/images/about-img-1.jpg"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                        </v-img>
+                      <v-card-title style="font-size:13px;">Dan Photos.</v-card-title>
+
+                      <v-card-text>
+                    
+
+                      <div class="my-4 " style="font-size:10px;">
+                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Oye-Ekiti.
+                      </div>
+                  
+                      </v-card-text>
+
+                  </v-card>
                 </v-flex>
                 <v-flex lg2 md2  class="pa-1 ">
                     <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
@@ -162,7 +197,7 @@
                     
 
                       <div class="my-4 " style="font-size:10px;">
-                           • Location : Ikole-Ekiti.
+                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Ikole-Ekiti.
                       </div>
                   
                       </v-card-text>
@@ -211,7 +246,7 @@
                     
 
                       <div class="my-4 " style="font-size:10px;">
-                           • Location : Oye-Ekiti.
+                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Oye-Ekiti.
                       </div>
                   
                       </v-card-text>
@@ -259,7 +294,7 @@
                     
 
                       <div class="my-4 " style="font-size:10px;">
-                           • Location : Ikole-Ekiti.
+                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Ikole-Ekiti.
                       </div>
                   
                       </v-card-text>
@@ -307,7 +342,7 @@
                     
 
                       <div class="my-4 " style="font-size:10px;">
-                           • Location : Oye-Ekiti.
+                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Oye-Ekiti.
                       </div>
                   
                       </v-card-text>
