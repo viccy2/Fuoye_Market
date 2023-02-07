@@ -43,8 +43,8 @@
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
-                                :rules="rules"
-                                v-model="post.accountType" 
+                                :rules="[rules.required]"
+                                v-model="post.type" 
                                 label="Account type" :items="account">
                                 </v-select>
 
@@ -75,12 +75,12 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:50%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:40%;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
-                        <v-card class="ma-2"><br>
+                        <v-card class="ma-2" flat><br>
                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;">Create New Account </v-card-title> -->
                                 <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
                                     Account created successfully, check email for activation link
@@ -108,8 +108,8 @@
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
-                                :rules="rules" color="#673AB7"  
-                                v-model="post.accountType" 
+                                :rules="[rules.required]" color="#673AB7"  
+                                v-model="post.type" 
                                 label="Account type" :items="account">
                                 </v-select>
 
@@ -141,7 +141,7 @@
 <script>
 import HomeNavbar from '../../components/HomeNavbar.vue'
 import Footers from '../../components/Footers.vue'
-// import API from '.../api'
+import API from '../../api'
 export default {
     name : 'new-account',
     components: {HomeNavbar, Footers},
@@ -159,7 +159,6 @@ export default {
             min: v => v.length >= 8 || 'Min 8 characters',
             },
             post : {
-                name : "",
                 username : "",
                 email : "",
                 password : "",
@@ -174,14 +173,17 @@ export default {
                 Form.append("username", this.post.username);
                 Form.append("email", this.post.email);
                 Form.append("password", this.post.password);
-                Form.append("accountType", this.post.accountType);
+                Form.append("type", this.post.type);
                
                 if(this.$refs.form.validate()){
                     const response = await API.newUser(Form);
                     this.message = response;
+                    if(this.message){
                      setTimeout(function(){
-                     window.location.href = '/activate-account';
+                     window.location.href = '/dashboard';
                     },5000);
+                    }
+                    
                 }
             }
             catch(err){

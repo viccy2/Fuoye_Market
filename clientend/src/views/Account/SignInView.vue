@@ -50,13 +50,13 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:80%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:50%;">
                   </center>
                     </v-flex>
 
                     <v-flex sm12 xs12>
                         <v-card flat>
-                            <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;text-align:center;">Sign In </v-card-title>
+                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;text-align:center;">Sign In </v-card-title> -->
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
                                 :rules="[rules.required]" 
