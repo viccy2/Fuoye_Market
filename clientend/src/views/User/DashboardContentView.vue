@@ -656,7 +656,7 @@
 
                 <!-- DISPLAY ON SMALL DEVICE -->
  <br>               <div class="hidden-md-and-up">
-                <v-layout row wrap style="margin-top:-20px">
+                <v-layout row wrap style="margin-top:-15px">
 
                     <v-flex sm6 xs6 class="pa-2">
                          <center>

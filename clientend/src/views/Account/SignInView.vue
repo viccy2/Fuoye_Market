@@ -50,7 +50,7 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:50%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:70%;">
                   </center>
                     </v-flex>
 

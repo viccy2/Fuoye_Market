@@ -12,7 +12,7 @@
             <br>
             <v-container fluid>
             <v-layout row wrap>
-                <v-flex lg2 md2  class="pa-1"  >
+                <v-flex lg2 md2  class="pa-2"  >
                   <v-card
                           :to="{name : 'service-content-details'}"
                           :loading="loading"
@@ -58,61 +58,7 @@
 
                   </v-card>
                 </v-flex>
-                <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/j.jpg" style="height:150px;" class=""></v-img>
-                       
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Zed Catering</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:150px;" class=""></v-img>
-                        
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Lilly cake</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex lg2 md2  class="pa-1 ">
-                   <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/4.png" style="height:150px;"  class=""></v-img>
-                        
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Zola</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/7.png" style="height:150px;" class=""></v-img>
-                        
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Ade Saloon</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
-                <v-flex lg2 md2  class="pa-1 ">
-                    <v-card flat class="grey lighten-2 ma-2" :to="{name : 'service-content-details'}">
-                        <v-img src="../../assets/images/8.png" style="height:150px;" class=""></v-img>
-                        
-                        <v-toolbar  height='50' style="margin-top:0px;" flat>
-                            <v-btn class="mt-1" small outlined color ="#673AB7" width="100%">
-                                <span style="font-size:10px">Bola Store</span>
-                            </v-btn>
-                        </v-toolbar>
-                    </v-card>
-                </v-flex>
+                
             </v-layout>
             </v-container>
         </div>
@@ -121,41 +67,7 @@
 
           <div class="service2 hidden-md-and-up" style="margin-top:0px">
             <v-container fluid>
-            <v-layout row wrap>
-                  <v-flex sm12 xs12>
-
-                  <v-combobox
-                    v-model="select"
-                    :items="items"
-                    label=""
-                    multiple
-                    chips
-                    rounded
-                    class="ma-2"
-                    style="width:100%"
-                  >
-                    <template v-slot:selection="data">
-                      <v-chip
-                        :key="JSON.stringify(data.item)"
-                        v-bind="data.attrs"
-                        :input-value="data.selected"
-                        :disabled="data.disabled"
-                        @click:close="data.parent.selectItem(data.item)"
-                        style="font-size:10px;width:100%;"
-                      >
-                        <v-avatar
-                          class="accent white--text"
-                          left
-                          v-text="data.item.slice(0, 1).toUpperCase()"
-                          style="font-size:10px;"
-                        ></v-avatar>
-                        {{ data.item }}
-                      </v-chip>
-                    </template>
-                  </v-combobox>
-                </v-flex>
-
-            </v-layout>
+           
             <v-layout row wrap>
                 <v-flex sm6 xs6 class="pa-2">
                       
@@ -211,7 +123,7 @@
                       <v-card
                           :to="{name : 'service-content-details'}"
                           :loading="loading"
-                          class="mx-auto my12"
+                          class="mx-auto my-1"
                           max-width="374" >
                       <template slot="progress">
                           <v-progress-linear
@@ -222,8 +134,8 @@
                       </template>
                       <v-img
                           height="150"
-                          src="../../assets/images/b.jpg"
-                          lazy-src="../../assets/images/b.jpg"
+                          src="../../assets/images/17-people.jpg"
+                          lazy-src="../../assets/images/17-people.jpg"
                             aspect-ratio="1"
                             class="grey lighten-2"
                       >
@@ -240,7 +152,7 @@
                           </v-row>
                         </template>
                         </v-img>
-                      <v-card-title style="font-size:13px;">Adele Catering.</v-card-title>
+                      <v-card-title style="font-size:13px;">Adele beauty.</v-card-title>
 
                       <v-card-text>
                     
