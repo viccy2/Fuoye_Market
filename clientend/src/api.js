@@ -1,12 +1,12 @@
 import axios from "axios" ;
-const url1 = "api/";
+// const url1 = "api/";
 // const url2 = "/app/api/company";
 
 export default class API {
     //create new user account 
     static async newUser(post){
         try{
-            const res = await axios.post(`http://fuoyemarket.afolabisalawu.com/api/authregister`, post);
+            const res = await axios.post(`/api/authregister`, post);
             return res.data;
             
         }
