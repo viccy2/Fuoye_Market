@@ -6,7 +6,7 @@ export default class API {
     //create new user account 
     static async newUser(post){
         try{
-            const res = await axios.post(`/api/authregister`, post);
+            const res = await axios.post(`http://fuoyemarket.afolabisalawu.com/api/authregister`, post);
             return res.data;
             
         }
