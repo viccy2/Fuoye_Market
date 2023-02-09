@@ -3,7 +3,17 @@ module.exports = defineConfig({
   transpileDependencies: [
     'vuetify'
   ],
-  devServer : {
-    proxy : "https://fuoyemarket.afolabisalawu.com/api/",
-  }
+
+   devServer: {
+        proxy: {
+            '/api': {
+                target: 'http://fuoyemarket.afolabisalawu.com/api', // paste the copied API url here
+                ws: true,
+                pathRewrite: {
+                  '^/api': '/'
+              }
+            }
+        }
+    }
+ 
 })

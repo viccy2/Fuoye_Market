@@ -1,12 +1,12 @@
 import axios from "axios" ;
-const url1 = "/app/api/user";
-const url2 = "/app/api/company";
+const url1 = "api/";
+// const url2 = "/app/api/company";
 
 export default class API {
     //create new user account 
     static async newUser(post){
         try{
-            const res = await axios.post("https://fuoyemarket.afolabisalawu.com/api/authregister", post);
+            const res = await axios.post(`/api/authregister`, post);
             return res.data;
             
         }
@@ -25,16 +25,19 @@ export default class API {
         }
        
     }
+    
      //Get users by ID
      static async getUsersById(id){
         const res = await axios.get(`${url1}/${id}`);
         return res.data
     }
+
     //update user
     static async updateUsersById(id, post){
         const res = await axios.patch(`${url1}/${id}`, post);
         return res.data
     }
+
     //delete user
     static async deleteUser(id){
         const res = await axios.delete(`${url1}/${id}`);
