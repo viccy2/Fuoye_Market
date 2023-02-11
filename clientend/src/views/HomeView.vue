@@ -1197,7 +1197,7 @@
                 </div>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
-                  <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
+                  <a href="https://www.facebook.com/profile.php?id=100088557773505" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
@@ -1215,12 +1215,15 @@
               <v-flex md4 lg4 sm12 xs12>
                 <h2 id="h27" >Contact Us</h2><br><br>
                 <p style="font-size:12px">Get in touch with us...</p>
+                <a href="tel: +234-907-204-5997" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
-                </v-btn> <span style="font-size:12px">Call : +234 9072045997</span> <br>
+                </v-btn></a> <span style="font-size:12px">Call : +234 9072045997</span> <br>
+                <a href="mailto: fuoyemarket@gmail.com" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
                 </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
+                </a>
               </v-flex>
               
             </v-layout>
@@ -1236,7 +1239,7 @@
                 <h2 id="h27" >Contact Us</h2><br>
                 <p style="font-size:12px">Follow us on our social platforms.</p>
                 <div>
-                  <a href="https://www.facebook.com/fuoyemarket" style="text-decoration:none">
+                  <a href="https://www.facebook.com/profile.php?id=100088557773505" style="text-decoration:none">
                   <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
                   </v-btn></a>
@@ -1252,12 +1255,15 @@
               </v-flex>
               <v-flex md4 lg4 sm12 xs12>
                 <p style="font-size:12px">Get in touch with us...</p>
+                <a href="tel: +234-907-204-5997" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-phone</v-icon>
-                </v-btn> <span style="font-size:12px">Call : +234 9072045997</span> <br>
+                </v-btn></a> <span style="font-size:12px">Call : +234 9072045997</span> <br>
+                <a href="mailto: fuoyemarket@gmail.com" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
                 </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
+                </a>
               </v-flex>
               
             </v-layout>

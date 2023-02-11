@@ -5,13 +5,8 @@ module.exports = defineConfig({
   ],
 
    devServer: {
-        proxy: {
-            '/api': {
-                target: 'http://fuoyemarket.afolabisalawu.com/api', // paste the copied API url here
-                ws: true,
-          
-            }
+        proxy:  'http://fuoyemarket.afolabisalawu.com/', // Backend API url here
         }
-    }
+    
  
 })
