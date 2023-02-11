@@ -75,7 +75,7 @@
                <v-layout row wrap>
                     <v-flex sm12 xs12>
                   <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:40%;">
+                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a1.png" style="width:50%;">
                   </center>
                     </v-flex>
 
@@ -176,6 +176,7 @@ export default {
                 Form.append("type", this.post.type);
                
                 if(this.$refs.form.validate()){
+
                     const response = await API.newUser(Form);
                     this.message = response;
                     if(this.message){
