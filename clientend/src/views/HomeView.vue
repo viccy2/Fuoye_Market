@@ -1222,8 +1222,8 @@
                 <a href="mailto: fuoyemarket@gmail.com" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
-                </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
-                </a>
+                </v-btn>  </a> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
+              
               </v-flex>
               
             </v-layout>
@@ -1262,8 +1262,8 @@
                 <a href="mailto: fuoyemarket@gmail.com" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
                       <v-icon small class="pa-3" id="icon"> mdi-gmail</v-icon>
-                </v-btn> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
-                </a>
+                </v-btn></a> <span style="font-size:12px">Email : fuoyemarket@gmail.com</span>
+                
               </v-flex>
               
             </v-layout>
