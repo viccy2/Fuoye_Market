@@ -71,24 +71,24 @@ export default {
         this.dashboard = false,
         this.service = false,
         this.seller = false,
-        this.appnav = false,
-        this.pagesnav = true
+        this.appnav = true,
+        this.pagesnav = false
       },
       services(){
         this.service = true,
         this.dashboard = false,
         this.product = false,
         this.seller = false,
-        this.appnav = false,
-        this.pagesnav = true
+        this.appnav = true,
+        this.pagesnav = false
       },
        sellers(){
         this.seller = true,
         this.dashboard = false,
         this.product = false,
         this.service = false,
-        this.appnav = false,
-        this.pagesnav = true
+        this.appnav = true,
+        this.pagesnav = false
       },
     },
  

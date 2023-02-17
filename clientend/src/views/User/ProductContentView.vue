@@ -1,30 +1,50 @@
 <template>
-    <div class="product-content">
-         <!-- <v-card height='40' tile>
-            <div class="select-category">
-                <v-select solo flat label="Select Product Category" color='#673AB7' :items="category" style="cursor:pointer"></v-select>
-            </div>
-        </v-card> -->
+  <div class="product-content">
+    
         <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
         
-        <div class="service1 hidden-sm-and-down" style="margin-top:0px">
-            <br>
-            <v-container fluid>
+    <div class="service1 hidden-sm-and-down" style="margin-top:0px">
+      <br>
+      <v-container fluid>
+          <template>
+
+            <v-container>
+              <v-row
+                align="center"
+                justify="start"
+              >
+                <v-col
+                  v-if="!allSelected"
+                  lg="12"
+                >
+                  <v-text-field
+                    ref="search"
+                    v-model="search"
+                    hide-details
+                    label="Search"
+                    single-line
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-container>
+            
             <v-layout row wrap>
-                <v-flex lg2 md2  class="pa-2"  >
-                  <center>
-                                                        
+              <v-flex lg2 md2  class="pa-2"  >
+                <template v-for="item in categories">                                    
                   <v-card
-                      class="mx-auto grey lighten-4"
-                      max-width="344"
-                      :to="{name : 'product-details'}"
+                    v-if="!selected.includes(item)"
+                    :key="item.text"
+                    :disabled="loading"
+                    class="mx-auto grey lighten-4"
+                    max-width="344"
+                    :to="{name : 'product-details'}"
                   >
-                      <v-img
-                      src="../../assets/images/product-2-1.jpg"
-                      height="200px"
-                      lazy-src="../../assets/images/product-2-1.jpg"
-                      aspect-ratio="1"
-                      class="grey lighten-2"
+                    <v-img
+                        :src="item.src"
+                        height="200px"
+                        :lazy-src="item.lazy"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
                     >
                       <template v-slot:placeholder>
                         <v-row
@@ -40,25 +60,23 @@
                       </template>
                     </v-img>
 
-                      <v-card-title style="font-size:12px;">
-                          Palm Sandal
-                      </v-card-title>
+                    <v-card-title style="font-size:12px;" v-text="item.text">
+                    </v-card-title>
 
-                      <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
                       # 15, 000
-                      </v-card-subtitle>
-                      <v-card-text style="font-size:10px;">
+                    </v-card-subtitle>
+                    <v-card-text style="font-size:10px;">
                         <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                      </v-card-text>
+                    </v-card-text>
 
                   </v-card>
-
-          </center>
-                </v-flex>
-  
+                </template>
+              </v-flex>
             </v-layout>
-            </v-container>
-        </div>
+          </template>
+        </v-container>
+    </div>
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
@@ -438,42 +456,68 @@
 <script>
 export default {
     name : 'product-content',
-    data(){
-        return{
-          select: [ 'Bakery Products / Snacks / Cereal & Flakes'],
-          items:[
-                'Grocery',
-                'Bakery Products / Snacks / Cereal & Flakes',
-                'Food Items / Foods',
-                'Frozen Food / Fish / Meat / Egg',
 
-                'Male Clothing / Clothing Acessories',
-                'Female Clothing / Clothing Acessories',
-                'Jewelry',
-                'Skincare / Bath & Body',
-                'Make-up / Frangrances',
-                'Hair / Hair Beauty',
-
-                'Drugs / Health Products',
-
-                'Mobile Phones / Tablets / Smart Watches',
-                'Laptops / Computers',
-                'Electronics / Acessories / Gadgets',
-
-                'Furniture / Home appliances',
-
-                'Vehichle / Automobile'
-
-                
-
-
-            ],
-            select2: ['Ikole'],
-            items2 : [
-                'Ikole',
-                'Oye',
-            ],
+    data: () => ({
+      items: [
+        {
+          text: 'Palm Sandal',
+          src: '../../assets/images/product-2-1.jpg',
+          lazy:'../../assets/images/product-2-1.jpg',
+        },
+        {
+          text: 'Nightlife',
+          src: '../../assets/images/product-2-1.jpg',
+          lazy:'../../assets/images/product-2-1.jpg',
         }
-    }
-}
+       
+      ],
+      loading: false,
+      search: '',
+      selected: [],
+    }),
+
+    computed: {
+      allSelected () {
+        return this.selected.length === this.items.length
+      },
+      categories () {
+        const search = this.search.toLowerCase()
+
+        if (!search) return this.items
+
+        return this.items.filter(item => {
+          const text = item.text.toLowerCase()
+
+          return text.indexOf(search) > -1
+        })
+      },
+      selections () {
+        const selections = []
+
+        for (const selection of this.selected) {
+          selections.push(selection)
+        }
+
+        return selections
+      },
+    },
+
+    watch: {
+      selected () {
+        this.search = ''
+      },
+    },
+
+    methods: {
+      next () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.search = ''
+          this.selected = []
+          this.loading = false
+        }, 2000)
+      },
+    },
+  }
 </script>

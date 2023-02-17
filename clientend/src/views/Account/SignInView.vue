@@ -46,42 +46,83 @@
         </div>
         
         <div class="hidden-md-and-up" style="margin-top:80px">
-            <v-container>
-               <v-layout row wrap>
-                    <v-flex sm12 xs12>
-                  <center>
-                      <img class="img1 animate__animated animate__zoomIn animate__slower"  src="../../assets/images/a2.png" style="width:90%;">
-                  </center>
-                    </v-flex>
+            <template>
+                <div class="pa-2">
+                    <v-img
+                        class="mx-auto "
+                        max-width="228"
+                        src="../../assets/images/a2.png"
+                    ></v-img>
+                    <v-card
+                        class="mx-auto pa-10 pb-8"
+                        elevation="8"
+                        max-width="448"
+                        rounded="lg"
+                    >
+                    <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
+     
+                    <v-text-field
+                        :rules="[rules.required]" 
+                        density="compact"
+                        placeholder="Email address"
+                        prepend-inner-icon="mdi-email-outline"
+                        variant="outlined"
+                        color="#673AB7"
+                    ></v-text-field>
 
-                    <v-flex sm12 xs12>
-                        <v-card flat>
-                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;text-align:center;">Sign In </v-card-title> -->
-                             <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
-                                <v-text-field 
-                                :rules="[rules.required]" 
-                                label="Email" type="email" color="#673AB7" clearable
-                                prepend-icon="mdi-gmail" class="small">
-                                </v-text-field>
+                    <v-text-field
+                        :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                        :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
+                        name="input-10-2" label="Password"  hint="At least 8 characters" color="#673AB7"
+                        class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"
+                        density="compact"
+                        placeholder="Enter your password"
+                        variant="outlined"
+                        @click:append-inner="visible = !visible"
+                    ></v-text-field>
 
-                                <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
-                                name="input-10-2" label="Password"  hint="At least 8 characters" color="#673AB7"
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
-                                </v-text-field>  
-                                <br>
-                                <v-btn type="submit" class="text-capitalize" 
-                                rounded outlined style="width:100%;color:#673AB7">
-                                Sign In
-                                </v-btn>
-                             </v-form>
-                             <p class="container pa-5" style="font-size:11px">Create new account ? <a href="/new-account">Here</a></p>
-
-                        </v-card><br><br>
-                    </v-flex>
-              </v-layout>
-            </v-container>
-        </div>
+                    <v-card
+                        class="mb-12"
+                        color="surface-variant"
+                        variant="tonal"
+                    >
+                        <v-card-text class="text-medium-emphasis text-caption">
+                            Note : After consecutive failed login attempts, you can also click "Forgot login password?" below to reset the login password.
+                        </v-card-text>
+                    </v-card>
+                    <v-btn type="submit" class="text-capitalize"  variant="tonal"
+                                rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
+                                sign up
+                    </v-btn>
+                
+            </v-form>
+                <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
+                        <a
+                        class="text-caption text-decoration-none "
+                        href="#"
+                        style="color:#673AB7"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >
+                        Forgot login password?
+                        </a>
+                </div>
+                <v-card-text class="text-center">
+                    <a
+                    class="text-blue text-decoration-none"
+                    href="new-account"
+                    rel="noopener noreferrer"
+                    target="new-account"
+                    style="color:#673AB7"
+                    >
+                    Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
+                    </a>
+                </v-card-text>
+        </v-card>
+    </div>
+    </template>
+            
+</div>
 
      <!-- FOOTER SECTION  -->
   <Footers />
@@ -97,6 +138,7 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
+            visible: false,
             show2: true,
             password: 'Password',
             rules: {
