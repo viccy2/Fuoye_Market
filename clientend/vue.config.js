@@ -4,9 +4,9 @@ module.exports = defineConfig({
     'vuetify'
   ],
 
-   devServer: {
-        proxy:  'http://fuoyemarket.afolabisalawu.com/', // Backend API url here
-        }
+  //  devServer: {
+  //       proxy:  'http://fuoyemarket.afolabisalawu.com/', // Backend API url here
+  //       }
     
  
 })

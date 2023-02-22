@@ -219,7 +219,7 @@
                     We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                     Also, for users to create account and have medium to add their products and connect with the sellers.
                   </p>
-                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
+                  <router-link to="new-account" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
                 </v-flex>
                 <v-flex md2 lg2>
 
@@ -250,7 +250,7 @@
                 Also, for users to create account and have medium to add their products and connect with the sellers.
               </p>
               </center>
-              <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
+              <router-link to="/new-account" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex>
 
             <v-flex sm12 xs12>
@@ -286,7 +286,7 @@
                   <p id="txt5">
                     Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
                   </p>
-                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
+                  <router-link to="/new-account" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
               </v-flex>
       
               </v-layout><br><br><br><br><br><br>

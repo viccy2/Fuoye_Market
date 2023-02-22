@@ -15,7 +15,7 @@
                 <v-flex lg2 md2  class="pa-2"  >
                   <v-card
                           :to="{name : 'service-content-details'}"
-                          :loading="loading"
+                          
                           class="mx-auto my12"
                           max-width="374" >
                       <template slot="progress">
@@ -73,7 +73,7 @@
                       
                       <v-card
                           :to="{name : 'service-content-details'}"
-                          :loading="loading"
+                          
                           class="mx-auto my-1"
                           max-width="374" >
                       <template slot="progress">
@@ -122,7 +122,7 @@
                       
                       <v-card
                           :to="{name : 'service-content-details'}"
-                          :loading="loading"
+                          
                           class="mx-auto my-1"
                           max-width="374" >
                       <template slot="progress">
@@ -170,7 +170,7 @@
                       
                       <v-card
                           :to="{name : 'service-content-details'}"
-                          :loading="loading"
+                          
                           class="mx-auto my12"
                           max-width="374" >
                       <template slot="progress">
@@ -218,7 +218,7 @@
                       
                       <v-card
                           :to="{name : 'service-content-details'}"
-                          :loading="loading"
+                          
                           class="mx-auto my12"
                           max-width="374" >
                       <template slot="progress">

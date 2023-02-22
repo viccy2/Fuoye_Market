@@ -4,7 +4,7 @@
         <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
         
     <div class="service1 hidden-sm-and-down" style="margin-top:0px">
-      <br>
+    
       <v-container fluid>
           <template>
 
@@ -18,6 +18,7 @@
                   lg="12"
                 >
                   <v-text-field
+                    color="#673AB7"
                     ref="search"
                     v-model="search"
                     hide-details
@@ -25,11 +26,11 @@
                     single-line
                   ></v-text-field>
                 </v-col>
-              </v-row>
+              </v-row><br>
             </v-container>
             
-            <v-layout row wrap>
-              <v-flex lg2 md2  class="pa-2"  >
+            <v-row>
+              <v-col lg="2"  >
                 <template v-for="item in categories">                                    
                   <v-card
                     v-if="!selected.includes(item)"
@@ -40,9 +41,9 @@
                     :to="{name : 'product-details'}"
                   >
                     <v-img
-                        :src="item.src"
+                        :src="`../../${item.image}`"
                         height="200px"
-                        :lazy-src="item.lazy"
+                        :lazy-src="item.lazyimg"
                         aspect-ratio="1"
                         class="grey lighten-2"
                     >
@@ -71,9 +72,9 @@
                     </v-card-text>
 
                   </v-card>
-                </template>
-              </v-flex>
-            </v-layout>
+                </template><br><br><br>
+              </v-col>
+            </v-row>
           </template>
         </v-container>
     </div>
@@ -461,13 +462,13 @@ export default {
       items: [
         {
           text: 'Palm Sandal',
-          src: '../../assets/images/product-2-1.jpg',
-          lazy:'../../assets/images/product-2-1.jpg',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
         },
         {
           text: 'Nightlife',
-          src: '../../assets/images/product-2-1.jpg',
-          lazy:'../../assets/images/product-2-1.jpg',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
         }
        
       ],

@@ -61,7 +61,6 @@
 
                             </v-form>
 
-                             <p class="container pa-5" style="font-size:11px">Already have an account ? <a href="/sign-in">Here</a></p>
 
                         </v-card><br><br>
                     </v-flex>
@@ -126,8 +125,7 @@
 
                             </v-form>
 
-                             <p class="container pa-5" style="font-size:11px">Already have an account ? <a href="/sign-in">Here</a></p>
-
+                   
                         </v-card><br><br>
                     </v-flex>
               </v-layout>

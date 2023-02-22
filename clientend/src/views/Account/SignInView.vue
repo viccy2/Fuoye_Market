@@ -25,8 +25,8 @@
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
-                                name="input-10-2" label="Password"  hint="At least 8 characters" 
+                                :rules="[rules.required]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
+                                name="input-10-2" label="Password" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>  
                                 <br>
@@ -47,7 +47,7 @@
         
         <div class="hidden-md-and-up" style="margin-top:80px">
             <template>
-                <div class="pa-2">
+                <div class="">
                     <v-img
                         class="mx-auto "
                         max-width="228"
@@ -55,9 +55,9 @@
                     ></v-img>
                     <v-card
                         class="mx-auto pa-10 pb-8"
-                        elevation="8"
+                        flat
                         max-width="448"
-                        rounded="lg"
+                      
                     >
                     <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
      
@@ -72,8 +72,8 @@
 
                     <v-text-field
                         :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                        :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'" 
-                        name="input-10-2" label="Password"  hint="At least 8 characters" color="#673AB7"
+                        :rules="[rules.required]" :type="show2 ? 'text' : 'password'" 
+                        name="input-10-2" label="Password" color="#673AB7"
                         class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"
                         density="compact"
                         placeholder="Enter your password"
@@ -92,13 +92,13 @@
                     </v-card>
                     <v-btn type="submit" class="text-capitalize"  variant="tonal"
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                sign up
+                                sign in
                     </v-btn>
                 
             </v-form>
                 <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
                         <a
-                        class="text-caption text-decoration-none "
+                        class="text-caption text-decoration-none small"
                         href="#"
                         style="color:#673AB7"
                         rel="noopener noreferrer"
@@ -109,7 +109,7 @@
                 </div>
                 <v-card-text class="text-center">
                     <a
-                    class="text-blue text-decoration-none"
+                    class="text-blue text-decoration-none small"
                     href="new-account"
                     rel="noopener noreferrer"
                     target="new-account"
@@ -118,7 +118,7 @@
                     Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
                     </a>
                 </v-card-text>
-        </v-card>
+        </v-card><br><br>
     </div>
     </template>
             
@@ -143,7 +143,7 @@ export default {
             password: 'Password',
             rules: {
             required: value => !!value || 'This field is required.',
-            min: v => v.length >= 8 || 'Min 8 characters',
+            // min: v => v.length >= 8 || 'Min 8 characters',
             },
         }
     },
@@ -156,6 +156,7 @@ export default {
     }
 }
 </script>
+
 
 <style>
 
