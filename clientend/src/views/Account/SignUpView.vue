@@ -89,21 +89,21 @@
                                 :rules="[rules.required]" 
                                 v-model="post.username"
                                 label="Username" type="text" color="#673AB7"  clearable
-                                prepend-icon="mdi-account" class="small">
+                                prepend-icon="mdi-account-outline" class="small">
                                 </v-text-field>
 
                                 <v-text-field 
                                 :rules="[rules.required]"
                                 v-model="post.email" 
                                 label="Email" type="email" color="#673AB7"  clearable
-                                prepend-icon="mdi-gmail" class="small">
+                                prepend-icon="mdi-gmail-outline" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 v-model="post.password" color="#673AB7"  
                                 name="input-10-2" label="Password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock-outline"> 
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"

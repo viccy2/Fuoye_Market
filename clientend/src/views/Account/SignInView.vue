@@ -62,6 +62,7 @@
                     <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
      
                     <v-text-field
+                        class="small"
                         :rules="[rules.required]" 
                         density="compact"
                         placeholder="Email address"
@@ -72,8 +73,8 @@
 
                     <v-text-field
                         :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                        :rules="[rules.required]" :type="show2 ? 'text' : 'password'" 
-                        name="input-10-2" label="Password" color="#673AB7"
+                        :rules="[rules.required]" :type="show2 ? 'text' : 'Enter your password'" 
+                        name="input-10-2" label="Enter your password" color="#673AB7"
                         class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"
                         density="compact"
                         placeholder="Enter your password"

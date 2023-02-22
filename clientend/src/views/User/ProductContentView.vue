@@ -6,9 +6,10 @@
     <div class="service1 hidden-sm-and-down" style="margin-top:0px">
     
       <v-container fluid>
-          <template>
-
-            <v-container>
+        <template>
+          <v-container>
+          
+              <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
                 align="center"
                 justify="start"
@@ -18,35 +19,42 @@
                   lg="12"
                 >
                   <v-text-field
+                    solo
                     color="#673AB7"
                     ref="search"
                     v-model="search"
                     hide-details
-                    label="Search"
+                    label="Search all products..."
                     single-line
                   ></v-text-field>
                 </v-col>
               </v-row><br>
-            </v-container>
-            
-            <v-row>
-              <v-col lg="2"  >
-                <template v-for="item in categories">                                    
-                  <v-card
-                    v-if="!selected.includes(item)"
+
+              <v-container>
+                <v-row class="pa-2">
+                  <v-col 
+                    v-for="item in categories"
                     :key="item.text"
-                    :disabled="loading"
-                    class="mx-auto grey lighten-4"
-                    max-width="344"
-                    :to="{name : 'product-details'}"
+                    class = "d-flex child-flex"
+                    cols="3"
+                
                   >
-                    <v-img
+
+                  <template >                                    
+                    <v-card
+                      v-if="!selected.includes(item)"
+                      :disabled="loading"
+                      class="mx-auto grey lighten-4"
+                      max-width="344"
+                      :to="{name : 'product-details'}"
+                    >
+                      <v-img
                         :src="`../../${item.image}`"
                         height="200px"
                         :lazy-src="item.lazyimg"
                         aspect-ratio="1"
                         class="grey lighten-2"
-                    >
+                      >
                       <template v-slot:placeholder>
                         <v-row
                           class="fill-height ma-0"
@@ -59,7 +67,7 @@
                           ></v-progress-circular>
                         </v-row>
                       </template>
-                    </v-img>
+                      </v-img>
 
                     <v-card-title style="font-size:12px;" v-text="item.text">
                     </v-card-title>
@@ -75,385 +83,113 @@
                 </template><br><br><br>
               </v-col>
             </v-row>
-          </template>
-        </v-container>
+            </v-container>
+
+          </v-card>
+         
+          </v-container>
+        </template>
+      </v-container>
     </div>
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-          <div class="service2 hidden-md-and-up" style="margin-top:10px;">
-            <v-container fluid>
-        
-            <v-layout row wrap>
-              <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/img8.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/img8.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
+    <div class="service2 hidden-md-and-up" style="margin-top:-10px;">
+      <v-container>
+        <template>
+          <v-container fluid>
+            <v-col sm="12" xs="12">
+              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
+              <v-row
+                align="center"
+                justify="start"
+              >
+                <v-col
+                  v-if="!allSelected"
+                  sm="12"
+                >
+                  <v-text-field
+                    solo
+                    color="#673AB7"
+                    ref="search"
+                    v-model="search"
+                    hide-details
+                    label="Search all products..."
+                    single-line
+                  ></v-text-field>
+                </v-col>
+              </v-row><br>
 
-                                    <v-card-title style="font-size:12px;">
-                                       LG Smart Curve Tv
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 300, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Oye-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-3b.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-3b.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                        Dell Laptop
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 505, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Oye-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-              </v-flex><br>
-              <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-51.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-51.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                        Helmet
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 15, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
+              <v-container fluid>
+                <v-row class="">
+                  <v-col 
+                    v-for="item in categories"
+                    :key="item.text"
+                    class = "d-flex child-flex"
+                    cols="6"
                 
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-6-2.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-6-2.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
+                  >
 
-                                    <v-card-title style="font-size:12px;">
-                                       Arm Chair
-                                    </v-card-title>
+                  <template >                                    
+                    <v-card
+                      v-if="!selected.includes(item)"
+                      :disabled="loading"
+                      class="mx-auto grey lighten-4"
+                      max-width="344"
+                      :to="{name : 'product-details'}"
+                    >
+                      <v-img
+                        :src="`../../${item.image}`"
+                        height="200px"
+                        :lazy-src="item.lazyimg"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+                      </v-img>
 
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 30, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
+                    <v-card-title style="font-size:12px;" v-text="item.text">
+                    </v-card-title>
 
-                                </v-card>
+                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                      # 15, 000
+                    </v-card-subtitle>
+                    <v-card-text style="font-size:10px;">
+                        <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                    </v-card-text>
 
-                        </center>
-                        
-                    </v-flex><br>
-                
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-8-2.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-8-2.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                       Straw Bag
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 20, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/n1.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/n1.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                       Bag Pack
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 10, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon">mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-2-1.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-2-1.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                       Palm Sandal
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 15, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
-                    
-                    <v-flex sm6 xs6 class="pa-2">
-                         <center>
-                                                        
-                                <v-card
-                                    class="mx-auto grey lighten-4"
-                                    max-width="344"
-                                    :to="{name : 'product-details'}"
-                                >
-                                    <v-img
-                                    src="../../assets/images/product-13-1.jpg"
-                                    height="200px"
-                                    lazy-src="../../assets/images/product-13-1.jpg"
-                                    aspect-ratio="1"
-                                    class="grey lighten-2"
-                                  >
-                                    <template v-slot:placeholder>
-                                      <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                      >
-                                        <v-progress-circular
-                                          indeterminate
-                                          color="grey lighten-5"
-                                        ></v-progress-circular>
-                                      </v-row>
-                                    </template>
-                                  </v-img>
-
-                                    <v-card-title style="font-size:12px;">
-                                       Sofa Chair
-                                    </v-card-title>
-
-                                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                                    # 130, 000
-                                    </v-card-subtitle>
-                                    <v-card-text style="font-size:10px;">
-                                      <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                                    </v-card-text>
-
-                                </v-card>
-
-                        </center>
-                        
-                    </v-flex><br>
-                    
-            </v-layout>
+                  </v-card>
+                </template><br><br><br>
+              </v-col>
+            </v-row>
             </v-container>
-        </div><br><br><br><br>
+
+          </v-card>
+          </v-col>
+          </v-container><br><br>
+        </template>
+      </v-container>
     </div>
+
+</div>
 </template>
+
+
+
+
+
+
 <script>
 export default {
     name : 'product-content',
@@ -469,7 +205,48 @@ export default {
           text: 'Nightlife',
           image: 'assets/images/product-2-1.jpg',
           lazyimg:'assets/images/product-2-1.jpg',
-        }
+        },
+        {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+         {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+        {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+        {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+        {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+         {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+         {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+         {
+          text: 'Palm Sandal',
+          image: 'assets/images/product-2-1.jpg',
+          lazyimg:'assets/images/product-2-1.jpg',
+        },
+        
        
       ],
       loading: false,
