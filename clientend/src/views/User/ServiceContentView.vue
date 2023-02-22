@@ -7,7 +7,7 @@
         <div class="service1 hidden-sm-and-down" style="margin-top:0px">
             <v-container fluid>
         <template>
-          <v-container>
+          <v-container fluid>
           
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
@@ -103,7 +103,7 @@
             <v-container fluid>
               <template>
             <v-container fluid>
-            <v-col sm="12" xs="12">
+            
               <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
                 align="center"
@@ -186,7 +186,7 @@
             </v-container>
 
           </v-card>
-          </v-col>
+         
           </v-container>
         </template>
       </v-container>
