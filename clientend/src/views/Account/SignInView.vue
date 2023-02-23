@@ -46,6 +46,7 @@
         </div>
         
         <div class="hidden-md-and-up" style="margin-top:80px">
+            <v-container fluid>
             <template>
                 <div class="">
                     <v-img
@@ -54,9 +55,9 @@
                         src="../../assets/images/a2.png"
                     ></v-img>
                     <v-card
-                        class="mx-auto pa-10 pb-8"
+                        
                         flat
-                        max-width="448"
+                        
                       
                     >
                     <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
@@ -122,7 +123,7 @@
         </v-card><br><br>
     </div>
     </template>
-            
+</v-container>
 </div>
 
      <!-- FOOTER SECTION  -->

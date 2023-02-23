@@ -96,7 +96,7 @@
                                 :rules="[rules.required]"
                                 v-model="post.email" 
                                 label="Email" type="email" color="#673AB7"  clearable
-                                prepend-icon="mdi-gmail-outline" class="small">
+                                prepend-inner-icon="mdi-email-outline" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
