@@ -94,7 +94,7 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-    <div class="service2 hidden-md-and-up" style="margin-top:-10px;">
+    <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
       <v-container fluid>
         <template>
           <v-container fluid>
@@ -108,16 +108,47 @@
                   v-if="!allSelected"
                   sm="12"
                 >
-                  <v-text-field
-                    solo
-                    color="#673AB7"
-                    ref="search"
-                    v-model="search"
-                    hide-details
-                    label="Search all products..."
-                    single-line
-                  ></v-text-field>
+                  <template>
+                     <v-card
+                      class="mx-auto"
+                      color="grey-lighten-3"
+                      max-width="400"
+                    >
+                      <v-card-text>
+                        <v-text-field
+                          color="#673AB7"
+                          ref="search"
+                          v-model="search"
+                          
+                          density="compact"
+                          variant="solo"
+                          label="Search all products..."
+                          append-inner-icon="mdi-magnify"
+                          single-line
+                          hide-details
+                          @click:append-inner="onClick"
+                        ></v-text-field>
+                      </v-card-text>
+                    </v-card>
+                  </template>
+             
                 </v-col>
+                <!-- <v-col sm="4">
+                  <template>
+                    <v-select
+                        v-model="select"
+                        :hint="`${select.state}, ${select.abbr}`"
+                        :items="selections"
+                        selection-title="state"
+                        selection-value="abbr"
+                        label="Select"
+                        persistent-hint
+                        return-object
+                        single-line
+                      >
+                    </v-select>
+                  </template>
+                </v-col> -->
               </v-row><br>
 
               <v-container fluid>
@@ -139,7 +170,7 @@
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="`../../${item.image}`"
+                        :src="`${item.image}`"
                         height="200px"
                         :lazy-src="item.lazyimg"
                         aspect-ratio="1"
@@ -195,60 +226,70 @@ export default {
     name : 'product-content',
 
     data: () => ({
+      loaded: false,
+      loading: false,
       items: [
         {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         {
           text: 'Nightlife',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
          {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
          {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
          {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
          {
           text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
+          image: '../../assets/images/product-2-1.jpg',
+          lazyimg:'../../assets/images/product-2-1.jpg',
         },
         
        
       ],
+       select: { state: 'Florida', abbr: 'FL' },
+        selections: [
+          { state: 'Florida', abbr: 'FL' },
+          { state: 'Georgia', abbr: 'GA' },
+          { state: 'Nebraska', abbr: 'NE' },
+          { state: 'California', abbr: 'CA' },
+          { state: 'New York', abbr: 'NY' },
+        ],
       loading: false,
       search: '',
       selected: [],
@@ -294,6 +335,14 @@ export default {
           this.search = ''
           this.selected = []
           this.loading = false
+        }, 2000)
+      },
+      onClick () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.loading = false
+          this.loaded = true
         }, 2000)
       },
     },

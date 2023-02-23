@@ -99,7 +99,7 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-          <div class="service2 hidden-md-and-up" style="margin-top:0px">
+          <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
             <v-container fluid>
               <template>
             <v-container fluid>
@@ -113,15 +113,29 @@
                   v-if="!allSelected"
                   sm="12"
                 >
-                  <v-text-field
-                    solo
-                    color="#673AB7"
-                    ref="search"
-                    v-model="search"
-                    hide-details
-                    label="Search all services..."
-                    single-line
-                  ></v-text-field>
+                <template>
+                     <v-card
+                      class="mx-auto"
+                      color="grey-lighten-3"
+                      max-width="400"
+                    >
+                      <v-card-text>
+                        <v-text-field
+                          color="#673AB7"
+                          ref="search"
+                          v-model="search"
+                          
+                          density="compact"
+                          variant="solo"
+                          label="Search all services..."
+                          append-inner-icon="mdi-magnify"
+                          single-line
+                          hide-details
+                          @click:append-inner="onClick"
+                        ></v-text-field>
+                      </v-card-text>
+                    </v-card>
+                  </template>
                 </v-col>
               </v-row><br>
 
@@ -198,6 +212,8 @@ export default {
     name : 'service-content',
   
     data: () => ({
+      loaded: false,
+      loading: false,
       items: [
         {
           text: 'Palm Sandal',
@@ -251,7 +267,15 @@ export default {
         },
         
        
-      ],
+        ],
+       select: { state: 'Florida', abbr: 'FL' },
+        selections: [
+          { state: 'Florida', abbr: 'FL' },
+          { state: 'Georgia', abbr: 'GA' },
+          { state: 'Nebraska', abbr: 'NE' },
+          { state: 'California', abbr: 'CA' },
+          { state: 'New York', abbr: 'NY' },
+        ],
       loading: false,
       search: '',
       selected: [],
@@ -289,6 +313,25 @@ export default {
       },
     },
 
+    methods: {
+      next () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.search = ''
+          this.selected = []
+          this.loading = false
+        }, 2000)
+      },
+      onClick () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.loading = false
+          this.loaded = true
+        }, 2000)
+      },
+    },
   }
 </script>
 

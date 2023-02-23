@@ -1,7 +1,7 @@
 <template>
     <div class="content-view" >
         <!-- SAVED SELLER SECTION -->
-            <div class="new-sellers">
+            <div class="new-sellers" style="margin-top:-20px;">
              <v-card flat class="rounded-lg " elevation=''>
              <v-container fluid>
 
@@ -16,16 +16,31 @@
                 <v-col
                   v-if="!allSelected"
                   sm="12"
+                  lg="12"
                 >
-                  <v-text-field
-                    solo
-                    color="#673AB7"
-                    ref="search"
-                    v-model="search"
-                    hide-details
-                    label="Search sellers ..."
-                    single-line
-                  ></v-text-field>
+                <template>
+                     <v-card
+                      class="mx-auto"
+                      color="grey-lighten-3"
+                      
+                    >
+                      <v-card-text>
+                        <v-text-field
+                          color="#673AB7"
+                          ref="search"
+                          v-model="search"
+                          
+                          density="compact"
+                          variant="solo"
+                          label="Search all services..."
+                          append-inner-icon="mdi-magnify"
+                          single-line
+                          hide-details
+                          @click:append-inner="onClick"
+                        ></v-text-field>
+                      </v-card-text>
+                    </v-card>
+                  </template>
                 </v-col>
               </v-row><br>
               <v-card-title style="font-weight:bold;margin-top:-10px;font-size:12px;"> Saved Sellers For You : </v-card-title>
@@ -135,9 +150,9 @@ export default {
           image: '../../assets/images/product-2-1.jpg',
           lazyimg:'../../assets/images/product-2-1.jpg',
         },
-        
-       
-      ],
+
+        ],
+   
       loading: false,
       search: '',
       selected: [],
@@ -175,6 +190,25 @@ export default {
       },
     },
 
+    methods: {
+      next () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.search = ''
+          this.selected = []
+          this.loading = false
+        }, 2000)
+      },
+      onClick () {
+        this.loading = true
+
+        setTimeout(() => {
+          this.loading = false
+          this.loaded = true
+        }, 2000)
+      },
+    },
   }
 </script>
 
