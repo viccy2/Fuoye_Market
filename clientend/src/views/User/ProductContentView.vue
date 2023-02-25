@@ -14,20 +14,50 @@
                 align="center"
                 justify="start"
               >
+               <v-col
+                  
+                  lg="1"
+                ></v-col>
                 <v-col
                   v-if="!allSelected"
-                  lg="12"
+                  lg="8"
                 >
-                  <v-text-field
-                    solo
-                    color="#673AB7"
-                    ref="search"
-                    v-model="search"
-                    hide-details
-                    label="Search all products..."
-                    single-line
-                  ></v-text-field>
+                <template>
+                     <v-card
+                      class="mx-auto"
+                      color="grey-lighten-3"
+                      flat
+                      
+                    >
+                      <v-card-text>
+                        <v-text-field
+                          color="#673AB7"
+                          ref="search"
+                          v-model="search"
+                          solo
+                          density="compact"
+                          variant="solo"
+                          label="Search all products..."
+                          append-inner-icon="mdi-magnify"
+                          single-line
+                          hide-details
+                          @click:append-inner="onClick"
+                        ></v-text-field>
+                      </v-card-text>
+                    </v-card>
+                  </template>
                 </v-col>
+               
+                <v-col
+                 
+                  lg="1"
+                >
+                <v-btn class="" large >Select Category</v-btn>
+              </v-col>
+              <v-col
+                  
+                  lg="2"
+                ></v-col>
               </v-row><br>
 
               <v-container>
@@ -69,7 +99,7 @@
                       </template>
                       </v-img>
 
-                    <v-card-title style="font-size:12px;" v-text="item.text">
+                    <v-card-title style="font-size:12px;">
                     </v-card-title>
 
                     <v-card-subtitle style="font-size:11px;color:#673AB7;">
@@ -99,7 +129,7 @@
         <template>
           <v-container fluid>
             
-              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
+              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
                 align="center"
                 justify="start"
@@ -108,18 +138,19 @@
                   v-if="!allSelected"
                   sm="12"
                 >
+              
                   <template>
                      <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
-                      max-width="400"
+                      flat
                     >
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
                           ref="search"
                           v-model="search"
-                          
+                          solo
                           density="compact"
                           variant="solo"
                           label="Search all products..."
@@ -131,8 +162,13 @@
                       </v-card-text>
                     </v-card>
                   </template>
-             
                 </v-col>
+                <v-col
+                  sm="1"
+                >
+                <v-btn class="text-capitalize" >Category</v-btn>
+              </v-col>
+             
                 <!-- <v-col sm="4">
                   <template>
                     <v-select
@@ -149,12 +185,12 @@
                     </v-select>
                   </template>
                 </v-col> -->
-              </v-row><br>
+              </v-row>
 
               <v-container fluid>
                 <v-row class="">
                   <v-col 
-                    v-for="item in categories"
+                    v-for="item in items"
                     :key="item.text"
                     class = "d-flex child-flex"
                     cols="6"
@@ -190,7 +226,7 @@
                       </template>
                       </v-img>
 
-                    <v-card-title style="font-size:12px;" v-text="item.text">
+                    <v-card-title style="font-size:12px;" >
                     </v-card-title>
 
                     <v-card-subtitle style="font-size:11px;color:#673AB7;">
@@ -204,11 +240,11 @@
                 </template><br><br><br>
               </v-col>
             </v-row>
-            </v-container>
+            </v-container><br>
 
           </v-card>
           
-          </v-container><br><br>
+          </v-container>
         </template>
       </v-container>
     </div>
@@ -290,7 +326,7 @@ export default {
           { state: 'California', abbr: 'CA' },
           { state: 'New York', abbr: 'NY' },
         ],
-      loading: false,
+     
       search: '',
       selected: [],
     }),

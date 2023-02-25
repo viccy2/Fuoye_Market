@@ -10,24 +10,54 @@
           <v-container fluid>
           
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
-              <v-row
+                <v-row
                 align="center"
                 justify="start"
               >
+               <v-col
+                  
+                  lg="1"
+                ></v-col>
                 <v-col
                   v-if="!allSelected"
-                  lg="12"
+                  lg="8"
                 >
-                  <v-text-field
-                    solo
-                    color="#673AB7"
-                    ref="search"
-                    v-model="search"
-                    hide-details
-                    label="Search all services..."
-                    single-line
-                  ></v-text-field>
+                <template>
+                     <v-card
+                      class="mx-auto"
+                      color="grey-lighten-3"
+                      flat
+                      
+                    >
+                      <v-card-text>
+                        <v-text-field
+                          color="#673AB7"
+                          ref="search"
+                          v-model="search"
+                          solo
+                          density="compact"
+                          variant="solo"
+                          label="Search all services..."
+                          append-inner-icon="mdi-magnify"
+                          single-line
+                          hide-details
+                          @click:append-inner="onClick"
+                        ></v-text-field>
+                      </v-card-text>
+                    </v-card>
+                  </template>
                 </v-col>
+               
+                <v-col
+                 
+                  lg="1"
+                >
+                <v-btn class="" large >Select Category</v-btn>
+              </v-col>
+              <v-col
+                  
+                  lg="2"
+                ></v-col>
               </v-row><br>
 
               <v-container>
@@ -104,7 +134,7 @@
               <template>
             <v-container fluid>
             
-              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
+              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
                 align="center"
                 justify="start"
@@ -117,14 +147,14 @@
                      <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
-                      max-width="400"
+                      flat
                     >
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
                           ref="search"
                           v-model="search"
-                          
+                          solo
                           density="compact"
                           variant="solo"
                           label="Search all services..."
@@ -137,7 +167,12 @@
                     </v-card>
                   </template>
                 </v-col>
-              </v-row><br>
+                <v-col
+                  sm="1"
+                >
+                <v-btn class="text-capitalize" >Category</v-btn>
+              </v-col>
+              </v-row>
 
               <v-container fluid>
                 <v-row class="">
@@ -200,11 +235,11 @@
             </v-container>
 
           </v-card>
-         
+          
           </v-container>
         </template>
       </v-container>
-      </div><br><br><br><br>
+      </div>
     </div>
 </template>
 <script>
@@ -276,7 +311,7 @@ export default {
           { state: 'California', abbr: 'CA' },
           { state: 'New York', abbr: 'NY' },
         ],
-      loading: false,
+  
       search: '',
       selected: [],
     }),

@@ -7,21 +7,24 @@
 
             <template>
             <v-container fluid>
-            <v-col sm="12" xs="12">
-              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
-              <v-row
+            <v-col sm="12" xs="12" lg="12">
+              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
+                <v-row
                 align="center"
                 justify="start"
               >
+          
                 <v-col
                   v-if="!allSelected"
-                  sm="12"
                   lg="12"
+                  sm="12"
+                  xs="12"
                 >
                 <template>
                      <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
+                      flat
                       
                     >
                       <v-card-text>
@@ -29,10 +32,10 @@
                           color="#673AB7"
                           ref="search"
                           v-model="search"
-                          
+                          solo
                           density="compact"
                           variant="solo"
-                          label="Search all services..."
+                          label="Search all sellers..."
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
@@ -42,7 +45,9 @@
                     </v-card>
                   </template>
                 </v-col>
+           
               </v-row><br>
+
               <v-card-title style="font-weight:bold;margin-top:-10px;font-size:12px;"> Saved Sellers For You : </v-card-title>
               <v-container fluid>
                 <v-row class="">
