@@ -15,7 +15,6 @@
               >
           
                 <v-col
-                  v-if="!allSelected"
                   lg="12"
                   sm="12"
                   xs="12"
@@ -30,7 +29,6 @@
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
-                          ref="search"
                           v-model="search"
                           solo
                           density="compact"
@@ -39,8 +37,9 @@
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
-                          @click:append-inner="onClick"
-                        ></v-text-field>
+                         
+                        >
+                        </v-text-field>
                       </v-card-text>
                     </v-card>
                   </template>
@@ -52,8 +51,7 @@
               <v-container fluid>
                 <v-row class="">
                   <v-col 
-                    v-for="item in categories"
-                    :key="item.text"
+                    v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
                     cols="12"
                 
@@ -65,11 +63,11 @@
                                 <v-flex lg8 md8 sm8 xs8>
                                     <v-list-item three-line style="margin-top:-10px">
                                         <v-list-item-avatar class="rounded-lg"  height="" width="" color="grey">
-                                            <img  :src="`${item.image}`">
+                                            <img  :src="`${product.name}`">
                                         </v-list-item-avatar>
                                         <v-card-text>
                                             <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
-                                                Continental - Contiecocontact 
+                                                {{product.name}}
                                             </div>
                                         </v-card-text>
                                     </v-list-item>
@@ -102,118 +100,29 @@
 <script>
 export default {
     name : 'product-content',
-  
     data: () => ({
-      items: [
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Nightlife',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-
-        ],
-   
-      loading: false,
-      search: '',
-      selected: [],
+      products: [
+        { name: 'Product 1', category: 'Category A' },
+        { name: 'Product 2', category: 'Category B' },
+        { name: 'Product 3', category: 'Category A' },
+        { name: 'Product 4', category: 'Category C' },
+        { name: 'Product 5', category: 'Category B' }
+      ],
+      categories: ['Category A', 'Category B', 'Category C'],
+      selectedCategory: null,
+      search: ''
     }),
 
-    computed: {
-      allSelected () {
-        return this.selected.length === this.items.length
-      },
-      categories () {
-        const search = this.search.toLowerCase()
+  computed: {
+    filteredProducts() {
+      return this.products.filter(product => {
+        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
+        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+        return categoryMatch && nameMatch;
+      });
+    }
+ }
 
-        if (!search) return this.items
-
-        return this.items.filter(item => {
-          const text = item.text.toLowerCase()
-
-          return text.indexOf(search) > -1
-        })
-      },
-      selections () {
-        const selections = []
-
-        for (const selection of this.selected) {
-          selections.push(selection)
-        }
-
-        return selections
-      },
-    },
-
-    watch: {
-      selected () {
-        this.search = ''
-      },
-    },
-
-    methods: {
-      next () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.search = ''
-          this.selected = []
-          this.loading = false
-        }, 2000)
-      },
-      onClick () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.loading = false
-          this.loaded = true
-        }, 2000)
-      },
-    },
   }
 </script>
 

@@ -8,31 +8,27 @@
       <v-container fluid>
         <template>
           <v-container fluid>
-          
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
                 align="center"
                 justify="start"
               >
-               <v-col
-                  
-                  lg="1"
-                ></v-col>
                 <v-col
-                  v-if="!allSelected"
-                  lg="8"
+                  lg="1"
+                >
+                </v-col>
+
+                <v-col
+                  lg="7"
                 >
                 <template>
-                     <v-card
+                    <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
-                      flat
-                      
-                    >
+                      flat>
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
-                          ref="search"
                           v-model="search"
                           solo
                           density="compact"
@@ -41,30 +37,36 @@
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
-                          @click:append-inner="onClick"
-                        ></v-text-field>
+                         
+                        >
+                        </v-text-field>
                       </v-card-text>
                     </v-card>
                   </template>
                 </v-col>
                
                 <v-col
-                 
-                  lg="1"
+                  lg="4"
                 >
-                <v-btn class="" large >Select Category</v-btn>
-              </v-col>
+                  <v-select
+                    v-model="selectedCategory"
+                    :items="categories"
+                    label="Select a category"
+                  ></v-select>
+                </v-col>
+
               <v-col
-                  
-                  lg="2"
-                ></v-col>
+                  lg="1"
+              ></v-col>
+
               </v-row><br>
+
+              <!-- PRODUCTS CARD -->
 
               <v-container>
                 <v-row class="pa-2">
                   <v-col 
-                    v-for="item in categories"
-                    :key="item.text"
+                    v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
                     cols="3"
                 
@@ -72,16 +74,13 @@
 
                   <template >                                    
                     <v-card
-                      v-if="!selected.includes(item)"
-                      :disabled="loading"
                       class="mx-auto grey lighten-4"
                       max-width="344"
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="`../../${item.image}`"
+                        :src="product.name"
                         height="200px"
-                        :lazy-src="item.lazyimg"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -97,24 +96,26 @@
                           ></v-progress-circular>
                         </v-row>
                       </template>
+
                       </v-img>
 
                     <v-card-title style="font-size:12px;">
                     </v-card-title>
 
                     <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                      # 15, 000
+                      {{ product.name }}
                     </v-card-subtitle>
+
                     <v-card-text style="font-size:10px;">
                         <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
                     </v-card-text>
 
                   </v-card>
                 </template><br><br><br>
+
               </v-col>
             </v-row>
             </v-container>
-
           </v-card>
          
           </v-container>
@@ -135,7 +136,6 @@
                 justify="start"
               >
                 <v-col
-                  v-if="!allSelected"
                   sm="12"
                 >
               
@@ -147,8 +147,8 @@
                     >
                       <v-card-text>
                         <v-text-field
+                          class="small"
                           color="#673AB7"
-                          ref="search"
                           v-model="search"
                           solo
                           density="compact"
@@ -157,41 +157,30 @@
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
-                          @click:append-inner="onClick"
+                         
                         ></v-text-field>
                       </v-card-text>
+
                     </v-card>
                   </template>
                 </v-col>
                 <v-col
-                  sm="1"
+                  sm="12"
                 >
-                <v-btn class="text-capitalize" >Category</v-btn>
+                  <v-select
+                    class="small"
+                    v-model="selectedCategory"
+                    :items="categories"
+                    label="Select a category"
+                  ></v-select>
               </v-col>
-             
-                <!-- <v-col sm="4">
-                  <template>
-                    <v-select
-                        v-model="select"
-                        :hint="`${select.state}, ${select.abbr}`"
-                        :items="selections"
-                        selection-title="state"
-                        selection-value="abbr"
-                        label="Select"
-                        persistent-hint
-                        return-object
-                        single-line
-                      >
-                    </v-select>
-                  </template>
-                </v-col> -->
-              </v-row>
+      
+          </v-row>
 
               <v-container fluid>
                 <v-row class="">
                   <v-col 
-                    v-for="item in items"
-                    :key="item.text"
+                    v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
                     cols="6"
                 
@@ -199,16 +188,15 @@
 
                   <template >                                    
                     <v-card
-                      v-if="!selected.includes(item)"
                       :disabled="loading"
                       class="mx-auto grey lighten-4"
                       max-width="344"
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="`${item.image}`"
+                        :src="`${product.name}`"
                         height="200px"
-                        :lazy-src="item.lazyimg"
+                        :lazy-src="product.name"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -226,17 +214,17 @@
                       </template>
                       </v-img>
 
-                    <v-card-title style="font-size:12px;" >
-                    </v-card-title>
+                        <v-card-title style="font-size:12px;" >
+                        </v-card-title>
 
-                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
-                      # 15, 000
-                    </v-card-subtitle>
-                    <v-card-text style="font-size:10px;">
-                        <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
-                    </v-card-text>
+                        <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                         {{product.name}}
+                        </v-card-subtitle>
+                        <v-card-text style="font-size:10px;">
+                            <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                        </v-card-text>
 
-                  </v-card>
+                    </v-card>
                 </template><br><br><br>
               </v-col>
             </v-row>
@@ -254,134 +242,33 @@
 
 
 
-
-
-
 <script>
 export default {
     name : 'product-content',
-
     data: () => ({
-      loaded: false,
-      loading: false,
-      items: [
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Nightlife',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: '../../assets/images/product-2-1.jpg',
-          lazyimg:'../../assets/images/product-2-1.jpg',
-        },
-        
-       
+      loading:false,
+      products: [
+        { name: 'Product 1', category: 'Category A' },
+        { name: 'Product 2', category: 'Category B' },
+        { name: 'Product 3', category: 'Category A' },
+        { name: 'Product 4', category: 'Category C' },
+        { name: 'Product 5', category: 'Category B' }
       ],
-       select: { state: 'Florida', abbr: 'FL' },
-        selections: [
-          { state: 'Florida', abbr: 'FL' },
-          { state: 'Georgia', abbr: 'GA' },
-          { state: 'Nebraska', abbr: 'NE' },
-          { state: 'California', abbr: 'CA' },
-          { state: 'New York', abbr: 'NY' },
-        ],
-     
-      search: '',
-      selected: [],
+      categories: ['Category A', 'Category B', 'Category C'],
+      selectedCategory: null,
+      search: ''
     }),
 
-    computed: {
-      allSelected () {
-        return this.selected.length === this.items.length
-      },
-      categories () {
-        const search = this.search.toLowerCase()
+  computed: {
+    filteredProducts() {
+      return this.products.filter(product => {
+        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
+        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+        return categoryMatch && nameMatch;
+      });
+    }
+ }
 
-        if (!search) return this.items
-
-        return this.items.filter(item => {
-          const text = item.text.toLowerCase()
-
-          return text.indexOf(search) > -1
-        })
-      },
-      selections () {
-        const selections = []
-
-        for (const selection of this.selected) {
-          selections.push(selection)
-        }
-
-        return selections
-      },
-    },
-
-    watch: {
-      selected () {
-        this.search = ''
-      },
-    },
-
-    methods: {
-      next () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.search = ''
-          this.selected = []
-          this.loading = false
-        }, 2000)
-      },
-      onClick () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.loading = false
-          this.loaded = true
-        }, 2000)
-      },
-    },
   }
 </script>
 

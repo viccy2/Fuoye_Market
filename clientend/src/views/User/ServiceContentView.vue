@@ -6,65 +6,67 @@
             
         <div class="service1 hidden-sm-and-down" style="margin-top:0px">
             <v-container fluid>
-        <template>
+              <template>
           <v-container fluid>
-          
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
-                <v-row
+              <v-row
                 align="center"
                 justify="start"
               >
-               <v-col
-                  
-                  lg="1"
-                ></v-col>
                 <v-col
-                  v-if="!allSelected"
-                  lg="8"
+                  lg="1"
+                >
+                </v-col>
+
+                <v-col
+                  lg="7"
                 >
                 <template>
-                     <v-card
+                    <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
-                      flat
-                      
-                    >
+                      flat>
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
-                          ref="search"
                           v-model="search"
                           solo
                           density="compact"
                           variant="solo"
-                          label="Search all services..."
+                          label="Search all products..."
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
-                          @click:append-inner="onClick"
-                        ></v-text-field>
+                         
+                        >
+                        </v-text-field>
                       </v-card-text>
                     </v-card>
                   </template>
                 </v-col>
                
                 <v-col
-                 
-                  lg="1"
+                  lg="4"
                 >
-                <v-btn class="" large >Select Category</v-btn>
-              </v-col>
+                  <v-select
+                    v-model="selectedCategory"
+                    :items="categories"
+                    label="Select a category"
+                  ></v-select>
+                </v-col>
+
               <v-col
-                  
-                  lg="2"
-                ></v-col>
+                  lg="1"
+              ></v-col>
+
               </v-row><br>
+
+              <!-- PRODUCTS CARD -->
 
               <v-container>
                 <v-row class="pa-2">
                   <v-col 
-                    v-for="item in categories"
-                    :key="item.text"
+                    v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
                     cols="3"
                 
@@ -72,54 +74,48 @@
 
                   <template >                                    
                     <v-card
-                          :to="{name : 'service-content-details'}"
-                          
-                          class="mx-auto my12"
-                          max-width="374" >
-                      <template slot="progress">
-                          <v-progress-linear
-                              color="deep-purple"
-                              height="10"
-                              indeterminate>
-                          </v-progress-linear>
-                      </template>
+                      class="mx-auto grey lighten-4"
+                      max-width="344"
+                      :to="{name : 'product-details'}"
+                    >
                       <v-img
-                        :src="`../../${item.image}`"
-                        height="150px"
-                        :lazy-src="item.lazyimg"
+                        :src="product.name"
+                        height="200px"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                        </template>
-                        </v-img>
-                      <v-card-title style="font-size:13px;">Dan Photos.</v-card-title>
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
 
-                      <v-card-text>
-                    
+                      </v-img>
 
-                      <div class="my-4 " style="font-size:10px;">
-                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Oye-Ekiti.
-                      </div>
-                  
-                      </v-card-text>
+                    <v-card-title style="font-size:12px;">
+                    </v-card-title>
+
+                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                      {{ product.name }}
+                    </v-card-subtitle>
+
+                    <v-card-text style="font-size:10px;">
+                        <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                    </v-card-text>
 
                   </v-card>
                 </template><br><br><br>
+
               </v-col>
             </v-row>
             </v-container>
-
           </v-card>
          
           </v-container>
@@ -132,7 +128,7 @@
           <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
             <v-container fluid>
               <template>
-            <v-container fluid>
+          <v-container fluid>
             
               <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
               <v-row
@@ -140,10 +136,10 @@
                 justify="start"
               >
                 <v-col
-                  v-if="!allSelected"
                   sm="12"
                 >
-                <template>
+              
+                  <template>
                      <v-card
                       class="mx-auto"
                       color="grey-lighten-3"
@@ -152,7 +148,6 @@
                       <v-card-text>
                         <v-text-field
                           color="#673AB7"
-                          ref="search"
                           v-model="search"
                           solo
                           density="compact"
@@ -161,78 +156,78 @@
                           append-inner-icon="mdi-magnify"
                           single-line
                           hide-details
-                          @click:append-inner="onClick"
+                         
                         ></v-text-field>
                       </v-card-text>
+
                     </v-card>
                   </template>
                 </v-col>
                 <v-col
-                  sm="1"
+                  sm="12"
                 >
-                <v-btn class="text-capitalize" >Category</v-btn>
+                  <v-select
+                    class="small"
+                    v-model="selectedCategory"
+                    :items="categories"
+                    label="Select a category"
+                  ></v-select>
               </v-col>
-              </v-row>
+      
+          </v-row>
 
               <v-container fluid>
                 <v-row class="">
                   <v-col 
-                    v-for="item in categories"
-                    :key="item.text"
+                    v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
                     cols="6"
                 
                   >
 
-                  <template >                                   
+                  <template >                                    
                     <v-card
-                          :to="{name : 'service-content-details'}"
-                          
-                          class="mx-auto my-1"
-                          max-width="374" >
-                      <template slot="progress">
-                          <v-progress-linear
-                              color="deep-purple"
-                              height="10"
-                              indeterminate>
-                          </v-progress-linear>
-                      </template>
+                      :disabled="loading"
+                      class="mx-auto grey lighten-4"
+                      max-width="344"
+                      :to="{name : 'product-details'}"
+                    >
                       <v-img
-                        :src="`../../${item.image}`"
-                        height="150px"
-                        :lazy-src="item.lazyimg"
+                        :src="`${product.name}`"
+                        height="200px"
+                        :lazy-src="product.name"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
-                        <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                        </template>
-                        </v-img>
-                      <v-card-title style="font-size:13px;">Pelvix.</v-card-title>
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+                      </v-img>
 
-                      <v-card-text>
-                    
+                        <v-card-title style="font-size:12px;" >
+                        </v-card-title>
 
-                      <div class="my-4 " style="font-size:10px;">
-                          <v-icon small class="pa-3" id="icon">map-marker-radius-outline</v-icon>  Ikole-Ekiti.
-                      </div>
-                  
-                      </v-card-text>
+                        <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                         {{product.name}}
+                        </v-card-subtitle>
+                        <v-card-text style="font-size:10px;">
+                            <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                        </v-card-text>
 
-                  </v-card>
-                </template><br><br>
+                    </v-card>
+                </template><br><br><br>
               </v-col>
             </v-row>
-            </v-container>
+            </v-container><br>
 
           </v-card>
           
@@ -245,128 +240,30 @@
 <script>
 export default {
     name : 'service-content',
-  
     data: () => ({
-      loaded: false,
-      loading: false,
-      items: [
-        {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Nightlife',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-         {
-          text: 'Palm Sandal',
-          image: 'assets/images/product-2-1.jpg',
-          lazyimg:'assets/images/product-2-1.jpg',
-        },
-        
-       
-        ],
-       select: { state: 'Florida', abbr: 'FL' },
-        selections: [
-          { state: 'Florida', abbr: 'FL' },
-          { state: 'Georgia', abbr: 'GA' },
-          { state: 'Nebraska', abbr: 'NE' },
-          { state: 'California', abbr: 'CA' },
-          { state: 'New York', abbr: 'NY' },
-        ],
-  
-      search: '',
-      selected: [],
+      loading:false,
+      products: [
+        { name: 'Product 1', category: 'Category A' },
+        { name: 'Product 2', category: 'Category B' },
+        { name: 'Product 3', category: 'Category A' },
+        { name: 'Product 4', category: 'Category C' },
+        { name: 'Product 5', category: 'Category B' }
+      ],
+      categories: ['Category A', 'Category B', 'Category C'],
+      selectedCategory: null,
+      search: ''
     }),
 
-    computed: {
-      allSelected () {
-        return this.selected.length === this.items.length
-      },
-      categories () {
-        const search = this.search.toLowerCase()
+  computed: {
+    filteredProducts() {
+      return this.products.filter(product => {
+        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
+        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+        return categoryMatch && nameMatch;
+      });
+    }
+ }
 
-        if (!search) return this.items
-
-        return this.items.filter(item => {
-          const text = item.text.toLowerCase()
-
-          return text.indexOf(search) > -1
-        })
-      },
-      selections () {
-        const selections = []
-
-        for (const selection of this.selected) {
-          selections.push(selection)
-        }
-
-        return selections
-      },
-    },
-
-    watch: {
-      selected () {
-        this.search = ''
-      },
-    },
-
-    methods: {
-      next () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.search = ''
-          this.selected = []
-          this.loading = false
-        }, 2000)
-      },
-      onClick () {
-        this.loading = true
-
-        setTimeout(() => {
-          this.loading = false
-          this.loaded = true
-        }, 2000)
-      },
-    },
   }
 </script>
 
