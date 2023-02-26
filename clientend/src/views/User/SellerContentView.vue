@@ -7,47 +7,27 @@
 
             <template>
             <v-container fluid>
-            <v-col sm="12" xs="12" lg="12">
-              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
-                <v-row
-                align="center"
-                justify="start"
-              >
-          
-                <v-col
-                  lg="12"
-                  sm="12"
-                  xs="12"
-                >
-                <template>
-                     <v-card
-                      class="mx-auto"
-                      color="grey-lighten-3"
-                      flat
-                      
-                    >
-                      <v-card-text>
-                        <v-text-field
-                          color="#673AB7"
-                          v-model="search"
-                          solo
-                          density="compact"
-                          variant="solo"
-                          label="Search all sellers..."
-                          append-inner-icon="mdi-magnify"
-                          single-line
-                          hide-details
-                         
-                        >
-                        </v-text-field>
-                      </v-card-text>
-                    </v-card>
-                  </template>
-                </v-col>
-           
-              </v-row><br>
+            <v-col sm="12" xs="12" >
+              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat><br>
+                <v-row align="center" justify="center">
 
-              <v-card-title style="font-weight:bold;margin-top:-10px;font-size:12px;"> Saved Sellers For You : </v-card-title>
+                  <!-- INPUT SEARCH -->
+
+                  <v-col md="11" sm="10" xs="10" lg="11">
+                    <v-text-field
+                      color="#673AB7"
+                      v-model="search"
+                      label="Search all sellers..."
+                      outlined
+                      append-icon="mdi-magnify"
+                    
+                    ></v-text-field>
+                  </v-col>
+
+
+                </v-row>
+
+              <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;"> Saved Sellers For You : </v-card-title>
               <v-container fluid>
                 <v-row class="">
                   <v-col 
@@ -63,7 +43,8 @@
                                 <v-flex lg8 md8 sm8 xs8>
                                     <v-list-item three-line style="margin-top:-10px">
                                         <v-list-item-avatar class="rounded-lg"  height="" width="" color="grey">
-                                            <img  :src="`${product.name}`">
+                                            <img  :src="require(`@/assets/images/${product.images}`)" 
+                                                  :lazy-src="require(`@/assets/images/${product.images}`)">
                                         </v-list-item-avatar>
                                         <v-card-text>
                                             <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
@@ -102,11 +83,11 @@ export default {
     name : 'product-content',
     data: () => ({
       products: [
-        { name: 'Product 1', category: 'Category A' },
-        { name: 'Product 2', category: 'Category B' },
-        { name: 'Product 3', category: 'Category A' },
-        { name: 'Product 4', category: 'Category C' },
-        { name: 'Product 5', category: 'Category B' }
+        { name: 'Product 1', category: 'Category A' , images:'Fm.png'},
+        { name: 'Product 2', category: 'Category B' , images:'Fm.png'},
+        { name: 'Product 3', category: 'Category A' , images:'Fm.png'},
+        { name: 'Product 4', category: 'Category C' , images:'Fm.png'},
+        { name: 'Product 5', category: 'Category B' , images:'Fm.png'}
       ],
       categories: ['Category A', 'Category B', 'Category C'],
       selectedCategory: null,

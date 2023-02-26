@@ -9,61 +9,39 @@
         <template>
           <v-container fluid>
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
-              <v-row
-                align="center"
-                justify="start"
-              >
-                <v-col
-                  lg="1"
-                >
-                </v-col>
+                <v-row align="center" justify="center">
 
-                <v-col
-                  lg="7"
-                >
-                <template>
-                    <v-card
-                      class="mx-auto"
-                      color="grey-lighten-3"
-                      flat>
-                      <v-card-text>
-                        <v-text-field
-                          color="#673AB7"
-                          v-model="search"
-                          solo
-                          density="compact"
-                          variant="solo"
-                          label="Search all products..."
-                          append-inner-icon="mdi-magnify"
-                          single-line
-                          hide-details
-                         
-                        >
-                        </v-text-field>
-                      </v-card-text>
-                    </v-card>
-                  </template>
-                </v-col>
-               
-                <v-col
-                  lg="4"
-                >
-                  <v-select
-                    v-model="selectedCategory"
-                    :items="categories"
-                    label="Select a category"
-                  ></v-select>
-                </v-col>
+                    <!-- INPUT SEARCH -->
 
-              <v-col
-                  lg="1"
-              ></v-col>
+                    <v-col cols="12" md="6">
+                      <v-text-field
+                        color="#673AB7"
+                        v-model="search"
+                        label="Search all products..."
+                        outlined
+                        append-icon="mdi-magnify"
+                      
+                      ></v-text-field>
+                    </v-col>
 
-              </v-row><br>
+                    <!-- SELECT CATEGORY  -->
+
+                    <v-col cols="12" md="6">
+                      <v-select
+                        outlined
+                        v-model="selectedCategory"
+                        :items="categories"
+                        label="Select category"
+                      ></v-select>
+                    </v-col>
+
+                </v-row>
+             
 
               <!-- PRODUCTS CARD -->
 
-              <v-container>
+              <v-container fluid
+              >
                 <v-row class="pa-2">
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
@@ -75,12 +53,12 @@
                   <template >                                    
                     <v-card
                       class="mx-auto grey lighten-4"
-                      max-width="344"
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="product.name"
-                        height="200px"
+                        :src="require(`@/assets/images/${product.images}`)"
+                        height="300px"
+                        :lazy-src="require(`@/assets/images/${product.images}`)"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -107,7 +85,17 @@
                     </v-card-subtitle>
 
                     <v-card-text style="font-size:10px;">
-                        <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                      <v-row>
+                        <v-col cols="4">
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon><span style="color:#673AB7">350, 000.</span>
+                        </v-col>
+                        <v-col cols="4">
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Electronics.</span>
+                        </v-col>
+                        <v-col cols="4">
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
+                        </v-col>
+                      </v-row>
                     </v-card-text>
 
                   </v-card>
@@ -130,52 +118,35 @@
         <template>
           <v-container fluid>
             
-              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat>
-              <v-row
-                align="center"
-                justify="start"
-              >
-                <v-col
-                  sm="12"
-                >
-              
-                  <template>
-                     <v-card
-                      class="mx-auto"
-                      color="grey-lighten-3"
-                      flat
-                    >
-                      <v-card-text>
-                        <v-text-field
-                          class="small"
-                          color="#673AB7"
-                          v-model="search"
-                          solo
-                          density="compact"
-                          variant="solo"
-                          label="Search all products..."
-                          append-inner-icon="mdi-magnify"
-                          single-line
-                          hide-details
-                         
-                        ></v-text-field>
-                      </v-card-text>
+              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat><br>
+                <v-row align="center" justify="center">
+                  
+                    <!-- INPUT SEARCH -->
 
-                    </v-card>
-                  </template>
-                </v-col>
-                <v-col
-                  sm="12"
-                >
-                  <v-select
-                    class="small"
-                    v-model="selectedCategory"
-                    :items="categories"
-                    label="Select a category"
-                  ></v-select>
-              </v-col>
-      
-          </v-row>
+                    <v-col  sm="6" xs="6">
+                      <v-text-field
+                        color="#673AB7"
+                        v-model="search"
+                        label="Search all products..."
+                        outlined
+                        append-icon="mdi-magnify"
+                      
+                      ></v-text-field>
+                    
+                    </v-col>
+
+                    <!-- SELECT CATEGORY  -->
+
+                    <v-col  sm="6" xs="6">
+                      <v-select
+                        outlined
+                        v-model="selectedCategory"
+                        :items="categories"
+                        label="Select category"
+                      ></v-select>
+                    </v-col>
+
+                </v-row>
 
               <v-container fluid>
                 <v-row class="">
@@ -190,13 +161,12 @@
                     <v-card
                       :disabled="loading"
                       class="mx-auto grey lighten-4"
-                      max-width="344"
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="`${product.name}`"
+                        :src="require(`@/assets/images/${product.images}`)"
                         height="200px"
-                        :lazy-src="product.name"
+                        :lazy-src="require(`@/assets/images/${product.images}`)"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -220,8 +190,11 @@
                         <v-card-subtitle style="font-size:11px;color:#673AB7;">
                          {{product.name}}
                         </v-card-subtitle>
+                      
                         <v-card-text style="font-size:10px;">
-                            <v-icon small class="" id="icon"> mdi-location-on-rounded</v-icon> Location : Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon><span style="color:#673AB7">350, 000.</span><br>
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Electronics.</span><br>
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
                         </v-card-text>
 
                     </v-card>
@@ -248,11 +221,11 @@ export default {
     data: () => ({
       loading:false,
       products: [
-        { name: 'Product 1', category: 'Category A' },
-        { name: 'Product 2', category: 'Category B' },
-        { name: 'Product 3', category: 'Category A' },
-        { name: 'Product 4', category: 'Category C' },
-        { name: 'Product 5', category: 'Category B' }
+        { name: 'Product 1', category: 'Category A' , images:'img8.jpg'},
+        { name: 'Product 2', category: 'Category B' , images:'img8.jpg'},
+        { name: 'Product 3', category: 'Category A' , images:'img8.jpg'},
+        { name: 'Product 4', category: 'Category C' , images:'img8.jpg'},
+        { name: 'Product 5', category: 'Category B' , images:'img8.jpg'}
       ],
       categories: ['Category A', 'Category B', 'Category C'],
       selectedCategory: null,
