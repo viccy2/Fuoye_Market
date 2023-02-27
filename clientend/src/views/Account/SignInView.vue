@@ -16,15 +16,22 @@
 
                     <v-flex lg6 md6 >
                         <v-card flat style="margin-top:40px;">
+                            <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                                         {{this.successMessage}}
+                            </v-alert>
+                            <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
+                                    {{this.errorMessage}}
+                            </v-alert>
                             <v-card-title class="pa-5" style="color:#673AB7">Sign In</v-card-title>
                              <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
+                                v-model="post.email" 
                                 :rules="[rules.required]" 
                                 label="Email" type="email" color="#673AB7" clearable
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
-                                <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                                <v-text-field  v-model="post.password"  :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
                                 name="input-10-2" label="Password" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
@@ -47,6 +54,7 @@
         
         <div class="hidden-md-and-up" style="margin-top:80px">
             <v-container fluid>
+                
             <template>
                 <div class="">
                     <v-img
@@ -54,15 +62,18 @@
                         max-width="228"
                         src="../../assets/images/a2.png"
                     ></v-img>
-                    <v-card
+                    
+                    <v-card  flat >
                         
-                        flat
-                        
-                      
-                    >
                     <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
-     
+                        <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                            {{this.successMessage}}
+                        </v-alert>
+                        <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
+                            {{this.errorMessage}}
+                        </v-alert>
                     <v-text-field
+                        v-model="post.email" 
                         class="small"
                         :rules="[rules.required]" 
                         density="compact"
@@ -73,6 +84,7 @@
                     ></v-text-field>
 
                     <v-text-field
+                        v-model="post.password" 
                         :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                         :rules="[rules.required]" :type="show2 ? 'text' : 'Enter your password'" 
                         name="input-10-2" label="Enter your password" color="#673AB7"
@@ -135,27 +147,56 @@
 <script>
 import HomeNavbar from '../../components/HomeNavbar.vue'
 import Footers from '../../components/Footers.vue'
+import API from '../../api'
+
 export default {
     name : 'sign-in',
     components: {HomeNavbar, Footers},
     data(){
         return {
+            successMessage:"",
+            errorMessage:"",
             visible: false,
             show2: true,
-            password: 'Password',
             rules: {
             required: value => !!value || 'This field is required.',
             // min: v => v.length >= 8 || 'Min 8 characters',
             },
+            post : {
+                email : "",
+                password : "",
+            },
+          
         }
     },
     methods : {
         async signIn(){
+
+            const data = {
+                    email    : this.post.email,
+                    password : this.post.password
+            };
+
             if(this.$refs.form.validate()){
-                console.log('ready')
-            }
-        }
+
+             const response = await API.loginUser(data);
+            //  console.log(response);
+                if(response.msg=='login successful'){
+                    this.successMessage = response.msg;
+                    localStorage.setItem('token', response.data.token);
+                    setTimeout(function(){
+                    window.location.href = '/dashboard';
+                    },5000);
+                }
+                
+                else{
+                    this.errorMessage = response;
+                }
+
+                };
+            
     }
+}
 }
 </script>
 

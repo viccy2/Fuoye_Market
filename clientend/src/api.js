@@ -1,17 +1,26 @@
 import axios from "axios" ;
-// const url1 = "api/";
-// const url2 = "/app/api/company";
+// const url1 = "https://fuoyemarket.intellicsolutions.org/api/";
 
 export default class API {
     //create new user account 
-    static async newUser(post){
+    static async createUser(post){
         try{
-            const res = await axios.post('https://fuoyemarket.intellicsolutions.org/api/authregister', post);
-            return res.data;
-            
+            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/authregister', post);
+            return response.data;           
         }
-        catch(err){
-            console.log(err)
+        catch(error){
+            const errors = Object.values(error.response.data.msg);
+            return 'Registration failed : ' + errors;
+        }
+    }
+    static async loginUser(post){
+        try{
+            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/login', post);
+            return response.data;           
+        }
+        catch(error){
+             const errors = error.response.data.errors[0].message;
+             return 'Login failed : ' + errors;
         }
     }
     //Getting all users from server

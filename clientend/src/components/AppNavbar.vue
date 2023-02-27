@@ -5,7 +5,7 @@
   <div class="hidden-sm-and-down white">
       <v-app-bar fixed flat elevation='' height="55" class="white">
           <v-container>
-          <v-toolbar-title @click="goDashboard" id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
+          <v-toolbar-title  id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
           </v-container>
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
@@ -18,10 +18,10 @@
                   </template>
                   <v-list>
                     <v-list-item>
-                      <v-list-item-title style="font-size:13px;cursor:pointer" @click="goMarket"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title></router-link>
                     </v-list-item>
                     <v-list-item>
-                      <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                     <v-list-item-title style="font-size:13px;cursor:pointer"  @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                     </v-list-item>
                   </v-list>
                 </v-menu>
@@ -33,7 +33,7 @@
 <!-- DISPLAY ONLY ON SMALL DEVICES -->
   <div class="hidden-md-and-up white">
       <v-app-bar fixed flat elevation='' height="55" class="white">
-          <v-toolbar-title @click="goDashboard" id="names" class="font-weight-bold">FuoyeMarket.</v-toolbar-title>         
+        <router-link to="/dashboard" style="text-decoration:none;color:black"><v-toolbar-title id="names" class="font-weight-bold">FuoyeMarket.</v-toolbar-title></router-link>       
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
           <div class="text-center">
@@ -45,10 +45,10 @@
                   </template>
                   <v-list>
                     <v-list-item>
-                      <v-list-item-title style="font-size:13px;cursor:pointer" @click="goMarket"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title></router-link>
                     </v-list-item>
                     <v-list-item>
-                      <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                     <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                     </v-list-item>
                   </v-list>
                 </v-menu>
@@ -68,13 +68,11 @@ export default {
            
         }
     },
-    methods : {
-      goDashboard(){
-            this.$router.push({name : 'dashboard'})
-        },
-        goMarket(){
-            this.$router.push({name : 'market'})
-        }
+    methods:{
+      logOut(){
+        localStorage.removeItem('token');
+        this.$router.push('/sign-in');
+      }
     }
 }
 </script>

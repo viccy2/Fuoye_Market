@@ -12,7 +12,8 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: () => import(/* webpackChunkName: "dashboard" */ '../views/User/DashboardView.vue')
+    component: () => import(/* webpackChunkName: "dashboard" */ '../views/User/DashboardView.vue'),
+    // meta: { requiresAuth: true }
   },
   {
     path: '/dashboard-content',
@@ -105,6 +106,17 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+  
+})
+
+router.beforeEach((to, from, next) => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn')
+
+  if (to.matched.some(record => record.meta.requiresAuth) && !isLoggedIn) {
+    next({ name: 'sign-in' })
+  } else {
+    next()
+  }
 })
 
 export default router

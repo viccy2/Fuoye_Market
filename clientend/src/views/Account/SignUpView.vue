@@ -17,8 +17,11 @@
                     <v-flex lg6 md6 sm12 xs12>
                         <v-card flat>
                            <v-card-title class="pa-5" style="color:#673AB7;">Welcome, create an account. </v-card-title>
-                                <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
-                                    Account created successfully, check email for activation link
+                                <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                                    {{this.successMessage}}
+                                </v-alert>
+                                <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
+                                    {{this.errorMessage}}
                                 </v-alert>
                             <v-form ref="form" @submit.prevent="createAccount" class="pa-5" style="margin-top:-10px" enctype="multi-part/form-data">
                                 <v-text-field 
@@ -81,10 +84,14 @@
                     <v-flex sm12 xs12>
                         <v-card class="ma-2" flat><br>
                            <!-- <v-card-title class="pa-5" style="color:#673AB7;font-size:20px;">Create New Account </v-card-title> -->
-                                <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.message">
-                                    Account created successfully, check email for activation link
-                                </v-alert>
+                                
                                 <v-form ref="form" @submit.prevent="createAccount" class="pa-5" style="margin-top:-10px" enctype="multi-part/form-data">
+                                    <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                                        {{this.successMessage}}
+                                    </v-alert>
+                                    <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
+                                        {{this.errorMessage}}
+                                    </v-alert>
                                 <v-text-field 
                                 :rules="[rules.required]" 
                                 v-model="post.username"
@@ -140,12 +147,14 @@
 import HomeNavbar from '../../components/HomeNavbar.vue'
 import Footers from '../../components/Footers.vue'
 import API from '../../api'
+
 export default {
     name : 'new-account',
     components: {HomeNavbar, Footers},
     data(){
         return {
-            message:"",
+            successMessage:"",
+            errorMessage:"",
             account : [
                 'Buyer',
                 'Seller'
@@ -166,28 +175,27 @@ export default {
     },
     methods : {
        async createAccount(){
-            try {
-                const Form = new FormData();
-                Form.append("username", this.post.username);
-                Form.append("email", this.post.email);
-                Form.append("password", this.post.password);
-                Form.append("type", this.post.type);
-               
+
+                const data = {
+                    username : this.post.username,
+                    email    : this.post.email,
+                    password : this.post.password,
+                    type     : this.post.type
+                };
                 if(this.$refs.form.validate()){
 
-                    const response = await API.newUser(Form);
-                    this.message = response;
-                    if(this.message){
+                const response = await API.createUser(data);
+                if(response.msg=='user successfully registered'){
+                    this.successMessage = response.msg;
                      setTimeout(function(){
-                     window.location.href = '/dashboard';
+                     window.location.href = '/sign-in';
                     },5000);
-                    }
-                    
                 }
-            }
-            catch(err){
-                console.log(err)
-            }
+                else{
+                    this.errorMessage = response;
+                }
+            
+                };
            
         }
     }
