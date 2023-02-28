@@ -50,7 +50,7 @@
                             <v-col  sm="6"  xs="6">
                             <br>
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:10px;color:whitesmoke;">
-                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;" v-if="user"> {{user.username}} </span>
+                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;" v-if="this.user"> {{this.user.username}} </span>
                             </div><br>
                             <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke;font-size:11px;">My Profile</v-btn>
                             </v-col>

@@ -83,17 +83,15 @@
                         color="#673AB7"
                     ></v-text-field>
 
-                    <v-text-field
-                        v-model="post.password" 
-                        :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                        :rules="[rules.required]" :type="show2 ? 'text' : 'Enter your password'" 
-                        name="input-10-2" label="Enter your password" color="#673AB7"
-                        class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"
-                        density="compact"
-                        placeholder="Enter your password"
-                        variant="outlined"
-                        @click:append-inner="visible = !visible"
-                    ></v-text-field>
+                    <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
+                                density="compact"
+                                placeholder="Enter your password"
+                                variant="outlined"
+                                v-model="post.password" color="#673AB7"  
+                                name="input-10-2" label="Password"  hint="At least 8 characters" 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
+                     </v-text-field>
 
                     <v-card
                         class="mb-12"
@@ -154,13 +152,14 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
+            password: 'Password',
             successMessage:"",
             errorMessage:"",
             visible: false,
             show2: true,
             rules: {
             required: value => !!value || 'This field is required.',
-            // min: v => v.length >= 8 || 'Min 8 characters',
+            min: v => v.length >= 8 || 'Min 8 characters',
             },
             post : {
                 email : "",

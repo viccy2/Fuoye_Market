@@ -20,13 +20,24 @@ export default {
   data: () => ({
     user : '',
   }),
+  created(){
+    const token = localStorage.getItem('token');
+    // Make API call with token as a query parameter
+axios.get('https://fuoyemarket.intellicsolutions.org/api/profile', {
+  params: {
+    token: token
+  }
+}).then(response => {
+  // Handle successful API response
+  console.log(response.data);
+}).catch(error => {
+  // Handle API error
+  console.error(error);
+});
+  }
   // async created(){
-  //       const response = await axios.get('https://fuoyemarket.intellicsolutions.org/api/profile/', {
-  //           headers : {
-  //               Authorization : 'Bearer' + localStorage.getItem('token')
-  //           }
-
-  //       });
+  //      const token = localStorage.getItem('token');
+  //      const response = await axios.get('https://fuoyemarket.intellicsolutions.org/api/profile', { headers: { Authorization: `Bearer ${token}` } });
         
   //       console.log(response);
   //       this.user = response.data;
