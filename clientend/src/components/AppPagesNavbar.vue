@@ -20,7 +20,7 @@
                     </template>
                     <v-list>
                         <v-list-item>
-                            <v-list-item-title style="font-size:13px;cursor:pointer"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                            <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
                         </v-list-item>
                     </v-list>
                 </v-menu>
@@ -48,7 +48,11 @@ export default {
         },
         goProfile(){
             this.$router.push({name : 'profile'})
-        }
+        },
+        logOut(){
+        localStorage.removeItem('token');
+        this.$router.push('/sign-in');
+      }
     }
 }
 </script>
