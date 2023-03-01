@@ -22,6 +22,7 @@
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:13px;color:black">
                                 Welcome back, <br><span class="font-weight-bold" style="color:#673AB7;font-size:16px;"> Victor David! </span>
                             </div><br>
+                            
                             <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower"  outlined style="color:#673AB7;font-size:11px;">My Profile</v-btn>
                             </v-col>
                         </v-row>
@@ -50,8 +51,10 @@
                             <v-col  sm="6"  xs="6">
                             <br>
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:10px;color:whitesmoke;">
-                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;" v-if="this.user"> {{this.user.username}} </span>
-                            </div><br>
+                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;"> </span>
+                                <div>{{ userName }}</div>
+                            </div>
+                            <br>
                             <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke;font-size:11px;">My Profile</v-btn>
                             </v-col>
                         </v-row>
@@ -73,7 +76,8 @@
                 <div class="hidden-sm-and-down">
                     <v-card flat elevation=''>
                  <v-container fluid>
-                 <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>        
+                 <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>    
+            
                     <v-layout row wrap class="pa-3" style="margin-top:-20px">
 
                     <v-flex lg4 md4 class="">
@@ -907,7 +911,9 @@
 import 'animate.css'
 export default {
     name : 'dashboard',
-    props : ['user'],
+    props: {
+    userName : String
+  },
     data(){
         return{
             show : false,
@@ -916,6 +922,7 @@ export default {
             loading: false,
            
         }
+       
     },
 
     methods:{
@@ -929,6 +936,7 @@ export default {
       },
     }
 }
+
 </script>
 
 <style scoped>

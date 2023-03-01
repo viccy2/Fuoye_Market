@@ -36,9 +36,14 @@ export default class API {
     }
     
      //Get users by ID
-     static async getUsersById(id){
-        const res = await axios.get(`${url1}/${id}`);
-        return res.data
+     static async getUser(){
+        const token = localStorage.getItem('token');
+        const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/profile', {
+        params: {
+          token: token
+        }
+      })
+      return response.data;
     }
 
     //update user
