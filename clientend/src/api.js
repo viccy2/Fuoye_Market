@@ -44,10 +44,34 @@ export default class API {
         
     }
 
-    //update user
-    static async updateUsersById(id, post){
-        const res = await axios.patch(`${url1}/${id}`, post);
-        return res.data
+    //fetch seller by token method / signedin-seller
+    static async getSeller(){
+        try{
+            const token = localStorage.getItem('token');
+            const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/seller/profile', {
+            params: {
+            token: token
+            }
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+        
+    }
+
+    //update user / seller
+    static async updateUser(post){
+        try{
+            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/seller/update-profile', post);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+        // const res = await axios.patch(`${url1}/${id}`, post);
+        // return res.data
     }
 
     //delete user

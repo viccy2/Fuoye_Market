@@ -129,23 +129,23 @@
                 </v-card>
               </v-flex>
 
-        </v-layout><br><br><br><br>
+        </v-layout><br><br><br><br><br>
       </div>
       <!-- END DISPLAY ON LARGE DEVICE  -->
 
         <!-- DISPLAY ON SMALL MOBILE DEVICES -->
       <div class="body2 hidden-md-and-up">
         <v-layout row wrap>
-          <v-flex sm12 xs12>
-            <v-card tile flat height='' class="ma-5">
+          <v-flex sm4 xs4>
+            <v-card tile flat class="">
               <v-layout>
-                <v-flex sm12>
+                <v-flex sm4>
                   <center>
                     <v-btn fab  small color='grey lighten-5'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
+                      <v-icon small class="" id="icon"> mdi-account-group-outline</v-icon>
                     </v-btn><br><br>
                     <v-card-text class="py-0">
-                      <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
+                      <div class="item animate__animated animate__bounceIn" id="txt4">
                         Create account, get access to top sellers around you.
                       </div>
                     </v-card-text>
@@ -154,40 +154,19 @@
                 </v-layout>
               </v-card>
             </v-flex>
-          </v-layout><br><br>
+              <br><br>
 
-          <v-layout row wrap>
-            <v-flex sm12 xs12 id="con">
-              <v-card tile flat height='' class="ma-5" >
-                <v-layout>
-                  <v-flex sm12>
-                    <center>
-                      <v-btn fab small color='grey lighten-5'>
-                        <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
-                      </v-btn><br><br>
-                      <v-card-text class="py-0">
-                        <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
-                          Get access to unlimited choice products & services.
-                        </div>
-                      </v-card-text>
-                    </center>
-                  </v-flex>
-                </v-layout>
-              </v-card>
-            </v-flex>
-            </v-layout><br><br>
-
-            <v-layout row wrap>
-              <v-flex sm12 xs12 id="con">
-                <v-card tile flat height='' class="ma-5" >
+   
+              <v-flex sm4 xs4 >
+                <v-card tile flat height='' class="" >
                   <v-layout>
-                    <v-flex sm12>
+                    <v-flex sm4>
                       <center>
                         <v-btn fab  small color='grey lighten-5'>
-                          <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
+                          <v-icon small class="" id="icon"> mdi-cart-check</v-icon>
                         </v-btn><br><br>
                         <v-card-text class="py-0">
-                          <div class="item pa-3 animate__animated animate__bounceIn" id="txt4">
+                          <div class="item  animate__animated animate__bounceIn" id="txt4">
                             Create seller's account, get access to showcase your products.
                         </div>
                         </v-card-text>
@@ -196,6 +175,28 @@
                   </v-layout><br><br>
                 </v-card>
               </v-flex>
+
+
+              <v-flex sm4 xs4 >
+              <v-card tile flat height='' class="" >
+                <v-layout>
+                  <v-flex sm4>
+                    <center>
+                      <v-btn fab small color='grey lighten-5'>
+                        <v-icon small class="" id="icon"> mdi-account-key-outline</v-icon>
+                      </v-btn><br><br>
+                      <v-card-text class="py-0">
+                        <div class="item  animate__animated animate__bounceIn" id="txt4">
+                          Get access to unlimited choice products & services.
+                        </div>
+                      </v-card-text>
+                    </center>
+                  </v-flex>
+                </v-layout>
+              </v-card>
+            </v-flex>
+           <br><br>
+
             </v-layout>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
@@ -255,11 +256,9 @@
             </v-flex>
 
             <v-flex sm12 xs12>
-              <v-card flat class="grey lighten-4" elevation="10"> 
               <center>              
                   <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
               </center>
-              </v-card>
             </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -306,11 +305,9 @@
             </v-flex>
 
             <v-flex sm12 xs12>
-              <v-card class="grey lighten-4" elevation="10">
               <center>
                   <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
-              </v-card>
             </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
@@ -1017,7 +1014,7 @@
             <v-layout row wrap>
               <v-flex sm6 xs6>
                
-                  <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
+                  <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="2">
                     <v-img src="../assets/images/po.jpg" style="width:;height:100%;" 
                       lazy-src="../assets/images/po.jpg"
                         aspect-ratio="1"
@@ -1038,14 +1035,14 @@
                         </template>
               
                     </v-img>
-                  </v-card>
+                  </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Victor Aremu David </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Founder, Team Lead Engineering)  </h2>
                 <br>
               </v-flex>
               <v-flex sm6 xs6>
                 <center>
-                  <v-card  class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
+                  <v-card  class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="2">
                     <v-img  src="../assets/images/f2.jpeg" style="width:;height:100%;" 
                     lazy-src="../assets/images/f2.jpeg"
                         aspect-ratio="1"
@@ -1066,13 +1063,13 @@
                         </template>
               
                     </v-img>
-                  </v-card>
+                  </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
                 </center>
               </v-flex>
               <v-flex sm6 xs6>
-                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
+                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="2">
                     <v-img  src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;" 
                         lazy-src="../assets/images/afolabisalawu.jpg"
                         aspect-ratio="1"
@@ -1093,13 +1090,13 @@
                         </template>
               
                     </v-img>
-                  </v-card>
+                  </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Salawu Afolabi </h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Development & Engineering (Backend))  </h2>
                 <br><br><br>              
               </v-flex>
               <v-flex sm6 xs6>
-                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
+                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="2">
                     <v-img src="../assets/images/k23.jpg" style="height:100%;" 
                       lazy-src="../assets/images/k23.jpg"
                         aspect-ratio="1"
@@ -1120,7 +1117,7 @@
                         </template>
               
                     </v-img>
-                  </v-card>
+                  </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
                   <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
                                 
@@ -1367,7 +1364,7 @@ height:45px;
   color:#673AB7; font-size:13px;font-weight:bold;
 }
 #txt4{
-color:#673AB7; font-size:12px;font-weight:bold;
+color:#673AB7; font-size:10px;font-weight:bold;
 }
 #txt5{
   font-size:13px;font-weight:normal;
