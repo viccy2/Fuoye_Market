@@ -2,7 +2,8 @@ import axios from "axios" ;
 // const url1 = "https://fuoyemarket.intellicsolutions.org/api/";
 
 export default class API {
-    //create new user account 
+
+    //user sign up method
     static async createUser(post){
         try{
             const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/authregister', post);
@@ -13,6 +14,8 @@ export default class API {
             return 'Registration failed : ' + errors;
         }
     }
+
+    //user sign in method
     static async loginUser(post){
         try{
             const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/login', post);
@@ -23,27 +26,22 @@ export default class API {
              return 'Login failed : ' + errors;
         }
     }
-    //Getting all users from server
-    static async getAllUsers(){
-        try {
-            const res = await axios.get(url1);
-            return res.data
-        }
-        catch (err) {
-            console.log(err.message)
-        }
-       
-    }
-    
-     //Get users by ID
+
+     //fetch user by token method / signedin-user
      static async getUser(){
-        const token = localStorage.getItem('token');
-        const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/profile', {
-        params: {
-          token: token
+        try{
+            const token = localStorage.getItem('token');
+            const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/profile', {
+            params: {
+            token: token
+            }
+        })
+        return response.data;
         }
-      })
-      return response.data;
+        catch(err){
+            console.log(err)
+        }
+        
     }
 
     //update user

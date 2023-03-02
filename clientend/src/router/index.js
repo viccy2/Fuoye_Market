@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
+
 const requireAuth = (to, from, next) => {
   if (!localStorage.getItem('token')) {
     next({
@@ -12,6 +13,7 @@ const requireAuth = (to, from, next) => {
     next()
   }
 }
+
 const routes = [
   {
     path: '/',

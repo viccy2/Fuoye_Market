@@ -221,13 +221,16 @@ export default {
     data: () => ({
       loading:false,
       products: [
-        { name: 'Product 1', category: 'Category A' , images:'img8.jpg'},
-        { name: 'Product 2', category: 'Category B' , images:'img8.jpg'},
-        { name: 'Product 3', category: 'Category A' , images:'img8.jpg'},
-        { name: 'Product 4', category: 'Category C' , images:'img8.jpg'},
-        { name: 'Product 5', category: 'Category B' , images:'img8.jpg'}
+        { name: 'Product 1',  category: 'Fashion' ,          images:'img8.jpg'},
+        { name: 'Product 2',  category: 'Automobile' ,       images:'img8.jpg'},
+        { name: 'Product 3',  category: 'Automobile' ,       images:'img8.jpg'},
+        { name: 'Product 4',  category: 'Health & Beauty' ,  images:'img8.jpg'},
+        { name: 'Product 5',  category: 'Phones / Tablets' , images:'img8.jpg'}
       ],
-      categories: ['Category A', 'Category B', 'Category C'],
+      categories: [
+        'Animals & Pets', 'Automobile', 'Baby Products', 'Books & Stationaries', 'Computing', 'Electronics', 
+        'Fashion', 'Gaming', 'Grocery', 'Health & Beauty', 'Home & Offices', 'Phones / Tablets', 'Snacks', 'Sporting goods'
+      ],
       selectedCategory: null,
       search: ''
     }),

@@ -9,10 +9,10 @@
       <v-container>
 
         <!-- HEADER SECTION  -->
-        <section class="header">
+        <section class="header" >
 
           <!-- DISPLAY ON LARGER DEVICES  -->
-          <div class="head1 hidden-sm-and-down" style="margin-top:200px">
+          <div class="head1 hidden-sm-and-down">
             <v-container>
               <v-layout row wrap>
                 <v-flex md4 lg4 >
@@ -255,9 +255,11 @@
             </v-flex>
 
             <v-flex sm12 xs12>
-              <center>
+              <v-card flat class="grey lighten-4" elevation="10"> 
+              <center>              
                   <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
               </center>
+              </v-card>
             </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -304,9 +306,11 @@
             </v-flex>
 
             <v-flex sm12 xs12>
+              <v-card class="grey lighten-4" elevation="10">
               <center>
                   <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
+              </v-card>
             </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
@@ -1013,7 +1017,7 @@
             <v-layout row wrap>
               <v-flex sm6 xs6>
                
-                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                  <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
                     <v-img src="../assets/images/po.jpg" style="width:;height:100%;" 
                       lazy-src="../assets/images/po.jpg"
                         aspect-ratio="1"
@@ -1041,7 +1045,7 @@
               </v-flex>
               <v-flex sm6 xs6>
                 <center>
-                  <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                  <v-card  class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
                     <v-img  src="../assets/images/f2.jpeg" style="width:;height:100%;" 
                     lazy-src="../assets/images/f2.jpeg"
                         aspect-ratio="1"
@@ -1068,7 +1072,7 @@
                 </center>
               </v-flex>
               <v-flex sm6 xs6>
-                <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
                     <v-img  src="../assets/images/afolabisalawu.jpg" style="width:;height:100%;" 
                         lazy-src="../assets/images/afolabisalawu.jpg"
                         aspect-ratio="1"
@@ -1095,7 +1099,7 @@
                 <br><br><br>              
               </v-flex>
               <v-flex sm6 xs6>
-                <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
+                <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="10">
                     <v-img src="../assets/images/k23.jpg" style="height:100%;" 
                       lazy-src="../assets/images/k23.jpg"
                         aspect-ratio="1"

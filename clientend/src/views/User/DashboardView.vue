@@ -1,7 +1,6 @@
 <template>
   <div class="dashboard white">
-    <AppNavbar  v-show="appnav"/>
-    <PageNavbar v-show="pagesnav"/> 
+    <AppNavbar  v-show="appnav"/> 
     <div style="max-height:infinity;min-height:infinity">
       <DashboardContentView v-show="dashboard"/>
       <ProductView  v-show="product"/>
@@ -37,14 +36,13 @@
 
 <script>
 import AppNavbar from '../../components/AppNavbar.vue'
-import PageNavbar from '../../components/PageNavbar.vue'
 import DashboardContentView from './DashboardContentView.vue'
 import ProductView from './ProductView.vue'
 import ServiceView from './ServiceView.vue'
 import SellerView from './SellerView.vue'
 export default {
   name: 'dashboard',
-  components: {AppNavbar, PageNavbar, DashboardContentView, ProductView, ServiceView, SellerView,},
+  components: {AppNavbar,  DashboardContentView, ProductView, ServiceView, SellerView,},
   data(){
       return{
         dashboard : true,
@@ -52,7 +50,6 @@ export default {
         service : false,
         seller : false,
         appnav : true,
-        pagesnav : false
         
        }
     },
@@ -63,32 +60,28 @@ export default {
         this.product = false,
         this.service = false,
         this.seller = false,
-        this.appnav = true,
-        this.pagesnav = false
+        this.appnav = true
       },
       products(){
         this.product = true,
         this.dashboard = false,
         this.service = false,
         this.seller = false,
-        this.appnav = true,
-        this.pagesnav = false
+        this.appnav = true
       },
       services(){
         this.service = true,
         this.dashboard = false,
         this.product = false,
         this.seller = false,
-        this.appnav = true,
-        this.pagesnav = false
+        this.appnav = true
       },
        sellers(){
         this.seller = true,
         this.dashboard = false,
         this.product = false,
         this.service = false,
-        this.appnav = true,
-        this.pagesnav = false
+        this.appnav = true
       },
     },
  

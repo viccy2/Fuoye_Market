@@ -1,37 +1,39 @@
 <template>
     <div class="navbar">
+
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
-    <div>
-        <v-app-bar fixed flat  class="white" height="55" >
-            <v-app-bar-nav-icon>
-                <v-icon @click="Go" class="">
-                    mdi-arrow-left-thick
-                </v-icon> 
-            </v-app-bar-nav-icon>  
-            <v-toolbar-title id="name" ></v-toolbar-title>          
-            <v-spacer></v-spacer>
-            <!-- NAVBAR ICONS -->
-           <div class="text-center">
-                 <v-menu offset-y>
-                    <template v-slot:activator="{ on, attrs }">
-                    <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
-                      <span style="color:whitesmoke;font-size:12px;">VD</span>
-                    </v-btn>
-                    </template>
-                    <v-list>
-                        <v-list-item>
-                            <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </div>
-         
-        </v-app-bar>
-    </div><br>
-    
+
+        <div>
+            <v-app-bar fixed flat  class="white" height="55" >
+                <v-app-bar-nav-icon>
+                    <v-icon @click="Go" class="">
+                        mdi-arrow-left-thick
+                    </v-icon> 
+                </v-app-bar-nav-icon>  
+                <v-toolbar-title id="name" ></v-toolbar-title>          
+                <v-spacer></v-spacer>
+                <!-- NAVBAR ICONS -->
+            <div class="text-center">
+                    <v-menu offset-y>
+                        <template v-slot:activator="{ on, attrs }">
+                        <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
+                        <span style="color:whitesmoke;font-size:12px;">VD</span>
+                        </v-btn>
+                        </template>
+                        <v-list>
+                            <v-list-item>
+                                <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu>
+                </div>
+            
+            </v-app-bar>
+        </div><br>
 
     </div>
 </template>
+
 <script>
 export default {
     data(){
