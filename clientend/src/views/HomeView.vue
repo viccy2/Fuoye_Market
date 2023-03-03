@@ -49,7 +49,7 @@
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
                     We're here to <span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
-                  </p>
+                  </p><br>
                 <center >
                   <router-link to="/new-account" style="text-decoration:none">
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
@@ -58,7 +58,7 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex><br>
+              </v-flex><br><br>
 
               <center>
                       <img class=" img2 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
@@ -133,11 +133,11 @@
       </div>
       <!-- END DISPLAY ON LARGE DEVICE  -->
 
-        <!-- DISPLAY ON SMALL MOBILE DEVICES -->
+        <!-- DISPLAY ON SMALL MOBILE DEVICES --><br><br>
       <div class="body2 hidden-md-and-up">
         <v-layout row wrap>
-          <v-flex sm4 xs4>
-            <v-card tile flat class="">
+          <v-flex sm4 xs4 class="pa-1">
+            <v-card class="grey lighten-4" >
               <v-layout>
                 <v-flex sm4>
                   <center>
@@ -146,39 +146,38 @@
                     </v-btn><br><br>
                     <v-card-text class="py-0">
                       <div class="item animate__animated animate__bounceIn" id="txt4">
-                        Create account, get access to top sellers around you.
+                        Become a Buyer, get access to the best Sellers around you.
                       </div>
                     </v-card-text>
                     </center>
                   </v-flex>
-                </v-layout>
+                </v-layout><br>
               </v-card>
             </v-flex>
-              <br><br>
 
    
-              <v-flex sm4 xs4 >
-                <v-card tile flat height='' class="" >
-                  <v-layout>
-                    <v-flex sm4>
-                      <center>
-                        <v-btn fab  small color='grey lighten-5'>
-                          <v-icon small class="" id="icon"> mdi-cart-check</v-icon>
-                        </v-btn><br><br>
-                        <v-card-text class="py-0">
-                          <div class="item  animate__animated animate__bounceIn" id="txt4">
-                            Create seller's account, get access to showcase your products.
-                        </div>
-                        </v-card-text>
-                      </center>
-                    </v-flex>
-                  </v-layout><br><br>
-                </v-card>
-              </v-flex>
+            <v-flex sm4 xs4 class="pa-1">
+              <v-card class="grey lighten-4" >
+                <v-layout>
+                  <v-flex sm4>
+                    <center>
+                      <v-btn fab  small color='grey lighten-5'>
+                        <v-icon small class="" id="icon"> mdi-cart-check</v-icon>
+                      </v-btn><br><br>
+                      <v-card-text class="py-0">
+                        <div class="item  animate__animated animate__bounceIn" id="txt4">
+                          Become a Seller, get access to showcase your products.
+                      </div>
+                      </v-card-text>
+                    </center>
+                  </v-flex>
+                </v-layout><br>
+              </v-card>
+            </v-flex>
 
 
-              <v-flex sm4 xs4 >
-              <v-card tile flat height='' class="" >
+              <v-flex sm4 xs4 class="pa-1" >
+              <v-card class="grey lighten-4" >
                 <v-layout>
                   <v-flex sm4>
                     <center>
@@ -192,7 +191,7 @@
                       </v-card-text>
                     </center>
                   </v-flex>
-                </v-layout>
+                </v-layout><br>
               </v-card>
             </v-flex>
            <br><br>
@@ -238,7 +237,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up"><br><br><br>
             <v-flex sm12 xs12 id="con1">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
@@ -257,7 +256,7 @@
 
             <v-flex sm12 xs12>
               <center>              
-                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
+                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
               </center>
             </v-flex>
           </div>
@@ -306,7 +305,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
+                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
             </v-flex><br><br>
           </div>
@@ -446,7 +445,7 @@
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up" id="con4">
+          <div class="hidden-md-and-up" id="con4"><br><br>
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
 
@@ -815,8 +814,8 @@
         </div> 
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
-        <!-- DISPLAY ON SMALL DEVICE --> 
-        <div class="hidden-md-and-up" id="con4">
+        <!-- DISPLAY ON SMALL DEVICE -->
+        <div class="hidden-md-and-up" id="con4"><br><br>
           <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br>
             <div>
               <v-layout row wrap>
@@ -1006,7 +1005,7 @@
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up" id="con4">
+          <div class="hidden-md-and-up" id="con4"><br>
             <h2 id="h26">Meet the<span style="color:#673AB7"> Team.</span></h2><br><br>
             <div>
             
@@ -1163,20 +1162,20 @@
         <!-- END DISPLAY ON LARGE DEVICE  -->
 
         <!-- DISPLAY ON SMALL DEVICES  -->
-        <div class="hidden-md-and-up" id="con4">
+        <div class="hidden-md-and-up" id="con4"><br>
           <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br><br>
             <div>
             <v-container>
               <center>
             <v-layout row wrap>
               <v-flex sm4 xs4>
-                <img class="" src="../assets/images/4.png" style="height:35px; ">
+                <img class="" src="../assets/images/4.png" style="height:px; ">
               </v-flex>
               <v-flex sm4 xs4>
-               <img class="" src="../assets/images/7.png" style="height:35px; ">
+               <img class="" src="../assets/images/7.png" style="height:px; ">
               </v-flex>
               <v-flex sm4 xs4>
-                <img class="" src="../assets/images/8.png" style="height:35px;">
+                <img class="" src="../assets/images/8.png" style="height:px;">
               </v-flex>
              </v-layout>
               </center>
@@ -1231,7 +1230,7 @@
             </v-layout>
           </div>
 
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up"><br><br>
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
@@ -1255,7 +1254,7 @@
                   </v-btn></a>
                 </div>
               </v-flex>
-              <v-flex md4 lg4 sm12 xs12>
+              <v-flex md4 lg4 sm12 xs12><br>
                 <p style="font-size:12px">Get in touch with us...</p>
                 <a href="tel: +234-907-204-5997" style="text-decoration:none">
                 <v-btn fab  small color='grey lighten-5 ma-2'>
@@ -1310,22 +1309,22 @@ export default {
 
 <style scoped>
 #h21{
-  color:black;font-weight:bold;font-size:30px;line-height:1.2;
+  color:black;font-weight:bold;font-size:32px;line-height:1.2;
 }
 #h22{
   color:#673AB7;font-weight:bold;font-size:25px;line-height:1.2;
 }
 #h23{
-  color:#673AB7;font-weight:bold;font-size:20px;line-height:0.7;text-align:center;
+  color:#673AB7;font-weight:bold;font-size:25px;line-height:0.7;text-align:center;
 }
 #h24{
-  color:#673AB7;font-weight:bold;font-size:20px;line-height:1.5;text-align:center;
+  color:#673AB7;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
 }
 #h25{
- color:black;font-weight:bold;font-size:25px;line-height:1.2;text-align:center;
+ color:black;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
 }
 #h26{
-  color:black;font-weight:bold;font-size:20px;line-height:1.5;text-align:center;
+  color:black;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
 }
 #h27{
   color:#673AB7;font-size:18px;
@@ -1355,7 +1354,7 @@ width:100%;
 height:45px;
 }
 .txt1{
-  color:#673AB7;font-weight:bold;font-size:27px;line-height:1.5;
+  color:#673AB7;font-weight:bold;font-size:30px;line-height:1.5;
 }
 .txt2{
   font-size:13px;font-weight:500;
