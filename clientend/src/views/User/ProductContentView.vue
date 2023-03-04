@@ -87,13 +87,13 @@
                     <v-card-text style="font-size:10px;">
                       <v-row>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon><span style="color:#673AB7">350, 000.</span>
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7">350, 000.</span>
                         </v-col>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Electronics.</span>
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;<span>Electronics.</span>
                         </v-col>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
                         </v-col>
                       </v-row>
                     </v-card-text>
@@ -191,9 +191,9 @@
                         </v-card-subtitle>
                       
                         <v-card-text style="font-size:10px;">
-                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon><span style="color:#673AB7">350, 000.</span><br>
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Electronics.</span><br>
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > 350, 000.</span><br>
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Electronics.</span><br>
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
                         </v-card-text>
 
                     </v-card>

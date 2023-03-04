@@ -85,10 +85,10 @@
                     <v-card-text style="font-size:10px;">
                       <v-row>
                         <v-col cols="6">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Catering.</span>
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span>
                         </v-col>
                         <v-col cols="6">
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
                         </v-col>
                       </v-row>
                     </v-card-text>
@@ -182,8 +182,8 @@
                          {{product.name}}
                         </v-card-subtitle>
                         <v-card-text style="font-size:10px;">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon><span>Catering.</span><br>
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon> Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span><br>
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
                         </v-card-text>
                         
 

@@ -134,9 +134,11 @@
 
         <!-- DISPLAY ON SMALL MOBILE DEVICES --><br><br>
       <div class="body2 hidden-md-and-up">
+        <v-card class="grey lighten-4 card-with-gradient" ><br><br>
         <v-layout row wrap>
+
           <v-flex sm4 xs4 class="pa-1">
-            <v-card class="grey lighten-4" >
+          
               <v-layout>
                 <v-flex sm4>
                   <center>
@@ -151,12 +153,12 @@
                     </center>
                   </v-flex>
                 </v-layout><br>
-              </v-card>
+            
             </v-flex>
 
    
             <v-flex sm4 xs4 class="pa-1">
-              <v-card class="grey lighten-4" >
+              
                 <v-layout>
                   <v-flex sm4>
                     <center>
@@ -171,12 +173,12 @@
                     </center>
                   </v-flex>
                 </v-layout><br>
-              </v-card>
+           
             </v-flex>
 
 
               <v-flex sm4 xs4 class="pa-1" >
-              <v-card class="grey lighten-4" >
+              
                 <v-layout>
                   <v-flex sm4>
                     <center>
@@ -191,11 +193,12 @@
                     </center>
                   </v-flex>
                 </v-layout><br>
-              </v-card>
+            
             </v-flex>
-           <br><br>
+           
 
-            </v-layout>
+            </v-layout><br><br>
+            </v-card>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
@@ -304,7 +307,7 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
+                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
               </center>
             </v-flex><br><br>
           </div>
@@ -1359,7 +1362,7 @@ height:45px;
   color:#673AB7; font-size:13px;font-weight:bold;
 }
 #txt4{
-color:#673AB7; font-size:10px;font-weight:bold;
+color:white; font-size:10px;font-weight:bold;
 }
 #txt5{
   font-size:13px;font-weight:normal;
@@ -1402,5 +1405,8 @@ color:#673AB7; font-size:10px;font-weight:bold;
 }
 #con4{
   margin-top:-100px;
+}
+.card-with-gradient {
+  background-image: linear-gradient(135deg, #2E3192 0%, #673AB7 100%);
 }
 </style>

@@ -78,8 +78,8 @@ export default {
     name : 'product-content',
     data: () => ({
       products: [
-        { name: 'Product 1', category: 'Category A' , images:'Fm.png'},
-        { name: 'Product 2', category: 'Category B' , images:'Fm.png'},
+        { name: 'Continental - Contiecocontact', category: 'Category A' , images:'Fm.png'},
+        { name: 'Continental - Contiecocontact', category: 'Category B' , images:'Fm.png'},
         { name: 'Product 3', category: 'Category A' , images:'Fm.png'},
         { name: 'Product 4', category: 'Category C' , images:'Fm.png'},
         { name: 'Product 5', category: 'Category B' , images:'Fm.png'}

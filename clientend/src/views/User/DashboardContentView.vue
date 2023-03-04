@@ -919,10 +919,12 @@ export default {
         }
        
     },
+    
     async mounted() {
     const response = await API.getUser();
     this.Activeuser = response.msg.username;
     },
+
     methods:{
         goProfile(){
             this.$router.push({name : 'profile'})
