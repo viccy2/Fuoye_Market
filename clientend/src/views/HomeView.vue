@@ -822,9 +822,9 @@
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                    "<span class="font-italic" style="color:white">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -833,7 +833,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px;">Dan (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Dan (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -841,9 +841,9 @@
               </v-flex>
 
               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat >
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                    <span class="font-italic" style="color:white">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -852,7 +852,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Mide (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -860,9 +860,9 @@
               </v-flex>
 
               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat>
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                    "<span class="font-italic" style="color:white">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -871,7 +871,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Ayomide (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -1408,5 +1408,8 @@ color:white; font-size:10px;font-weight:bold;
 }
 .card-with-gradient {
   background-image: linear-gradient(135deg, #2E3192 0%, #673AB7 100%);
+}
+.card-with-gradients {
+  background-image: linear-gradient(135deg,  #673AB7 0%, #673AB7 100%);
 }
 </style>

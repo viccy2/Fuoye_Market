@@ -17,7 +17,7 @@
                     <v-menu offset-y>
                         <template v-slot:activator="{ on, attrs }">
                         <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7" width="40" height="40">
-                        <span style="color:whitesmoke;font-size:12px;">VD</span>
+                        <span style="color:whitesmoke;font-size:12px;">{{firstLetter}}</span>
                         </v-btn>
                         </template>
                         <v-list>
@@ -35,15 +35,24 @@
 </template>
 
 <script>
+import API from '../api'
 export default {
     data(){
         return{
             items : [
                 {title : 'Log-Out'},
                 {title : 'Profile'}
-            ]
+            ],
+            firstLetter : '',
         }
     },
+
+    async mounted() {
+    const response = await API.getUser();
+    const splitText = response.msg.username.split(" "); 
+    this.firstLetter = splitText[0][0];  
+    },
+
     methods : {
         Go(){
             this.$router.go(-1);

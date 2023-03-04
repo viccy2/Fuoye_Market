@@ -1,7 +1,7 @@
 <template>
 <div class="profile">
     <AppPagesNavbar /><br>
-   <v-container style="margin-top:px;">
+   <v-container>
         
                 <v-card flat>
                     <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">My Profile</v-card-title>
@@ -45,7 +45,7 @@
                     </v-form>
                 </v-card>
             
-    </v-container><br><br><br>
+    </v-container><br>
 </div>
   
 </template>
