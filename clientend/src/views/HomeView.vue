@@ -24,7 +24,6 @@
                     <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
                   </router-link>
-                  <div>{{ userName }}</div>
                 </v-flex>
                 <v-flex md2 lg2>
                 </v-flex>
@@ -1293,9 +1292,6 @@ import 'animate.css'
 export default {
   name: 'home',
   components: {HomeNavbar, Footers},
-  props: {
-    userName : String
-  },
   data(){
     return{
 

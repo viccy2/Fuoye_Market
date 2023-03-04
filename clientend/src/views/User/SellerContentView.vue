@@ -1,19 +1,17 @@
 <template>
     <div class="content-view" >
+        <v-container fluid>
         <!-- SAVED SELLER SECTION -->
             <div class="new-sellers" style="margin-top:-20px;">
              <v-card flat class="rounded-lg " elevation=''>
-             <v-container fluid>
-
-            <template>
-            <v-container fluid>
+           
             <v-col sm="12" xs="12" >
-              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat><br>
+              <v-card height="600px" style="width:100%;" flat><br>
                 <v-row align="center" justify="center">
 
                   <!-- INPUT SEARCH -->
 
-                  <v-col md="11" sm="10" xs="10" lg="11">
+                  <v-col md="12" sm="12" xs="12" lg="12">
                     <v-text-field
                       color="#673AB7"
                       v-model="search"
@@ -27,8 +25,8 @@
 
                 </v-row>
 
-              <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;"> Saved Sellers For You : </v-card-title>
-              <v-container fluid>
+              <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;margin-top:-30px;"> Saved Sellers For You : </v-card-title>
+
                 <v-row class="">
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
@@ -37,8 +35,7 @@
                 
                   >
 
-                  <template >                                   
-                    <v-card flat class="ma-1 " height="50">
+                    <v-card flat class="ma-1 grey lighten-4" height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
                                     <v-list-item three-line style="margin-top:-10px">
@@ -60,22 +57,20 @@
                                     </v-card-text>
                                 </v-flex>
                             </v-layout>
-                        </v-card>
-                </template><br>
+                    </v-card>
+                        
+                <br>
               </v-col>
             </v-row>
-            </v-container>
 
           </v-card>
           </v-col>
-          </v-container>
-        </template>
-
-
-    </v-container>
+ 
+   
     </v-card>
  </div>
             <!-- END NEW SELLER SECTION -->
+      </v-container>
     </div>
 </template>
 <script>

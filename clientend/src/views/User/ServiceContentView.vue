@@ -109,11 +109,10 @@
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
           <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
-            <v-container fluid>
+            <v-container>
               <template>
-          <v-container fluid>
-            
-              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat><br>
+   
+              <v-card height="600px" style="width:100%;" flat><br>
                 <v-row align="center" justify="center">
                   
                   <!-- INPUT SEARCH -->
@@ -142,7 +141,6 @@
 
                 </v-row>
 
-              <v-container fluid>
                 <v-row class="">
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
@@ -193,11 +191,10 @@
                 </template><br><br><br>
               </v-col>
             </v-row>
-            </v-container><br>
+            <br>
 
           </v-card>
-          
-          </v-container>
+  
         </template>
       </v-container>
       </div>

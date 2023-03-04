@@ -20,7 +20,7 @@
                             <v-col  sm="3"  xs="3"><br>
                            
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:13px;color:black">
-                                Welcome back, <br><span class="font-weight-bold" style="color:#673AB7;font-size:16px;"> Victor David! </span>
+                                Welcome back, <br><span class="font-weight-bold" style="color:#673AB7;font-size:16px;"> {{ Activeuser }} </span>
                             </div><br>
                             
                             <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower"  outlined style="color:#673AB7;font-size:11px;">My Profile</v-btn>
@@ -51,8 +51,7 @@
                             <v-col  sm="6"  xs="6">
                             <br>
                             <div class="items animate__animated animate__bounceIn animate__slower" style="font-size:10px;color:whitesmoke;">
-                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;"> </span>
-                                <div>{{ userName }}</div>
+                                Welcome back, <br><span class="font-weight-bold" style="color:white;font-size:13px;"> {{ Activeuser }} </span>
                             </div>
                             <br>
                             <v-btn @click="goProfile" class="text-capitalize animate__animated animate__bounceIn animate__slower" small  outlined style="color:whitesmoke;font-size:11px;">My Profile</v-btn>
@@ -824,9 +823,6 @@
             <!-- END TOP FEATURED PRODUCTS SECTION -->
 
             
-
-
-            
             <!-- NEW SELLER SECTION -->
             <div class="new-sellers">
                 <v-card flat class="rounded-lg" elevation=''>
@@ -909,13 +905,12 @@
 
 <script>
 import 'animate.css'
+import API from '../../api'
 export default {
     name : 'dashboard',
-    props: {
-    userName : String
-  },
     data(){
         return{
+            Activeuser : '',
             show : false,
             name : true,
             show: false,
@@ -924,7 +919,10 @@ export default {
         }
        
     },
-
+    async mounted() {
+    const response = await API.getUser();
+    this.Activeuser = response.msg.username;
+    },
     methods:{
         goProfile(){
             this.$router.push({name : 'profile'})

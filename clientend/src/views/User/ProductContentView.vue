@@ -8,7 +8,7 @@
       <v-container fluid>
         <template>
           <v-container fluid>
-              <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
+              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
                 <v-row align="center" justify="center">
 
                     <!-- INPUT SEARCH -->
@@ -114,11 +114,9 @@
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
     <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
-      <v-container fluid>
+      <v-container>
         <template>
-          <v-container fluid>
-            
-              <v-card height="600px" style=" overflow-y : auto; width:100%;" flat><br>
+              <v-card height="600px" style="width:100%;" flat><br>
                 <v-row align="center" justify="center">
                   
                     <!-- INPUT SEARCH -->
@@ -148,7 +146,7 @@
 
                 </v-row>
 
-              <v-container fluid>
+                <!-- Product Data -->
                 <v-row class="">
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
@@ -162,6 +160,7 @@
                       :disabled="loading"
                       class="mx-auto grey lighten-4"
                       :to="{name : 'product-details'}"
+                      style="width:100%"
                     >
                       <v-img
                         :src="require(`@/assets/images/${product.images}`)"
@@ -199,13 +198,13 @@
 
                     </v-card>
                 </template><br><br><br>
+
               </v-col>
             </v-row>
-            </v-container><br>
+            <br>
 
           </v-card>
-          
-          </v-container>
+  
         </template>
       </v-container>
     </div>

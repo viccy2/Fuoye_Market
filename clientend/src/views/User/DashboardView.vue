@@ -1,15 +1,41 @@
 <template>
   <div class="dashboard white">
     <AppNavbar  v-show="appnav"/> 
-    <div style="max-height:infinity;min-height:infinity">
-      <DashboardContentView v-show="dashboard"/>
-      <ProductView  v-show="product"/>
-      <ServiceView v-show="service"/>
-      <SellerView  v-show="seller" />
+    
+    <template>
+  <v-app>
+    <v-main>
+      <v-container>
+      <div style="max-height:infinity;min-height:infinity">
+      <DashboardContentView />
+      <!-- <ProductView />
+      <ServiceView />
+      <SellerView  /> -->
       
     </div>
-    
-    <v-bottom-navigation grow color="#673AB7" fixed height="55" >
+      </v-container>
+    </v-main>
+    <v-footer app>
+      <v-bottom-navigation fixed>
+        <v-btn text icon exact to="/">
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+        <v-btn text icon to="/product">
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+        <v-btn text icon to="/service">
+          <v-icon>mdi-heart</v-icon>
+        </v-btn>
+        <v-btn text icon to="/">
+          <v-icon>mdi-account</v-icon>
+        </v-btn>
+      </v-bottom-navigation>
+    </v-footer>
+  </v-app>
+</template>
+
+
+    <!-- <v-bottom-navigation grow color="#673AB7" fixed height="55" >
       <v-btn @click="home" active style="margin-top:10px;">
         <span style="font-size:10px;">Home</span>
         <v-icon >mdi-home-account</v-icon>
@@ -29,7 +55,7 @@
         <span style="font-size:10px">Sellers</span>
         <v-icon >mdi-account-group-outline</v-icon>
       </v-btn>
-    </v-bottom-navigation>
+    </v-bottom-navigation> -->
 
   </div>
 </template>
