@@ -134,13 +134,13 @@
 
         <!-- DISPLAY ON SMALL MOBILE DEVICES --><br><br>
       <div class="body2 hidden-md-and-up">
-        <v-card class="grey lighten-4 card-with-gradient" ><br><br>
+        <v-card class="card-with-gradient" flat><br><br>
         <v-layout row wrap>
 
           <v-flex sm4 xs4 class="pa-1">
           
               <v-layout>
-                <v-flex sm4>
+         
                   <center>
                     <v-btn fab  small color='grey lighten-5'>
                       <v-icon small class="" id="icon"> mdi-account-group-outline</v-icon>
@@ -151,7 +151,7 @@
                       </div>
                     </v-card-text>
                     </center>
-                  </v-flex>
+                
                 </v-layout><br>
             
             </v-flex>
@@ -160,7 +160,7 @@
             <v-flex sm4 xs4 class="pa-1">
               
                 <v-layout>
-                  <v-flex sm4>
+                  
                     <center>
                       <v-btn fab  small color='grey lighten-5'>
                         <v-icon small class="" id="icon"> mdi-cart-check</v-icon>
@@ -171,7 +171,7 @@
                       </div>
                       </v-card-text>
                     </center>
-                  </v-flex>
+                 
                 </v-layout><br>
            
             </v-flex>
@@ -180,7 +180,7 @@
               <v-flex sm4 xs4 class="pa-1" >
               
                 <v-layout>
-                  <v-flex sm4>
+                 
                     <center>
                       <v-btn fab small color='grey lighten-5'>
                         <v-icon small class="" id="icon"> mdi-account-key-outline</v-icon>
@@ -191,13 +191,13 @@
                         </div>
                       </v-card-text>
                     </center>
-                  </v-flex>
+                  
                 </v-layout><br>
             
             </v-flex>
            
 
-            </v-layout><br><br>
+            </v-layout><br>
             </v-card>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
@@ -823,8 +823,8 @@
               <v-layout row wrap>
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    "<span class="font-italic" style="color:white">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
+                    "<span class="font-italic" style="color:grey">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -842,8 +842,8 @@
 
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    <span class="font-italic" style="color:white">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
+                    <span class="font-italic" style="color:grey">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -861,8 +861,8 @@
 
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:black">
-                    "<span class="font-italic" style="color:white">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
+                    "<span class="font-italic" style="color:grey">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">

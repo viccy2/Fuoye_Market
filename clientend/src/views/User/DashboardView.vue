@@ -9,7 +9,7 @@
       
     </div>
   
-    <v-bottom-navigation grow color="#673AB7" fixed height="55" >
+    <v-bottom-navigation grow color="#673AB7" fixed height="" >
       <v-btn @click="home" active style="margin-top:10px;">
         <span style="font-size:10px;">Home</span>
         <v-icon >mdi-home-account</v-icon>

@@ -35,7 +35,7 @@
                 
                   >
 
-                    <v-card flat class="ma-1 grey lighten-4" height="50">
+                    <v-card flat class="ma-1" height="50">
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
                                     <v-list-item three-line style="margin-top:-10px">

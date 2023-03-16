@@ -670,7 +670,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/samsungs.jpg"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     
                                     ></v-img>
@@ -695,7 +695,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/apple.png"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     ></v-img>
 
@@ -720,7 +720,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/hp.jpg"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     ></v-img>
 
@@ -745,7 +745,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/oriamo.png"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     ></v-img>
 
@@ -771,7 +771,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/nike.png"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     ></v-img>
 
@@ -797,7 +797,7 @@
                                 >
                                     <v-img
                                     src="../../assets/images/lv.jpg"
-                                    height="110px"
+                                    height="90px"
                                     style="width:100%"
                                     ></v-img>
 
