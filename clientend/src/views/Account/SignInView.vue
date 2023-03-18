@@ -32,7 +32,7 @@
                                 </v-text-field>
 
                                 <v-text-field  v-model="post.password"  :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
+                                :rules="[rules.required]" :type="show2 ? 'text' : 'password'"  color="#673AB7"
                                 name="input-10-2" label="Password" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>  
