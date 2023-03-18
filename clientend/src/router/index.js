@@ -136,6 +136,18 @@ const routes = [
     props: true
   },
   {
+    path: '/reset-password',
+    name: 'reset-password',
+    component: () => import(/* webpackChunkName: "reset-password" */ '../views/Account/ResetPasswordView.vue'),
+    props: true
+  },
+  {
+    path: '/new-password',
+    name: 'new-password',
+    component: () => import(/* webpackChunkName: "new-password" */ '../views/Account/NewPasswordView.vue'),
+    props: true
+  },
+  {
     path: '/:catchAll(.*)',
     name: '404-page',
     component: () => import(/* webpackChunkName: "404-page" */ '../views/404View.vue'),

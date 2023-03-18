@@ -22,28 +22,36 @@
                             <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
                                     {{this.errorMessage}}
                             </v-alert>
-                            <v-card-title class="pa-5" style="color:#673AB7">Sign In</v-card-title>
-                             <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
-                                <v-text-field 
-                                v-model="post.email" 
-                                :rules="[rules.required]" 
-                                label="Email" type="email" color="#673AB7" clearable
-                                prepend-icon="mdi-gmail" class="small">
-                                </v-text-field>
+                            <v-card-title class="pa-5" style="color:#673AB7">New Password </v-card-title>
+                             <v-form ref="form" @submit.prevent="newPwd" class="pa-5" style="" enctype="multi-part/form-data" >
+                                
+                                <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
+                                density="compact"
+                                placeholder="Enter your password"
+                                variant="outlined"
+                                v-model="post.password" color="#673AB7"  
+                                name="input-10-2" label="New password"  hint="At least 8 characters" 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
+                                </v-text-field> 
 
-                                <v-text-field  v-model="post.password"  :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required]" :type="show2 ? 'text' : 'password'" clearable color="#673AB7"
-                                name="input-10-2" label="Password" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
-                                </v-text-field>  
+                                <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
+                                density="compact"
+                                placeholder="Enter your password"
+                                variant="outlined"
+                                v-model="post.password" color="#673AB7"  
+                                name="input-10-2" label="New password"  hint="At least 8 characters" 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
+                                </v-text-field>
                                 <br>
                                 <v-btn type="submit" class="text-capitalize" 
                                 rounded outlined style="width:100%;color:#673AB7">
-                                Sign In
+                                Update password
                                 </v-btn>
 
                              </v-form>
-                             <p class="container pa-5" style="font-size:11px">Forgot Password ? <a href="/reset-password">Here</a></p>
+                            
 
                         </v-card>
                     </v-flex>
@@ -72,16 +80,6 @@
                         <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
                             {{this.errorMessage}}
                         </v-alert>
-                    <v-text-field
-                        v-model="post.email" 
-                        class="small"
-                        :rules="[rules.required]" 
-                        density="compact"
-                        placeholder="Email address"
-                        prepend-inner-icon="mdi-email-outline"
-                        variant="outlined"
-                        color="#673AB7"
-                    ></v-text-field>
 
                     <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
@@ -89,7 +87,17 @@
                                 placeholder="Enter your password"
                                 variant="outlined"
                                 v-model="post.password" color="#673AB7"  
-                                name="input-10-2" label="Password"  hint="At least 8 characters" 
+                                name="input-10-2" label="New password"  hint="At least 8 characters" 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
+                     </v-text-field>
+
+                     <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
+                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
+                                density="compact"
+                                placeholder="Enter your password"
+                                variant="outlined"
+                                v-model="post.password" color="#673AB7"  
+                                name="input-10-2" label="Confirm password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
                      </v-text-field>
 
@@ -98,38 +106,15 @@
                         color="surface-variant"
                         variant="tonal"
                     >
-                        <v-card-text class="text-medium-emphasis text-caption">
-                            Note : After consecutive failed login attempts, you can also click "Forgot login password?" below to reset the login password.
-                        </v-card-text>
+                      
                     </v-card>
                     <v-btn type="submit" class="text-capitalize"  variant="tonal"
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                sign in
+                                Update password
                     </v-btn>
                 
             </v-form>
-                <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
-                        <a
-                        class="text-caption text-decoration-none small"
-                        href="reset-password"
-                        style="color:#673AB7"
-                        rel="noopener noreferrer"
-                        target="reset-password"
-                        >
-                        Forgot login password?
-                        </a>
-                </div>
-                <v-card-text class="text-center">
-                    <a
-                    class="text-blue text-decoration-none small"
-                    href="new-account"
-                    rel="noopener noreferrer"
-                    target="new-account"
-                    style="color:#673AB7"
-                    >
-                    Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
-                    </a>
-                </v-card-text>
+               
         </v-card><br><br>
     </div>
     </template>
