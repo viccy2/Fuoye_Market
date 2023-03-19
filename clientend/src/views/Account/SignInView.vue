@@ -106,8 +106,7 @@
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
                                 sign in
                     </v-btn>
-                
-            </v-form>
+            <v-container fluid>
                 <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
                         <a
                         class="text-caption text-decoration-none small"
@@ -119,17 +118,9 @@
                         Forgot login password?
                         </a>
                 </div>
-                <v-card-text class="text-center">
-                    <a
-                    class="text-blue text-decoration-none small"
-                    href="new-account"
-                    rel="noopener noreferrer"
-                    target="new-account"
-                    style="color:#673AB7"
-                    >
-                    Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
-                    </a>
-                </v-card-text>
+            </v-container> 
+            </v-form>
+                
         </v-card><br><br>
     </div>
     </template>
