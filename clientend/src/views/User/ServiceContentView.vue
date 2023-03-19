@@ -201,6 +201,7 @@
     </div>
 </template>
 <script>
+import API from '../../api'
 export default {
     name : 'service-content',
     data: () => ({
@@ -212,13 +213,23 @@ export default {
         { name: 'Product 4', category: 'Computing / IT' , images:'b.jpg'},
         { name: 'Product 5', category: 'Furniture' , images:'b.jpg'}
       ],
-      categories: [
-        'Arts & Entertainment', 'Beauty', 'Catering', 'Cleaning / Housekeeping', 'Computing / IT', 'Construction / Agent', 'Cryptocurrency', 'Engineering / Manufacturing',
-        'Farming / Veterinary', 'Fashion Designing', 'Furniture', 'Hair / Barbing', 'Healthcare / Nursing', 'Vehicle / Automobile'
-      ],
+      categories : [],
+      // categories: [
+      //   'Arts & Entertainment', 'Beauty', 'Catering', 'Cleaning / Housekeeping', 'Computing / IT', 'Construction / Agent', 'Cryptocurrency', 'Engineering / Manufacturing',
+      //   'Farming / Veterinary', 'Fashion Designing', 'Furniture', 'Hair / Barbing', 'Healthcare / Nursing', 'Vehicle / Automobile'
+      // ],
       selectedCategory: null,
       search: ''
     }),
+
+    //fetching the categories
+    async created(){
+      const response = await API.getCategory();
+      // returning value names for only where type is Service
+      const services = response.data.filter(item => item.type === "Service");
+      const serviceNames = services.map(item => item.name);
+      this.categories = serviceNames;
+    },
 
   computed: {
     filteredProducts() {

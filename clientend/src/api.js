@@ -1,12 +1,12 @@
 import axios from "axios" ;
-// const url1 = "https://fuoyemarket.intellicsolutions.org/api/";
+const API_URL = "https://fuoyemarket.intellicsolutions.org/api";
 
 export default class API {
 
     //user sign up method
     static async createUser(post){
         try{
-            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/authregister', post);
+            const response = await axios.post(`${API_URL}/authregister`, post);
             return response.data;           
         }
         catch(error){
@@ -18,7 +18,7 @@ export default class API {
     //user sign in method
     static async loginUser(post){
         try{
-            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/login', post);
+            const response = await axios.post(`${API_URL}/login`, post);
             return response.data;           
         }
         catch(error){
@@ -31,7 +31,7 @@ export default class API {
      static async getUser(){
         try{
             const token = localStorage.getItem('token');
-            const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/profile', {
+            const response = await axios.get(`${API_URL}/profile`, {
             params: {
             token: token
             }
@@ -48,7 +48,7 @@ export default class API {
     static async getSeller(){
         try{
             const token = localStorage.getItem('token');
-            const response = await axios.get ('https://fuoyemarket.intellicsolutions.org/api/seller/profile', {
+            const response = await axios.get(`${API_URL}/seller/profile`, {
             params: {
             token: token
             }
@@ -64,35 +64,25 @@ export default class API {
     //update user / seller
     static async updateUser(post){
         try{
-            const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/seller/update-profile', post);
+            const response = await axios.post(`${API_URL}/seller/update-profile`, post);
             return response.data;           
         }
         catch(err){
             console.log(err)
         }
-        // const res = await axios.patch(`${url1}/${id}`, post);
-        // return res.data
     }
 
-    //delete user
-    static async deleteUser(id){
-        const res = await axios.delete(`${url1}/${id}`);
-        return res.data;
-    }
-
-    //Get all company 
-    static async getAllCompany(){
+    //fetch all categories
+    static async getCategory(){
         try{
-            const res = await axios.get(url2);
-            return res.data
+            const response = await axios.get(`${API_URL}/categories`, {
+        })
+        return response.data;
         }
         catch(err){
-            console.log(err);
+            console.log(err)
         }
+        
     }
-    //Get company by ID
-    static async getCompanyByID(id){
-        const res = await axios.get(`${url}/${id}`);
-        return res.data
-    }
+
 }

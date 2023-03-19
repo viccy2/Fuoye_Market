@@ -215,6 +215,7 @@
 
 
 <script>
+import API from '../../api'
 export default {
     name : 'product-content',
     data: () => ({
@@ -226,22 +227,32 @@ export default {
         { name: 'Product 4',  category: 'Health & Beauty' ,  images:'img8.jpg'},
         { name: 'Product 5',  category: 'Phones / Tablets' , images:'img8.jpg'}
       ],
-      categories: [
-        'Animals & Pets', 'Automobile', 'Baby Products', 'Books & Stationaries', 'Computing', 'Electronics', 
-        'Fashion', 'Gaming', 'Grocery', 'Health & Beauty', 'Home & Offices', 'Phones / Tablets', 'Snacks', 'Sporting goods'
-      ],
+      categories : [],
+      // categories: [
+      //   'Animals & Pets', 'Automobile', 'Baby Products', 'Books & Stationaries', 'Computing', 'Electronics', 
+      //   'Fashion', 'Gaming', 'Grocery', 'Health & Beauty', 'Home & Offices', 'Phones / Tablets', 'Snacks', 'Sporting goods'
+      // ],
       selectedCategory: null,
       search: ''
     }),
 
-  computed: {
-    filteredProducts() {
-      return this.products.filter(product => {
-        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
-        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
-        return categoryMatch && nameMatch;
-      });
-    }
+    //fetching the categories
+    async created(){
+      const response = await API.getCategory();
+      //returning value names for only when category type is Product
+      const products = response.data.filter(item => item.type === "Product");
+      const productNames = products.map(item => item.name);
+      this.categories = productNames;
+    },
+    
+    computed: {
+      filteredProducts() {
+        return this.products.filter(product => {
+          const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
+          const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+          return categoryMatch && nameMatch;
+        });
+      }
  }
 
   }
