@@ -68,7 +68,7 @@
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br><br>
+        </section><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -128,80 +128,9 @@
                 </v-card>
               </v-flex>
 
-        </v-layout><br><br><br><br><br>
+        </v-layout><br>
       </div>
       <!-- END DISPLAY ON LARGE DEVICE  -->
-
-        <!-- DISPLAY ON SMALL MOBILE DEVICES --><br><br>
-      <div class="body2 hidden-md-and-up">
-        <v-card class="card-with-gradient" flat><br><br>
-        <v-layout row wrap>
-
-          <v-flex sm4 xs4 class="pa-1">
-          
-              <v-layout>
-         
-                  <center>
-                    <v-btn fab  small color='grey lighten-5'>
-                      <v-icon small class="" id="icon"> mdi-account-group-outline</v-icon>
-                    </v-btn><br><br>
-                    <v-card-text class="py-0">
-                      <div class="item animate__animated animate__bounceIn" id="txt4">
-                        Become a Buyer, get access to the best Sellers around you.
-                      </div>
-                    </v-card-text>
-                    </center>
-                
-                </v-layout><br>
-            
-            </v-flex>
-
-   
-            <v-flex sm4 xs4 class="pa-1">
-              
-                <v-layout>
-                  
-                    <center>
-                      <v-btn fab  small color='grey lighten-5'>
-                        <v-icon small class="" id="icon"> mdi-cart-check</v-icon>
-                      </v-btn><br><br>
-                      <v-card-text class="py-0">
-                        <div class="item  animate__animated animate__bounceIn" id="txt4">
-                          Become a Seller, get access to showcase your products.
-                      </div>
-                      </v-card-text>
-                    </center>
-                 
-                </v-layout><br>
-           
-            </v-flex>
-
-
-              <v-flex sm4 xs4 class="pa-1" >
-              
-                <v-layout>
-                 
-                    <center>
-                      <v-btn fab small color='grey lighten-5'>
-                        <v-icon small class="" id="icon"> mdi-account-key-outline</v-icon>
-                      </v-btn><br><br>
-                      <v-card-text class="py-0">
-                        <div class="item  animate__animated animate__bounceIn" id="txt4">
-                          Get access to unlimited choice products & services.
-                        </div>
-                      </v-card-text>
-                    </center>
-                  
-                </v-layout><br>
-            
-            </v-flex>
-           
-
-            </v-layout><br>
-            </v-card>
-          </div>
-          <!-- END DISPLAY ON SMALL DEVICES  -->
-
         </v-container>
       </section><br><br><br><br><br>
       <!-- END AIM SECTION  -->
@@ -239,7 +168,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up"><br><br><br>
+          <div class="hidden-md-and-up">
             <v-flex sm12 xs12 id="con1">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
@@ -782,8 +711,7 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
+                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg"></v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
                         <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
@@ -801,11 +729,10 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
+                        <v-img  class="elevation-6" alt=""  src="../assets/images/product-11-2.jpg"> </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ella(Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -824,7 +751,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:grey">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    "<span class="font-italic" style="color:black">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -843,16 +770,16 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    <span class="font-italic" style="color:grey">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                    <span class="font-italic" style="color:black">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg">
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Mide (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Ciara (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -862,13 +789,12 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:grey">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    "<span class="font-italic" style="color:black">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
+                        <v-img  class="elevation-6" alt=""  src="../assets/images/product-11-2.jpg"> </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
                         <v-list-item-title class="font-italic" style="color:white;font-size:11px">Ayomide (Buyer)</v-list-item-title>
@@ -1145,17 +1071,19 @@
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/4.png" >
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/pel.jpg" style="height:100px;width:30%;">
                 </center> 
               </v-flex>
+              
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/7.png" >
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/oriamo.png" style="height:100px;width:30%;">
                 </center> 
               </v-flex>
+              
               <v-flex md4 lg4>
                 <center>
-                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/8.png">
+                <img class="img7 animate__animated animate__fadeIn" src="../assets/images/ins.jpeg" style="height:100px;width:30%;">
                 </center>
               </v-flex>
             </v-layout>
@@ -1171,13 +1099,13 @@
               <center>
             <v-layout row wrap>
               <v-flex sm4 xs4>
-                <img class="" src="../assets/images/4.png" style="height:px; ">
+               <img class="" src="../assets/images/pel.jpg" style="height:80px;width:80%;">
               </v-flex>
               <v-flex sm4 xs4>
-               <img class="" src="../assets/images/7.png" style="height:px; ">
+                <img class="" src="../assets/images/oriamo.png" style="height:80px;width:80%;">
               </v-flex>
               <v-flex sm4 xs4>
-                <img class="" src="../assets/images/8.png" style="height:px;">
+                <img class="" src="../assets/images/ins.jpeg" style="height:80px;width:80%;">
               </v-flex>
              </v-layout>
               </center>
@@ -1406,10 +1334,7 @@ color:white; font-size:10px;font-weight:bold;
 #con4{
   margin-top:-100px;
 }
-.card-with-gradient {
-  background-image: linear-gradient(135deg, #2E3192 0%, #673AB7 100%);
-}
 .card-with-gradients {
-  background-image: linear-gradient(135deg,  #673AB7 0%, #673AB7 100%);
+  background-image: linear-gradient(135deg, #2E3192 0%, #673AB7 100%);
 }
 </style>

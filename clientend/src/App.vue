@@ -27,5 +27,7 @@
   };
   </script>
 <style>
-
+body {
+  font-family: 'Sofia', sans-serif;
+}
 </style>
