@@ -1160,7 +1160,7 @@
             </v-layout>
           </div>
 
-          <div class="hidden-md-and-up"><br><br>
+          <div class="hidden-md-and-up">
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>

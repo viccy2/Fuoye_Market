@@ -1,99 +1,259 @@
 <template>
   <div>
-    <AppNavbar  /><br><br>
-  <v-container>
-    <v-row>
-      <v-col>
-        <h4>Products</h4>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <v-text-field v-model="newProduct.name" label="Product Name"></v-text-field>
-        <v-text-field v-model="newProduct.description" label="Product Description"></v-text-field>
-        <v-text-field v-model="newProduct.price" label="Product Price"></v-text-field>
-        <v-btn @click="createProduct"  class="text-capitalize"  variant="tonal"
-              rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                Add Product
-        </v-btn>
-      </v-col>
-      <v-col v-if="selectedProduct">
-        <v-text-field v-model="selectedProduct.name" label="Product Name"></v-text-field>
-        <v-text-field v-model="selectedProduct.description" label="Product Description"></v-text-field>
-        <v-text-field v-model="selectedProduct.price" label="Product Price"></v-text-field>
-        <v-btn @click="updateProduct" color="primary">Update Product</v-btn>
-        <v-btn @click="deleteProduct" color="error">Delete Product</v-btn>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col v-for="(product, index) in products" :key="index" class="mb-3">
-        <v-card>
-          <v-card-title>
-            {{ product.name }}
-          </v-card-title>
-          <v-card-text>
-            {{ product.description }} - ${{ product.price }}
-          </v-card-text>
-          <v-card-actions>
-            <v-btn @click="selectProduct(index)" color="primary">Edit</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-app>
+    <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
+      <v-list dense>
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app :clipped-left="clipped" color="white" dark>
+      <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title style="color:#673AB7;font-size:15px;">FuoyeMarket.</v-toolbar-title>
+      <v-spacer></v-spacer>
+                <!-- NAVBAR ICONS -->
+            <div class="text-center">
+                    <v-menu offset-y>
+                        <template v-slot:activator="{ on, attrs }">
+                        <v-btn icon v-bind="attrs" v-on="on" style="background:#673AB7"  width="40" height="40">
+                        <span style="color:white;font-size:12px;">{{firstLetter}}</span>
+                        </v-btn>
+                        </template>
+                        <v-list>
+                            <v-list-item>
+                                <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu>
+                </div>
+    </v-app-bar>
+
+    <v-main>
+        <v-container>
+        <div class="hidden-sm-and-down">
+          <v-layout row wrap>
+            <v-flex lg3>
+              <v-card class="product-card ma-2">
+                  <v-img
+                    src="https://placehold.it/300x200"
+                    height="200px"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn color="primary">Add to Cart</v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+          <v-flex lg3>
+              <v-card class="product-card ma-2">
+                  <v-img
+                    src="https://placehold.it/300x200"
+                    height="200px"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn color="primary">Add to Cart</v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+          <v-flex lg3>
+              <v-card class="product-card ma-2">
+                  <v-img
+                    src="https://placehold.it/300x200"
+                    height="200px"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn color="primary">Add to Cart</v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+          <v-flex lg3>
+              <v-card class="product-card ma-2">
+                  <v-img
+                    src="https://placehold.it/300x200"
+                    height="200px"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn color="primary">Add to Cart</v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+          </v-layout>
+        </div>
+
+        <div class="hidden-md-and-up">
+          <v-layout row wrap>
+            <v-flex sm6 xs6 class="pa-2">
+              <v-card class="product-cards">
+                  <v-img
+                    src="../../assets/images/lv.jpg"
+                    height="100px"
+                    style="width:100%"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+          <v-flex sm6 xs6 class="pa-2">
+              <v-card class="product-cards">
+                  <v-img
+                    src="../../assets/images/lv.jpg"
+                    height="100px"
+                    style="width:100%"
+                  />
+                  <v-card-title>
+                    <h3 class="headline"></h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <p></p>
+                  </v-card-text>
+                  <v-card-actions>
+                    
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                      <v-icon>mdi-heart-outline</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-flex>
+        </v-layout>
+        </div>
+
+
+
+        </v-container>
+        <router-view></router-view>
+      
+    </v-main>
+
+    
+    <Footers />
+  </v-app>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
 import 'animate.css'
-import AppNavbar from '../../components/AppNavbar.vue'
+import API from '../../api'
+import Footers from '../../components/Footers.vue'
 export default {
   name: 'market',
-  components: {AppNavbar},
-  data() {
-    return {
-      products: [],
-      newProduct: {
-        name: '',
-        description: '',
-        price: 0
+  components : {Footers},
+  data: () => ({
+    firstLetter : '',
+    clipped: true,
+    drawer: true,
+    miniVariant: false,
+    drawerWidth: 240,
+    items: [
+      {
+        title: 'Dashboard',
+        icon: 'mdi-view-dashboard',
+        to: '/dashboard'
       },
-      selectedProduct: null
-    }
-  },
-  methods: {
-    async getProducts() {
-      const response = await axios.get('/api/products')
-      this.products = response.data
-    },
-    async createProduct() {
-      const response = await axios.post('https://fuoyemarket.intellicsolutions.org/api/upload-product/', this.newProduct)
-      this.products.push(response.data)
-      this.newProduct = {
-        name: '',
-        description: '',
-        price: 0
+      {
+        title: 'New product',
+        icon: 'mdi-plus-circle-outline',
+        to: '/profile'
+      },
+      {
+        title: 'New service',
+        icon: 'mdi-clipboard-plus-outline',
+        to: '/settings'
       }
+    ]
+  }),
+  async mounted() {
+    const response = await API.getUser();
+    const splitText = response.msg.username.split(" "); 
+    this.firstLetter = splitText[0][0];  
     },
-    selectProduct(index) {
-      this.selectedProduct = Object.assign({}, this.products[index])
-    },
-    async updateProduct() {
-      const index = this.products.indexOf(this.selectedProduct)
-      const response = await axios.put(`/api/products/${this.selectedProduct.id}`, this.selectedProduct)
-      this.products.splice(index, 1, response.data)
-      this.selectedProduct = null
-    },
-    async deleteProduct() {
-      const index = this.products.indexOf(this.selectedProduct)
-      await axios.delete(`/api/products/${this.selectedProduct.id}`)
-      this.products.splice(index, 1)
-      this.selectedProduct = null
-    }
-  },
-  created() {
-    this.getProducts()
+  methods:{
+    logOut(){
+        localStorage.removeItem('token');
+        this.$router.push('/sign-in');
+      }
   }
 }
 </script>
+
+
+<style scoped>
+.product-card {
+  max-width: 300px;
+}
+</style>
