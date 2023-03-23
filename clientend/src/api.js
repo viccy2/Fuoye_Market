@@ -72,6 +72,28 @@ export default class API {
         }
     }
 
+    //create  new product
+    static async createProduct(post){
+        try{
+            const response = await axios.post(`${API_URL}/seller/create-product`, post);
+            return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
+    //create  new service
+    static async createService(post){
+        try{
+            const response = await axios.post(`${API_URL}/seller/create-service`, post);
+            return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
     //fetch all categories
     static async getCategory(){
         try{

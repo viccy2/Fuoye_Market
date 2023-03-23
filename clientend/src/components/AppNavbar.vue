@@ -17,8 +17,8 @@
                     </v-btn>
                   </template>
                   <v-list>
-                    <v-list-item>
-                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title></router-link>
+                    <v-list-item v-if="user == 'Seller'">
+                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-store</v-icon></v-list-item-title></router-link>
                     </v-list-item>
                     <v-list-item>
                      <v-list-item-title style="font-size:13px;cursor:pointer"  @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
@@ -44,8 +44,8 @@
                     </v-btn>
                   </template>
                   <v-list>
-                    <v-list-item>
-                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title></router-link>
+                    <v-list-item v-if="user == 'Seller'">
+                      <router-link to="/market" style="text-decoration:none;color:black"><v-list-item-title style="font-size:13px;cursor:pointer"> <span >Market</span> <v-icon small> mdi-store</v-icon></v-list-item-title></router-link>
                     </v-list-item>
                     <v-list-item>
                      <v-list-item-title style="font-size:13px;cursor:pointer" @click="logOut"> <span >Log-out</span> <v-icon small> mdi-logout-variant</v-icon></v-list-item-title>
@@ -67,12 +67,14 @@ export default {
     data(){
         return{
            firstLetter : '',
+           user:'',
         }
     },
     async mounted() {
     const response = await API.getUser();
     const splitText = response.msg.username.split(" "); 
-    this.firstLetter = splitText[0][0];  
+    this.firstLetter = splitText[0][0]; 
+    this.user = response.msg.type; 
     },
     methods:{
       logOut(){

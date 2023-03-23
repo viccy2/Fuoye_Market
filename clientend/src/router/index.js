@@ -122,6 +122,31 @@ const routes = [
     beforeEnter: requireAuth
   },
 
+  {
+    path: '/new-product',
+    name: 'new-product',
+    component: () => import(/* webpackChunkName: "new-product" */ '../views/User/NewProductView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
+
+  {
+    path: '/new-service',
+    name: 'new-service',
+    component: () => import(/* webpackChunkName: "new-service" */ '../views/User/NewServiceView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
+
+
+  {
+    path: '/market-content',
+    name: 'market-content',
+    component: () => import(/* webpackChunkName: "market-content" */ '../views/User/MarketContentView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
+
     // Account routes
   {
     path: '/new-account',
