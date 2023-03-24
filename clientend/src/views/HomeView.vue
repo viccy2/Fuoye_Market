@@ -751,7 +751,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:black">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    "<span class="font-italic" style="color:#2E3192">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -770,7 +770,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    <span class="font-italic" style="color:black">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                    <span class="font-italic" style="color:#2E3192">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -789,7 +789,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:black">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    "<span class="font-italic" style="color:#2E3192">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -1335,6 +1335,6 @@ color:white; font-size:10px;font-weight:bold;
   margin-top:-100px;
 }
 .card-with-gradients {
-  background-image: linear-gradient(135deg, #2E3192 0%, #673AB7 100%);
+  background-image: linear-gradient(135deg, #673AB7 0%, #673AB7 20%);
 }
 </style>

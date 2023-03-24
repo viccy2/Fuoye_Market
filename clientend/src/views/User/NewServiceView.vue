@@ -13,6 +13,16 @@
                     <v-form ref="form" @submit.prevent="createProduct" class="pa-5" enctype="multi-part/form-data">
                    
                     <v-text-field class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="rules" v-model="newService.name" color="#673AB7"></v-text-field><br>
+                    <v-col cols="12" md="12">
+                      <v-select
+                        outlined
+                        v-model="selectedService"
+                        :items="services"
+                        item-text="name"
+                        item-value="id"
+                        label="Select selrvice category"
+                      ></v-select>
+                    </v-col>
                     <v-textarea
                         class="small"
                         v-model="newService.describtion"
@@ -62,6 +72,8 @@
           category_id       : '',
           type              : '',
         },
+        services: [],
+        selectedService: null
       }
     },
 
@@ -69,7 +81,8 @@
     async created(){
         const response = await API.getSeller();
         this.seller = response.msg;
-        
+        const response2 = await API.getCategory();
+        this.services = response2.data.filter(product => product.type === 'Service');
     },
     methods: {
      
@@ -81,11 +94,12 @@
           formData.append("describtion",    this.newService.describtion);
           formData.append("no_of_clients",  this.newService.no_of_clients);
           formData.append("location",       this.newService.location);
-          formData.append("category_id",    1);
+          formData.append("category_id",    this.selectedService);
           formData.append("type",           'Service');
           formData.append("token",          this.seller.token);
 
                 if(this.$refs.form.validate()){
+              
                     const response =  await API.createService(formData);
                     this.successMessage = response.msg;
                 
