@@ -1,11 +1,11 @@
 <template>
-    <div class="dashboard"><br><br>
+    <div class="dashboard">
        
         <!-- PROFILE SECTION -->
       <section>     
         <!-- DISPLAY ON LARGE DEVICE --> 
-        <div class="hidden-sm-and-down" ><br>
-            <v-layout row wrap justify-space-between class="pa-3">
+        <div class="hidden-sm-and-down" >
+            <v-layout row wrap justify-space-between class="pa-3" style="margin-top:-80px;">
             <v-container fluid>
                 <v-card class="mx-auto" height="140" color="" flat>
                 

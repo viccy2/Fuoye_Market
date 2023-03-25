@@ -30,7 +30,7 @@
                     <v-text-field class="small" label="Username" disabled prepend-icon="mdi-account-edit" :rules="rules" v-model="seller.username" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Email" disabled prepend-icon="mdi-email-edit-outline" :rules="rules" v-model="seller.email" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Account" disabled prepend-icon="mdi-account-group" :rules="rules" v-model="seller.type" color="#673AB7"></v-text-field>
-                    <v-select class="small" prepend-icon="mdi-map-marker" :rules="rules" label="Select location" :items="location"></v-select>  
+                    <v-select class="small" disabled prepend-icon="mdi-map-marker" :rules="rules" label="Nigeria" ></v-select> 
                     <v-text-field class="small" label="Phone Number" prepend-icon="mdi-phone" :rules="rules" v-model="sellerDetails.phone_number" color="#673AB7"></v-text-field>
                    
                     <h4>Social Accounts :</h4>
@@ -38,7 +38,7 @@
                     <v-text-field class="small" label="Instagram" prepend-icon="mdi-instagram" :rules="rules" v-model="sellerDetails.instagram" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Facebook" prepend-icon="mdi-facebook" :rules="rules" v-model="sellerDetails.facebook" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Twitter" prepend-icon="mdi-twitter" :rules="rules" v-model="sellerDetails.twitter" color="#673AB7"></v-text-field>
-                    <v-text-field class="small" label="Tiktok" prepend-icon="mdi-tiktok" :rules="rules" v-model="sellerDetails.tiktok" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Tiktok" prepend-icon="mdi-tiktok-outlined" :rules="rules" v-model="sellerDetails.tiktok" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Snapchat" prepend-icon="mdi-snapchat" :rules="rules" v-model="sellerDetails.snapchat" color="#673AB7"></v-text-field>
 
                     <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined> Update Profile</v-btn>

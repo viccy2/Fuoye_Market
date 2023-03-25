@@ -159,7 +159,7 @@ export default {
                 'Buyer',
                 'Seller'
             ],
-            show2: true,
+            show2: false,
             password: 'Password',
             rules: {
             required: value => !!value || 'This field is required.',

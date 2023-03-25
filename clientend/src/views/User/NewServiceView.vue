@@ -13,16 +13,19 @@
                     <v-form ref="form" @submit.prevent="createProduct" class="pa-5" enctype="multi-part/form-data">
                    
                     <v-text-field class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="rules" v-model="newService.name" color="#673AB7"></v-text-field><br>
+                    <v-row>
                     <v-col cols="12" md="12">
                       <v-select
-                        outlined
+                        class="small"
+                        prepend-icon="mdi-list-box-outline" 
                         v-model="selectedService"
                         :items="services"
                         item-text="name"
-                        item-value="id"
-                        label="Select selrvice category"
+                        item-value="id" 
+                        label="Select service category"
                       ></v-select>
                     </v-col>
+                    </v-row><br>
                     <v-textarea
                         class="small"
                         v-model="newService.describtion"
@@ -36,7 +39,7 @@
                     <v-text-field class="small" label="Number of happy clients" type="number" prepend-icon="mdi-account-group" :rules="rules" v-model="newService.no_of_clients" color="#673AB7"></v-text-field><br>
                     <v-text-field class="small" label="Location" prepend-icon="mdi-map-marker" :rules="rules" v-model="newService.location" color="#673AB7"></v-text-field><br>
                     <v-file-input
-                        label="Company logo"
+                        label="select company logo"
                         accept="image/*"
                         v-model="selectedFile"
                         

@@ -71,10 +71,8 @@
                         v-model="post.email" 
                         class="small"
                         :rules="[rules.required]" 
-                        density="compact"
-                        placeholder="Enter registered email"
-                        prepend-inner-icon="mdi-email-outline"
-                        variant="outlined"
+                        label="Enter registered email"
+                        prepend-icon="mdi-email-outline"
                         color="#673AB7"
                     ></v-text-field>
 

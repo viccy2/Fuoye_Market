@@ -17,7 +17,7 @@
 
     <v-app-bar app :clipped-left="clipped" color="white" dark>
       <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title style="color:#673AB7;font-size:15px;">FuoyeMarket.</v-toolbar-title>
+      <v-toolbar-title style="color:#673AB7;font-size:17px;font-weight:bold">Market Store.</v-toolbar-title>
       <v-spacer></v-spacer>
                 <!-- NAVBAR ICONS -->
             <div class="text-center">
@@ -84,6 +84,17 @@ export default {
       {
         title: 'New service',
         icon: 'mdi-clipboard-plus-outline',
+        to: '/new-service'
+      },
+      {
+        title: 'View product',
+        icon: 'mdi-cart-variant',
+        to: '/new-product',
+  
+      },
+      {
+        title: 'View service',
+        icon: 'mdi-list-box-outline',
         to: '/new-service'
       }
     ]

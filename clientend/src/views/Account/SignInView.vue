@@ -73,24 +73,20 @@
                             {{this.errorMessage}}
                         </v-alert>
                     <v-text-field
-                        v-model="post.email" 
                         class="small"
+                        v-model="post.email" 
                         :rules="[rules.required]" 
-                        density="compact"
-                        placeholder="Email address"
-                        prepend-inner-icon="mdi-email-outline"
-                        variant="outlined"
+                        label="Email address"
+                        prepend-icon="mdi-email-outline"
                         color="#673AB7"
                     ></v-text-field>
 
                     <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
-                                density="compact"
-                                placeholder="Enter your password"
-                                variant="outlined"
+                                label="Password"
                                 v-model="post.password" color="#673AB7"  
-                                name="input-10-2" label="Password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
+                                name="input-10-2" hint="At least 8 characters" 
+                                class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock-outline"> 
                      </v-text-field>
 
                     <v-card
@@ -147,7 +143,7 @@ export default {
             successMessage:"",
             errorMessage:"",
             visible: false,
-            show2: true,
+            show2: false,
             rules: {
             required: value => !!value || 'This field is required.',
             min: v => v.length >= 8 || 'Min 8 characters',

@@ -6,12 +6,22 @@
              <v-card flat class="rounded-lg " elevation=''>
            
             <v-col sm="12" xs="12" >
-              <v-card height="600px" style="width:100%;" flat><br>
+              <v-card height="600px" style="width:100%;" flat>
                 <v-row align="center" justify="center">
 
                   <!-- INPUT SEARCH -->
 
-                  <v-col md="12" sm="12" xs="12" lg="12">
+                  <v-col class="hidden-sm-and-down" md="12" sm="12" xs="12" lg="12" style="margin-top:20px;">
+                    <v-text-field
+                      color="#673AB7"
+                      v-model="search"
+                      label="Search all sellers..."
+                      outlined
+                      append-icon="mdi-magnify"
+                    
+                    ></v-text-field>
+                  </v-col>
+                  <v-col class="hidden-md-and-up" md="12" sm="12" xs="12" lg="12" style="margin-top:-10px;">
                     <v-text-field
                       color="#673AB7"
                       v-model="search"
@@ -25,9 +35,9 @@
 
                 </v-row>
 
-              <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;margin-top:-30px;"> Saved Sellers For You : </v-card-title>
+              <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;margin-top:-40px;"> Saved Sellers For You : </v-card-title>
 
-                <v-row class="">
+                <v-row class="" >
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"

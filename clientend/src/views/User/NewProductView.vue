@@ -19,7 +19,8 @@
                     <v-row>
                     <v-col cols="12" md="12">
                       <v-select
-                        outlined
+                        class="small" 
+                        prepend-icon="mdi-cart-variant" 
                         v-model="selectedProduct"
                         :items="products"
                         item-text="name"

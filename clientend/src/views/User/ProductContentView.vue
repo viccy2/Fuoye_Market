@@ -116,7 +116,7 @@
     <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
       <v-container>
         <template>
-              <v-card height="600px" style="width:100%;" flat><br>
+              <v-card height="600px" style="width:100%;" flat>
                 <v-row align="center" justify="center">
                   
                     <!-- INPUT SEARCH -->
@@ -147,7 +147,7 @@
                 </v-row>
 
                 <!-- Product Data -->
-                <v-row class="">
+                <v-row class="" style="margin-top:-30px;">
                   <v-col 
                     v-for="(product, index) in filteredProducts" :key="index"
                     class = "d-flex child-flex"
