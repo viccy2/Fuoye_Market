@@ -5,6 +5,7 @@
             <ProductContentView />
         </div>
         <div class="hidden-md-and-up">
+            <AppPagesNavbar />
             <ProductContentView />
         </div>
         

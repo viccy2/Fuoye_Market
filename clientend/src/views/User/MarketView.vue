@@ -2,7 +2,7 @@
   <div>
     <v-app>
     <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
-      <v-list dense>
+      <v-list nav>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -12,12 +12,18 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-   
+      <template v-slot:append>
+          <div class="pa-2">
+            <v-btn block @click="logOut" size="large" class="grey lighten-3" style="color:#673AB7;">
+              Logout
+            </v-btn>
+          </div>
+        </template>
     </v-navigation-drawer>
 
     <v-app-bar app :clipped-left="clipped" color="white" dark>
       <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title style="color:#673AB7;font-size:17px;font-weight:bold">Market Store.</v-toolbar-title>
+      <v-toolbar-title style="color:#673AB7;font-size:15px;font-weight:bold">MyStore.</v-toolbar-title>
       <v-spacer></v-spacer>
                 <!-- NAVBAR ICONS -->
             <div class="text-center">

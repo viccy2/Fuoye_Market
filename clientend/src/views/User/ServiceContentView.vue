@@ -108,7 +108,7 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-          <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
+          <div class="service2 hidden-md-and-up" style="margin-top:0px;">
             <v-container>
               <template>
    

@@ -32,7 +32,8 @@
                   </v-row><br>
                     <v-text-field class="small" label="Location" prepend-icon="mdi-map-marker" :rules="rules" v-model="newProduct.location" color="#673AB7"></v-text-field><br>
                     <v-file-input
-                        label="select product image"
+                        class="small"
+                        label="Select product image"
                         accept="image/*"
                         v-model="selectedFile"
                         

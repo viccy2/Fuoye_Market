@@ -5,6 +5,7 @@
             <ServiceContentView />
         </div>
         <div class="hidden-md-and-up">
+            <AppPagesNavbar />
             <ServiceContentView />
         </div>
     </div>

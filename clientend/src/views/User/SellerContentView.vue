@@ -21,7 +21,7 @@
                     
                     ></v-text-field>
                   </v-col>
-                  <v-col class="hidden-md-and-up" md="12" sm="12" xs="12" lg="12" style="margin-top:-10px;">
+                  <v-col class="hidden-md-and-up" md="12" sm="12" xs="12" lg="12" style="margin-top:20px;">
                     <v-text-field
                       color="#673AB7"
                       v-model="search"

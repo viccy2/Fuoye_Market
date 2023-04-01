@@ -37,9 +37,9 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
          <div class="hidden-md-and-up">
-            <v-container>
+            <v-container fluid style="margin-top:-160px;">
             <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
-                <v-container>
+                
                 <v-list-item>
                     <v-list-item-avatar  height="55" width="55" color="grey darken-3">
                         <v-img  class="elevation-6 animate__animated animate__zoomIn animate__slower" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
@@ -59,7 +59,7 @@
                         </v-row>
                     </v-list-item-content>    
                 </v-list-item>
-            </v-container>
+           
             </v-card>
             </v-container>
         </div>
@@ -353,8 +353,8 @@
                     <v-layout row wrap style="margin-top:-50px">
 
                         <v-flex sm6 xs6 class="pa-2">
-                      
-                      <v-card
+                        <v-card
+                          :to="{name : 'seller-page'}"
                           :loading="loading"
                           class="mx-auto my-12"
                           max-width="374" >
@@ -366,7 +366,7 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="150"
+                          height="110"
                           src="../../assets/images/17.jpg"
                           lazy-src="../../assets/images/17.jpg"
                             aspect-ratio="1"
@@ -400,21 +400,7 @@
                           size="14"
                           ></v-rating>
 
-                          <div class="grey--text ms-4">
-                          5.0
-                          </div>
-                      </v-row>
-
-                      <div class="my-4 " style="font-size:10px;">
-                           • Location : Oye-Ekiti.
-                      </div>
-                      <div class="my-4 " style="font-size:10px;">
-                           • Category : Grocery.
-                      </div>
-
-                      <div>
-                        <v-btn small :to="{name : 'seller-page'}" outlined color='#673AB7' rounded  class="text-capitalize" style="width:100%;"><span style="color:#673AB7">Connect</span></v-btn>
-                      </div>                      
+                      </v-row>                      
                     </v-card-text>
 
                       <v-divider class="mx-4"></v-divider>
@@ -427,6 +413,7 @@
               <v-flex sm6 xs6 class="pa-2">
                       
                       <v-card
+                          :to="{name : 'seller-page'}" 
                           :loading="loading"
                           class="mx-auto my-12"
                           max-width="374" >
@@ -438,9 +425,9 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="150"
-                          src="../../assets/images/pel.jpg"
-                          lazy-src="../../assets/images/pel.jpg"
+                          height="110"
+                          src="../../assets/images/ins.jpeg"
+                          lazy-src="../../assets/images/ins.jpeg"
                             aspect-ratio="1"
                             class="grey lighten-2"
                       >
@@ -457,7 +444,7 @@
                           </v-row>
                         </template>
                         </v-img>
-                      <v-card-title style="font-size:13px;">Pelvix.</v-card-title>
+                      <v-card-title style="font-size:13px;">Intellic.</v-card-title>
 
                       <v-card-text>
                       <v-row
@@ -471,26 +458,9 @@
                           readonly
                           size="14"
                           ></v-rating>
-
-                          <div class="grey--text ms-4">
-                         5.0.
-                          </div>
                       </v-row>
-
-                      <div class="my-4 " style="font-size:10px;">
-                           • Location : Ikole-Ekiti.
-                      </div>
-                      <div class="my-4 " style="font-size:10px;">
-                           • Category : Mobile device.
-                      </div>
-
-                      <div>
-                        <v-btn small :to="{name : 'seller-page'}" outlined color='#673AB7' rounded  class="text-capitalize" style="width:100%;"><span style="color:#673AB7">Connect</span></v-btn>
-                      </div>
                       </v-card-text>
-
-                 
-
+                      <v-divider class="mx-4"></v-divider>
                   </v-card>
 
               </v-flex>

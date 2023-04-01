@@ -39,7 +39,8 @@
                     <v-text-field class="small" label="Number of happy clients" type="number" prepend-icon="mdi-account-group" :rules="rules" v-model="newService.no_of_clients" color="#673AB7"></v-text-field><br>
                     <v-text-field class="small" label="Location" prepend-icon="mdi-map-marker" :rules="rules" v-model="newService.location" color="#673AB7"></v-text-field><br>
                     <v-file-input
-                        label="select company logo"
+                        class="small"
+                        label="Select company logo"
                         accept="image/*"
                         v-model="selectedFile"
                         

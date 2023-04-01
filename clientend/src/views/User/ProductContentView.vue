@@ -113,7 +113,7 @@
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
-    <div class="service2 hidden-md-and-up" style="margin-top:-20px;">
+    <div class="service2 hidden-md-and-up" style="margin-top:0px;">
       <v-container>
         <template>
               <v-card height="600px" style="width:100%;" flat>
