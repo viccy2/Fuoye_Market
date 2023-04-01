@@ -47,7 +47,7 @@
         </template>
         </v-navigation-drawer>
 
-        <v-app-bar app :clipped-left="clipped" color="white" dark>
+        <v-app-bar app :clipped-left="clipped" height="55" class="white" flat dark>
           <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
           <v-toolbar-title style="color:#673AB7;font-size:17px;font-weight:bold;">FuoyeMarket.</v-toolbar-title>
           <v-spacer></v-spacer>
@@ -91,7 +91,8 @@
       <v-app>
         <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
           <v-list nav v-if="user == 'Buyer'">
-            
+            <br>
+              <p> Dashboard : </p>
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -103,8 +104,8 @@
           </v-list>
 
           <v-list nav v-if="user == 'Seller'">   
-        <v-divider></v-divider>
-            <div>
+            <div><br>
+              <p> Dashboard : </p>
             <v-list-item v-for="(item, j) in items" :key="j" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -113,8 +114,9 @@
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            </div>
+            </div><br>
             <div>
+              <p> Market : </p>
             <v-list-item v-for="(item, k) in items2" :key="k" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -134,7 +136,7 @@
         </template>
         </v-navigation-drawer>
 
-        <v-app-bar app :clipped-left="clipped" color="white" dark>
+        <v-app-bar app :clipped-left="clipped"  class="white" flat dark>
           <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
           <v-toolbar-title style="color:#673AB7;font-size:15px;font-weight:bold;">FuoyeMarket.</v-toolbar-title>
           <v-spacer></v-spacer>

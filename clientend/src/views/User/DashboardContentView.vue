@@ -37,7 +37,7 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
          <div class="hidden-md-and-up">
-            <v-container fluid style="margin-top:-160px;">
+            <v-container fluid style="margin-top:-180px;">
             <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
                 
                 <v-list-item>
@@ -234,7 +234,7 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="110"
+                          height="120"
                           src="../../assets/images/17.jpg"
                           lazy-src="../../assets/images/17.jpg"
                             aspect-ratio="1"
@@ -269,7 +269,7 @@
                           ></v-rating>
 
                       </v-row>                      
-                    </v-card-text>
+                    </v-card-text><br>
 
                       <v-divider class="mx-4"></v-divider>
 
@@ -293,7 +293,7 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="110"
+                          height="120"
                           src="../../assets/images/ins.jpeg"
                           lazy-src="../../assets/images/ins.jpeg"
                             aspect-ratio="1"
@@ -327,15 +327,12 @@
                           size="14"
                           ></v-rating>
                       </v-row>
-                      </v-card-text>
+                      </v-card-text><br>
                       <v-divider class="mx-4"></v-divider>
                   </v-card>
 
               </v-flex>
-
-
-                    
-                    
+         
                 </v-layout>
                 </v-container>
                 </v-card>
