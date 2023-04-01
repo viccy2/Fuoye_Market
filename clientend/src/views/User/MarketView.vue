@@ -3,6 +3,8 @@
     <v-app>
     <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
       <v-list nav>
+        <br>
+              <p> Market : </p>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
