@@ -5,7 +5,7 @@
       <section>     
         <!-- DISPLAY ON LARGE DEVICE --> 
         <div class="hidden-sm-and-down" >
-            <v-layout row wrap justify-space-between class="pa-3" style="margin-top:-80px;">
+            <v-layout row wrap justify-space-between class="pa-3" style="margin-top:-190px;">
             <v-container fluid>
                 <v-card class="mx-auto" height="140" color="" flat>
                 
@@ -84,7 +84,7 @@
                             <v-card
                                 :loading="loading"
                                 class="mx-auto my-12"
-                                max-width="374" >
+                                max-width="300" >
                             <template slot="progress">
                                 <v-progress-linear
                                     color="deep-purple"
@@ -93,7 +93,7 @@
                                 </v-progress-linear>
                             </template>
                             <v-img
-                                height="250"
+                                height="150"
                                 src="../../assets/images/b.jpg">
                             </v-img>
                             <v-card-title>Adele foods</v-card-title>
@@ -110,55 +110,11 @@
                                 readonly
                                 size="14"
                                 ></v-rating>
-
-                                <div class="grey--text ms-4">
-                                5.0 
-                                </div>
                             </v-row>
 
-                            <div class="my-4 " style="font-size:13px;">
-                           • Location : Ikole-Ekiti
-                      </div>
-
-                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-                      </v-card-text>
+                      </v-card-text><br>
 
                       <v-divider class="mx-4"></v-divider>
-
-                      <v-card-title>Availability</v-card-title>
-
-                      <v-card-text>
-                      <p> Days : </p>
-                      <v-chip-group
-                          
-                          active-class="deep-purple accent-4 white--text"
-                          column 
-                      >
-                          
-                          <v-chip style="font-size:13px;">Monday</v-chip>
-                          <v-chip style="font-size:13px;">Tuesday</v-chip>
-                          <v-chip style="font-size:13px;">Wednesday</v-chip>
-                          <v-chip style="font-size:13px;">Thursday</v-chip>
-                          <v-chip style="font-size:13px;">Friday</v-chip>
-                         
-                      </v-chip-group><br>
-                            <p> Time : </p>
-                            <v-chip-group
-                                
-                                active-class="deep-purple accent-4 white--text"
-                                column
-                            >
-                               <v-layout row wrap>
-                                <v-flex lg6 md6 class="pa-3">
-                                    <v-chip>12:00AM</v-chip>
-                                </v-flex>
-                                <v-flex lg6 md6 class="pa-3">
-                                    <v-chip>12:00PM</v-chip>
-                                </v-flex>
-                               </v-layout>
-                            
-                            </v-chip-group>
-                            </v-card-text>
 
                         </v-card>
 
@@ -170,7 +126,7 @@
                       <v-card
                           :loading="loading"
                           class="mx-auto my-12"
-                          max-width="374" >
+                          max-width="300" >
                       <template slot="progress">
                           <v-progress-linear
                               color="deep-purple"
@@ -179,10 +135,10 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="250"
-                          src="../../assets/images/about-img-1.jpg">
+                          height="150"
+                          src="../../assets/images/ins.jpeg">
                       </v-img>
-                      <v-card-title>Dan Photography</v-card-title>
+                      <v-card-title>Intellic Solution</v-card-title>
 
                       <v-card-text>
                       <v-row
@@ -197,54 +153,12 @@
                           size="14"
                           ></v-rating>
 
-                          <div class="grey--text ms-4">
-                          5.0 
-                          </div>
                       </v-row>
 
-                      <div class="my-4 " style="font-size:13px;">
-                           • Location : Oye-Ekiti
-                      </div>
-
-                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-                      </v-card-text>
+                      </v-card-text><br>
 
                       <v-divider class="mx-4"></v-divider>
 
-                      <v-card-title>Availability</v-card-title>
-
-                      <v-card-text>
-                      <p> Days : </p>
-                      <v-chip-group
-                          
-                          active-class="deep-purple accent-4 white--text"
-                          column 
-                      >
-                          
-                          <v-chip style="font-size:13px;">Monday</v-chip>
-                          <v-chip style="font-size:13px;">Tuesday</v-chip>
-                          <v-chip style="font-size:13px;">Wednesday</v-chip>
-                          <v-chip style="font-size:13px;">Thursday</v-chip>
-                          <v-chip style="font-size:13px;">Friday</v-chip>
-                         
-                      </v-chip-group><br>
-                      <p> Time : </p>
-                      <v-chip-group
-                          
-                          active-class="deep-purple accent-4 white--text"
-                          column
-                      >
-                         <v-layout row wrap>
-                          <v-flex lg6 md6 class="pa-3">
-                              <v-chip>08:00AM</v-chip>
-                          </v-flex>
-                          <v-flex lg6 md6 class="pa-3">
-                              <v-chip>10:00PM</v-chip>
-                          </v-flex>
-                         </v-layout>
-                      
-                      </v-chip-group>
-                      </v-card-text>
 
                   </v-card>
 
@@ -256,7 +170,7 @@
                       <v-card
                           :loading="loading"
                           class="mx-auto my-12"
-                          max-width="374" >
+                          max-width="300" >
                       <template slot="progress">
                           <v-progress-linear
                               color="deep-purple"
@@ -265,7 +179,7 @@
                           </v-progress-linear>
                       </template>
                       <v-img
-                          height="250"
+                          height="150"
                           src="../../assets/images/17.jpg">
                       </v-img>
                       <v-card-title>Bola Store</v-card-title>
@@ -283,64 +197,18 @@
                           size="14"
                           ></v-rating>
 
-                          <div class="grey--text ms-4">
-                          5.0 
-                          </div>
                       </v-row>
-
-                      <div class="my-4 " style="font-size:13px;">
-                           • Location : Oye-Ekiti
-                      </div>
-
-                      <div style="font-size:13px;">Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-                      </v-card-text>
+                      </v-card-text><br>
 
                       <v-divider class="mx-4"></v-divider>
-
-                      <v-card-title>Availability</v-card-title>
-
-                      <v-card-text>
-                      <p> Days : </p>
-                      <v-chip-group
-                          
-                          active-class="deep-purple accent-4 white--text"
-                          column 
-                      >
-                          
-                          <v-chip style="font-size:13px;">Monday</v-chip>
-                          <v-chip style="font-size:13px;">Tuesday</v-chip>
-                          <v-chip style="font-size:13px;">Wednesday</v-chip>
-                          <v-chip style="font-size:13px;">Thursday</v-chip>
-                          <v-chip style="font-size:13px;">Friday</v-chip>
-                         
-                      </v-chip-group><br>
-                      <p> Time : </p>
-                      <v-chip-group
-                          
-                          active-class="deep-purple accent-4 white--text"
-                          column
-                      >
-                         <v-layout row wrap>
-                          <v-flex lg6 md6 class="pa-3">
-                              <v-chip>10:00AM</v-chip>
-                          </v-flex>
-                          <v-flex lg6 md6 class="pa-3">
-                              <v-chip>06:00PM</v-chip>
-                          </v-flex>
-                         </v-layout>
-                      
-                      </v-chip-group>
-                      </v-card-text>
-
+               
                   </v-card>
 
-              </v-flex>
+                </v-flex>
 
-                    
-                    
                 </v-layout>
                 </v-container>
-                </v-card>
+                </v-card><br><br>
                 </div>
                 <!-- END DISPLAY ON LARGE DEVICE -->
 
@@ -357,7 +225,7 @@
                           :to="{name : 'seller-page'}"
                           :loading="loading"
                           class="mx-auto my-12"
-                          max-width="374" >
+                          max-width="300" >
                       <template slot="progress">
                           <v-progress-linear
                               color="deep-purple"
@@ -416,7 +284,7 @@
                           :to="{name : 'seller-page'}" 
                           :loading="loading"
                           class="mx-auto my-12"
-                          max-width="374" >
+                          max-width="300" >
                       <template slot="progress">
                           <v-progress-linear
                               color="deep-purple"
@@ -494,7 +362,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/samsungs.jpg"
@@ -516,7 +384,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/apple.png"
@@ -539,7 +407,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/lgs.png"
@@ -561,7 +429,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/nike.png"
@@ -583,7 +451,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/hp.jpg"
@@ -606,7 +474,7 @@
                                                         
                                 <v-card
                                     class="mx-auto "
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/lv.jpg"
@@ -636,7 +504,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/samsungs.jpg"
@@ -661,7 +529,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/apple.png"
@@ -686,7 +554,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/hp.jpg"
@@ -711,7 +579,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/oriamo.png"
@@ -737,7 +605,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/nike.png"
@@ -763,7 +631,7 @@
                                                         
                                 <v-card
                                     class="mx-auto grey lighten-5"
-                                    max-width="344"
+                                    max-width="300"
                                 >
                                     <v-img
                                     src="../../assets/images/lv.jpg"

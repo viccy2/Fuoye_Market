@@ -5,7 +5,7 @@
     <div class="hidden-sm-and-down">
       <v-app>
         <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
-          <v-list dense v-if="user == 'Buyer'">
+          <v-list app v-if="user == 'Buyer'">
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -16,7 +16,7 @@
             </v-list-item>
           </v-list>
 
-          <v-list dense v-if="user == 'Seller'">
+          <v-list app v-if="user == 'Seller'">
             <div>
             <v-list-item v-for="(item, j) in items" :key="j" :to="item.to" router>
               <v-list-item-icon>
@@ -38,7 +38,13 @@
             </v-list-item>
           </div>
           </v-list>
-      
+          <template v-slot:append>
+          <div class="pa-2">
+            <v-btn block @click="logOut" class="grey lighten-3" style="color:#673AB7;">
+              Logout
+            </v-btn>
+          </div>
+        </template>
         </v-navigation-drawer>
 
         <v-app-bar app :clipped-left="clipped" color="white" dark>
