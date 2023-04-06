@@ -92,7 +92,7 @@
         <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
           <v-list nav v-if="user == 'Buyer'">
             <br>
-              <p style="font-size:13px;"> Users Dashboard : </p>
+              <p style="font-size:13px;color:#673AB7;">Dashboard : </p>
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -105,7 +105,7 @@
 
           <v-list nav v-if="user == 'Seller'">   
             <div><br>
-              <p style="font-size:13px;"> Sellers Dashboard : </p>
+              <p style="font-size:13px;color:#673AB7;">  Dashboard : </p>
             <v-list-item v-for="(item, j) in items" :key="j" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -116,7 +116,7 @@
             </v-list-item>
             </div><br>
             <div>
-              <p style="font-size:13px;"> Market : </p>
+              <p style="font-size:13px;color:#673AB7;"> Market : </p>
             <v-list-item v-for="(item, k) in items2" :key="k" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -128,7 +128,7 @@
           </div>
           </v-list>
           <template v-slot:append>
-          <div class="pa-2">
+          <div class="">
             <v-btn block @click="logOut" class="grey lighten-3" style="color:#673AB7;">
               Logout
             </v-btn>
