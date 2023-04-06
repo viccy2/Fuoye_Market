@@ -17,7 +17,7 @@
                     <v-text-field class="small" label="Username" disabled prepend-icon="mdi-account-edit" :rules="rules" v-model="user.username" color="#673AB7"></v-text-field><br>
                     <v-text-field class="small" label="Email" disabled prepend-icon="mdi-email-edit-outline" :rules="rules" v-model="user.email" color="#673AB7"></v-text-field><br>
                     <v-text-field class="small" label="Password" disabled prepend-icon="mdi-lock-outline" :rules="rules" value="secured" color="#673AB7"></v-text-field><br>
-                    <v-text-field class="small" label="Phone Number" disabled prepend-icon="mdi-phone" :rules="rules" v-model="user.phone_number" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Phone Number" disabled prepend-icon="mdi-phone" :rules="rules" v-model="user.phone_number" color="#673AB7"></v-text-field><br>
                     <v-text-field class="small" label="Account type" disabled prepend-icon="mdi-account-group" :rules="rules" v-model="user.type" color="#673AB7"></v-text-field><br>
                     <v-select class="small" disabled prepend-icon="mdi-map-marker" :rules="rules" label="Nigeria" ></v-select>  
                     </v-form>

@@ -69,7 +69,7 @@
         </v-app-bar>
 
     <v-main>
-        <v-container>
+        <v-container fluid>
           <!-- Dashboard page Content -->
           <DashboardContentView v-show="dashboard"/>
 
@@ -92,7 +92,7 @@
         <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
           <v-list nav v-if="user == 'Buyer'">
             <br>
-              <p> Dashboard : </p>
+              <p style="font-size:13px;"> Users Dashboard : </p>
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -105,7 +105,7 @@
 
           <v-list nav v-if="user == 'Seller'">   
             <div><br>
-              <p> Dashboard : </p>
+              <p style="font-size:13px;"> Sellers Dashboard : </p>
             <v-list-item v-for="(item, j) in items" :key="j" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -116,7 +116,7 @@
             </v-list-item>
             </div><br>
             <div>
-              <p> Market : </p>
+              <p style="font-size:13px;"> Market : </p>
             <v-list-item v-for="(item, k) in items2" :key="k" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
