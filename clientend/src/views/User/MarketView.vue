@@ -23,7 +23,7 @@
         </template>
     </v-navigation-drawer>
 
-    <v-app-bar app :clipped-left="clipped" color="white" dark>
+    <v-app-bar app :clipped-left="clipped" color="white" dark height="70" >
       <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title style="color:#673AB7;font-size:15px;font-weight:bold">MyStore.</v-toolbar-title>
       <v-spacer></v-spacer>

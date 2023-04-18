@@ -5,9 +5,9 @@
         <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
             
         <div class="service1 hidden-sm-and-down" style="margin-top:0px">
-            <v-container fluid>
+          
               <template>
-          <v-container fluid>
+
               <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
                 <v-row align="center" justify="center">
 
@@ -28,6 +28,7 @@
 
                   <v-col cols="12" md="6">
                     <v-select
+                      color="#673AB7"
                       outlined
                       v-model="selectedCategory"
                       :items="categories"
@@ -100,16 +101,15 @@
             </v-row>
             </v-container>
           </v-card>
-         
-          </v-container>
+     
         </template>
-      </v-container>
+     
    </div>
 
         <!-- DISPLAY ONLY ON SMALL AND SMALLER DEVICES -->
 
           <div class="service2 hidden-md-and-up" style="margin-top:0px;">
-            <v-container>
+   
               <template>
    
               <v-card height="600px" style="width:100%;" flat>
@@ -132,6 +132,7 @@
 
                   <v-col  sm="6" xs="6">
                     <v-select
+                      color="#673AB7"
                       outlined
                       v-model="selectedCategory"
                       :items="categories"
@@ -196,7 +197,7 @@
           </v-card>
   
         </template>
-      </v-container>
+ 
       </div>
     </div>
 </template>

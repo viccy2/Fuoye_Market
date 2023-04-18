@@ -12,7 +12,7 @@
          <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
         
-            <v-card class="mx-auto"  flat  height="145" color="#673AB7" style="margin-top:-170px;">
+            <v-card class="mx-auto"  flat  height="145" color="#673AB7" style="margin-top:-210px;">
                 
                 <v-list-item>
                     <v-list-item-avatar  height="55" width="55" color="grey darken-3">
@@ -345,7 +345,7 @@ export default {
                     img: 'apple.png',
                 },
                 {
-                    title: 'Hewlwt Packard',
+                    title: 'Hewlet Packard',
                     img: 'hp.jpg',
                 },
                 {

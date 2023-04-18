@@ -1,6 +1,6 @@
 <template>
     <div class="content-view" >
-        <v-container fluid>
+     
         <!-- SAVED SELLER SECTION -->
             <div class="new-sellers" style="margin-top:-20px;">
              <v-card flat class="rounded-lg " elevation=''>
@@ -28,7 +28,7 @@
                       label="Search all sellers..."
                       outlined
                       append-icon="mdi-magnify"
-                    
+                      style="width:100%"
                     ></v-text-field>
                   </v-col>
 
@@ -80,7 +80,7 @@
     </v-card>
  </div>
             <!-- END NEW SELLER SECTION -->
-      </v-container>
+  
     </div>
 </template>
 <script>

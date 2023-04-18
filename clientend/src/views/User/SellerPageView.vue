@@ -1,6 +1,6 @@
 <template>
     <div class="seller-page">
-         <AppPagesNavbar />
+         <AppPagesNavbar /><br>
          <v-container fluid>
 
          <div class="hidden-sm-and-down" >

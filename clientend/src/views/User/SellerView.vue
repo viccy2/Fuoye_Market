@@ -1,21 +1,53 @@
 <template>
-    <div class="product" style="margin-top:20px;">
+    <div class="product" style="margin-top:-210px;">
         <div class="hidden-sm-and-down">
-            <AppPagesNavbar />
-            <SellerContentView />
+            <v-app>
+
+            <SideNavbar />
+
+            <v-main>
+                
+                <!-- Dashboard page Content -->
+                <SellerContentView />
+
+                <!-- routes -->
+                <router-view></router-view>
+                <!-- FOOTER SECTION  -->
+                <Footers />
+                <!-- END FOOTER SECTION  -->
+            </v-main>
+
+            </v-app>
         </div>
         <div class="hidden-md-and-up">
-            <AppPagesNavbar />
-            <SellerContentView />
+            <v-app>
+
+            <SideNavbar />
+
+            <v-main>
+                
+                <!-- Dashboard page Content -->
+                <SellerContentView />
+
+               
+                <!-- routes -->
+                <router-view></router-view>
+                <!-- FOOTER SECTION  -->
+                <Footers />
+                <!-- END FOOTER SECTION  -->
+            </v-main>
+
+            </v-app>
         </div>
     </div>
 </template>
 <script>
 import SellerContentView from './SellerContentView.vue'
-import AppPagesNavbar from '../../components/AppPagesNavbar.vue'
+import SideNavbar from '../../components/SideNavbar.vue'
+import Footers from '../../components/Footers.vue'
 export default {
     name: 'seller',
     tab: null,
-    components:{SellerContentView, AppPagesNavbar}
+    components:{SellerContentView, SideNavbar, Footers}
 }
 </script>

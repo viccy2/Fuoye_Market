@@ -1,6 +1,6 @@
 <template>
     <div class="new-product">
-      <AppPagesNavbar /><br>
+      <AppPagesNavbar /><br><br>
       <v-container>
         <v-card flat>
                     <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">New Product</v-card-title>

@@ -3,7 +3,7 @@
     <AppPagesNavbar /><br>
    <v-container>
         
-                <v-card flat>
+                <v-card flat><br>
                     <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">My Profile</v-card-title>
          
                     <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">

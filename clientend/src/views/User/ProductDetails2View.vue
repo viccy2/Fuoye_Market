@@ -94,7 +94,7 @@
                         </p>
                     </v-card-text>
                     
-                </v-card>
+                </v-card><br>
             </v-col>
         </div>
          <!-- END DISPLAY ON SMALL DEVICE -->
@@ -110,6 +110,11 @@ export default {
     components:{AppPagesNavbar, Footers},
     data(){
         return {
+
+        }
+    },
+    methods:{
+        Buy(){
 
         }
     }
