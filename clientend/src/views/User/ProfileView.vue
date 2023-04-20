@@ -1,6 +1,6 @@
 <template>
 <div class="profile">
-    <AppPagesNavbar /><br>
+    <AppPagesNavbar />
    <v-container>
         
                 <v-card flat><br>
@@ -39,7 +39,7 @@
                     <v-text-field class="small" label="Instagram" prepend-icon="mdi-instagram" :rules="rules" v-model="sellerDetails.instagram" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Facebook" prepend-icon="mdi-facebook" :rules="rules" v-model="sellerDetails.facebook" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Twitter" prepend-icon="mdi-twitter" :rules="rules" v-model="sellerDetails.twitter" color="#673AB7"></v-text-field>
-                    <v-text-field class="small" label="Tiktok" prepend-icon="mdi-tiktok-outlined" :rules="rules" v-model="sellerDetails.tiktok" color="#673AB7"></v-text-field>
+                    <v-text-field class="small" label="Tiktok" prepend-icon="mdi-tiktok" :rules="rules" v-model="sellerDetails.tiktok" color="#673AB7"></v-text-field>
                     <v-text-field class="small" label="Snapchat" prepend-icon="mdi-snapchat" :rules="rules" v-model="sellerDetails.snapchat" color="#673AB7"></v-text-field>
 
                     <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined> Update Profile</v-btn>
@@ -125,16 +125,11 @@ export default {
                     snapchat    : this.sellerDetails.snapchat ,
                     token       : this.seller.token 
                 };
-                // const Form = new FormData();
-                // // Form.append('image', this.image);
-                // Form.append('first_name', this.seller.first_name);
-                
-         
-                if(this.$refs.form.validate()){
+  
                     const response =  await API.updateUser(data);
                     this.successMessage = response.msg;
                 
-                }
+                
                 
             }
             catch(err){
