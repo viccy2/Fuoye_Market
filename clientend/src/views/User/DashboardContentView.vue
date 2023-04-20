@@ -273,11 +273,11 @@
                                         <v-flex lg8 md8 sm8 xs8>
                                             <v-list-item three-line style="margin-top:-10px">
                                                 <v-list-item-avatar class="rounded-lg"  height="" width="" color="grey">
-                                                        <img  :src="require(`@/assets/images/${item.img}`)" >
+                                                    <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                                                     </v-list-item-avatar>
                                                     <v-card-text>
                                                         <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
-                                                            {{item.title}}
+                                                            {{item.username}}
                                                         </div>
                                                     </v-card-text>
                                             </v-list-item>
@@ -370,27 +370,16 @@ export default {
                     img: 'dior.png',
                 },
             ],
-            newseller: [
-                {
-                    title: 'Continental - Contiecocontact ',
-                    img: 'Fm.png',
-                },
-                {
-                    title: 'Continental -23 ',
-                    img: 'Fm.png',
-                },
-                {
-                    title: 'Continentaqwe',
-                    img: 'Fm.png',
-                },
-            ],
+            newseller: [],
         }
        
     },
     
     async mounted() {
     const response = await API.getUser();
+    const response2 = await API.newSellers();
     this.Activeuser = response.msg.username;
+    this.newseller = response2.data;
     },
 
     methods:{

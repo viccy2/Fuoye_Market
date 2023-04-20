@@ -4,7 +4,7 @@
     <!-- DISPLAY ONLY ON MOBILE DEVICES -->
 
         <div>
-            <v-app-bar fixed  class="white" height="70" >
+            <v-app-bar fixed flat  class="white" height="60" >
                 <v-app-bar-nav-icon>
                     <v-icon @click="Go" class="" large color="#673AB7">
                         mdi-chevron-left

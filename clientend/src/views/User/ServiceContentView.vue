@@ -8,7 +8,7 @@
           
               <template>
 
-              <v-card height="500px" style=" overflow-y : auto; width:100%;" flat>
+              <v-card height="" style=" overflow-y : auto; width:100%;" flat>
                 <v-row align="center" justify="center">
 
                   <!-- INPUT SEARCH -->
@@ -55,8 +55,8 @@
                       :to="{name : 'service-content-details'}"
                     >
                       <v-img
-                        :src="require(`@/assets/images/${product.images}`)"
-                        :lazy-src="require(`@/assets/images/${product.images}`)"
+                        :src="`${product.image_link}`"
+                        :lazy-src="`${product.image_link}`"
                         height="200px"
                         aspect-ratio="1"
                         class="grey lighten-2"
@@ -89,7 +89,7 @@
                           <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span>
                         </v-col>
                         <v-col cols="6">
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-col>
                       </v-row>
                     </v-card-text>
@@ -100,7 +100,7 @@
               </v-col>
             </v-row>
             </v-container>
-          </v-card>
+          </v-card><br><br>
      
         </template>
      
@@ -112,7 +112,7 @@
    
               <template>
    
-              <v-card height="600px" style="width:100%;" flat>
+              <v-card height="" style="width:100%;" flat>
                 <v-row align="center" justify="center">
                   
                   <!-- INPUT SEARCH -->
@@ -156,9 +156,9 @@
                       :to="{name : 'service-content-details'}"
                     >
                       <v-img
-                        :src="require(`@/assets/images/${product.images}`)"
+                        :src="`${product.image_link}`"
                         height="200px"
-                        :lazy-src="require(`@/assets/images/${product.images}`)"
+                        :lazy-src="`${product.image_link}`"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -184,7 +184,7 @@
                         </v-card-subtitle>
                         <v-card-text style="font-size:10px;">
                           <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span><br>
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-card-text>
                         
 
@@ -194,7 +194,7 @@
             </v-row>
             <br>
 
-          </v-card>
+          </v-card><br><br>
   
         </template>
  
@@ -207,13 +207,7 @@ export default {
     name : 'service-content',
     data: () => ({
       loading:false,
-      products: [
-        { name: 'Product 1', category: 'Arts $ Entertainment' , images:'b.jpg'},
-        { name: 'Product 2', category: 'Beauty' , images:'b.jpg'},
-        { name: 'Product 3', category: 'Beauty' , images:'b.jpg'},
-        { name: 'Product 4', category: 'Computing / IT' , images:'b.jpg'},
-        { name: 'Product 5', category: 'Furniture' , images:'b.jpg'}
-      ],
+      products: [],
       categories : [],
       // categories: [
       //   'Arts & Entertainment', 'Beauty', 'Catering', 'Cleaning / Housekeeping', 'Computing / IT', 'Construction / Agent', 'Cryptocurrency', 'Engineering / Manufacturing',
@@ -226,19 +220,22 @@ export default {
     //fetching the categories
     async created(){
       const response = await API.getCategory();
-      // returning value names for only where type is Service
-      const services = response.data.filter(item => item.type === "Service");
-      const serviceNames = services.map(item => item.name);
-      this.categories = serviceNames;
+      const response2 = await API.allServices();
+     
+      //returning value names for only when category type is Service
+      const products = response.data.filter(item => item.type === "Service");
+      const productNames = products.map(item => item.name);
+      this.categories = productNames;
+      this.products = response2.data;
     },
 
   computed: {
     filteredProducts() {
-      return this.products.filter(product => {
-        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
-        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
-        return categoryMatch && nameMatch;
-      });
+        return this.products.filter(product => {
+          const categoryMatch = !this.selectedCategory || product.id === this.selectedCategory;
+          const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+          return categoryMatch && nameMatch;
+        });
     }
  }
 

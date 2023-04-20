@@ -49,13 +49,13 @@
                             <v-layout row wrap>
                                 <v-flex lg8 md8 sm8 xs8>
                                     <v-list-item three-line style="margin-top:-10px">
-                                        <v-list-item-avatar class="rounded-lg"  height="" width="" color="grey">
-                                            <img  :src="require(`@/assets/images/${product.images}`)" 
-                                                  :lazy-src="require(`@/assets/images/${product.images}`)">
+                                        <v-list-item-avatar class="rounded-circle"  height="" width="" color="grey">
+                                            <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" 
+                                                  :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`">
                                         </v-list-item-avatar>
                                         <v-card-text>
                                             <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
-                                                {{product.name}}
+                                                {{product.username}}
                                             </div>
                                         </v-card-text>
                                     </v-list-item>
@@ -83,28 +83,28 @@
   
     </div>
 </template>
+
+
 <script>
+import API from '../../api'
 export default {
     name : 'product-content',
     data: () => ({
-      products: [
-        { name: 'Continental - Contiecocontact', category: 'Category A' , images:'Fm.png'},
-        { name: 'Continental - Contiecocontact', category: 'Category B' , images:'Fm.png'},
-        { name: 'Product 3', category: 'Category A' , images:'Fm.png'},
-        { name: 'Product 4', category: 'Category C' , images:'Fm.png'},
-        { name: 'Product 5', category: 'Category B' , images:'Fm.png'}
-      ],
-      categories: ['Category A', 'Category B', 'Category C'],
-      selectedCategory: null,
+      data : [],
       search: ''
     }),
 
+    async created(){
+      const response = await API.allSellers();
+      this.data = response.data;
+      // console.log(response.data);
+    },
+
   computed: {
     filteredProducts() {
-      return this.products.filter(product => {
-        const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
-        const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
-        return categoryMatch && nameMatch;
+      return this.data.filter(item => {
+        const nameMatch = item.username.toLowerCase().includes(this.search.toLowerCase());
+        return nameMatch;
       });
     }
  }

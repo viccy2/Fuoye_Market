@@ -2,7 +2,7 @@
     <div class="home-navbar">
     <!-- DISPLAY ONLY ON ALL DEVICES -->
     <div class="hidden-sm-and-down white">
-        <v-app-bar fixed flat elevation='' height="70" class="white">
+        <v-app-bar flat fixed elevation='' height="65" class="white">
             <v-container>
             <v-toolbar-title @click="Go" id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
             </v-container>
@@ -21,7 +21,7 @@
         </v-app-bar>
     </div>
     <div class="hidden-md-and-up white">
-        <v-app-bar fixed flat elevation='' height="55" class="white">
+        <v-app-bar flat fixed  elevation='' height="60" class="grey lighten-4">
             <v-toolbar-title @click="Go" id="names" class="font-weight-bold">FuoyeMarket.</v-toolbar-title>         
             <v-spacer></v-spacer>
             <!-- NAVBAR ICONS -->   
@@ -61,7 +61,7 @@ export default {
 </script>
 <style scoped>
     #name{
-      color:#673AB7;font-size:18px;
+      color:#673AB7;font-size:17px;
     }
     #names{
       color:#673AB7;font-size:15px;

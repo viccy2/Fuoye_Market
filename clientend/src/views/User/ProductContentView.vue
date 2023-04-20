@@ -7,7 +7,7 @@
   
         <template>
       
-              <v-card height="1000px" style=" overflow-y : auto; width:100%;" flat>
+              <v-card height="" style=" overflow-y : auto; width:100%;" flat>
                 <v-row align="center" justify="center">
 
                     <!-- INPUT SEARCH -->
@@ -56,9 +56,9 @@
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="require(`@/assets/images/${product.images}`)"
+                        :src="`${product.image_link}`"
                         height="300px"
-                        :lazy-src="require(`@/assets/images/${product.images}`)"
+                        :lazy-src="`${product.image_link}`"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -87,13 +87,13 @@
                     <v-card-text style="font-size:10px;">
                       <v-row>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7">350, 000.</span>
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7">{{product.price}}</span>
                         </v-col>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;<span>Electronics.</span>
+                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;<span></span>
                         </v-col>
                         <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-col>
                       </v-row>
                     </v-card-text>
@@ -104,7 +104,7 @@
               </v-col>
             </v-row>
             </v-container>
-          </v-card>
+          </v-card><br><br>
        
         </template>
      
@@ -115,7 +115,7 @@
     <div class="service2 hidden-md-and-up" style="margin-top:0px;">
     
         <template>
-              <v-card height="600px" style="width:100%;" flat>
+              <v-card height="" style="width:100%;" flat>
                 <v-row align="center" justify="center">
                   
                     <!-- INPUT SEARCH -->
@@ -163,9 +163,9 @@
                       style="width:100%"
                     >
                       <v-img
-                        :src="require(`@/assets/images/${product.images}`)"
+                        :src="`${product.image_link}`"
                         height="200px"
-                        :lazy-src="require(`@/assets/images/${product.images}`)"
+                        :lazy-src="`${product.image_link}`"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -191,9 +191,9 @@
                         </v-card-subtitle>
                       
                         <v-card-text style="font-size:10px;">
-                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > 350, 000.</span><br>
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > {{product.price}}.</span><br>
                           <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Electronics.</span><br>
-                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; Ikole-Ekiti.
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-card-text>
 
                     </v-card>
@@ -203,7 +203,7 @@
             </v-row>
             <br>
 
-          </v-card>
+          </v-card><br><br>
   
         </template>
      
@@ -220,13 +220,7 @@ export default {
     name : 'product-content',
     data: () => ({
       loading:false,
-      products: [
-        { name: 'Product 1',  category: 'Fashion' ,          images:'img8.jpg'},
-        { name: 'Product 2',  category: 'Automobile' ,       images:'img8.jpg'},
-        { name: 'Product 3',  category: 'Automobile' ,       images:'img8.jpg'},
-        { name: 'Product 4',  category: 'Health & Beauty' ,  images:'img8.jpg'},
-        { name: 'Product 5',  category: 'Phones / Tablets' , images:'img8.jpg'}
-      ],
+      products: [],
       categories : [],
       // categories: [
       //   'Animals & Pets', 'Automobile', 'Baby Products', 'Books & Stationaries', 'Computing', 'Electronics', 
@@ -239,16 +233,19 @@ export default {
     //fetching the categories
     async created(){
       const response = await API.getCategory();
+      const response2 = await API.allProducts();
+     
       //returning value names for only when category type is Product
       const products = response.data.filter(item => item.type === "Product");
       const productNames = products.map(item => item.name);
       this.categories = productNames;
+      this.products = response2.data;
     },
     
     computed: {
       filteredProducts() {
         return this.products.filter(product => {
-          const categoryMatch = !this.selectedCategory || product.category === this.selectedCategory;
+          const categoryMatch = !this.selectedCategory || product.id === this.selectedCategory;
           const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
           return categoryMatch && nameMatch;
         });

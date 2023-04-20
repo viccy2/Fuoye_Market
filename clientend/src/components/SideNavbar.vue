@@ -43,9 +43,10 @@
         </template>
         </v-navigation-drawer>
 
-        <v-app-bar app :clipped-left="clipped" height="70" class="white" dark>
+        <v-app-bar app :clipped-left="clipped" flat height="60" class="white" dark>
           <v-app-bar-nav-icon color="#673AB7" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-          <v-toolbar-title style="color:#673AB7;font-size:17px;font-weight:bold;">FuoyeMarket.</v-toolbar-title>
+          <v-toolbar-title class="hidden-sm-and-down" style="color:#673AB7;font-size:17px;font-weight:bold;">FuoyeMarket.</v-toolbar-title>
+          <v-toolbar-title class="hidden-md-and-up" style="color:#673AB7;font-size:15px;font-weight:bold;">FuoyeMarket.</v-toolbar-title>
           <v-spacer></v-spacer>
                     <!-- NAVBAR ICONS -->
                 <div class="text-center">
@@ -62,7 +63,7 @@
                             </v-list>
                         </v-menu>
                     </div>
-        </v-app-bar>
+        </v-app-bar><br>
 
     </div>
     

@@ -61,7 +61,7 @@ export default class API {
         
     }
 
-    //update user / seller
+    //update  seller
     static async updateUser(post){
         try{
             const response = await axios.post(`${API_URL}/seller/update-profile`, post);
@@ -71,6 +71,33 @@ export default class API {
             console.log(err)
         }
     }
+
+    //fetch all sellers
+    static async allSellers(){
+        try{
+            const response = await axios.get(`${API_URL}/general/sellers`, {
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+        
+    }
+
+    //fetch all new sellers
+    static async newSellers(){
+        try{
+            const response = await axios.get(`${API_URL}/general/new-sellers`, {
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+        
+    }
+
 
     //create  new product
     static async createProduct(post){
@@ -105,6 +132,30 @@ export default class API {
             console.log(err)
         }
         
+    }
+
+    //fetch all products
+    static async allProducts(){
+        try{
+            const response = await axios.get(`${API_URL}/general/products?type=Product&category_id=2`,{
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
+     //fetch all services
+     static async allServices(){
+        try{
+            const response = await axios.get(`${API_URL}/general/products?type=Service&category_id=1`,{
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 
 }

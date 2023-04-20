@@ -3,7 +3,7 @@
   <!-- DISPLAY ONLY ON LARGE DEVICES -->
 
   <div class="hidden-sm-and-down white">
-      <v-app-bar fixed flat elevation='' height="55" class="white">
+      <v-app-bar fixed flat elevation='' height="65" class="white">
           <v-container>
           <v-toolbar-title  id="name" class="font-weight-bold"><v-container>FuoyeMarket.</v-container></v-toolbar-title>     
           </v-container>
@@ -32,7 +32,7 @@
 
 <!-- DISPLAY ONLY ON SMALL DEVICES -->
   <div class="hidden-md-and-up white">
-      <v-app-bar fixed flat elevation='' height="55" class="white">
+      <v-app-bar fixed flat elevation='' height="65" class="white">
         <router-link to="/dashboard" style="text-decoration:none;color:black"><v-toolbar-title id="names" class="font-weight-bold">FuoyeMarket.</v-toolbar-title></router-link>       
           <v-spacer></v-spacer>
           <!-- NAVBAR ICONS -->   
