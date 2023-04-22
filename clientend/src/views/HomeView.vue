@@ -29,10 +29,23 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower" 
+                      <v-img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower" 
                        src="../assets/images/ad1.jpg"
                        lazy-src="../assets/images/ad1.jpg"
                        >
+                       <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </center>
                 </v-flex>
               </v-layout>
@@ -62,11 +75,27 @@
                 </center>
               </v-flex><br><br>
 
-              <center>
-                      <img class=" img2 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad1.jpg" lazy-src="../assets/images/ad1.jpg">
-              </center>
-
+              
             </center>
+            <v-flex sm12 xs12>
+              <center>              
+                  <v-img class="img2 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad1.jpg" 
+                  lazy-src="../assets/images/ad1.jpg">
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                  </v-img>
+              </center>
+            </v-flex>
             </v-layout>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -163,7 +192,21 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad3.jpg" lazy-src="../assets/images/ad3.jpg">
+                    <v-img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad3.jpg" 
+                    lazy-src="../assets/images/ad3.jpg">
+                    <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                      </v-img>
                   </center>
                 </v-flex>
 
@@ -186,11 +229,25 @@
                 Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
               </center>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
-            </v-flex>
+            </v-flex><br><br>
 
             <v-flex sm12 xs12>
               <center>              
-                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad3.jpg" lazy-src="../assets/images/ad3.jpg">
+                  <v-img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad3.jpg" 
+                  lazy-src="../assets/images/ad3.jpg">
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                  </v-img>
               </center>
             </v-flex>
           </div>
@@ -210,7 +267,21 @@
             <v-layout row wrap>
               <v-flex md5 lg5>
                   <center>
-                    <img class="rounded img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad2.jpg" lazy-src="../assets/images/ad2.jpg">
+                    <v-img class="rounded img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad2.jpg"
+                     lazy-src="../assets/images/ad2.jpg">
+                     <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                    </v-img>
                   </center>
               </v-flex>
               <v-flex md2 lg2>
@@ -243,7 +314,21 @@
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="rounded img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/ad2.jpg" lazy-src="../assets/images/ad4.jpg" style="margin-top:-10px;">
+                  <v-img class="rounded img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/ad2.jpg" 
+                  lazy-src="../assets/images/ad2.jpg" style="margin-top:-10px;">
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
+                  </v-img>
               </center> 
             </v-flex><br><br>
           </div>
