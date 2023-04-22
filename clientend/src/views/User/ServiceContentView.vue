@@ -85,10 +85,7 @@
 
                     <v-card-text style="font-size:10px;">
                       <v-row>
-                        <v-col cols="6">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span>
-                        </v-col>
-                        <v-col cols="6">
+                        <v-col cols="12">
                           <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-col>
                       </v-row>
@@ -183,7 +180,6 @@
                          {{product.name}}
                         </v-card-subtitle>
                         <v-card-text style="font-size:10px;">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Catering.</span><br>
                           <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-card-text>
                         

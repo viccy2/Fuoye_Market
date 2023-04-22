@@ -56,9 +56,9 @@
                       :to="{name : 'product-details'}"
                     >
                       <v-img
-                        :src="`${product.image_link}`"
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         height="300px"
-                        :lazy-src="`${product.image_link}`"
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -86,13 +86,11 @@
 
                     <v-card-text style="font-size:10px;">
                       <v-row>
-                        <v-col cols="4">
+                        <v-col cols="6">
                           <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7">{{product.price}}</span>
                         </v-col>
-                        <v-col cols="4">
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;<span></span>
-                        </v-col>
-                        <v-col cols="4">
+                        
+                        <v-col cols="6">
                           <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-col>
                       </v-row>
@@ -163,9 +161,9 @@
                       style="width:100%"
                     >
                       <v-img
-                        :src="`${product.image_link}`"
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         height="200px"
-                        :lazy-src="`${product.image_link}`"
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -192,7 +190,7 @@
                       
                         <v-card-text style="font-size:10px;">
                           <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > {{product.price}}.</span><br>
-                          <v-icon small class="" id="icon">mdi-view-grid</v-icon>&nbsp;&nbsp;<span>Electronics.</span><br>
+                          
                           <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
                         </v-card-text>
 

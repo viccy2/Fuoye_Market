@@ -34,32 +34,50 @@
                                 <v-text-field 
                                 :rules="[rules.required]"
                                 v-model="post.email" 
-                                label="Email" type="email" color="#673AB7"  clearable
+                                label="Email" type="email" color="#673AB7"  clearable 
                                 prepend-icon="mdi-gmail" class="small">
                                 </v-text-field>
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 v-model="post.password" 
-                                name="input-10-2" label="Password"  hint="At least 8 characters"  
+                                name="input-10-2" label="Password"  hint="At least 8 characters"   color="#673AB7"
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-icon="mdi-lock"> 
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
                                 :rules="[rules.required]"
-                                v-model="post.type" 
+                                v-model="post.type"  color="#673AB7"
                                 label="Account type" :items="account">
                                 </v-select>
-
-                                <v-checkbox color="#673AB7" class="small"
-                                label="I agree to the terms and conditions">
-                                </v-checkbox>
+                                <div>
+                                    <v-checkbox
+                                    v-model="agreeTerms"
+                                    :rules="[v => !!v || 'You must agree to the terms and conditions to proceed']"
+                                    label="I agree to the terms and conditions" color="#673AB7"
+                                    ></v-checkbox>
+                                    <v-card
+                                        class="mb-12"
+                                        color="surface-variant"
+                                        variant="tonal"
+                                    >
+                                    <v-card-text class="text-medium-emphasis text-caption">
+                                        <span>
+                                           FuoyeMarket is not responsible for any delays or issues with delivery, and is not liable for any damages arising from delivery delays or issues.     
+                                        <br>Users are responsible for maintaining the confidentiality of their account information and for any activity that occurs under their account.
+                                        <br>FuoyeMarket reserves the right to suspend or terminate user accounts for any reason, related to violation of these terms and conditions.
+                                    </span>                                    
+                                </v-card-text>
+                                </v-card>
+                                    
+                                </div>
+                                
 
                                 <br>
 
                                 <v-btn type="submit" class="text-capitalize" 
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
-                                create account
+                                sign up
                                 </v-btn>
 
                             </v-form>
@@ -118,10 +136,27 @@
                                 v-model="post.type" 
                                 label="Account type" :items="account">
                                 </v-select>
-
-                                <v-checkbox color="#673AB7" class="small"
-                                label="I agree to the terms and conditions">
-                                </v-checkbox>
+                                <div>
+                                    <v-checkbox
+                                    v-model="agreeTerms" color="#673AB7"
+                                    :rules="[v => !!v || 'You must agree to the terms and conditions to proceed']"
+                                    label="I agree to the terms and conditions"
+                                    ></v-checkbox>
+                                    <v-card
+                                        class="mb-12"
+                                        color="surface-variant"
+                                        variant="tonal"
+                                    >
+                                    <v-card-text class="text-medium-emphasis text-caption">
+                                        <span>
+                                           FuoyeMarket is not responsible for any delays or issues with delivery, and is not liable for any damages arising from delivery delays or issues.     
+                                        <br>Users are responsible for maintaining the confidentiality of their account information and for any activity that occurs under their account.
+                                        <br>FuoyeMarket reserves the right to suspend or terminate user accounts for any reason, related to violation of these terms and conditions.
+                                    </span>                                    
+                                </v-card-text>
+                                </v-card>
+                                    
+                                </div>
 
                                 <br>
 
@@ -153,6 +188,7 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
+            agreeTerms: false,
             successMessage:"",
             errorMessage:"",
             account : [

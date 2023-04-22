@@ -29,7 +29,10 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
+                      <img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower" 
+                       src="../assets/images/ad1.jpg"
+                       lazy-src="../assets/images/ad1.jpg"
+                       >
                   </center>
                 </v-flex>
               </v-layout>
@@ -60,7 +63,7 @@
               </v-flex><br><br>
 
               <center>
-                      <img class=" img2 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n62.jpg">
+                      <img class=" img2 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad1.jpg" lazy-src="../assets/images/ad1.jpg">
               </center>
 
             </center>
@@ -147,7 +150,9 @@
                 <v-flex md4 lg4 >
                   <h2 id="h22"><span style="color:black">Grow </span>= Connect + <span style="color:black">Sell</span>.</h2><br>
                   <p id="txt5">
-                    We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br>
+                    We provide a digital marketplace where students can buy and sell goods and services within their campus community.
+                    We offer a user-friendly interface, secure transactions, and a wide range of products and services, including textbooks, electronics, clothing, and tutoring services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
+                    We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
                     We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                     Also, for users to create account and have medium to add their products and connect with the sellers.
                   </p>
@@ -158,7 +163,7 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/n61.jpg">
+                    <img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad3.jpg" lazy-src="../assets/images/ad3.jpg">
                   </center>
                 </v-flex>
 
@@ -173,21 +178,19 @@
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
               <p id="txt7" class="animate__animated animate__fadeIn">
-                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.
-              </p>
+                We provide a digital marketplace where students can buy and sell goods and services within their campus community.
+                We offer a user-friendly interface, secure transactions, and a wide range of products and services, including textbooks, electronics, clothing, and tutoring services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
+                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.              </p>
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
-              </p>
-              <p id="txt7" class="animate__animated animate__fadeIn">
-                Also, for users to create account and have medium to add their products and connect with the sellers.
-              </p>
+                Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
               </center>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex>
 
             <v-flex sm12 xs12>
               <center>              
-                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/n61.jpg">
+                  <img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad3.jpg" lazy-src="../assets/images/ad3.jpg">
               </center>
             </v-flex>
           </div>
@@ -207,7 +210,7 @@
             <v-layout row wrap>
               <v-flex md5 lg5>
                   <center>
-                    <img class="img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/n63.jpg">
+                    <img class="rounded img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad2.jpg" lazy-src="../assets/images/ad2.jpg">
                   </center>
               </v-flex>
               <v-flex md2 lg2>
@@ -216,6 +219,8 @@
               <v-flex md5 lg5 >
                   <h2 id="h22"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
                   <p id="txt5">
+                    We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
+                    We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
                     Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
                   </p>
                   <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
@@ -230,14 +235,16 @@
             <v-flex sm12 xs12 id="con3">
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
               <p id="txt7">
-                Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+                We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
+                We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
+                <br><br>Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
               </p>
-            </v-flex>
+            </v-flex><br><br><br>
 
             <v-flex sm12 xs12>
               <center>
-                  <img class="img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/n63.jpg" style="margin-top:-10px;">
-              </center>
+                  <img class="rounded img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/ad2.jpg" lazy-src="../assets/images/ad4.jpg" style="margin-top:-10px;">
+              </center> 
             </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
@@ -258,8 +265,11 @@
 
           <div>
             <v-layout row wrap>
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3b.jpg" style="height:100%;margin-top:px;" >
@@ -268,12 +278,17 @@
                     <img src="../assets/images/n212.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;"> Computing. </h2>
+                <h2 id="h26" style="font-size:11px;"> Computing. </h2><br><br>
+              </v-card>
                 </center> <br><br><br><br>
+              
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img8.jpg" style="height:70%;margin-top:px;" >
@@ -282,12 +297,16 @@
                     <img src="../assets/images/img10.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;"> Electronics. </h2>
+                <h2 id="h26" style="font-size:11px;"> Electronics. </h2><br><br>
+                </v-card>
                 </center><br><br><br><br>
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
@@ -296,12 +315,16 @@
                     <img src="../assets/images/product-161.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Fashion.</h2>
+                <h2 id="h26" style="font-size:11px;">Fashion.</h2><br><br>
+                </v-card>
                 </center> <br><br><br><br>
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img1.jpg" style="height:70%;margin-top:px;" >
@@ -310,12 +333,16 @@
                     <img src="../assets/images/img2.jpg" style="height:70%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Gaming.</h2>
+                <h2 id="h26" style="font-size:11px;">Gaming.</h2><br><br>
+                </v-card>
                 </center> <br><br><br><br>
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
@@ -324,12 +351,16 @@
                     <img src="../assets/images/product-14-1.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Home & Offices.</h2>
+                <h2 id="h26" style="font-size:11px;">Home & Offices.</h2><br><br>
+                </v-card>
                 </center> 
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/n33.jpg" style="height:100%;margin-top:px;" >
@@ -338,12 +369,16 @@
                     <img src="../assets/images/img6.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2>
+                <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2><br><br>
+                </v-card>
                 </center>  
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img3.jpg" style="height:80%;margin-top:px;" >
@@ -352,12 +387,16 @@
                     <img src="../assets/images/img9.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Appliances.  </h2>
+                <h2 id="h26" style="font-size:11px;">Appliances.  </h2><br><br>
+                </v-card>
                 </center>  
               </v-flex>
 
-              <v-flex md3 lg3>
+              <v-flex md3 lg3 class="pa-1">
                 <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="">
                 <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img4.jpg" style="height:80%;margin-top:px;" >
@@ -366,7 +405,8 @@
                     <img src="../assets/images/img5.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
                 </v-carousel><br>
-                <h2 id="h26" style="font-size:11px;">Grocery.  </h2>
+                <h2 id="h26" style="font-size:11px;">Grocery.  </h2><br><br>
+                </v-card>
                 </center>  
               </v-flex>
 
@@ -869,7 +909,7 @@
                       </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Co-Founder, CFO)  </h2>
                 </center>             
               </v-flex>
               <v-flex md3 lg3>
@@ -992,7 +1032,7 @@
                     </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Olaoluwa David</h2>
-                  <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, Chief Financial Officer)  </h2>
+                  <h2 class="font-italic" style="font-size:11px;"> (Co-Founder, CFO)  </h2>
                 </center>
               </v-flex>
               <v-flex sm6 xs6>
@@ -1266,16 +1306,17 @@ export default {
   width:100%;
 }
 .img3{
-width:100%;height:500px;margin-top:-150px;
+width:100%;margin-top:-180px;
 }
 .img5{
 width:50%;height:400px;margin-top:-50px;
 }
 .img4{
 width:100%;
+height:100%;
 }
 .img6{
-  width:100%;height:500px;margin-top:-200px;
+  width:100%;margin-top:-30px;
 }
 .img7{
 height:45px;
