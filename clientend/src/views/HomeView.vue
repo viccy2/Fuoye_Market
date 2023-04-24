@@ -33,7 +33,7 @@
                   <v-img
                     src="../assets/images/ad1.jpg" 
                     lazy-src="../assets/images/ad1.jpg"
-                    class="rounded-circle-image "
+                    class="rounded-circle-imagess "
                     contain
                     rounded-circle
                     style="margin-top:-100px;"
@@ -122,11 +122,11 @@
 
  
       <!-- GROW SECTION  -->
-      <section>
+      <section >
         <v-container>
 
         <!-- DISPLAY ON LARGE DEVICES  -->
-          <div class="hidden-sm-and-down">
+          <div class="hidden-sm-and-down" style="margin-top:-100px;">
             <v-container fluid>
               <v-layout row wrap>
                 <v-flex md4 lg4 >
@@ -149,7 +149,7 @@
                     <v-img
                       src="../assets/images/ad3.jpg" 
                       lazy-src="../assets/images/ad3.jpg"
-                      class="rounded-circle-image"
+                      class="rounded-circle-imagess"
                       contain
                       rounded-circle
                       style="margin-top:-160px;"
@@ -178,7 +178,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up" style="margin-top:-50px;">
             <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
@@ -199,7 +199,7 @@
                   <v-img
                     src="../assets/images/ad3.jpg" 
                     lazy-src="../assets/images/ad3.jpg"
-                    class="rounded-circle-image"
+                    class="rounded-circle-imagess"
                     contain
                     rounded-circle
                   >
@@ -230,7 +230,7 @@
 
     <!-- ACCESS SECTION  -->
       <section>
-        <v-container>
+        <v-container >
 
           <!-- DISPLAY ON LARGE DEVICES -->
           <div class="hidden-sm-and-down" >
@@ -241,7 +241,7 @@
                   <v-img
                     src="../assets/images/ad2.jpg" 
                     lazy-src="../assets/images/ad2.jpg"
-                    class="rounded-circle-image"
+                    class="rounded-circle-images"
                     contain
                     rounded-circle
                     style="margin-top:-100px;"
@@ -281,7 +281,7 @@
           <!-- END DISPLAY ON LARGE DEVICES -->
 
           <!-- DISPLAY ON SMALL DEVICES  -->
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up"><br>
             <v-flex sm12 xs12 >
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
               <p id="txt7">
@@ -297,9 +297,9 @@
                   <v-img
                     src="../assets/images/ad2.jpg" 
                     lazy-src="../assets/images/ad2.jpg"
-                    class="rounded-circle-image"
+                    class="rounded-circle-images"
                     contain
-                    rounded-circle
+                    
                   >
                   <template v-slot:placeholder>
                           <v-row
@@ -322,7 +322,7 @@
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
         </v-container>
-      </section><br><br>
+      </section>
 
       <!-- END ACCESS SECTION  -->
 
@@ -333,7 +333,7 @@
 
           <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down" >
-            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br>
+            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br>
 
           <div>
             <v-layout row wrap>
@@ -488,7 +488,7 @@
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up"><br>
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
 
@@ -792,7 +792,7 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICES  -->
-          <div class="hidden-sm-and-down">
+          <div class="hidden-sm-and-down"><br><br>
             <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
@@ -933,7 +933,7 @@
       <section id="team">
         <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br>
+            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md3 lg3>
@@ -1046,7 +1046,7 @@
                 </center>             
               </v-flex>
             </v-layout>
-          </div>
+          </div><br><br><br><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
 
@@ -1175,7 +1175,7 @@
         <!-- END DISPLAY ON SMALL DEVICE -->
           
         </v-container>
-      </section><br>
+      </section>
       <!-- END TEAM  SECTION  -->
 
 
@@ -1184,7 +1184,7 @@
         <v-container>
           <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br>
+            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md4 lg4>
@@ -1354,6 +1354,18 @@ export default {
 
 <style scoped>
 .rounded-circle-image {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.rounded-circle-images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.rounded-circle-imagess {
+  border-radius: 50%;
   height: 100%;
   width: 100%;
   object-fit: cover;

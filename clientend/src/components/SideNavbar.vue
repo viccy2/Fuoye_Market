@@ -2,6 +2,19 @@
     <div class="side-nav">
         <v-navigation-drawer app v-model="drawer" :clipped="clipped" :mini-variant="miniVariant" :width="drawerWidth" enable-resize-watcher>
           <v-list app v-if="user == 'Buyer'">
+            <v-list-item three-line >
+                <center>             
+                  <v-list-item-avatar class="rounded-circle"  height="" width="" color="grey">
+                      <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" 
+                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`">
+                  </v-list-item-avatar>
+                  <v-card-text>
+                      <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
+                          Buyer's Dashboard View : 
+                      </div>
+                  </v-card-text>
+                </center>
+              </v-list-item>
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -14,6 +27,19 @@
 
           <v-list app v-if="user == 'Seller'">
             <div>
+              <v-list-item three-line >
+                <center>             
+                  <v-list-item-avatar class="rounded-circle"  height="" width="" color="grey">
+                      <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" 
+                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`">
+                  </v-list-item-avatar>
+                  <v-card-text>
+                      <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
+                          Seller's Dashboard Page : 
+                      </div>
+                  </v-card-text>
+                </center>
+              </v-list-item>
             <v-list-item v-for="(item, j) in items" :key="j" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -21,7 +47,7 @@
               <v-list-item-content>
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
-            </v-list-item>
+            </v-list-item><br>
             </div>
             <div>
             <v-list-item v-for="(item, k) in items2" :key="k" :to="item.to" router>
@@ -34,13 +60,7 @@
             </v-list-item>
           </div>
           </v-list>
-          <template v-slot:append>
-          <div class="pa-2">
-            <v-btn block @click="logOut" class="grey lighten-3" style="color:#673AB7;">
-              Logout
-            </v-btn>
-          </div>
-        </template>
+          
         </v-navigation-drawer>
 
         <v-app-bar app :clipped-left="clipped" flat height="60" class="white" dark>
