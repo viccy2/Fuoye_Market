@@ -276,7 +276,7 @@
                                                     <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                                                     </v-list-item-avatar>
                                                     <v-card-text>
-                                                        <div class="items text-capitalize" style="font-size:10px; margin-top:-15px">
+                                                        <div class="items text-capitalize" style="font-size:11px; margin-top:-15px">
                                                             {{item.username}}
                                                         </div>
                                                     </v-card-text>
@@ -285,11 +285,11 @@
                 
                                         <v-flex lg4 md4 sm4 xs4>
                                             <v-card-text>
-                                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' rounded  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">Connect</span></v-btn>
+                                                <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' tile  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">Connect</span></v-btn>
                                             </v-card-text>
                                         </v-flex>
                                         </v-layout>
-                            </v-card><br>
+                            </v-card>
                         </v-col>
                     </v-row>
                             </v-container>
