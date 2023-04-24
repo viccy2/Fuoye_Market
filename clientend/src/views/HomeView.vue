@@ -28,12 +28,18 @@
                 <v-flex md2 lg2>
                 </v-flex>
                 <v-flex md6 lg6>
-                  <center>
-                      <v-img class="rounded-circle img1 animate__animated animate__zoomIn animate__slower" 
-                       src="../assets/images/ad1.jpg"
-                       lazy-src="../assets/images/ad1.jpg"
-                       >
-                       <template v-slot:placeholder>
+                 
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad1.jpg" 
+                    lazy-src="../assets/images/ad1.jpg"
+                    class="rounded-circle-image "
+                    contain
+                    rounded-circle
+                    style="margin-top:-100px;"
+
+                  >
+                  <template v-slot:placeholder>
                           <v-row
                             class="fill-height ma-0"
                             align="center"
@@ -44,12 +50,13 @@
                               color="grey lighten-5"
                             ></v-progress-circular>
                           </v-row>
-                        </template>
-                      </v-img>
-                  </center>
+                </template>
+                </v-img>
+                </v-responsive>
+            
                 </v-flex>
               </v-layout>
-            </v-container><br><br>
+            </v-container>
           </div>
           <!-- END DISPLAY ON LARGER DEVICES -->
 
@@ -73,14 +80,20 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex><br><br>
-
-              
+              </v-flex>
+ 
             </center>
+
             <v-flex sm12 xs12>
-              <center>              
-                  <v-img class="img2 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad1.jpg" 
-                  lazy-src="../assets/images/ad1.jpg">
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad1.jpg" 
+                    lazy-src="../assets/images/ad1.jpg"
+                    class="rounded-circle-image"
+                    contain
+                    rounded-circle
+                  >
                   <template v-slot:placeholder>
                           <v-row
                             class="fill-height ma-0"
@@ -92,82 +105,22 @@
                               color="grey lighten-5"
                             ></v-progress-circular>
                           </v-row>
-                        </template>
-                  </v-img>
-              </center>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
             </v-flex>
             </v-layout>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br>
+        </section>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
 
-      <!-- AIM SECTION  -->
-      <section class="aim">
-        <v-container>
-
-          <!-- DISPLAY ON LARGE DEVICES -->
-          <div class="body1 hidden-sm-and-down">
-            <v-layout row wrap>
-              <v-flex md4 lg4 sm12 xs12>
-                <v-card tile flat height='100' class="ma-5" >
-                  <center>
-                    <v-btn fab small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account-group-outline</v-icon>
-                    </v-btn>
-                    <br><br><br>
-                    <v-card-text class="py-0">
-                      <div class="items " id="txt3">
-                        Create account, get access to top sellers around you.
-                        </div>
-                    </v-card-text>
-                  </center>
-                </v-card>
-              </v-flex>
-
-              <v-flex md4 lg4 sm12 xs12>
-                <v-card tile flat height='100' class="ma-5" >
-                  <center>
-                    <v-btn fab  small color='grey lighten-2'>
-                      <v-icon small class="pa-3" id="icon"> mdi-account-key-outline</v-icon>
-                    </v-btn>
-                    <br><br><br>
-                    <v-card-text class="py-0">
-                      <div class="items " id="txt3">
-                        Get access to unlimited choice products & services.
-                      </div>
-                    </v-card-text>
-                  </center>
-                </v-card>
-              </v-flex>
-
-              <v-flex md4 lg4 sm12 xs12>
-                <v-card tile flat height='100' class="ma-5" >
-                  <center>
-                  <v-btn fab  small color='grey lighten-2'>
-                    <v-icon small class="pa-3" id="icon"> mdi-cart-check</v-icon>
-                  </v-btn>
-                  <br><br><br>
-                  <v-card-text class="py-0">
-                    <div class="items " id="txt3">
-                     Create seller's account, get access to showcase your products.
-                    </div>
-                  </v-card-text>
-                  </center>
-                </v-card>
-              </v-flex>
-
-        </v-layout><br>
-      </div>
-      <!-- END DISPLAY ON LARGE DEVICE  -->
-        </v-container>
-      </section><br><br><br><br><br>
-      <!-- END AIM SECTION  -->
-
-
+ 
       <!-- GROW SECTION  -->
       <section>
         <v-container>
@@ -192,32 +145,41 @@
                 </v-flex>
                 <v-flex md6 lg6>
                   <center>
-                    <v-img class="img3 animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad3.jpg" 
-                    lazy-src="../assets/images/ad3.jpg">
+                  <v-responsive aspect-ratio="1">
+                    <v-img
+                      src="../assets/images/ad3.jpg" 
+                      lazy-src="../assets/images/ad3.jpg"
+                      class="rounded-circle-image"
+                      contain
+                      rounded-circle
+                      style="margin-top:-160px;"
+                    >
                     <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                        </template>
-                      </v-img>
-                  </center>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular
+                                indeterminate
+                                color="grey lighten-5"
+                              ></v-progress-circular>
+                            </v-row>
+                  </template>
+                  </v-img>
+                  </v-responsive>
+               
+              </center> 
                 </v-flex>
 
               </v-layout>
-            </v-container><br><br><br>
+            </v-container>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
           <div class="hidden-md-and-up">
-            <v-flex sm12 xs12 id="con1">
+            <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
               <p id="txt7" class="animate__animated animate__fadeIn">
@@ -229,12 +191,18 @@
                 Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
               </center>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
-            </v-flex><br><br>
+            </v-flex>
 
             <v-flex sm12 xs12>
-              <center>              
-                  <v-img class="img4 rounded-circle animate__animated animate__zoomIn animate__slower" src="../assets/images/ad3.jpg" 
-                  lazy-src="../assets/images/ad3.jpg">
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad3.jpg" 
+                    lazy-src="../assets/images/ad3.jpg"
+                    class="rounded-circle-image"
+                    contain
+                    rounded-circle
+                  >
                   <template v-slot:placeholder>
                           <v-row
                             class="fill-height ma-0"
@@ -246,15 +214,17 @@
                               color="grey lighten-5"
                             ></v-progress-circular>
                           </v-row>
-                        </template>
-                  </v-img>
-              </center>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
             </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
         </v-container>
-      </section><br><br><br><br>
+      </section><br><br>
     <!-- END GROWTH SECTION  -->
 
 
@@ -266,10 +236,17 @@
           <div class="hidden-sm-and-down" >
             <v-layout row wrap>
               <v-flex md5 lg5>
-                  <center>
-                    <v-img class="rounded img6  animate__animated animate__zoomIn animate__slower"  src="../assets/images/ad2.jpg"
-                     lazy-src="../assets/images/ad2.jpg">
-                     <template v-slot:placeholder>
+                <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad2.jpg" 
+                    lazy-src="../assets/images/ad2.jpg"
+                    class="rounded-circle-image"
+                    contain
+                    rounded-circle
+                    style="margin-top:-100px;"
+                  >
+                  <template v-slot:placeholder>
                           <v-row
                             class="fill-height ma-0"
                             align="center"
@@ -280,9 +257,11 @@
                               color="grey lighten-5"
                             ></v-progress-circular>
                           </v-row>
-                        </template>
-                    </v-img>
-                  </center>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
               </v-flex>
               <v-flex md2 lg2>
 
@@ -297,25 +276,31 @@
                   <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
               </v-flex>
       
-              </v-layout><br><br><br><br><br><br>
+              </v-layout>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES -->
 
           <!-- DISPLAY ON SMALL DEVICES  -->
-          <div class="hidden-md-and-up"><br><br>
-            <v-flex sm12 xs12 id="con3">
+          <div class="hidden-md-and-up">
+            <v-flex sm12 xs12 >
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
               <p id="txt7">
                 We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
                 We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
                 <br><br>Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
               </p>
-            </v-flex><br><br><br>
+            </v-flex>
 
             <v-flex sm12 xs12>
               <center>
-                  <v-img class="rounded img4 animate__animated animate__zoomIn animate__slower" src="../assets/images/ad2.jpg" 
-                  lazy-src="../assets/images/ad2.jpg" style="margin-top:-10px;">
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad2.jpg" 
+                    lazy-src="../assets/images/ad2.jpg"
+                    class="rounded-circle-image"
+                    contain
+                    rounded-circle
+                  >
                   <template v-slot:placeholder>
                           <v-row
                             class="fill-height ma-0"
@@ -327,15 +312,17 @@
                               color="grey lighten-5"
                             ></v-progress-circular>
                           </v-row>
-                        </template>
-                  </v-img>
+                </template>
+                </v-img>
+                </v-responsive>
+               
               </center> 
-            </v-flex><br><br>
+            </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
         </v-container>
-      </section><br><br><br><br>
+      </section><br><br>
 
       <!-- END ACCESS SECTION  -->
 
@@ -345,8 +332,8 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICE -->
-          <div class="hidden-sm-and-down" style="margin-top:-100px">
-            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br><br><br>
+          <div class="hidden-sm-and-down" >
+            <h2 id="h25" >Explore <span style="color:#673AB7">Popular Categories</span></h2><br><br>
 
           <div>
             <v-layout row wrap>
@@ -495,13 +482,13 @@
                 </center>  
               </v-flex>
 
-            </v-layout><br><br><br><br>
+            </v-layout>
           </div>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up" id="con4"><br><br>
+          <div class="hidden-md-and-up">
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
 
@@ -793,11 +780,11 @@
 
               </v-container>
 
-            </div><br><br>
+            </div>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
         </v-container>
-      </section><br><br><br><br>
+      </section><br><br><br>
      
 
       <!-- TESTIMOLIAL  SECTION  -->
@@ -806,13 +793,14 @@
 
           <!-- DISPLAY ON LARGE DEVICES  -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br><br>
+            <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" color="" height="310" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:#673AB7">sellers</span> on the platform are trusted <span style="color:#673AB7">sellers,</span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                     "I love using <span class="font-italic" style="color:#673AB7">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                     I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -821,7 +809,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -831,7 +819,8 @@
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -849,7 +838,8 @@
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    "<span class="font-italic" style="color:#673AB7">FuoyeMarket</span> is an awesome platform, <span style="color:#673AB7">very easy to use, </span> a good platform to <span style="color:#673AB7">connect</span> with my choice <span style="color:#673AB7">sellers.</span>"
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#673AB7">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
+                     Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -869,14 +859,15 @@
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
         <!-- DISPLAY ON SMALL DEVICE -->
-        <div class="hidden-md-and-up" id="con4"><br><br>
+        <div class="hidden-md-and-up">
           <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:#2E3192">FuoyeMarket</span> is an awesome platform, I love using it because all <span style="color:white">sellers</span> on the platform are trusted <span style="color:white">sellers,</span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    "<span class="font-italic" style="color:#2E3192">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -885,7 +876,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Dan (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Dan (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -895,7 +886,8 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    <span class="font-italic" style="color:#2E3192">"FuoyeMarket</span> is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform."
+                    "I love using <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                     I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -914,7 +906,8 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:#2E3192">FuoyeMarket</span> is an awesome platform, <span style="color:white">very easy to use, </span> a good platform to <span style="color:white">connect</span> with my choice <span style="color:white">sellers.</span>"
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
+                     Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -928,19 +921,19 @@
                   </v-card-actions>
                 </v-card>
               </v-flex>
-            </v-layout><br><br><br>
-          </div><br><br><br>
+            </v-layout>
+          </div>
           </div>
           <!-- END DISPLAY ON SMALL DEVICE  -->
         </v-container>
-      </section>
+      </section><br><br><br>
       <!-- END CATEGORY SECTION  -->
 
       <!-- TEAM SECTION  -->
       <section id="team">
         <v-container>
           <div class="hidden-sm-and-down">
-            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br><br><br>
+            <h2 id="h25" >Meet the <span style="color:#673AB7"> Team </span></h2><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md3 lg3>
@@ -1053,12 +1046,12 @@
                 </center>             
               </v-flex>
             </v-layout>
-          </div><br><br><br><br><br>
+          </div>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up" id="con4"><br>
+          <div class="hidden-md-and-up">
             <h2 id="h26">Meet the<span style="color:#673AB7"> Team.</span></h2><br><br>
             <div>
             
@@ -1177,12 +1170,12 @@
             </v-layout>
               </center>
            
-            </div><br>
+            </div>
         </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
           
         </v-container>
-      </section><br><br><br>
+      </section><br>
       <!-- END TEAM  SECTION  -->
 
 
@@ -1191,7 +1184,7 @@
         <v-container>
           <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br><br><br>
+            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br>
             <div>
             <v-layout row wrap>
               <v-flex md4 lg4>
@@ -1217,8 +1210,8 @@
         <!-- END DISPLAY ON LARGE DEVICE  -->
 
         <!-- DISPLAY ON SMALL DEVICES  -->
-        <div class="hidden-md-and-up" id="con4"><br>
-          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br><br>
+        <div class="hidden-md-and-up" >
+          <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br>
             <div>
             <v-container>
               <center>
@@ -1360,6 +1353,11 @@ export default {
  <!-- STYLES -->
 
 <style scoped>
+.rounded-circle-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 #h21{
   color:black;font-weight:bold;font-size:32px;line-height:1.2;
 }
@@ -1447,18 +1445,6 @@ color:white; font-size:10px;font-weight:bold;
 }
 #icon{
   color:#673AB7;
-}
-#con{
-  margin-top:-40px;
-}
-#con1{
-  margin-top:-100px;
-}
-#con3{
-  margin-top:-100px;
-}
-#con4{
-  margin-top:-100px;
 }
 .card-with-gradients {
   background-image: linear-gradient(135deg, #673AB7 0%, #673AB7 20%);
