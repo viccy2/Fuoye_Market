@@ -33,10 +33,9 @@
                   <v-img
                     src="../assets/images/ad1.jpg" 
                     lazy-src="../assets/images/ad1.jpg"
-                    class="rounded-circle-imagess "
-                    contain
-                    rounded-circle
-                    style="margin-top:-100px;"
+                    class="rounded-circle-images3"
+                
+                    style="margin-top:-30px;"
 
                   >
                   <template v-slot:placeholder>
@@ -80,7 +79,7 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex>
+              </v-flex><br>
  
             </center>
 
@@ -90,9 +89,8 @@
                   <v-img
                     src="../assets/images/ad1.jpg" 
                     lazy-src="../assets/images/ad1.jpg"
-                    class="rounded-circle-image"
-                    contain
-                    rounded-circle
+                    class="rounded-circle-images1"
+
                   >
                   <template v-slot:placeholder>
                           <v-row
@@ -115,7 +113,7 @@
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section>
+        </section><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -126,7 +124,7 @@
         <v-container>
 
         <!-- DISPLAY ON LARGE DEVICES  -->
-          <div class="hidden-sm-and-down" style="margin-top:-100px;">
+          <div class="hidden-sm-and-down" style="margin-top:-60px;">
             <v-container fluid>
               <v-layout row wrap>
                 <v-flex md4 lg4 >
@@ -149,10 +147,10 @@
                     <v-img
                       src="../assets/images/ad3.jpg" 
                       lazy-src="../assets/images/ad3.jpg"
-                      class="rounded-circle-imagess"
+                      class="rounded-circle-images3"
                       contain
                       rounded-circle
-                      style="margin-top:-160px;"
+                      style="margin-top:-0px;"
                     >
                     <template v-slot:placeholder>
                             <v-row
@@ -173,7 +171,7 @@
                 </v-flex>
 
               </v-layout>
-            </v-container>
+            </v-container><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
@@ -191,7 +189,7 @@
                 Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
               </center>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
-            </v-flex>
+            </v-flex><br><br>
 
             <v-flex sm12 xs12>
               <center>
@@ -199,7 +197,7 @@
                   <v-img
                     src="../assets/images/ad3.jpg" 
                     lazy-src="../assets/images/ad3.jpg"
-                    class="rounded-circle-imagess"
+                    class="rounded-circle-images2"
                     contain
                     rounded-circle
                   >
@@ -224,7 +222,7 @@
           <!-- END DISPLAY ON SMALL DEVICES -->
 
         </v-container>
-      </section><br><br>
+      </section>
     <!-- END GROWTH SECTION  -->
 
 
@@ -281,7 +279,7 @@
           <!-- END DISPLAY ON LARGE DEVICES -->
 
           <!-- DISPLAY ON SMALL DEVICES  -->
-          <div class="hidden-md-and-up"><br>
+          <div class="hidden-md-and-up">
             <v-flex sm12 xs12 >
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
               <p id="txt7">
@@ -1353,10 +1351,22 @@ export default {
  <!-- STYLES -->
 
 <style scoped>
-.rounded-circle-image {
+.rounded-circle-images1 {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+.rounded-circle-images2 {
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+.rounded-circle-images3 {
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
 }
 .rounded-circle-images {
@@ -1364,12 +1374,7 @@ export default {
   width: 100%;
   object-fit: cover;
 }
-.rounded-circle-imagess {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
 #h21{
   color:black;font-weight:bold;font-size:32px;line-height:1.2;
 }
