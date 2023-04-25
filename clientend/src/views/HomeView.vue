@@ -33,7 +33,7 @@
                   <v-img
                     src="../assets/images/ad1.jpg" 
                     lazy-src="../assets/images/ad1.jpg"
-                    class="rounded-circle-images3"
+                    class="rounded-circle-images5"
                 
                     style="margin-top:-30px;"
 
@@ -79,7 +79,7 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex><br>
+              </v-flex><br><br>
  
             </center>
 
@@ -109,7 +109,7 @@
                
               </center> 
             </v-flex>
-            </v-layout>
+            </v-layout><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
@@ -1353,14 +1353,14 @@ export default {
 <style scoped>
 .rounded-circle-images1 {
   border-radius: 50%;
-  height: 80%;
-  width: 80%;
-  object-fit: cover;
+  height: 90%;
+  width: 90%;
+ 
 }
 .rounded-circle-images2 {
   border-radius: 50%;
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
   object-fit: cover;
 }
 .rounded-circle-images3 {
@@ -1374,7 +1374,12 @@ export default {
   width: 100%;
   object-fit: cover;
 }
-
+.rounded-circle-images5 {
+  border-radius: 50%;
+  height: 80%;
+  width: 100%;
+ 
+}
 #h21{
   color:black;font-weight:bold;font-size:32px;line-height:1.2;
 }
