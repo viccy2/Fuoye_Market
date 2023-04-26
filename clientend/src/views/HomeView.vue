@@ -25,17 +25,17 @@
                   </v-btn>
                   </router-link>
                 </v-flex>
-                <v-flex md2 lg2>
+                <v-flex md1 lg1>
                 </v-flex>
-                <v-flex md6 lg6>
+                <v-flex md7 lg7>
                  
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad1.jpg" 
-                    lazy-src="../assets/images/ad1.jpg"
+                    src="../assets/images/land.jpg" 
+                    lazy-src="../assets/images/land.jpg"
                     class="rounded-circle-images5"
                 
-                    style="margin-top:-30px;"
+                    style="margin-top:0px;"
 
                   >
                   <template v-slot:placeholder>
@@ -87,8 +87,8 @@
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad1.jpg" 
-                    lazy-src="../assets/images/ad1.jpg"
+                    src="../assets/images/land.jpg" 
+                    lazy-src="../assets/images/land.jpg"
                     class="rounded-circle-images1"
 
                   >
@@ -109,7 +109,7 @@
                
               </center> 
             </v-flex>
-            </v-layout><br><br>
+            </v-layout><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
@@ -217,7 +217,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex>
+            </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
@@ -1352,15 +1352,15 @@ export default {
 
 <style scoped>
 .rounded-circle-images1 {
-  border-radius: 50%;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
  
 }
 .rounded-circle-images2 {
   border-radius: 50%;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .rounded-circle-images3 {
@@ -1375,9 +1375,9 @@ export default {
   object-fit: cover;
 }
 .rounded-circle-images5 {
-  border-radius: 50%;
-  height: 80%;
+  height: 60%;
   width: 100%;
+ 
  
 }
 #h21{
