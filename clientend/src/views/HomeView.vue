@@ -25,9 +25,9 @@
                   </v-btn>
                   </router-link>
                 </v-flex>
-                <v-flex md1 lg1>
+                <v-flex md2 lg2>
                 </v-flex>
-                <v-flex md7 lg7>
+                <v-flex md6 lg6>
                  
                 <v-responsive aspect-ratio="1">
                   <v-img
@@ -124,7 +124,7 @@
         <v-container>
 
         <!-- DISPLAY ON LARGE DEVICES  -->
-          <div class="hidden-sm-and-down" style="margin-top:-60px;">
+          <div class="hidden-sm-and-down" style="margin-top:-200px;">
             <v-container fluid>
               <v-layout row wrap>
                 <v-flex md4 lg4 >
@@ -814,24 +814,7 @@
                 </v-card>
               </v-flex>
 
-              <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
-                    It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-list-item class="grow">
-                      <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg"></v-img>
-                      </v-list-item-avatar>
-                      <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                    </v-card-actions>
-                </v-card>
-              </v-flex>
+              
 
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
@@ -849,6 +832,25 @@
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
+                </v-card>
+              </v-flex>
+
+              <v-flex md4 lg4>
+                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
+                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-list-item class="grow">
+                      <v-list-item-avatar color="grey darken-3">
+                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg"></v-img>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                    </v-card-actions>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -1375,7 +1377,7 @@ export default {
   object-fit: cover;
 }
 .rounded-circle-images5 {
-  height: 60%;
+  height: 50%;
   width: 100%;
  
  

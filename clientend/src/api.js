@@ -158,4 +158,15 @@ export default class API {
         }
     }
 
+     //forgot password
+     static async forgotPWD(post){
+        try{
+            const response = await axios.post(`${API_URL}/forgot_password`, post);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
 }

@@ -133,20 +133,14 @@ export default {
             };
 
             if(this.$refs.form.validate()){
-
-             const response = await API.loginUser(data);
-            //  console.log(response);
-                if(response.msg=='email sent successfully'){
+                try {
+                    const response = await API.forgotPWD(data);
                     this.successMessage = response.msg;
-                    localStorage.setItem('token', response.data.token);
-                    setTimeout(function(){
-                    window.location.href = '/dashboard';
-                    },5000);
+                    console.log(response);
+                } catch (error) {
+                    this.errorMessage ='User not found';
                 }
-                
-                else{
-                    this.errorMessage = response;
-                }
+            
 
                 };
             
