@@ -20,8 +20,8 @@
                                          {{this.successMessage}}
                             </v-alert>
                             <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
-                                    {{this.errorMessage}}
-                            </v-alert>
+                            {{this.errorMessage}}
+                        </v-alert>
                             <v-card-title class="pa-5" style="color:#673AB7">Reset Password</v-card-title>
                              <v-form ref="form" @submit.prevent="resetPwd" class="pa-5" style="" enctype="multi-part/form-data" >
                                 <v-text-field 
@@ -136,7 +136,7 @@ export default {
                 try {
                     const response = await API.forgotPWD(data);
                     this.successMessage = response.msg;
-                    console.log(response);
+                    // console.log(response);
                 } catch (error) {
                     this.errorMessage ='User not found';
                 }

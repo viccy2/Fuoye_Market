@@ -20,20 +20,26 @@
                                          {{this.successMessage}}
                             </v-alert>
                             <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
-                                    {{this.errorMessage}}
-                            </v-alert>
+                            {{this.errorMessage}}
+                        </v-alert>
                             <v-card-title class="pa-5" style="color:#673AB7">New Password </v-card-title>
-                             <v-form ref="form" @submit.prevent="newPwd" class="pa-5" style="" enctype="multi-part/form-data" >
-                                
-                                <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
-                                density="compact"
-                                placeholder="Enter your password"
-                                variant="outlined"
-                                v-model="post.password" color="#673AB7"  
-                                name="input-10-2" label="New password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
-                                </v-text-field> 
+                             <v-form ref="form" @submit.prevent="newPWD" class="pa-5" style="" enctype="multi-part/form-data" >
+                                <v-text-field
+                                    class="small"
+                                    v-model="post.email" 
+                                    :rules="[rules.required]" 
+                                    label="Email address"
+                                    prepend-icon="mdi-email-outline"
+                                    color="#673AB7"
+                                ></v-text-field>
+                                <v-text-field
+                                    class="small"
+                                    v-model="post.code" 
+                                    :rules="[rules.required]" 
+                                    label="Verification code"
+                                    prepend-icon="mdi-key-star"
+                                    color="#673AB7"
+                                ></v-text-field> 
 
                                 <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
@@ -73,31 +79,36 @@
                     
                     <v-card  flat >
                         
-                    <v-form ref="form" @submit.prevent="signIn" class="pa-5" style="" enctype="multi-part/form-data" >
+                    <v-form ref="form" @submit.prevent="newPWD" class="pa-5" style="" enctype="multi-part/form-data" >
                         <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
                             {{this.successMessage}}
                         </v-alert>
                         <v-alert border="left" close-text="Close Alert" color="red accent-4" dark dismissible v-if="this.errorMessage">
                             {{this.errorMessage}}
                         </v-alert>
-
-                    <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
-                                :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
-                                density="compact"
-                                placeholder="Enter your password"
-                                variant="outlined"
-                                v-model="post.password" color="#673AB7"  
-                                name="input-10-2" label="New password"  hint="At least 8 characters" 
-                                class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
-                     </v-text-field>
-
+                        <v-text-field
+                        class="small"
+                        v-model="post.email" 
+                        :rules="[rules.required]" 
+                        label="Email address"
+                        prepend-icon="mdi-email-outline"
+                        color="#673AB7"
+                    ></v-text-field>
+                    <v-text-field
+                                    class="small"
+                                    v-model="post.code" 
+                                    :rules="[rules.required]" 
+                                    label="Verification code"
+                                    prepend-icon="mdi-key-star"
+                                    color="#673AB7"
+                      ></v-text-field> 
                      <v-text-field :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'" 
                                 :rules="[rules.required, rules.min]" :type="show2 ? 'text' : 'password'"
                                 density="compact"
                                 placeholder="Enter your password"
                                 variant="outlined"
                                 v-model="post.password" color="#673AB7"  
-                                name="input-10-2" label="Confirm password"  hint="At least 8 characters" 
+                                name="input-10-2" label="New password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
                      </v-text-field>
 
@@ -149,33 +160,29 @@ export default {
             post : {
                 email : "",
                 password : "",
+                code : "",
             },
           
         }
     },
     methods : {
-        async signIn(){
+        async newPWD(){
 
             const data = {
                     email    : this.post.email,
-                    password : this.post.password
+                    password : this.post.password,
+                    code : this.post.code
             };
 
             if(this.$refs.form.validate()){
-
-             const response = await API.loginUser(data);
-            //  console.log(response);
-                if(response.msg=='login successful'){
+                try {
+                    const response = await API.newPWD(data);
                     this.successMessage = response.msg;
-                    localStorage.setItem('token', response.data.token);
-                    setTimeout(function(){
-                    window.location.href = '/dashboard';
-                    },5000);
+                    // console.log(response);
+                } catch (error) {
+                    this.errorMessage ='Password reset failed';
                 }
-                
-                else{
-                    this.errorMessage = response;
-                }
+            
 
                 };
             

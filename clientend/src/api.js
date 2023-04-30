@@ -169,4 +169,15 @@ export default class API {
         }
     }
 
+    //reset password
+    static async newPWD(post){
+        try{
+            const response = await axios.post(`${API_URL}/reset_password`, post);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
 }
