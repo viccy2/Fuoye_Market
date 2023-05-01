@@ -53,7 +53,8 @@
                   <template >                                    
                     <v-card
                       class="mx-auto grey lighten-4"
-                      :to="{name : 'product-details'}"
+                      :to="{ name: 'product-details', params: { id: product.id }}"
+                      
                     >
                       <v-img
                         :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
@@ -157,7 +158,7 @@
                     <v-card
                       :disabled="loading"
                       class="mx-auto grey lighten-4"
-                      :to="{name : 'product-details'}"
+                      :to="{ name: 'product-details', params: { id: product.id }}"
                       style="width:100%"
                     >
                       <v-img

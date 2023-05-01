@@ -158,6 +158,17 @@ export default class API {
         }
     }
 
+    //fetch product details
+    // static async productDetails(){
+    //     try{
+    //         const response = await axios.post(`${API_URL}/product-details`, post);
+    //         return response.data;           
+    //     }
+    //     catch(err){
+    //         console.log(err)
+    //     }
+    // }
+
      //forgot password
      static async forgotPWD(post){
         try{

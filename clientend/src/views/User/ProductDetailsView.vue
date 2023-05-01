@@ -7,25 +7,25 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/product-90.jpg" style="height:100%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" style="height:50%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #250,000</v-btn>
+                                <v-btn small outlined color ="#673AB7"> #{{ vcard.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn  :to="{name : 'seller-page', params: { id : vcard.seller_id}}"  style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>Apple Watch Series 4</h3>
+                      <h3>{{ vcard.name }}</h3>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            Apple
+                            {{ vcard.type}}
                         </span>
                        
                     </v-card-text>
@@ -34,19 +34,16 @@
                           Product Details :
                         </span><br>
                         <p>
-                            This is one of the available Apple products. 
-                            This is one of the available Apple products. 
-                            This is one of the available Apple products. 
-                            This is one of the available Apple products. 
+                            {{ vcard.describtion}}
                         </p>
                         <p class="font-weight-bold ">
-                            Quantity available : 200 pieces 
+                            Quantity available : {{ vcard.quantity}} 
                         </p>
                     </v-card-text>
                     
-                     <v-card-subtitle class="headline font-italic font-weight-bold" style="margin-top:-30px;">
-                      <h6 style="font-size:12px;">Seller : Adele Store </h6>
-                      <h6 style="font-size:12px;">Location : Ikole </h6>
+                     <v-card-subtitle class="headline font-italic font-weight-bold" style="width:100%;">
+                      <h6 style="font-size:12px;">Seller : {{ vcard.seller.username }}</h6>
+                      <h6 style="font-size:12px;">Location : {{ vcard.location }} </h6>
                       
                     </v-card-subtitle><br><br>
                 </v-card>
@@ -59,25 +56,25 @@
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img src="../../assets/images/product-90.jpg" style="height:100%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`"  style="width:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #250,000</v-btn>
+                                <v-btn small outlined color ="#673AB7"> #{{ vcard.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page'}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn  :to="{name : 'seller-page', params: { id : vcard.seller_id}}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h5>Apple Watch Series 4</h5>
+                      <h5>{{ vcard.name }}</h5>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            Apple
+                            {{ vcard.type}}
                         </span>
                        
                     </v-card-text>
@@ -86,20 +83,15 @@
                           Product Details :
                         </span><br>
                         <p style="font-size:10px;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {{ vcard.describtion}}
                         </p>
                         <p class="font-weight-bold " style="font-size:11px;">
-                            Quantity available : 200 pieces 
+                            Quantity available : {{ vcard.quantity}} 
                         </p>
                     </v-card-text>
                     <v-card-subtitle class="headline font-italic font-weight-bold" style="margin-top:-30px;">
-                      <h6 style="font-size:11px;">Seller : Adele Store </h6>
-                      <h6 style="font-size:11px;">Location : Ikole </h6>
+                      <h6 style="font-size:11px;">Seller : {{ vcard.seller.username }}</h6>
+                      <h6 style="font-size:11px;">Location : {{ vcard.location }} </h6>
                       
                     </v-card-subtitle><br><br>
                 </v-card>
@@ -118,8 +110,18 @@ export default {
     components:{AppPagesNavbar, Footers},
     data(){
         return {
-
-        }
+            vcard: {}
+        }  
+    },
+    mounted(){
+        const id = this.$route.params.id;
+        // console.log(id)
+        fetch(`https://fuoyemarket.intellicsolutions.org/api/general/product-details?product_id=${id}`)
+        .then(response => response.json())
+        .then(data => {
+            this.vcard = data.data;
+            // console.log(this.vcard )
+        })
     }
 }
 </script>

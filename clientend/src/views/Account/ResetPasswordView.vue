@@ -136,6 +136,9 @@ export default {
                 try {
                     const response = await API.forgotPWD(data);
                     this.successMessage = response.msg;
+                    setTimeout(function(){
+                     window.location.href = '/new-password';
+                    },3000);
                     // console.log(response);
                 } catch (error) {
                     this.errorMessage ='User not found';

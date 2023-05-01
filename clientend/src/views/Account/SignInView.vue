@@ -172,7 +172,7 @@ export default {
                     localStorage.setItem('token', response.data.token);
                     setTimeout(function(){
                     window.location.href = '/dashboard';
-                    },5000);
+                    },3000);
                 }
                 
                 else{

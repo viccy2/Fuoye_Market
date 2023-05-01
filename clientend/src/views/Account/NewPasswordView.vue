@@ -23,7 +23,7 @@
                             {{this.errorMessage}}
                         </v-alert>
                             <v-card-title class="pa-5" style="color:#673AB7">New Password </v-card-title>
-                             <v-form ref="form" @submit.prevent="newPWD" class="pa-5" style="" enctype="multi-part/form-data" >
+                             <v-form ref="form" @submit.prevent="newPWD" class="pa-5" style=""  >
                                 <v-text-field
                                     class="small"
                                     v-model="post.email" 
@@ -34,7 +34,7 @@
                                 ></v-text-field>
                                 <v-text-field
                                     class="small"
-                                    v-model="post.code" 
+                                    v-model="post.verif_code" 
                                     :rules="[rules.required]" 
                                     label="Verification code"
                                     prepend-icon="mdi-key-star"
@@ -46,7 +46,7 @@
                                 density="compact"
                                 placeholder="Enter your password"
                                 variant="outlined"
-                                v-model="post.password" color="#673AB7"  
+                                v-model="post.new_password" color="#673AB7"  
                                 name="input-10-2" label="New password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
                                 </v-text-field>
@@ -96,7 +96,7 @@
                     ></v-text-field>
                     <v-text-field
                                     class="small"
-                                    v-model="post.code" 
+                                    v-model="post.verif_code" 
                                     :rules="[rules.required]" 
                                     label="Verification code"
                                     prepend-icon="mdi-key-star"
@@ -107,7 +107,7 @@
                                 density="compact"
                                 placeholder="Enter your password"
                                 variant="outlined"
-                                v-model="post.password" color="#673AB7"  
+                                v-model="post.new_password" color="#673AB7"  
                                 name="input-10-2" label="New password"  hint="At least 8 characters" 
                                 class="input-group--focused small" @click:append="show2 = !show2" prepend-inner-icon="mdi-lock-outline"> 
                      </v-text-field>
@@ -159,8 +159,8 @@ export default {
             },
             post : {
                 email : "",
-                password : "",
-                code : "",
+                new_password : "",
+                verif_code : "",
             },
           
         }
@@ -170,14 +170,24 @@ export default {
 
             const data = {
                     email    : this.post.email,
-                    password : this.post.password,
-                    code : this.post.code
+                    new_password : this.post.new_password,
+                    verif_code : this.post.verif_code
             };
 
             if(this.$refs.form.validate()){
                 try {
                     const response = await API.newPWD(data);
-                    this.successMessage = response.msg;
+                    if(response.msg == "invalid verification code"){
+                        this.errorMessage ='Invalid verification code';
+                    }
+                    else{
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = '/sign-in';
+                        },3000);
+                        // console.log(response.msg);
+                    }
+                    
                     // console.log(response);
                 } catch (error) {
                     this.errorMessage ='Password reset failed';

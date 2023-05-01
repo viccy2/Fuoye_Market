@@ -10,7 +10,7 @@
                   </v-list-item-avatar>
                   <v-card-text>
                       <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
-                          Buyer's Dashboard View : 
+                          Buyer's Dashboard Page : 
                       </div>
                   </v-card-text>
                 </center>

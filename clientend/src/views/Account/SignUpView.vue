@@ -225,7 +225,7 @@ export default {
                     this.successMessage = response.msg;
                      setTimeout(function(){
                      window.location.href = '/sign-in';
-                    },5000);
+                    },3000);
                 }
                 else{
                     this.errorMessage = response;
