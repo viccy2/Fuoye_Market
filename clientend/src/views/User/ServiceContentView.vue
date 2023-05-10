@@ -52,11 +52,11 @@
                   <template >                                    
                     <v-card
                       class="mx-auto grey lighten-4"
-                      :to="{name : 'service-content-details'}"
+                      :to="{name : 'service-content-details', params: { id: product.id }}"
                     >
                       <v-img
-                        :src="`${product.image_link}`"
-                        :lazy-src="`${product.image_link}`"
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         height="200px"
                         aspect-ratio="1"
                         class="grey lighten-2"
@@ -150,12 +150,13 @@
                     <v-card
                       :disabled="loading"
                       class="mx-auto grey lighten-4"
-                      :to="{name : 'service-content-details'}"
+                      :to="{name : 'service-content-details', params: { id: product.id }}"
                     >
                       <v-img
-                        :src="`${product.image_link}`"
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         height="200px"
-                        :lazy-src="`${product.image_link}`"
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >

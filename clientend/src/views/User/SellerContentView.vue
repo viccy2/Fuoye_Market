@@ -63,7 +63,7 @@
     
                                 <v-flex lg4 md4 sm4 xs4>
                                     <v-card-text>
-                                        <v-btn small :to="{name : 'seller-page'}"  color='#673AB7' tile class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">View</span></v-btn>
+                                        <v-btn small :to="{name : 'seller-page', params: { id : product.id}}"  color='#673AB7' tile class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">View</span></v-btn>
                                     </v-card-text>
                                 </v-flex>
                             </v-layout>
@@ -72,7 +72,7 @@
               </v-col>
             </v-row>
 
-          </v-card>
+          </v-card> 
           </v-col>
  
    

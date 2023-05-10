@@ -146,6 +146,18 @@ export default class API {
         }
     }
 
+    //fetch all service 
+    static async allServices(){
+        try{
+            const response = await axios.get(`${API_URL}/general/products?type=Service&category_id=1`,{
+             })
+             return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
      //fetch all services
      static async allServices(){
         try{
@@ -158,16 +170,16 @@ export default class API {
         }
     }
 
-    //fetch product details
-    // static async productDetails(){
-    //     try{
-    //         const response = await axios.post(`${API_URL}/product-details`, post);
-    //         return response.data;           
-    //     }
-    //     catch(err){
-    //         console.log(err)
-    //     }
-    // }
+    // fetch product details
+    static async productDetails(id){
+        try{
+            const response = await axios.get(`${API_URL}/general/product-details?product_id=${id}`);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
 
      //forgot password
      static async forgotPWD(post){

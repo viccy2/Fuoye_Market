@@ -19,7 +19,7 @@
                             <v-col  md="2"  lg="2">
                                 <br>
                                 <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                    Pelvix Buy'N Sell 
+                                    {{vcard.username}}
                                 </div><br>
                                 <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
                             </v-col>
@@ -66,7 +66,7 @@
                                 <v-col  md="10"  lg="10">
                                     <br>
                                     <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                        Pelvix Buy'N Sell 
+                                        {{vcard.username}}
                                     </div><br>
                                     <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
                                 </v-col>
@@ -135,72 +135,62 @@
 
                 <!-- DISPLAY ON SMALL DEVICE -->
                 <div class="hidden-md-and-up">
-                <v-layout row wrap style="margin-top:-20px">
-                    
-                    <v-flex sm4 xs4>
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-15.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> TVs </p>
-                        </v-card>
-                    </v-flex>
-                   
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/n33.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;">Smart watch</p>
-                        </v-card>
-                    </v-flex>
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-14-1.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> Wingback chair </p>
-                        </v-card>
-                    </v-flex>
+                <!-- Product Data -->
+                <v-row class="" style="margin-top:-30px;">
+                  <v-col 
+                    v-for="item in items" :key="item.id"
+                    class = "d-flex child-flex"
+                    cols="6"
+                
+                  >
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-16-1.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> Cushion set </p>
-                        </v-card>
-                    </v-flex>
+                  <template >                                    
+                    <v-card
+                      :disabled="loading"
+                      class="mx-auto grey lighten-4"
+                      :to="{ name: 'product-details', params: { id: item.id }}"
+                      style="width:100%"
+                    >
+                      <v-img
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
+                        height="200px"
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+                      </v-img>
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/n1.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> Bag </p>
-                        </v-card>
-                    </v-flex>
+                        <v-card-title style="font-size:12px;" >
+                        </v-card-title>
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-11-1.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;">Hooded top</p>
-                        </v-card>
-                    </v-flex>
+                        <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                         {{product.name}}
+                        </v-card-subtitle>
+                      
+                        <v-card-text style="font-size:10px;">
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > {{product.price}}.</span><br>
+                          
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
+                        </v-card-text>
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-12.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;">Footwear </p>
-                        </v-card>
-                    </v-flex>
+                    </v-card>
+                </template><br><br><br>
 
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/product-8a.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> Gaming</p>
-                        </v-card>
-                    </v-flex>
-
-                    <v-flex sm4 xs4 >
-                        <v-card :to="{name : 'product-details-seller'}" flat>
-                        <img src="../../assets/images/n50.jpg" style="width:80%;height:70%;margin-top:px;" >
-                        <p class="text-center " style="font-size:11px;"> Heaadset </p>
-                        </v-card>
-                    </v-flex>
-                    
-                </v-layout>
+              </v-col>
+            </v-row>
                 </div>
                 <!-- END DISPLAY ON SMALL DEVICE -->
                
@@ -223,8 +213,26 @@ export default {
    components:{AppPagesNavbar, Footers},
    data(){
     return {
-
+        vcard : {},
+        products : [],
+        services : [],
+        items : {},
     }
-   }
+   },
+   mounted(){
+        const id = this.$route.params.id;
+        // console.log(id)
+        fetch(`https://fuoyemarket.intellicsolutions.org/api/general/seller-details?seller_id=${id}`)
+        .then(response => response.json())
+        .then(data => {
+            this.vcard = data.profile;
+            this.products = data.products;
+            console.log(this.vcard )
+            this.products.forEach(product => {
+                this.items = product;
+                console.log(this.items);
+            });
+        })
+    }
 }
 </script>

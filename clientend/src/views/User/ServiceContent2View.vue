@@ -8,7 +8,7 @@
             <v-card class="mx-auto mt-1"  flat height="160" >
                 <v-list-item three-line >
                     <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
-                    <img class="" src="../../assets/images/b.jpg" >
+                    <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" >
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-row><br>
@@ -19,7 +19,7 @@
                             <v-col  md="2"  lg="2">
                                 <br>
                                 <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                    Adele's Catering
+                                    {{ vcard.name }}
                                 </div><br>
                                 <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
                             </v-col>
@@ -51,11 +51,11 @@
 
          <div class="hidden-md-and-up">
         
-                <v-card class="mx-auto  mt-1"  flat height="160" >
+                <v-card class="mx-auto mt-2"  flat height="160" >
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                          <img class="" src="../../assets/images/z.jpg" >
+                          <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>
@@ -66,9 +66,9 @@
                                 <v-col  md="10"  lg="10">
                                     <br>
                                     <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                        Adele's Photography
+                                        {{ vcard.name }}
                                     </div><br>
-                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
+                                    <v-btn :href="`https://wa.me/${vcard.seller_details.whatsapp}`" class="text-capitalize" small outlined style="color: #673AB7">Message</v-btn>
                                 </v-col>
                             </v-row>
                             
@@ -104,13 +104,10 @@
                           What we do :
                         </span><br>
                         <p>
-                            This is one of the available Samsung S21 products. 
-                            vThis is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
-                            This is one of the available Samsung S21 products. 
+                            {{ vcard.describtion }}+ 
                         </p>
                         <p class="font-weight-bold">
-                            Happy Clients : 200+ 
+                            Happy Clients :{{ vcard.no_of_clients }}+ 
                         </p>
                     </v-card-text>
             
@@ -129,15 +126,10 @@
                           What we do :
                         </span><br>
                         <p style="font-size:10px;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          {{vcard.describtion}}
                         </p>
                         <p class="font-weight-bold " style="font-size:11px;">
-                            Happy clients  : 200+ .
+                            Happy clients  : {{ vcard.no_of_clients }}+ 
                         </p>
                     </v-card-text>
                    
@@ -262,8 +254,18 @@ export default {
    components:{AppPagesNavbar, Footers},
    data(){
     return {
-
+            vcard: {}
     }
+   },
+   mounted(){
+    const id = this.$route.params.id;
+        console.log(id)
+        fetch(`https://fuoyemarket.intellicsolutions.org/api/general/product-details?product_id=${id}`)
+        .then(response => response.json())
+        .then(data => {
+            this.vcard = data.data;
+            // console.log(this.vcard )
+        })
    }
 }
 </script>

@@ -7,25 +7,25 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" style="height:50%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:50%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #{{ vcard.price }}</v-btn>
+                                <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page', params: { id : vcard.seller_id}}"  style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn  :href="`https://wa.me/${contact}`"  style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h3>{{ vcard.name }}</h3>
+                      <h3>{{ post.name }}</h3>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            {{ vcard.type}}
+                            {{ post.type}}
                         </span>
                        
                     </v-card-text>
@@ -34,16 +34,16 @@
                           Product Details :
                         </span><br>
                         <p>
-                            {{ vcard.describtion}}
+                            {{ post.describtion}}
                         </p>
                         <p class="font-weight-bold ">
-                            Quantity available : {{ vcard.quantity}} 
+                            Quantity available : {{ post.quantity}} 
                         </p>
                     </v-card-text>
                     
                      <v-card-subtitle class="headline font-italic font-weight-bold" style="width:100%;">
-                      <h6 style="font-size:12px;">Seller : {{ vcard.seller.username }}</h6>
-                      <h6 style="font-size:12px;">Location : {{ vcard.location }} </h6>
+                        <h6  style="font-size:11px;">Seller :  </h6><v-btn :to="{name : 'seller-page', params: { id : sid}}"  small outlined color ="#673AB7">{{seller }}</v-btn>
+                      <h6 style="font-size:12px;">Location : {{ post.location }} </h6>
                       
                     </v-card-subtitle><br><br>
                 </v-card>
@@ -56,25 +56,25 @@
            <v-col sm="10" class="pa- mx-auto"><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`"  style="width:100%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`"  style="width:100%;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #{{ vcard.price }}</v-btn>
+                                <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :to="{name : 'seller-page', params: { id : vcard.seller_id}}" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn  :href="`https://wa.me/${contact}`" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                      <h5>{{ vcard.name }}</h5>
+                      <h5>{{ post.name }}</h5>
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
                         <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            {{ vcard.type}}
+                            {{ post.type}}
                         </span>
                        
                     </v-card-text>
@@ -83,15 +83,15 @@
                           Product Details :
                         </span><br>
                         <p style="font-size:10px;">
-                            {{ vcard.describtion}}
+                            {{ post.describtion}}
                         </p>
                         <p class="font-weight-bold " style="font-size:11px;">
-                            Quantity available : {{ vcard.quantity}} 
+                            Quantity available : {{ post.quantity}} 
                         </p>
                     </v-card-text>
                     <v-card-subtitle class="headline font-italic font-weight-bold" style="margin-top:-30px;">
-                      <h6 style="font-size:11px;">Seller : {{ vcard.seller.username }}</h6>
-                      <h6 style="font-size:11px;">Location : {{ vcard.location }} </h6>
+                      <h6  style="font-size:11px;">Seller :  </h6><v-btn :to="{name : 'seller-page', params: { id : sid}}"  small outlined color ="#673AB7">{{seller }}</v-btn>
+                      <h6 style="font-size:11px;">Location : {{ post.location }} </h6>
                       
                     </v-card-subtitle><br><br>
                 </v-card>
@@ -103,6 +103,7 @@
 </template>
 
 <script>
+import API from '../../api'
 import AppPagesNavbar from '../../components/AppPagesNavbar.vue'
 import Footers from '../../components/Footers.vue'
 export default {
@@ -110,18 +111,36 @@ export default {
     components:{AppPagesNavbar, Footers},
     data(){
         return {
-            vcard: {}
+            post : {},
+            contact : '',
+            seller : '',
+            sid : '',
         }  
     },
-    mounted(){
-        const id = this.$route.params.id;
-        // console.log(id)
-        fetch(`https://fuoyemarket.intellicsolutions.org/api/general/product-details?product_id=${id}`)
-        .then(response => response.json())
-        .then(data => {
-            this.vcard = data.data;
-            // console.log(this.vcard )
-        })
-    }
+    async created(){
+        try {
+            const response = await API.productDetails(this.$route.params.id);
+            console.log(response)
+            this.post = response.data;
+            this.contact = response.data.seller_details.whatsapp;
+            this.seller = response.data.seller.username;
+            this.sid = response.data.seller_details.id;
+        }
+        catch(err){
+            console.log(err)
+        }
+        
+    },
+
+    // mounted(){
+    //     const id = this.$route.params.id;
+    //     // console.log(id)
+    //     fetch(`https://fuoyemarket.intellicsolutions.org/api/general/product-details?product_id=${id}`)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         this.post = data.data;
+    //         // console.log(this.post )
+    //     })
+    // }
 }
 </script>
