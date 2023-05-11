@@ -180,6 +180,27 @@ export default class API {
             console.log(err)
         }
     }
+    
+    // fetch service details
+    static async serviceDetails(id){
+        try{
+            const response = await axios.get(`${API_URL}/general/product-details?product_id=${id}`);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
+    static async sellerDetails(id){
+        try{
+            const response = await axios.get(`${API_URL}/general/seller-details?seller_id=${id}`);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
 
      //forgot password
      static async forgotPWD(post){

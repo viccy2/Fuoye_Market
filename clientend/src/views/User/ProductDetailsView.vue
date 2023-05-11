@@ -24,8 +24,8 @@
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
-                        <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            {{ post.type}}
+                        <span :to="{name : 'seller-page', params: { id : sid}}"  @click="goPage" class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black;cursor: pointer;" >
+                            {{seller }}
                         </span>
                        
                     </v-card-text>
@@ -39,13 +39,12 @@
                         <p class="font-weight-bold ">
                             Quantity available : {{ post.quantity}} 
                         </p>
-                    </v-card-text>
+                        <p class="font-weight-bold ">
+                            Location : {{ post.location }} 
+                        </p>
+                    </v-card-text><br>
                     
-                     <v-card-subtitle class="headline font-italic font-weight-bold" style="width:100%;">
-                        <h6  style="font-size:11px;">Seller :  </h6><v-btn :to="{name : 'seller-page', params: { id : sid}}"  small outlined color ="#673AB7">{{seller }}</v-btn>
-                      <h6 style="font-size:12px;">Location : {{ post.location }} </h6>
-                      
-                    </v-card-subtitle><br><br>
+                     
                 </v-card>
             </v-col>
         </div>
@@ -73,8 +72,8 @@
                     </v-card-subtitle>
                     <v-card-text class="grey--text">
                         
-                        <span class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black" >
-                            {{ post.type}}
+                        <span :to="{name : 'seller-page', params: { id : sid}}" @click="goPage" class="text-color-black text-capitalize font-weight-bold text-decoration-underline" style="color:black;cursor: pointer;" >
+                            {{seller }}
                         </span>
                        
                     </v-card-text>
@@ -88,12 +87,11 @@
                         <p class="font-weight-bold " style="font-size:11px;">
                             Quantity available : {{ post.quantity}} 
                         </p>
-                    </v-card-text>
-                    <v-card-subtitle class="headline font-italic font-weight-bold" style="margin-top:-30px;">
-                      <h6  style="font-size:11px;">Seller :  </h6><v-btn :to="{name : 'seller-page', params: { id : sid}}"  small outlined color ="#673AB7">{{seller }}</v-btn>
-                      <h6 style="font-size:11px;">Location : {{ post.location }} </h6>
-                      
-                    </v-card-subtitle><br><br>
+                        <p class="font-weight-bold ">
+                            Location : {{ post.location }} 
+                        </p>
+                    </v-card-text><br>
+                    
                 </v-card>
             </v-col>
         </div>
@@ -120,16 +118,23 @@ export default {
     async created(){
         try {
             const response = await API.productDetails(this.$route.params.id);
-            console.log(response)
+            // console.log(response)
             this.post = response.data;
             this.contact = response.data.seller_details.whatsapp;
             this.seller = response.data.seller.username;
             this.sid = response.data.seller_details.id;
+            
         }
         catch(err){
             console.log(err)
         }
         
+    },
+    methods : {
+        goPage(){
+            const id = this.sid;
+            this.$router.push({name : 'seller-page',  params: { id } })
+        }
     },
 
     // mounted(){

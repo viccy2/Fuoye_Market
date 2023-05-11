@@ -5,10 +5,10 @@
 
          <div class="hidden-sm-and-down" >
 
-            <v-card class="mx-auto mt-1"  flat height="160" >
+            <v-card class="mx-auto mt-3"  flat height="160" >
                 <v-list-item three-line >
                     <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
-                    <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" >
+                    <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" >
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-row><br>
@@ -19,9 +19,9 @@
                             <v-col  md="2"  lg="2">
                                 <br>
                                 <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                    {{ vcard.name }}
+                                    {{ post.name }}
                                 </div><br>
-                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
+                                <v-btn :href="`https://wa.me/${contact}`" class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
                             </v-col>
                         </v-row>
                         
@@ -33,11 +33,11 @@
                             
                         </v-col>
                         <v-col  lg="3" md="3" >
-                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Category<br><span>Mobile Devices</span>
+                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Category<br><span>{{ post.category.name }}</span>
                             </p>
                         </v-col>
                         <v-col  lg="3" md="3" >
-                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Location<br><span>Ikole-Ekiti</span>
+                            <p style="text-decoration:none;font-size:10px;font-weight:bold;">Location<br><span>{{ post.location }} </span>
                             </p>
                         </v-col>
                         <v-col  lg="3" md="3" >
@@ -55,7 +55,7 @@
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                          <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${vcard.image_link}`" >
+                          <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>
@@ -66,9 +66,9 @@
                                 <v-col  md="10"  lg="10">
                                     <br>
                                     <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
-                                        {{ vcard.name }}
+                                        {{ post.name }}
                                     </div><br>
-                                    <v-btn :href="`https://wa.me/${vcard.seller_details.whatsapp}`" class="text-capitalize" small outlined style="color: #673AB7">Message</v-btn>
+                                    <v-btn :href="`https://wa.me/${contact}`" class="text-capitalize" small outlined style="color: #673AB7">Message</v-btn>
                                 </v-col>
                             </v-row>
                             
@@ -77,11 +77,11 @@
                     <v-card-text>
                         <v-row>
                             <v-col  sm="4" >
-                                <p style="text-decoration:none;font-size:10px;font-weight:bold;">Service<br><span>Photography</span>
+                                <p style="text-decoration:none;font-size:10px;font-weight:bold;"> Category<br><span>{{ post.category.name }} </span>
                                 </p>
                             </v-col>
                             <v-col  sm="4" >
-                                <p style="text-decoration:none;font-size:10px;font-weight:bold;">Location<br><span>Ikole-Ekiti</span>
+                                <p style="text-decoration:none;font-size:10px;font-weight:bold;">Location<br><span>{{ post.location }} </span>
                                 </p>
                             </v-col>
                             <v-col  sm="4" >
@@ -104,10 +104,10 @@
                           What we do :
                         </span><br>
                         <p>
-                            {{ vcard.describtion }}+ 
+                            {{ post.describtion }}+ 
                         </p>
                         <p class="font-weight-bold">
-                            Happy Clients :{{ vcard.no_of_clients }}+ 
+                            Happy Clients :{{ post.no_of_clients }}+ 
                         </p>
                     </v-card-text>
             
@@ -126,10 +126,10 @@
                           What we do :
                         </span><br>
                         <p style="font-size:10px;">
-                          {{vcard.describtion}}
+                          {{post.describtion}}
                         </p>
                         <p class="font-weight-bold " style="font-size:11px;">
-                            Happy clients  : {{ vcard.no_of_clients }}+ 
+                            Happy clients  : {{ post.no_of_clients }}+ 
                         </p>
                     </v-card-text>
                    
@@ -247,6 +247,7 @@
     </div>
 </template>
 <script>
+import API from '../../api'
 import AppPagesNavbar from '../../components/AppPagesNavbar.vue'
 import Footers from '../../components/Footers.vue'
 export default {
@@ -254,18 +255,21 @@ export default {
    components:{AppPagesNavbar, Footers},
    data(){
     return {
-            vcard: {}
+            post : {},
+            contact : '',
     }
    },
-   mounted(){
-    const id = this.$route.params.id;
-        console.log(id)
-        fetch(`https://fuoyemarket.intellicsolutions.org/api/general/product-details?product_id=${id}`)
-        .then(response => response.json())
-        .then(data => {
-            this.vcard = data.data;
-            // console.log(this.vcard )
-        })
-   }
+   async created(){
+        try{
+            const response = await API.serviceDetails(this.$route.params.id);
+            console.log(response);
+            this.post = response.data;
+            this.contact = response.data.seller_details.whatsapp;
+        }
+        catch(err){
+            console.log(err)
+        }
+   },
+
 }
 </script>
