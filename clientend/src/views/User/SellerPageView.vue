@@ -8,7 +8,7 @@
             <v-card class="mx-auto mt-1"  flat height="160" >
                 <v-list-item three-line >
                     <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
-                    <img class="" >
+                        <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-row><br>
@@ -21,7 +21,7 @@
                                 <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
                                     {{username}}
                                 </div><br>
-                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
+                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7" :href="`https://wa.me/${post.whatsapp}`">Message</v-btn>
                             </v-col>
                         </v-row>
                         
@@ -83,7 +83,7 @@
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                          <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" >
+                            <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>
@@ -96,7 +96,7 @@
                                     <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
                                         {{username}}
                                     </div><br>
-                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7">Message</v-btn>
+                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7" :href="`https://wa.me/${post.whatsapp}`">Message</v-btn>
                                 </v-col>
                             </v-row>
                             
@@ -465,7 +465,7 @@ export default {
    },
    async created(){
         try{
-            const response = await API.sellerDetails(2);
+            const response = await API.sellerDetails(this.$route.params.id);
             // console.log(this.$route.params.id);
             // console.log( response)
             this.post = response.other_details;

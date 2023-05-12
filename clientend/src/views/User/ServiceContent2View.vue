@@ -47,6 +47,34 @@
                     </v-row>             
                 </v-card-text>
                 </v-card>
+                <div><br>
+                    <v-row>
+                            <v-col sm="3">  
+                                <a :href="`https://wa.me/${posts.whatsapp}`"  style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
+                                </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">
+                                    <a :href="`https://www.facebook.com/profile.php?id=${posts.facebook}`"  style="text-decoration:none;color: #673AB7;">
+                                    <v-btn fab  small color='grey lighten-5 ma-2'>
+                                        <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
+                                    </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">      
+                                <a :href="`https://www.instagram.com/${posts.instagram}`" style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
+                                </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">  
+                                <a :href="`https://twitter.com/${posts.twitter}`" style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
+                                </v-btn></a>
+                            </v-col>
+                        </v-row>
+                </div>
          </div>
 
          <div class="hidden-md-and-up">
@@ -91,6 +119,34 @@
                         </v-row>             
                     </v-card-text>
                 </v-card>
+                <div><br>
+                    <v-row>
+                            <v-col sm="3">  
+                                <a :href="`https://wa.me/${posts.whatsapp}`"  style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
+                                </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">
+                                    <a :href="`https://www.facebook.com/profile.php?id=${posts.facebook}`"  style="text-decoration:none;color: #673AB7;">
+                                    <v-btn fab  small color='grey lighten-5 ma-2'>
+                                        <v-icon small class="pa-3" id="icon" > mdi-facebook</v-icon>
+                                    </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">      
+                                <a :href="`https://www.instagram.com/${posts.instagram}`" style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-instagram</v-icon>
+                                </v-btn></a>
+                            </v-col>
+                            <v-col sm="3">  
+                                <a :href="`https://twitter.com/${posts.twitter}`" style="text-decoration:none;color: #673AB7;">
+                                <v-btn fab  small color='grey lighten-5 ma-2'>
+                                    <v-icon small class="pa-3" id="icon"> mdi-twitter</v-icon>
+                                </v-btn></a>
+                            </v-col>
+                        </v-row>
+                </div>
          </div><br>
 
          <!--WHAT WE DO SECTION -->
@@ -256,6 +312,7 @@ export default {
    data(){
     return {
             post : {},
+            posts : {},
             contact : '',
     }
    },
@@ -265,6 +322,7 @@ export default {
             console.log(response);
             this.post = response.data;
             this.contact = response.data.seller_details.whatsapp;
+            this.posts = response.data.seller_details;
         }
         catch(err){
             console.log(err)
