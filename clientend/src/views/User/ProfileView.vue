@@ -103,6 +103,7 @@ export default {
     async created(){
         const response = await API.getUser();
         const response2 = await API.getSeller();
+        console.log(response2)
         this.user = response.msg;
         this.seller = response2.msg;
         this.sellerDetails = response2.other_details;

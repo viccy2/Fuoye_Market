@@ -38,7 +38,7 @@
                         </p>
                     </v-card-text><br>
                     
-                    <center> <v-btn :to="{name : 'seller-page', params : { id : sellid.id }}" small outlined color ="#673AB7" style="width:100%;">View seller</v-btn></center>
+                    <center> <v-btn :to="{name : 'seller-page', params: { id : post.seller_id }}" small outlined color ="#673AB7" style="width:100%;">View seller</v-btn></center>
 
                 </v-card><br><br>
             </v-col>
@@ -79,9 +79,9 @@
                         <p class="font-weight-bold ">
                             Location : {{ post.location }} 
                         </p><br>
-                       <center> <v-btn :to="{name : 'seller-page', params : { id : sellid.id }}" small outlined color ="#673AB7" style="width:100%;">View seller</v-btn></center>
+                       <center> <v-btn :to="{name : 'seller-page', params : { id : post.seller_id }}" small outlined color ="#673AB7" style="width:100%;">View seller</v-btn></center>
                     </v-card-text>
-             
+            {{ post.seller_id}}
                 </v-card><br><br>
             </v-col>
         </div>
@@ -112,7 +112,7 @@ export default {
             this.post = response.data;
             this.contact = response.data.seller_details.whatsapp;
             this.seller = response.data.seller.username;
-            this.sellid = response.data.seller_details;
+            // this.sellid = response.data.seller_details;
             
         }
         catch(err){

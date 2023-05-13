@@ -137,7 +137,7 @@ export default class API {
     //fetch all products
     static async allProducts(){
         try{
-            const response = await axios.get(`${API_URL}/general/products?type=Product&category_id=2`,{
+            const response = await axios.get(`${API_URL}/general/products?type=Product`,{
         })
         return response.data;
         }
@@ -149,7 +149,7 @@ export default class API {
     //fetch all service 
     static async allServices(){
         try{
-            const response = await axios.get(`${API_URL}/general/products?type=Service&category_id=1`,{
+            const response = await axios.get(`${API_URL}/general/products?type=Service`,{
              })
              return response.data;
         }

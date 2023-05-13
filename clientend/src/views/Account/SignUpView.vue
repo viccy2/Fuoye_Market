@@ -202,10 +202,20 @@ export default {
             min: v => v.length >= 8 || 'Min 8 characters',
             },
             post : {
-                username : "",
-                email : "",
-                password : "",
-                accountType : "",
+                username        : "",
+                email           : "",
+                password        : "",
+                accountType     : "",
+                first_name      : "empty",
+                last_name       : "empty",
+                whatsapp        :  "empty",
+                phone_number    : "empty",
+                facebook        : "empty",
+                tiktok          : "empty",
+                twitter         : "empty",
+                instagram       : "empty",
+                snapchat        : "empt",
+                
             },
         }
     },
@@ -213,10 +223,20 @@ export default {
        async createAccount(){
 
                 const data = {
-                    username : this.post.username,
-                    email    : this.post.email,
-                    password : this.post.password,
-                    type     : this.post.type
+                    username        : this.post.username,
+                    email           : this.post.email,
+                    password        : this.post.password,
+                    type            : this.post.type,
+                    first_name      : this.post.first_name,
+                    last_name       : this.post.last_name,
+                    whatsapp        :  this.post.whatsapp,
+                    phone_number    : this.post.phone_number,
+                    facebook        : this.post.facebook,
+                    tiktok          : this.post.tiktok,
+                    twitter         : this.post.twitter,
+                    instagram       : this.post.instagram,
+                    snapchat        : this.post.snapchat,
+                   
                 };
                 if(this.$refs.form.validate()){
 

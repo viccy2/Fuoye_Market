@@ -233,18 +233,21 @@ export default {
     async created(){
       const response = await API.getCategory();
       const response2 = await API.allProducts();
+      
      
       //returning value names for only when category type is Product
       const products = response.data.filter(item => item.type === "Product");
       const productNames = products.map(item => item.name);
       this.categories = productNames;
       this.products = response2.data;
+      console.log(products)
     },
     
     computed: {
       filteredProducts() {
         return this.products.filter(product => {
           const categoryMatch = !this.selectedCategory || product.id === this.selectedCategory;
+          // console.log(product.id);
           const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
           return categoryMatch && nameMatch;
         });
