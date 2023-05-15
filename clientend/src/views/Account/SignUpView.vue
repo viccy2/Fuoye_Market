@@ -206,15 +206,7 @@ export default {
                 email           : "",
                 password        : "",
                 accountType     : "",
-                first_name      : "empty",
-                last_name       : "empty",
-                whatsapp        :  "empty",
-                phone_number    : "empty",
-                facebook        : "empty",
-                tiktok          : "empty",
-                twitter         : "empty",
-                instagram       : "empty",
-                snapchat        : "empt",
+               
                 
             },
         }
@@ -227,15 +219,7 @@ export default {
                     email           : this.post.email,
                     password        : this.post.password,
                     type            : this.post.type,
-                    first_name      : this.post.first_name,
-                    last_name       : this.post.last_name,
-                    whatsapp        :  this.post.whatsapp,
-                    phone_number    : this.post.phone_number,
-                    facebook        : this.post.facebook,
-                    tiktok          : this.post.tiktok,
-                    twitter         : this.post.twitter,
-                    instagram       : this.post.instagram,
-                    snapchat        : this.post.snapchat,
+                  
                    
                 };
                 if(this.$refs.form.validate()){

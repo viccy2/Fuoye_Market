@@ -158,17 +158,6 @@ export default class API {
         }
     }
 
-     //fetch all services
-     static async allServices(){
-        try{
-            const response = await axios.get(`${API_URL}/general/products?type=Service&category_id=1`,{
-        })
-        return response.data;
-        }
-        catch(err){
-            console.log(err)
-        }
-    }
 
     // fetch product details
     static async productDetails(id){

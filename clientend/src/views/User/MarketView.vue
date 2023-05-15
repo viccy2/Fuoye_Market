@@ -96,13 +96,13 @@ export default {
       {
         title: 'View product',
         icon: 'mdi-cart-variant',
-        to: '/new-product',
+        to: '/market-product',
   
       },
       {
         title: 'View service',
         icon: 'mdi-list-box-outline',
-        to: '/new-service'
+        to: '/market-service'
       }
     ]
   }),

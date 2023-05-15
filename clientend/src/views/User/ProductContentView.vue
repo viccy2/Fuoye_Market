@@ -32,6 +32,8 @@
                         v-model="selectedCategory"
                         :items="categories"
                         label="Select category"
+                        item-text="name"
+                        item-value="id"
                       ></v-select>
                     </v-col>
 
@@ -139,6 +141,8 @@
                         outlined
                         v-model="selectedCategory"
                         :items="categories"
+                        item-text="name"
+                        item-value="id"
                         label="Select category"
                       ></v-select>
                     </v-col>
@@ -229,30 +233,29 @@ export default {
       search: ''
     }),
 
-    //fetching the categories
-    async created(){
-      const response = await API.getCategory();
-      const response2 = await API.allProducts();
-      
-     
-      //returning value names for only when category type is Product
-      const products = response.data.filter(item => item.type === "Product");
-      const productNames = products.map(item => item.name);
-      this.categories = productNames;
-      this.products = response2.data;
-      console.log(products)
-    },
-    
-    computed: {
-      filteredProducts() {
-        return this.products.filter(product => {
-          const categoryMatch = !this.selectedCategory || product.id === this.selectedCategory;
-          // console.log(product.id);
-          const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
-          return categoryMatch && nameMatch;
-        });
-      }
- }
+    //fetching products categories 
+    async created() {
+          const [categoryResponse, productsResponse] = await Promise.all([
+            API.getCategory(),
+            API.allProducts()
+          ]);
+
+          const categories = categoryResponse.data.filter(item => item.type === "Product");
+          const categoryNames = categories.map(item => item);
+          this.categories = categoryNames;
+          this.products = productsResponse.data;
+        },
+
+        computed: {
+          filteredProducts() {
+            return this.products.filter(product => {
+              // console.log(product.category_id);
+              const categoryMatch = !this.selectedCategory || product.category_id === this.selectedCategory;
+              const nameMatch = product.name.toLowerCase().includes(this.search.toLowerCase());
+              return categoryMatch && nameMatch;
+            });
+          }
+        }
 
   }
 </script>

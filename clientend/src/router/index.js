@@ -147,6 +147,22 @@ const routes = [
     beforeEnter: requireAuth
   },
 
+  {
+    path: '/market-product',
+    name: 'market-product',
+    component: () => import(/* webpackChunkName: "market-content" */ '../views/User/MarketProductView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
+  
+{
+  path: '/market-service',
+  name: 'market-service',
+  component: () => import(/* webpackChunkName: "market-content" */ '../views/User/MarketServiceView.vue'),
+  props: true,
+  beforeEnter: requireAuth
+},
+
     // Account routes
   {
     path: '/new-account',
