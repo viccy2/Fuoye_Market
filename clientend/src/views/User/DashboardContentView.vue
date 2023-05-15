@@ -34,7 +34,7 @@
                     </v-list-item-content>    
                 </v-list-item>
            
-            </v-card><br>
+            </v-card>
      
         </div>
          <!-- END DISPLAY ON SMALL DEVICE -->
@@ -55,7 +55,7 @@
                             <v-col 
                                 v-for="(item, i) in items" :key="i" :to="item.to" router
                                 
-                                cols="3"
+                                cols="4"
                             
                             >
                             <center>
@@ -72,7 +72,7 @@
                                 </v-progress-linear>
                                 </template>
                                 <v-img
-                                height="180"
+                                height="250"
                                 :src="require(`@/assets/images/${item.img}`)"
                                 :lazy-src="require(`@/assets/images/${item.img}`)"
                                 aspect-ratio="1"
@@ -91,7 +91,7 @@
                                     </v-row>
                                     </template>
                                 </v-img>
-                                <v-card-title style="font-size:13px;">{{item.title}}
+                                <!-- <v-card-title style="font-size:13px;">{{item.title}}
                                 <v-rating
                                 :value="5.0"
                                 color="amber"
@@ -100,8 +100,8 @@
                                 readonly
                                 size="14"
                                 ></v-rating>
-                                </v-card-title>
-                                <v-divider class="mx-4"></v-divider>
+                                </v-card-title> -->
+                                <!-- <v-divider class="mx-4"></v-divider> -->
                             </v-card>
                             </center>
                             </v-col>
@@ -120,7 +120,7 @@
                     <v-col 
                         v-for="(item, i) in items" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
-                        cols="6"
+                        cols="4"
                     >
                         <v-card
                           
@@ -153,27 +153,94 @@
                             </v-row>
                             </template>
                             </v-img>
-                            <v-card-title style="font-size:13px;">{{item.title}}
-                            <v-rating
-                            :value="5.0"
-                            color="amber"
-                            dense
-                            half-increments
-                            readonly
-                            size="14"
-                            ></v-rating>
-                            </v-card-title>
-                        <v-divider class="mx-4"></v-divider>
+                       
                         </v-card>
+                        
                     </v-col>
                 </v-row>       
     
             </v-card>
-            </div><br>
+            </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                 
         </div>
         <!-- END TOP SELLER SECTION -->
+
+ <!-- POPULAR CATEGORY SECTION -->
+
+ <div class="featured-products">
+                <v-card flat elevation=''>
+                    <v-container fluid>
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Popular Category : </v-card-title>
+                
+
+        <!-- DISPLAY ON LARGE DEVICE -->
+            <div class="hidden-sm-and-down">
+                <v-row class="pa-2">
+                    <v-col 
+                        v-for="(item, i) in category" :key="i" :to="item.to" router
+                        class = "d-flex child-flex"
+                        cols="4"
+                    >
+                        <center>
+                                                            
+                            <v-card
+                                class="mx-auto "
+                                max-width="300"
+                            >
+                                <v-img
+                                :src="require(`@/assets/images/${item.img}`)"
+                                height="200px"
+                                ></v-img>
+
+                                <v-card-title style="font-size:14px;">
+                                    {{item.title}}
+                                </v-card-title>
+
+                            </v-card>
+                            
+                        </center>
+                    </v-col>
+                </v-row><br><br>
+             
+            </div>
+        <!-- END DISPLAY ON LARGE DEVICE -->
+
+        <!-- DISPLAY ON SMALL DEVICE -->
+            <div class="hidden-md-and-up">
+                <v-row class="pa-2">
+                    <v-col 
+                        v-for="(item, i) in category" :key="i" :to="item.to" router
+                        class = "d-flex child-flex"
+                        cols="4"
+                    >
+                        <center>
+                                                                
+                            <v-card
+                                class="mx-auto grey lighten-5"
+                                max-width="300"
+                            >
+                                <v-img
+                                :src="require(`@/assets/images/${item.img}`)"
+                                height="90px"
+                                style="width:100%"
+                                
+                                ></v-img>
+
+                            </v-card>
+                            <span style="font-size:10px;">{{item.title}}</span>
+                                
+                        </center>
+                    </v-col>
+                </v-row>
+             
+            </div>
+        <!-- END DISPLAY ON SMALL DEVICE -->
+               
+            </v-container>
+            </v-card>
+        </div>
+        <!-- END POPULAR CATEGORY SECTION -->
 
 
         <!-- FEATURED PRODUCTS SECTION -->
@@ -190,7 +257,7 @@
                     <v-col 
                         v-for="(item, i) in brand" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
-                        cols="3"
+                        cols="4"
                     >
                         <center>
                                                             
@@ -222,7 +289,7 @@
                     <v-col 
                         v-for="(item, i) in brand" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
-                        cols="6"
+                        cols="4"
                     >
                         <center>
                                                                 
@@ -237,13 +304,8 @@
                                 
                                 ></v-img>
 
-                                <v-card-title style="font-size:12px;">
-                                    {{item.title}}
-                                </v-card-title>
-
-
                             </v-card>
-                                
+                            <span style="font-size:10px;">{{item.title}}</span>
                         </center>
                     </v-col>
                 </v-row><br>
@@ -319,11 +381,7 @@ export default {
                     img: 'ins.jpeg',
                     to: '/seller-page'
                 },
-                {
-                    title: 'Belle Store',
-                    img: '17.jpg',
-                    to: '/seller-page'
-                },
+                
                 {
                     title: 'Dan Photos',
                     img: 'about-img-1.jpg',
@@ -348,10 +406,7 @@ export default {
                     title: 'Hewlet Packard',
                     img: 'hp.jpg',
                 },
-                {
-                    title: 'Oriamo',
-                    img: 'oriamo.png',
-                },
+               
                
                 {
                     title: 'Nike',
@@ -365,10 +420,36 @@ export default {
                     title: 'LG',
                     img: 'lgs.png',
                 },
+                
+            ],
+            category: [
                 {
-                    title: 'Dior',
-                    img: 'dior.png',
+                    title: 'Computing.',
+                    img: 'product-3b.jpg',
                 },
+                {
+                    title: 'Electronics.',
+                    img: 'product-10.jpg',
+                },
+                {
+                    title: ' Gaming.',
+                    img: 'img1.jpg',
+                },
+               
+               
+                {
+                    title: 'Fashion - Men & Women.',
+                    img: 'product-11-1.jpg',
+                },
+                {
+                    title: 'Home & Office.',
+                    img: 'product-3.jpg',
+                },
+                {
+                    title: 'Sporting.',
+                    img: 'product-4.jpg',
+                },
+                
             ],
             newseller: [],
         }
