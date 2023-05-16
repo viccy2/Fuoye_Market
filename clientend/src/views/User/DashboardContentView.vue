@@ -120,7 +120,7 @@
                     <v-col 
                         v-for="(item, i) in items" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
-                        cols="4"
+                        cols="6"
                     >
                         <v-card
                           
@@ -387,11 +387,7 @@ export default {
                     img: 'about-img-1.jpg',
                     to: '/seller-page'
                 },
-                {
-                    title: 'Lauren Eatery',
-                    img: 'b.jpg',
-                    to: '/seller-page'
-                },
+               
             ],
             brand: [
                 {
@@ -437,25 +433,14 @@ export default {
                 },
 
                 {
-                    title: 'Fashion - Men & Women.',
+                    title: 'Fashion',
                     img: 'product-11-1.jpg',
                 },
                 {
                     title: 'Home & Office.',
                     img: 'product-3.jpg',
                 },
-                {
-                    title: 'Sporting.',
-                    img: 'product-4.jpg',
-                },
-                 {
-                    title: 'Smart device.',
-                    img: 'product-90.jpg',
-                },
-                {
-                    title: 'Appliance - Home.',
-                    img: 'img9.jpg',
-                },
+               
                  {
                     title: ' Grocery.',
                     img: 'img4.jpg',
