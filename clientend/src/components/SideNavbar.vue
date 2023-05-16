@@ -10,7 +10,7 @@
                   </v-list-item-avatar>
                   <v-card-text>
                       <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
-                          Buyer's Dashboard Page : 
+                          Buyers Dashboard Page : 
                       </div>
                   </v-card-text>
                 </center>
@@ -35,7 +35,7 @@
                   </v-list-item-avatar>
                   <v-card-text>
                       <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
-                          Seller's Dashboard Page : 
+                          Sellers Dashboard Page : 
                       </div>
                   </v-card-text>
                 </center>
@@ -47,9 +47,10 @@
               <v-list-item-content>
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
-            </v-list-item><br>
+            </v-list-item>
             </div>
             <div>
+              
             <v-list-item v-for="(item, k) in items2" :key="k" :to="item.to" router>
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
@@ -135,12 +136,28 @@ export default {
       },
     ],
     items2: [
-      {
-        title: 'Market',
-        icon: 'mdi-warehouse',
-        to: '/market',
+    {
+        title: 'New product',
+        icon: 'mdi-plus-circle-outline',
+        to: '/new-product',
   
       },
+      {
+        title: 'New service',
+        icon: 'mdi-clipboard-plus-outline',
+        to: '/new-service'
+      },
+      {
+        title: 'View product',
+        icon: 'mdi-cart-variant',
+        to: '/market-product',
+  
+      },
+      {
+        title: 'View service',
+        icon: 'mdi-list-box-outline',
+        to: '/market-service'
+      }
     ]
  }
 },

@@ -113,15 +113,7 @@ const routes = [
     props: true,
     beforeEnter: requireAuth
   },
-
-  {
-    path: '/market',
-    name: 'market',
-    component: () => import(/* webpackChunkName: "market" */ '../views/User/MarketView.vue'),
-    props: true,
-    beforeEnter: requireAuth
-  },
-
+  
   {
     path: '/new-product',
     name: 'new-product',
@@ -134,15 +126,6 @@ const routes = [
     path: '/new-service',
     name: 'new-service',
     component: () => import(/* webpackChunkName: "new-service" */ '../views/User/NewServiceView.vue'),
-    props: true,
-    beforeEnter: requireAuth
-  },
-
-
-  {
-    path: '/market-content',
-    name: 'market-content',
-    component: () => import(/* webpackChunkName: "market-content" */ '../views/User/MarketContentView.vue'),
     props: true,
     beforeEnter: requireAuth
   },

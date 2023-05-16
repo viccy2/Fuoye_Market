@@ -435,8 +435,7 @@ export default {
                     title: ' Gaming.',
                     img: 'img1.jpg',
                 },
-               
-               
+
                 {
                     title: 'Fashion - Men & Women.',
                     img: 'product-11-1.jpg',
@@ -448,6 +447,18 @@ export default {
                 {
                     title: 'Sporting.',
                     img: 'product-4.jpg',
+                },
+                 {
+                    title: 'Smart device.',
+                    img: 'product-90.jpg',
+                },
+                {
+                    title: 'Appliance - Home.',
+                    img: 'img9.jpg',
+                },
+                 {
+                    title: ' Grocery.',
+                    img: 'img4.jpg',
                 },
                 
             ],
