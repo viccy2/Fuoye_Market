@@ -97,7 +97,11 @@
                 if(this.$refs.form.validate()){
                     const response =  await API.createProduct(formData);
                     this.successMessage = response.msg;
-                    console.log(response);
+                     this.newProduct = '';
+                     this.selectedProduct = '';
+                     this.selectedFile = '';
+
+                    // console.log(response);
                 
                 }
       }
