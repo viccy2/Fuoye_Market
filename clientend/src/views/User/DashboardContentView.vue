@@ -126,7 +126,7 @@
                     >
                     <v-slide-item v-for="(item, i) in items" :key="i" :to="item.to" router>
                         <v-card class="product-card" flat>
-                        <v-img :src="require(`@/assets/images/${item.img}`)" height="120" style="width:90%"></v-img>
+                        <img :src="require(`@/assets/images/${item.img}`)" height="120" style="width:90%">
                         <v-card-title class="product-name">{{ item.title }}</v-card-title>
                             
                         </v-card>
@@ -355,12 +355,13 @@ export default {
             show: false,
             loading: false,
             items: [
+               
+                
                 {
-                    title: 'Intellic Solution',
-                    img: 'ins.jpeg',
+                    title: 'Dan Photos',
+                    img: 'about-img-1.jpg',
                     to: '/seller-page'
                 },
-                
                 {
                     title: 'Dan Photos',
                     img: 'about-img-1.jpg',
@@ -470,7 +471,7 @@ export default {
 } */
 
 .product-card {
-  max-width: 300px;
+  max-width: 100%;
   height:100%;  
   text-align: center;
 }
