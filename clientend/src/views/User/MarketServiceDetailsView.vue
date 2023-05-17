@@ -7,12 +7,12 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:50%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:300px;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
+                                
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
                                 <v-btn style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
@@ -25,13 +25,13 @@
                 
                     <v-card-text class="grey--text">
                         <span class="text-color-black text-capitalize font-weight-bold " style="color:black" >
-                          Product Details :
+                            What we do :
                         </span><br>
                         <p>
                             {{ post.describtion}}
                         </p>
                         <p class="font-weight-bold ">
-                            Quantity available : {{ post.quantity}} 
+                            Happy Clients : {{ post.no_of_clients }} +  
                         </p>
                         <p class="font-weight-bold ">
                             Location : {{ post.location }} 

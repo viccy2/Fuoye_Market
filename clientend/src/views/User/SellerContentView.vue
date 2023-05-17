@@ -46,28 +46,30 @@
                   >
 
                     <v-card flat class="ma-1" height="50">
-                            <v-layout row wrap>
-                                <v-flex lg8 md8 sm8 xs8>
-                                    <v-list-item three-line style="margin-top:-10px">
-                                        <v-list-item-avatar class="rounded-circle"  height="" width="" color="grey">
-                                            <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" 
-                                                  :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`">
-                                        </v-list-item-avatar>
-                                        <v-card-text>
-                                            <div class="items text-capitalize" style="font-size:12px; margin-top:-15px">
-                                                {{product.username}}
-                                            </div>
-                                        </v-card-text>
-                                    </v-list-item>
-                                </v-flex>
-    
-                                <v-flex lg4 md4 sm4 xs4>
-                                    <v-card-text>
-                                        <v-btn small :to="{name : 'seller-page', params: { id : product.id}}"  color='#673AB7' tile class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">View</span></v-btn>
-                                    </v-card-text>
-                                </v-flex>
-                            </v-layout>
-                    </v-card>
+                        <v-layout row wrap>
+                                        <v-flex lg2 md2 sm2 xs2>
+                                            <v-list-item three-line style="margin-top:-10px">
+                                                <v-list-item-avatar   height="50" width="50" color="grey">
+                                                    <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
+                                                    </v-list-item-avatar>
+                                                    
+                                            </v-list-item>
+                                        </v-flex>
+                                        <v-flex lg6 md6 sm4 xs6>
+                                            <v-card-text>
+                                                        <center>
+                                                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
+                                                            {{product.username}}
+                                                        </div></center>
+                                                    </v-card-text>
+                                        </v-flex>
+                                        <v-flex lg4 md4 sm4 xs4>
+                                            <v-card-text>
+                                                <v-btn small :to="{name : 'seller-page', params : { id : product.id }}"  color='#673AB7' tile  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">Connect</span></v-btn>
+                                            </v-card-text>
+                                        </v-flex>
+                          </v-layout>
+                      </v-card>
                 
               </v-col>
             </v-row>

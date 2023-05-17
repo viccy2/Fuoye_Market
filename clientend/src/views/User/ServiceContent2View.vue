@@ -7,7 +7,7 @@
 
             <v-card class="mx-auto mt-3"  flat height="160" >
                 <v-list-item three-line >
-                    <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
+                    <v-list-item-avatar  height="70" width="70" color="grey darken-3">
                     <img class="" :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" >
                     </v-list-item-avatar>
                     <v-list-item-content>
@@ -319,7 +319,7 @@ export default {
    async created(){
         try{
             const response = await API.serviceDetails(this.$route.params.id);
-            console.log(response);
+            // console.log(response);
             this.post = response.data;
             this.contact = response.data.seller_details.whatsapp;
             this.posts = response.data.seller_details;

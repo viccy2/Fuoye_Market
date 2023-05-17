@@ -59,7 +59,7 @@
                       <v-img
                         :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
                         :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
-                        height="200px"
+                       
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -158,7 +158,7 @@
                     >
                       <v-img
                         :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
-                        height="200px"
+                       
                         :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
 
                         aspect-ratio="1"

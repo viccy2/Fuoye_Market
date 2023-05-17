@@ -1,6 +1,6 @@
 <template>
     <div class="market-product">
-        <AppPagesNavbar /><br>
+        <AppPagesNavbar />
       
           <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
          
@@ -32,7 +32,7 @@
                       >
                         <v-img
                           :src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
-                          height="300px"
+                         
                           :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
                           aspect-ratio="1"
                           class="grey lighten-2"
@@ -109,7 +109,7 @@
                       >
                         <v-img
                           :src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
-                          height="200px"
+                          x
                           :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.image_link}`"
                           aspect-ratio="1"
                           class="grey lighten-2"

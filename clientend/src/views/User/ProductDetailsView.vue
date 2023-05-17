@@ -7,7 +7,7 @@
            <v-col sm="10" class="pa- mx-auto"><br><br>
                 <v-card class="pa-2" flat>
                     <center>
-                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:50%;"> 
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:300px;"> 
                     </center>
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
@@ -81,7 +81,7 @@
                         </p><br>
                        <center> <v-btn :to="{name : 'seller-page', params : { id : post.seller_id }}" small outlined color ="#673AB7" style="width:100%;">View seller</v-btn></center>
                     </v-card-text>
-            {{ post.seller_id}}
+            
                 </v-card><br><br>
             </v-col>
         </div>
