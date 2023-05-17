@@ -1,6 +1,6 @@
 <template>
     <div class="market-service">
-        <AppPagesNavbar /><br>
+        <AppPagesNavbar />
       
           <!-- DISPLAY ONLY ON LARGER AND MEDIUM DEVICES -->
          
@@ -27,7 +27,7 @@
                     <template >                                    
                               <v-card
                               class="mx-auto grey lighten-4"
-                              :to="{ name: 'product-details', params: { id: item.id }}"
+                              :to="{ name: 'market-service-details', params: { id: item.id }}"
                               
                               >
                               <v-img
@@ -101,7 +101,7 @@
                   <v-card
                    
                     class="mx-auto grey lighten-4"
-                    :to="{ name: 'product-details', params: { id: item.id }}"
+                    :to="{ name: 'market-service-details', params: { id: item.id }}"
                     style="width:100%"
                   >
                     <v-img
