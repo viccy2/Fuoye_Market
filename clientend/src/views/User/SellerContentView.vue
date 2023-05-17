@@ -49,7 +49,7 @@
                         <v-layout row wrap>
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
-                                                <v-list-item-avatar   height="50" width="50" color="grey">
+                                                <v-list-item-avatar  color="grey">
                                                     <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                                                     </v-list-item-avatar>
                                                     

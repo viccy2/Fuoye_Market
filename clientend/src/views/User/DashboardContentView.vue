@@ -116,49 +116,25 @@
                 <v-card flat elevation=''>
 
                 <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Our top sellers : </v-card-title> 
-                <v-row class="pa-2">
-                    <v-col 
-                        v-for="(item, i) in items" :key="i" :to="item.to" router
-                        class = "d-flex child-flex"
-                        cols="6"
+                <template>
+                <div class="product-carousel">
+                    <v-slide-group
+                    show-arrows-on-hover
+                    center-active
+                    hide-delimiter-background
+                    class="carousel"
                     >
-                        <v-card
-                          
-                          :loading="loading"
-                          class=""
-                          max-width="" >
-                            <template slot="progress">
-                            <v-progress-linear
-                                color="deep-purple"
-                                height="10"
-                                indeterminate>
-                            </v-progress-linear>
-                            </template>
-                            <v-img
-                            :src="require(`@/assets/images/${item.img}`)"
-                            :lazy-src="require(`@/assets/images/${item.img}`)"
-                            aspect-ratio="1"
-                            class="grey lighten-2"
-                            >
-                            <template v-slot:placeholder>
-                            <v-row
-                                class="fill-height ma-0"
-                                align="center"
-                                justify="center"
-                            >
-                                <v-progress-circular
-                                indeterminate
-                                color="grey lighten-5"
-                                ></v-progress-circular>
-                            </v-row>
-                            </template>
-                            </v-img>
-                       
+                    <v-slide-item v-for="(item, i) in items" :key="i" :to="item.to" router>
+                        <v-card class="product-card" flat>
+                        <v-img :src="require(`@/assets/images/${item.img}`)" height="120" style="width:90%"></v-img>
+                        <v-card-title class="product-name">{{ item.title }}</v-card-title>
+                            
                         </v-card>
-                        
-                    </v-col>
-                </v-row>       
-    
+                    </v-slide-item>
+                    </v-slide-group>
+                </div>
+                </template>
+
             </v-card>
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
@@ -334,7 +310,7 @@
                                     <v-layout row wrap>
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
-                                                <v-list-item-avatar   height="50" width="50" color="grey">
+                                                <v-list-item-avatar    color="grey">
                                                     <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
                                                     </v-list-item-avatar>
                                                     
@@ -390,6 +366,7 @@ export default {
                     img: 'about-img-1.jpg',
                     to: '/seller-page'
                 },
+                
                
             ],
             brand: [
@@ -471,10 +448,36 @@ export default {
 
         setTimeout(() => (this.loading = false), 2000)
       },
+      addToCart() {
+      // Add item to cart logic
+    },
+    viewDetail() {
+      // View details logic
+    }
     }
 }
 
 </script>
 
 <style scoped>
+.product-carousel {
+  max-width: 100%;
+  height:100%; 
+}
+
+/* .carousel {
+  margin-bottom: 20px;
+} */
+
+.product-card {
+  max-width: 300px;
+  height:100%;  
+  text-align: center;
+}
+
+.product-name {
+  font-size: 11px;
+  font-weight: bold;
+ 
+}
 </style>
