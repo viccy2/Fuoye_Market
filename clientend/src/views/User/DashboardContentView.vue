@@ -115,25 +115,54 @@
             <div class="hidden-md-and-up">
                 <v-card flat elevation=''>
 
-                <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Our top sellers : </v-card-title> 
-                <template>
-                <div class="product-carousel">
-                    <v-slide-group
-                    show-arrows-on-hover
-                    center-active
-                    hide-delimiter-background
-                    class="carousel"
+                <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Our top sellers : </v-card-title> <br>
+                    <v-row class="" style="margin-top:-30px;">
+                    <v-col 
+                        v-for="(item, index) in items" :key="index"
+                        class = "d-flex child-flex"
+                        cols="4"
+                    
                     >
-                    <v-slide-item v-for="(item, i) in items" :key="i" :to="item.to" router>
-                        <v-card class="product-card" flat>
-                        <img :src="require(`@/assets/images/${item.img}`)" height="120" style="width:90%">
-                        <v-card-title class="product-name">{{ item.title }}</v-card-title>
-                            
+
+                    <template >                                    
+                        <v-card
+                        :disabled="loading"
+                        class="mx-auto grey lighten-4"
+                        :to="{ name: 'product-details', params: { id: item.id }}"
+                        style="width:100%"
+                        >
+                        <v-img
+                            :src="require(`@/assets/images/${item.img}`)"
+                            :lazy-src="require(`@/assets/images/${item.img}`)"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                        >
+                        <template v-slot:placeholder>
+                            <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                            >
+                            <v-progress-circular
+                                indeterminate
+                                color="grey lighten-5"
+                            ></v-progress-circular>
+                            </v-row>
+                        </template>
+                        </v-img>
+
+                            <v-card-title style="font-size:12px;" >
+                            </v-card-title>
+
+                            <v-card-subtitle style="font-size:7px;color:#673AB7;">
+                               <span style="color:#673AB7" > {{item.title}}.</span>                         
+                            </v-card-subtitle>
+            
                         </v-card>
-                    </v-slide-item>
-                    </v-slide-group>
-                </div>
-                </template>
+                    </template>
+
+                </v-col>
+                </v-row>
 
             </v-card>
             </div>
@@ -320,7 +349,7 @@
                                             <v-card-text>
                                                         <center>
                                                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
-                                                            {{item.username}}
+                                                            {{item.username}}{{item.username}}{{item.username}}{{item.username}}{{item.username}}
                                                         </div></center>
                                                     </v-card-text>
                                         </v-flex>
@@ -356,7 +385,26 @@ export default {
             loading: false,
             items: [
                
-                
+                {
+                    title: 'Dan Photos',
+                    img: 'about-img-1.jpg',
+                    to: '/seller-page'
+                },
+                {
+                    title: 'Dan Photos',
+                    img: 'about-img-1.jpg',
+                    to: '/seller-page'
+                },
+                {
+                    title: 'Dan Photos',
+                    img: 'about-img-1.jpg',
+                    to: '/seller-page'
+                },
+                {
+                    title: 'Dan Photos',
+                    img: 'about-img-1.jpg',
+                    to: '/seller-page'
+                },
                 {
                     title: 'Dan Photos',
                     img: 'about-img-1.jpg',
@@ -449,36 +497,12 @@ export default {
 
         setTimeout(() => (this.loading = false), 2000)
       },
-      addToCart() {
-      // Add item to cart logic
-    },
-    viewDetail() {
-      // View details logic
-    }
+   
     }
 }
 
 </script>
 
 <style scoped>
-.product-carousel {
-  max-width: 100%;
-  height:100%; 
-}
 
-/* .carousel {
-  margin-bottom: 20px;
-} */
-
-.product-card {
-  max-width: 100%;
-  height:100%;  
-  text-align: center;
-}
-
-.product-name {
-  font-size: 11px;
-  font-weight: bold;
- 
-}
 </style>
