@@ -36,55 +36,41 @@
                 </v-row>
 
               <v-card-title style="font-weight:bold;margin-top:0px;font-size:12px;margin-top:-40px;"> Saved Sellers For You : </v-card-title><br>
-              <v-row class="" style="margin-top:-30px;">
-                    <v-col 
-                        v-for="(item, index) in filteredProducts" :key="index"
-                        class = "d-flex child-flex"
-                        cols="4"
-                    
-                    >
-
-                    <template >                                    
-                        <v-card
-                     
-                        class="mx-auto grey lighten-4"
-                        :to="{ name: 'product-details', params: { id: item.id }}"
-                        style="width:100%"
+              <v-row class="pa-2">
+                        <v-col 
+                            v-for="(item, i) in filteredProducts" :key="i" :to="item.to" router
+                            class = "d-flex child-flex"
+                            cols="12"
                         >
-                        <v-img
-                            :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
-                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
-                            aspect-ratio="1"
-                            class="grey lighten-2"
-                        >
-                        <template v-slot:placeholder>
-                            <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                            >
-                            <v-progress-circular
-                                indeterminate
-                                color="grey lighten-5"
-                            ></v-progress-circular>
-                            </v-row>
-                        </template>
-                        </v-img>
-
-                            <v-card-title style="font-size:12px;" >
-                            </v-card-title>
-
-                            <v-card-subtitle style="font-size:7px;color:#673AB7;">
-                               <span style="color:#673AB7" > {{item.username}}.</span>                         
-                            </v-card-subtitle>
-            
-                        </v-card>
-                    </template>
-
-                </v-col>
-                </v-row>
+                            <v-card flat class="ma-1 " height="50">
+                                    <v-layout row wrap>
+                                        <v-flex lg2 md2 sm2 xs2>
+                                            <v-list-item three-line style="margin-top:-10px">
+                                                <v-list-item-avatar    color="grey">
+                                                    <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
+                                                    </v-list-item-avatar>
+                                                    
+                                            </v-list-item>
+                                        </v-flex>
+                                        <v-flex lg6 md6 sm4 xs6>
+                                            <v-card-text>
+                                                        <center>
+                                                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
+                                                            {{item.username}}{{item.username}}{{item.username}}{{item.username}}
+                                                        </div></center>
+                                                    </v-card-text>
+                                        </v-flex>
+                                        <v-flex lg4 md4 sm4 xs4>
+                                            <v-card-text>
+                                                <v-btn small :to="{name : 'seller-page', params : { id : item.id }}"  color='#673AB7' tile  class="text-capitalize" style="width:100%; margin-top:-5px"><span style="color:white">Connect</span></v-btn>
+                                            </v-card-text>
+                                        </v-flex>
+                                    </v-layout>
+                            </v-card>
+                        </v-col>
+                    </v-row>
  
-          </v-card> 
+          </v-card> <br><br>
           </v-col>
  
    

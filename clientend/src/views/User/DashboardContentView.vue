@@ -50,62 +50,50 @@
                 <v-card flat elevation=''>
             
                         <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>  
-                        
-                        <v-row class="pa-5">
-                            <v-col 
-                                v-for="(item, i) in items" :key="i" :to="item.to" router
-                                
-                                cols="6"
-                            
+                        <v-row class="" style="margin-top:0px;">
+                    <v-col 
+                        v-for="(item, index) in newseller" :key="index"
+                        class = "d-flex child-flex"
+                        cols="3"
+                    
+                    >
+             
+                    <template >                                    
+                        <v-card
+                      
+                        class="mx-auto grey lighten-4"
+                        :to="{name : 'seller-page', params : { id : item.id }}"
+                      
+                        >
+                        <v-img
+                            height="200"
+                            :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
+                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
+                            aspect-ratio="1"
+                            class="grey lighten-2"
+                        >
+                        <template v-slot:placeholder>
+                            <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
                             >
-                            <center>
-                            <v-card
-                             
-                                :loading="loading"
-                                class=""
-                            >
-                                <template slot="progress">
-                                <v-progress-linear
-                                    color="deep-purple"
-                                    height="10"
-                                    indeterminate>
-                                </v-progress-linear>
-                                </template>
-                                <v-img
-                                height="300"
-                                :src="require(`@/assets/images/${item.img}`)"
-                                :lazy-src="require(`@/assets/images/${item.img}`)"
-                                aspect-ratio="1"
-                                class="grey lighten-2"
-                                >
-                                    <template v-slot:placeholder>
-                                    <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                    >
-                                        <v-progress-circular
-                                        indeterminate
-                                        color="grey lighten-5"
-                                        ></v-progress-circular>
-                                    </v-row>
-                                    </template>
-                                </v-img>
-                                <!-- <v-card-title style="font-size:13px;">{{item.title}}
-                                <v-rating
-                                :value="5.0"
-                                color="amber"
-                                dense
-                                half-increments
-                                readonly
-                                size="14"
-                                ></v-rating>
-                                </v-card-title> -->
-                                <!-- <v-divider class="mx-4"></v-divider> -->
-                            </v-card>
-                            </center>
-                            </v-col>
-                        </v-row>  
+                            <v-progress-circular
+                                indeterminate
+                                color="grey lighten-5"
+                            ></v-progress-circular>
+                            </v-row>
+                        </template>
+                        </v-img>
+                        <v-card-title style="font-size:12px;color:#673AB7;" >
+                                {{item.username}}{{item.username}}
+                            </v-card-title>
+            
+                        </v-card>
+                    </template>
+
+                </v-col>
+                </v-row>
                        
                 </v-card>
             </div>
@@ -118,22 +106,22 @@
                 <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Our top sellers : </v-card-title> <br>
                     <v-row class="" style="margin-top:-30px;">
                     <v-col 
-                        v-for="(item, index) in items" :key="index"
+                        v-for="(item, index) in newseller" :key="index"
                         class = "d-flex child-flex"
                         cols="4"
                     
                     >
-
+             
                     <template >                                    
                         <v-card
                         :disabled="loading"
                         class="mx-auto grey lighten-4"
-                        :to="{ name: 'product-details', params: { id: item.id }}"
+                        :to="{name : 'seller-page', params : { id : item.id }}"
                         style="width:100%"
                         >
                         <v-img
-                            :src="require(`@/assets/images/${item.img}`)"
-                            :lazy-src="require(`@/assets/images/${item.img}`)"
+                            :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
+                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
                             aspect-ratio="1"
                             class="grey lighten-2"
                         >
@@ -151,12 +139,10 @@
                         </template>
                         </v-img>
 
-                            <v-card-title style="font-size:12px;" >
+                            <v-card-title style="font-size:10px;color:#673AB7;" >
+                                {{item.username}}{{item.username}}
                             </v-card-title>
 
-                            <v-card-subtitle style="font-size:7px;color:#673AB7;">
-                               <span style="color:#673AB7" > {{item.title}}.</span>                         
-                            </v-card-subtitle>
             
                         </v-card>
                     </template>
