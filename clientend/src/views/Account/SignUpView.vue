@@ -50,6 +50,14 @@
                                 v-model="post.type"  color="#673AB7"
                                 label="Account type" :items="account">
                                 </v-select>
+                                <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="[rules.required]" v-model="post.company_name" color="#673AB7"></v-text-field>
+                                <v-file-input
+                                    class="small"
+                                    label="Select comapny logo"
+                                    accept="image/*"
+                                    v-model="selectedFile" v-show="selectedOption"
+                                    :rules="[rules.required]"
+                                ></v-file-input>
                                 <div>
                                     <v-checkbox
                                     v-model="agreeTerms"
@@ -134,8 +142,17 @@
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
                                 :rules="[rules.required]" color="#673AB7"  
                                 v-model="post.type" 
-                                label="Account type" :items="account">
+                                label="Account type" :items="account"  @change="handleOptionChange">
                                 </v-select>
+                                <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="[rules.required]" v-model="post.company_name" color="#673AB7"></v-text-field>
+                                <v-file-input
+                                    class="small"
+                                    label="Select comapny logo"
+                                    accept="image/*"
+                                    v-model="selectedFile" v-show="selectedOption"
+                                    :rules="[rules.required]"
+                                ></v-file-input>
+
                                 <div>
                                     <v-checkbox
                                     v-model="agreeTerms" color="#673AB7"
@@ -188,6 +205,8 @@ export default {
     components: {HomeNavbar, Footers},
     data(){
         return {
+            selectedOption : false ,
+            selectedFile: null,
             agreeTerms: false,
             successMessage:"",
             errorMessage:"",
@@ -206,12 +225,28 @@ export default {
                 email           : "",
                 password        : "",
                 accountType     : "",
+                company_name    : "",
                
                 
             },
         }
     },
+      
     methods : {
+        handleOptionChange() {
+      // Reset the selectedOption when the text field should be hidden
+      if (this.post.type == 'Seller') {
+        return this.selectedOption = true ;
+      }
+      if (this.post.type == 'Buyer') {
+        this.post.company_name = "null";
+        this.selectedFile = null;
+        this.selectedFileName = 'null';
+        this.fileContent = 'null';
+        return this.selectedOption = false;
+        
+      }
+    },
        async createAccount(){
 
                 const data = {
@@ -219,11 +254,13 @@ export default {
                     email           : this.post.email,
                     password        : this.post.password,
                     type            : this.post.type,
+                    company_name    : this.post.company_name,
+                    company_logo    : this.selectedFile,
                   
                    
                 };
                 if(this.$refs.form.validate()){
-
+                  
                 const response = await API.createUser(data);
                 if(response.msg=='user successfully registered'){
                     this.successMessage = response.msg;
