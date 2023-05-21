@@ -144,13 +144,13 @@
                                 v-model="post.type" 
                                 label="Account type" :items="account"  @change="handleOptionChange">
                                 </v-select>
-                                <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="[rules.required]" v-model="post.company_name" color="#673AB7"></v-text-field>
+                                <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase"  v-model="post.company_name" color="#673AB7"></v-text-field>
                                 <v-file-input
                                     class="small"
                                     label="Select comapny logo"
                                     accept="image/*"
                                     v-model="selectedFile" v-show="selectedOption"
-                                    :rules="[rules.required]"
+                                    
                                 ></v-file-input>
 
                                 <div>
@@ -176,7 +176,7 @@
                                 </div>
 
                                 <br>
-
+                                
                                 <v-btn type="submit" class="text-capitalize" 
                                 rounded outlined style="width:100%;color:#673AB7;font-size:13px;">
                                 sign up
@@ -239,7 +239,6 @@ export default {
         return this.selectedOption = true ;
       }
       if (this.post.type == 'Buyer') {
-        this.post.company_name = "null";
         this.selectedFile = null;
         this.selectedFileName = 'null';
         this.fileContent = 'null';
@@ -248,7 +247,7 @@ export default {
       }
     },
        async createAccount(){
-
+            if (this.post.type == 'Seller') {
                 const data = {
                     username        : this.post.username,
                     email           : this.post.email,
@@ -260,8 +259,32 @@ export default {
                    
                 };
                 if(this.$refs.form.validate()){
-                  
-                const response = await API.createUser(data);
+                  console.log(data);
+                    const response = await API.createUser(data);
+                    if(response.msg=='user successfully registered'){
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = '/sign-in';
+                        },3000);
+                    }
+                    else{
+                        this.errorMessage = response;
+                    }
+                
+                    };
+        }
+        if (this.post.type == 'Buyer') {
+   
+            const datas = {
+                    username        : this.post.username,
+                    email           : this.post.email,
+                    password        : this.post.password,
+                    type            : this.post.type,
+                   
+                };
+                if(this.$refs.form.validate()){
+
+                const response = await API.createUser(datas);
                 if(response.msg=='user successfully registered'){
                     this.successMessage = response.msg;
                      setTimeout(function(){
@@ -273,6 +296,8 @@ export default {
                 }
             
                 };
+        }
+              
            
         }
     }
