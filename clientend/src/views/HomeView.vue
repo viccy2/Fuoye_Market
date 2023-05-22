@@ -339,8 +339,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3b.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -358,8 +358,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img8.jpg" style="height:70%;margin-top:px;" >
                   </v-carousel-item>
@@ -376,8 +376,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -394,8 +394,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img1.jpg" style="height:70%;margin-top:px;" >
                   </v-carousel-item>
@@ -412,8 +412,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -430,8 +430,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/n33.jpg" style="height:100%;margin-top:px;" >
                   </v-carousel-item>
@@ -448,8 +448,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img3.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
@@ -466,8 +466,8 @@
                 <center>
                   <v-card
                       class="mx-auto grey lighten-5"
-                      max-width="">
-                <v-carousel  height="150" cycle hide-delimiters :show-arrows="false">
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
                   <v-carousel-item >
                     <img src="../assets/images/img4.jpg" style="height:80%;margin-top:px;" >
                   </v-carousel-item>
@@ -795,9 +795,9 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn" color="" height="310" flat>
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                     "I love using <span class="font-italic" style="color:#673AB7">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" color="" height="310" flat>
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
+                     "I love using <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
                      I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
@@ -817,9 +817,9 @@
               
 
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#673AB7">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
                      Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
                   </v-card-text>
                   <v-card-actions>
@@ -836,9 +836,9 @@
               </v-flex>
 
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn" flat height="310">
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:black">
-                    <span class="font-italic" style="color:#673AB7">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
+                  <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
+                    <span class="font-italic" style="color:#2E3192">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
                     It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
