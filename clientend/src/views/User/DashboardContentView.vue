@@ -111,7 +111,7 @@
                         cols="4"
                     
                     >
-             
+                    <center>
                     <template >                                    
                         <v-card
                         :disabled="loading"
@@ -124,6 +124,7 @@
                             :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
                             aspect-ratio="1"
                             class="grey lighten-2"
+                            height="90px"
                         >
                         <template v-slot:placeholder>
                             <v-row
@@ -139,13 +140,10 @@
                         </template>
                         </v-img>
 
-                            <v-card-title style="font-size:10px;color:#673AB7;" >
-                                {{item.username}}{{item.username}}
-                            </v-card-title>
-
-            
                         </v-card>
+                        <span style="font-size:10px;">{{item.username}}{{item.username}}</span>
                     </template>
+                    </center>
 
                 </v-col>
                 </v-row>
@@ -321,7 +319,7 @@
                             class = "d-flex child-flex"
                             cols="12"
                         >
-                            <v-card flat class="ma-1 " height="50">
+                            <v-card flat class="ma-1 " >
                                     <v-layout row wrap>
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
@@ -331,12 +329,12 @@
                                                     
                                             </v-list-item>
                                         </v-flex>
-                                        <v-flex lg6 md6 sm4 xs6>
+                                        <v-flex lg6 md6 sm6 xs6>
                                             <v-card-text>
-                                                        <center>
-                                                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
+                                                        
+                                                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;">
                                                             {{item.username}}{{item.username}}{{item.username}}{{item.username}}{{item.username}}
-                                                        </div></center>
+                                                        </div>
                                                     </v-card-text>
                                         </v-flex>
                                         <v-flex lg4 md4 sm4 xs4>

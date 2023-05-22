@@ -54,10 +54,10 @@
                                         </v-flex>
                                         <v-flex lg6 md6 sm4 xs6>
                                             <v-card-text>
-                                                        <center>
+                                                      
                                                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
                                                             {{item.username}}{{item.username}}{{item.username}}{{item.username}}
-                                                        </div></center>
+                                                        </div>
                                                     </v-card-text>
                                         </v-flex>
                                         <v-flex lg4 md4 sm4 xs4>
@@ -70,11 +70,11 @@
                         </v-col>
                     </v-row>
  
-          </v-card> <br><br>
+          </v-card> <br><br><br><br>
           </v-col>
  
    
-    </v-card>
+    </v-card><br>
  </div>
             <!-- END NEW SELLER SECTION -->
   
