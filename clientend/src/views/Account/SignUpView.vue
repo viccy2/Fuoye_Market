@@ -247,20 +247,19 @@ export default {
       }
     },
        async createAccount(){
+        try {
             if (this.post.type == 'Seller') {
-                const data = {
-                    username        : this.post.username,
-                    email           : this.post.email,
-                    password        : this.post.password,
-                    type            : this.post.type,
-                    company_name    : this.post.company_name,
-                    company_logo    : this.selectedFile,
-                  
-                   
-                };
+                    const formData = new FormData();
+                    formData.append('company_logo',   this.selectedFile);
+                    formData.append("username",       this.post.username);
+                    formData.append("company_name",   this.post.company_name);
+                    formData.append("password",       this.post.password);
+                    formData.append("type",           this.post.type);
+                    formData.append("email",          this.post.email);
+
                 if(this.$refs.form.validate()){
-                  console.log(data);
-                    const response = await API.createUser(data);
+                  console.log(formData);
+                    const response = await API.createUser(formData);
                     if(response.msg=='user successfully registered'){
                         this.successMessage = response.msg;
                         setTimeout(function(){
@@ -297,6 +296,10 @@ export default {
             
                 };
         }
+    }
+    catch(err){
+                console.log(err)
+            }
               
            
         }

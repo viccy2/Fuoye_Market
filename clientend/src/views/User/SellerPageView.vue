@@ -8,7 +8,7 @@
             <v-card class="mx-auto mt-1"  flat height="160" >
                 <v-list-item three-line >
                     <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
-                        <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${image}`"  >
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-row><br>
@@ -83,7 +83,7 @@
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                            <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
+                            <img :src="`https://fuoyemarket.intellicsolutions.org/images/${image}`" >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>
@@ -459,6 +459,7 @@ export default {
     return {
         post : {},
         username : '',
+        image : '',
         products : [],
         services : [],
     }
@@ -469,7 +470,8 @@ export default {
             // console.log(this.$route.params.id);
             // console.log( response)
             this.post = response.other_details;
-            this.username = response.profile.username;
+            this.username = response.profile.company_name;
+            this.image = response.profile.company_logo;
             this.products = response.products;
             this.services = response.services;
         }

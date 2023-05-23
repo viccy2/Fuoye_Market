@@ -67,8 +67,8 @@
                         >
                         <v-img
                             height="200"
-                            :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
-                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
+                            :src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"                                  
+                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"              
                             aspect-ratio="1"
                             class="grey lighten-2"
                         >
@@ -120,11 +120,11 @@
                         style="width:100%"
                         >
                         <v-img
-                            :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
-                            :lazy-src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`"
+                            :src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"                                  
+                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"  
                             aspect-ratio="1"
                             class="grey lighten-2"
-                            height="90px"
+                            
                         >
                         <template v-slot:placeholder>
                             <v-row
@@ -141,14 +141,14 @@
                         </v-img>
 
                         </v-card>
-                        <span style="font-size:10px;">{{item.username}}{{item.username}}</span>
+                        <span style="font-size:10px;">{{item.company_name}}</span>
                     </template>
                     </center>
 
                 </v-col>
                 </v-row>
 
-            </v-card>
+            </v-card><br>
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                 
