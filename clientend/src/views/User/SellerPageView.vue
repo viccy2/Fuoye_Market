@@ -8,7 +8,7 @@
             <v-card class="mx-auto mt-1"  flat height="160" >
                 <v-list-item three-line >
                     <v-list-item-avatar class="rounded-lg" tile height="70" width="70" color="grey darken-3">
-                        <img :src="`https://fuoyemarket.intellicsolutions.org/images/${image}`"  >
+                        <img :src="`https://fuoyemarket.intellicsolutions.org/company_images/${image}`"  >
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-row><br>
@@ -83,7 +83,7 @@
 
                     <v-list-item three-line >
                         <v-list-item-avatar  height="60" width="60" >
-                            <img :src="`https://fuoyemarket.intellicsolutions.org/images/${image}`" >
+                            <img :src="`https://fuoyemarket.intellicsolutions.org/company_images/${image}`"  >
                         </v-list-item-avatar>
                         <v-list-item-content>
                             <v-row><br>

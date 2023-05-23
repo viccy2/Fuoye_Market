@@ -6,7 +6,7 @@
              <v-card flat class="rounded-lg " elevation=''>
            
             <v-col sm="12" xs="12" >
-              <v-card height="600px" style="width:100%;" flat>
+              <v-card style="width:100%;" flat>
                 <v-row align="center" justify="center">
 
                   <!-- INPUT SEARCH -->
@@ -47,8 +47,7 @@
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
                                                 <v-list-item-avatar    color="grey">
-                                                    <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
-                                                    </v-list-item-avatar>
+                                                  <img :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"  >                                                    </v-list-item-avatar>
                                                     
                                             </v-list-item>
                                         </v-flex>
@@ -56,7 +55,7 @@
                                             <v-card-text>
                                                       
                                                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.0;">
-                                                            {{item.username}}{{item.username}}{{item.username}}{{item.username}}
+                                                            {{item.company_name}}
                                                         </div>
                                                     </v-card-text>
                                         </v-flex>
@@ -70,11 +69,11 @@
                         </v-col>
                     </v-row>
  
-          </v-card> <br><br><br><br>
+          </v-card> <br>
           </v-col>
  
    
-    </v-card><br>
+    </v-card>
  </div>
             <!-- END NEW SELLER SECTION -->
   

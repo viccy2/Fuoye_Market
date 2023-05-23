@@ -67,8 +67,8 @@
                         >
                         <v-img
                             height="200"
-                            :src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"                                  
-                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"              
+                            :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"                                  
+                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"              
                             aspect-ratio="1"
                             class="grey lighten-2"
                         >
@@ -120,8 +120,8 @@
                         style="width:100%"
                         >
                         <v-img
-                            :src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"                                  
-                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${item.company_logo}`"  
+                            :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"                                  
+                            :lazy-src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"  
                             aspect-ratio="1"
                             class="grey lighten-2"
                             
@@ -324,7 +324,7 @@
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
                                                 <v-list-item-avatar    color="grey">
-                                                    <img  :src="`https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light`" >
+                                                    <img :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"  >
                                                     </v-list-item-avatar>
                                                     
                                             </v-list-item>
@@ -333,7 +333,7 @@
                                             <v-card-text>
                                                         
                                                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;">
-                                                            {{item.username}}{{item.username}}{{item.username}}{{item.username}}{{item.username}}
+                                                            {{item.company_name}}
                                                         </div>
                                                     </v-card-text>
                                         </v-flex>
