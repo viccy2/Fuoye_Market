@@ -1,6 +1,6 @@
 <template>
   <!-- Landing Page Start  -->
-  <div class="home white" style="width:100%">
+  <div class="home grey lighten-5" style="width:100%">
 
     <!-- NAVBAR SECTION  -->
     <HomeNavbar />
@@ -109,7 +109,7 @@
                
               </center> 
             </v-flex>
-            </v-layout><br>
+            </v-layout>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
@@ -217,7 +217,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex><br><br>
+            </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
@@ -297,6 +297,7 @@
                     lazy-src="../assets/images/ad2.jpg"
                     class="rounded-circle-images"
                     contain
+                    
                     
                   >
                   <template v-slot:placeholder>
@@ -493,7 +494,7 @@
               <v-container class="animate__animated animate__zoomIn animate__slower">
 
                   <v-layout row wrap>
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -503,13 +504,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -521,7 +522,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -531,13 +532,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -549,7 +550,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -559,13 +560,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -577,7 +578,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -587,25 +588,25 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
                       <v-card-title style="font-size:10px;color:#673AB7;">
-                          Fashion - Men & Women.
+                          Fashion Wears.
                         </v-card-title>
                     </v-card>
 
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -615,13 +616,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -633,7 +634,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -643,13 +644,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-4.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-51.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -661,7 +662,7 @@
                     </center> 
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -671,13 +672,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/phone.png"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -689,7 +690,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -699,13 +700,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -717,7 +718,7 @@
                     </center> <br><br>
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -727,13 +728,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -745,7 +746,7 @@
                     </center> 
                     </v-flex>
 
-                    <v-flex sm6 xs6 class="pa-1">
+                    <v-flex sm6 xs6 class="pa-2">
                     <center>
                     <v-card
                       class="mx-auto grey lighten-5"
@@ -755,13 +756,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="110px">
+                              height="100px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -797,7 +798,7 @@
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" color="" height="310" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                     "I love using <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                     "I love using <span class="font-italic" style="color:black">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
                      I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
@@ -819,7 +820,7 @@
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
                      Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
                   </v-card-text>
                   <v-card-actions>
@@ -838,7 +839,7 @@
               <v-flex md4 lg4>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                    <span class="font-italic" style="color:#2E3192">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    <span class="font-italic" style="color:black">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
                     It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
@@ -866,7 +867,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:#2E3192">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    "<span class="font-italic" style="color:black">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
                     It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
@@ -886,7 +887,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "I love using <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                    "I love using <span class="font-italic" style="color:black">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
                      I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
@@ -906,7 +907,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:#2E3192">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
                      Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
                   </v-card-text>
                   <v-card-actions>
@@ -1282,7 +1283,7 @@
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
-                  <img class="rounded-circle" src="../assets/images/logo1.png" style="height:75px; width:60%;">
+                  <img class="" src="../assets/images/logo1.png" style="height:75px; width:60%;">
                 </div>
                 <br>
                 <h2 id="h27" >Contact Us</h2><br>
@@ -1355,14 +1356,15 @@ export default {
 <style scoped>
 .rounded-circle-images1 {
   height: 80%;
-  width: 100%;
+  width: 80%;
+  border-radius: 50%;
   object-fit: cover;
  
 }
 .rounded-circle-images2 {
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
 }
 .rounded-circle-images3 {

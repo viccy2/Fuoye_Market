@@ -141,7 +141,7 @@
                         </v-img>
 
                         </v-card>
-                        <span style="font-size:10px;">{{item.company_name}}</span>
+                        <span style="font-size:11px;">{{item.company_name}}</span>
                     </template>
                     </center>
 
