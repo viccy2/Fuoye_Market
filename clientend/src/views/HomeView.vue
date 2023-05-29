@@ -24,7 +24,7 @@
                     <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
                   </v-btn>
                   </router-link>
-                </v-flex>
+                </v-flex> 
                 <v-flex md2 lg2>
                 </v-flex>
                 <v-flex md6 lg6>
@@ -941,8 +941,8 @@
                 <center>
                   <v-card flat class=" ma-2 animate__animated animate__fadeIn" >
                     <v-img
-                        src="../assets/images/po.jpg"
-                        lazy-src="../assets/images/po.jpg"
+                        src="../assets/images/vad.jpeg"
+                        lazy-src="../assets/images/vad.jpeg"
                         aspect-ratio="1"
                         class="grey lighten-2"
                       >
@@ -1061,8 +1061,8 @@
               <v-flex sm6 xs6>
                
                   <v-card class="grey lighten-4 ma-2 animate__animated animate__fadeIn" elevation="2">
-                    <v-img src="../assets/images/po.jpg" style="width:;height:100%;" 
-                      lazy-src="../assets/images/po.jpg"
+                    <v-img src="../assets/images/vad.jpeg" style="width:;height:100%;" 
+                      lazy-src="../assets/images/vad.jpeg"
                         aspect-ratio="1"
                         class="grey lighten-2"
                     >
