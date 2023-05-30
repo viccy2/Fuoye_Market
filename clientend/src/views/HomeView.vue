@@ -132,7 +132,7 @@
                   <p id="txt5">
                     We provide a digital marketplace where students can buy and sell goods and services within their campus community.
                     We offer a user-friendly interface, secure transactions, and a wide range of products and services, including textbooks, electronics, clothing, and tutoring services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
-                    We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
+                    We Design, Publicity & Marketing.ed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.<br><br>
                     We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                     Also, for users to create account and have medium to add their products and connect with the sellers.
                   </p>
@@ -183,7 +183,7 @@
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We provide a digital marketplace where students can buy and sell goods and services within their campus community.
                 We offer a user-friendly interface, secure transactions, and a wide range of products and services, including textbooks, electronics, clothing, and tutoring services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
-                We designed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.              </p>
+                We Design, Publicity & Marketing.ed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.              </p>
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
                 Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
@@ -867,7 +867,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:black">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    "<span class="font-italic" style="color:black">"FuoyeMarket </span> is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
                     It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
@@ -887,7 +887,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "I love using <span class="font-italic" style="color:black">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
+                    "I love using <span class="font-italic" style="color:black">FuoyeMarket </span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
                      I've had great success selling on this site and plan to continue using it in the future."
                   </v-card-text>
                   <v-card-actions>
@@ -1043,7 +1043,7 @@
                       </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
-                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design)  </h2>
+                  <h2 id="h26" class="font-italic" style="font-size:11px;"> (Team Lead Design, Publicity & Marketing.)  </h2>
                 </center>             
               </v-flex>
             </v-layout>
@@ -1165,7 +1165,7 @@
                     </v-img>
                   </v-card><br>
                   <h2 id="h26" style="font-size:14px;color:#673AB7">Afolabi Vivian</h2>
-                  <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design )  </h2>
+                  <h2 class="font-italic" style="font-size:11px;"> (Team Lead Design, Publicity & Marketing. )  </h2>
                                 
               </v-flex>  
             </v-layout>
@@ -1355,9 +1355,9 @@ export default {
 
 <style scoped>
 .rounded-circle-images1 {
-  height: 80%;
-  width: 80%;
-  border-radius: 50%;
+  height: 70%;
+  width: 100%;
+  
   object-fit: cover;
  
 }

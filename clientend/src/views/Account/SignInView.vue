@@ -1,5 +1,5 @@
 <template>
-    <div class="sign-in grey lighten-5">
+    <div class="sign-in white">
 
     <!-- NAVBAR SECTION  -->
         <HomeNavbar />
