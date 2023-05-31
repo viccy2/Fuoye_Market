@@ -4,9 +4,7 @@
         <!-- PROFILE SECTION -->
       <section>     
         <!-- DISPLAY ON LARGE DEVICE --> 
-        <div class="hidden-sm-and-down" >
-           
-         </div>
+        
          <!-- END DISPLAY ON LARGE DEVICE -->
 
          <!-- DISPLAY ON SMALL DEVICE -->
@@ -47,9 +45,9 @@
         <div class="top-seller">
         <!-- DISPLAY ON LARGEDEVICE -->
             <div class="hidden-sm-and-down">
-                <v-card flat elevation=''>
-            
-                        <v-card-title style="font-weight:bold;font-size:13px;"> Our top sellers : </v-card-title>  
+                <v-card flat elevation='' style="margin-top:-220px;">
+                    <v-container fluid>
+                        <v-card-title style="font-weight:bold;font-size:13px;"> Top Sellers : </v-card-title>  
                         <v-row class="" style="margin-top:0px;">
                     <v-col 
                         v-for="(item, index) in newseller" :key="index"
@@ -57,7 +55,8 @@
                         cols="3"
                     
                     >
-             
+                    <center>
+                        <v-container fluid>
                     <template >                                    
                         <v-card
                       
@@ -90,11 +89,11 @@
                             </v-card-title>
             
                         </v-card>
-                    </template>
-
+                    </template></v-container>
+                    </center>
                 </v-col>
                 </v-row>
-                       
+                </v-container>  
                 </v-card>
             </div>
             <!-- END DISPLAY ON LARGE DEVICE -->
@@ -102,8 +101,8 @@
             <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
                 <v-card flat elevation=''>
-
-                <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Our top sellers : </v-card-title> <br>
+                 <v-container fluid>
+                <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Top Sellers : </v-card-title> <br>
                     <v-row class="" style="margin-top:-30px;">
                     <v-col 
                         v-for="(item, index) in newseller" :key="index"
@@ -112,6 +111,7 @@
                     
                     >
                     <center>
+                    <v-container fluid>
                     <template >                                    
                         <v-card
                         :disabled="loading"
@@ -141,19 +141,24 @@
                         </v-img>
 
                         </v-card>
-                        <span style="font-size:11px;">{{item.company_name}}</span>
+                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;margin-top:10px;">
+                            {{item.company_name}}
+                         </div>
+                       
                     </template>
+                    </v-container>
                     </center>
 
                 </v-col>
                 </v-row>
-
-            </v-card><br>
+            </v-container>
+            </v-card>
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                 
         </div>
         <!-- END TOP SELLER SECTION -->
+
 
  <!-- POPULAR CATEGORY SECTION -->
 
@@ -297,7 +302,7 @@
                             <span style="font-size:10px;">{{item.title}}</span>
                         </center>
                     </v-col>
-                </v-row><br>
+                </v-row>
              
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
@@ -307,12 +312,149 @@
         </div>
         <!-- END TOP FEATURED PRODUCTS SECTION -->
 
-            
+ <!-- NEW PRODUCTS SECTION -->
+
+ <div class="featured-products">
+                <v-card flat elevation=''>
+                    <v-container fluid>
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> New Products : </v-card-title>
+                
+
+        <!-- DISPLAY ON LARGE DEVICE -->
+            <div class="hidden-sm-and-down">
+                <v-row class="pa-2">
+                    <v-col 
+                        v-for="(product, i) in newProducts" :key="i" :to="product.to" router
+                        class = "d-flex child-flex"
+                        cols="3"
+                    >
+                       
+                  <template >                                    
+                    <v-card
+                      class="mx-auto grey lighten-4"
+                      :to="{ name: 'product-details', params: { id: product.id }}"
+                      
+                    >
+                      <v-img
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+                       
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+
+                      </v-img>
+
+                    <v-card-title style="font-size:12px;">
+                    </v-card-title>
+
+                    <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                      {{ product.name }}
+                    </v-card-subtitle>
+
+                    <v-card-text style="font-size:10px;">
+                      <v-row>
+                        <v-col cols="6">
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7">{{product.price}}</span>
+                        </v-col>
+                        
+                        <v-col cols="6">
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
+                        </v-col>
+                      </v-row>
+                    </v-card-text>
+
+                  </v-card>
+                </template>
+                    </v-col>
+                </v-row><br><br>
+             
+            </div>
+        <!-- END DISPLAY ON LARGE DEVICE -->
+
+        <!-- DISPLAY ON SMALL DEVICE -->
+            <div class="hidden-md-and-up">
+                <v-row class="pa-2">
+                    <v-col 
+                        v-for="(product, i) in newProducts" :key="i" :to="product.to" router
+                        class = "d-flex child-flex"
+                        cols="6"
+                    >
+                       
+                           
+                  <template >                                    
+                    <v-card
+                      :disabled="loading"
+                      class="mx-auto grey lighten-4"
+                      :to="{ name: 'product-details', params: { id: product.id }}"
+                      style="width:100%"
+                    >
+                      <v-img
+                        :src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+                        
+                        :lazy-src="`https://fuoyemarket.intellicsolutions.org/images/${product.image_link}`"
+                        aspect-ratio="1"
+                        class="grey lighten-2"
+                      >
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+                      </v-img>
+
+                        <v-card-title style="font-size:12px;" >
+                        </v-card-title>
+
+                        <v-card-subtitle style="font-size:11px;color:#673AB7;">
+                         {{product.name}}
+                        </v-card-subtitle>
+                      
+                        <v-card-text style="font-size:10px;">
+                          <v-icon small class="" id="icon">mdi-currency-ngn</v-icon>&nbsp;<span style="color:#673AB7" > {{product.price}}.</span><br>
+                          
+                          <v-icon small class="" id="icon">mdi-map-marker</v-icon>&nbsp; {{product.location}}.
+                        </v-card-text>
+
+                    </v-card>
+                </template>
+                                
+                       
+                    </v-col>
+                </v-row><br>
+             
+            </div>
+        <!-- END DISPLAY ON SMALL DEVICE -->
+               
+            </v-container>
+            </v-card>
+        </div>
+<!-- END NEW PRODUCTS SECTION -->
+    
         <!-- NEW SELLER SECTION -->
         <div class="new-sellers">
             <v-card flat class="rounded-lg" elevation=''>
                 <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-20px;"> New sellers for you : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-20px;"> New sellers : </v-card-title>
                     <v-row class="pa-2">
                         <v-col 
                             v-for="(item, i) in newseller" :key="i" :to="item.to" router
@@ -461,6 +603,7 @@ export default {
                 
             ],
             newseller: [],
+            newProducts:[],
         }
        
     },
@@ -468,8 +611,10 @@ export default {
     async mounted() {
     const response = await API.getUser();
     const response2 = await API.newSellers();
+    const response3 = await API.newProducts();
     this.Activeuser = response.msg.username;
     this.newseller = response2.data;
+    this.newProducts = response3.data;
     },
 
     methods:{

@@ -258,7 +258,7 @@ export default {
                     formData.append("email",          this.post.email);
 
                 if(this.$refs.form.validate()){
-                  console.log(formData);
+               
                     const response = await API.createUser(formData);
                     if(response.msg=='user successfully registered'){
                         this.successMessage = response.msg;

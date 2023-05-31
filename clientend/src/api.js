@@ -146,6 +146,18 @@ export default class API {
         }
     }
 
+     //fetch new products
+     static async newProducts(){
+        try{
+            const response = await axios.get(`${API_URL}/general/latest-products`,{
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+
     //fetch all service 
     static async allServices(){
         try{
