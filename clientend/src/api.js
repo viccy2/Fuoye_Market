@@ -98,6 +98,19 @@ export default class API {
         
     }
 
+    //fetch all top sellers
+    static async topSellers(){
+        try{
+            const response = await axios.get(`${API_URL}/general/top-sellers`, {
+        })
+        return response.data;
+        }
+        catch(err){
+            console.log(err)
+        }
+        
+    }
+
 
     //create  new product
     static async createProduct(post){

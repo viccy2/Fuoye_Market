@@ -105,7 +105,15 @@
                 if(this.$refs.form.validate()){
               
                     const response =  await API.createService(formData);
-                    this.successMessage = response.msg;
+                    if(response.msg=='product  successfully created'){
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = 'new-service';
+                        },3000);
+                    }
+                    else{
+                         console.log(response.msg);
+                    }
                 
                 }
       }

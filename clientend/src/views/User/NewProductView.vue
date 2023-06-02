@@ -12,9 +12,9 @@
                     <!-- Create New Product -->
                     <v-form ref="form" @submit.prevent="createProduct" class="pa-5" enctype="multi-part/form-data">
                    
-                    <v-text-field class="small" label="Product's name" prepend-icon="mdi-package-variant" :rules="rules" v-model="newProduct.name" color="#673AB7"></v-text-field><br>
-                    <v-text-field class="small" label="Product's price" type="number" prepend-icon="mdi-currency-ngn" :rules="rules" v-model="newProduct.price" color="#673AB7"></v-text-field><br>
-                    <v-text-field class="small" label="Quantity available" type="number" prepend-icon="mdi-warehouse" :rules="rules" v-model="newProduct.quantity" color="#673AB7"></v-text-field><br>
+                    <v-text-field class="small" label="Products Name" prepend-icon="mdi-package-variant" :rules="rules" v-model="newProduct.name" color="#673AB7"></v-text-field><br>
+                    <v-text-field class="small" label="Products Price" prepend-icon="mdi-currency-ngn" :rules="rules" v-model="newProduct.price" color="#673AB7"></v-text-field><br>
+                    <v-text-field class="small" label="Quantity Available" type="number" prepend-icon="mdi-warehouse" :rules="rules" v-model="newProduct.quantity" color="#673AB7"></v-text-field><br>
                     <!-- SELECT CATEGORY  -->
                     <v-row>
                     <v-col cols="12" md="12">
@@ -25,15 +25,25 @@
                         :items="products"
                         item-text="name"
                         item-value="id"
-                        label="Select product category"
+                        label="Select Product Category"
                       ></v-select>
                     </v-col>
 
                   </v-row><br>
+                  <v-textarea
+                        class="small"
+                        v-model="newProduct.describtion"
+                        prepend-icon="mdi-information" 
+                        :rules="rules" 
+                        label="Product Details"
+                        rows="5"
+                        :counter="500"
+                        color="#673AB7"
+                    ></v-textarea><br>
                     <v-text-field class="small" label="Location" prepend-icon="mdi-map-marker" :rules="rules" v-model="newProduct.location" color="#673AB7"></v-text-field><br>
                     <v-file-input
                         class="small"
-                        label="Select product image"
+                        label="Select Product Image"
                         accept="image/*"
                         v-model="selectedFile"
                         
@@ -67,6 +77,7 @@
           image       : '',
           category_id : '',
           type        : '',
+          describtion : '',
         },
         products: [],
         selectedProduct: null
@@ -85,21 +96,28 @@
       async createProduct() {
         try {
           const formData = new FormData();
-          formData.append('image',    this.selectedFile);
-          formData.append("name",     this.newProduct.name);
-          formData.append("price",    this.newProduct.price);
-          formData.append("quantity", this.newProduct.quantity);
-          formData.append("location", this.newProduct.location);
-          formData.append("category_id", this.selectedProduct);
-          formData.append("type", 'Product');
-          formData.append("token", this.seller.token);
+          formData.append('image',          this.selectedFile);
+          formData.append("name",           this.newProduct.name);
+          formData.append("price",          this.newProduct.price);
+          formData.append("quantity",       this.newProduct.quantity);
+          formData.append("describtion",    this.newProduct.describtion);
+          formData.append("location",       this.newProduct.location);
+          formData.append("category_id",    this.selectedProduct);
+          formData.append("type",           'Product');
+          formData.append("token",          this.seller.token);
 
                 if(this.$refs.form.validate()){
                     const response =  await API.createProduct(formData);
-                    this.successMessage = response.msg;
-                     this.newProduct = '';
-                     this.selectedProduct = '';
-                     this.selectedFile = '';
+                   
+                    if(response.msg=='product  successfully created'){
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = 'new-product';
+                        },3000);
+                    }
+                    else{
+                         console.log(response.msg);
+                    }
 
                     // console.log(response);
                 

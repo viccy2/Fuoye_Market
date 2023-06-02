@@ -50,7 +50,7 @@
                         <v-card-title style="font-weight:bold;font-size:13px;"> Top Sellers : </v-card-title>  
                         <v-row class="" style="margin-top:0px;">
                     <v-col 
-                        v-for="(item, index) in newseller" :key="index"
+                        v-for="(item, index) in topseller" :key="index"
                         class = "d-flex child-flex"
                         cols="3"
                     
@@ -105,7 +105,7 @@
                 <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Top Sellers : </v-card-title> <br>
                     <v-row class="" style="margin-top:-30px;">
                     <v-col 
-                        v-for="(item, index) in newseller" :key="index"
+                        v-for="(item, index) in topseller" :key="index"
                         class = "d-flex child-flex"
                         cols="4"
                     
@@ -603,6 +603,7 @@ export default {
                 
             ],
             newseller: [],
+            topseller: [],
             newProducts:[],
         }
        
@@ -612,8 +613,10 @@ export default {
     const response = await API.getUser();
     const response2 = await API.newSellers();
     const response3 = await API.newProducts();
+    const response4 = await API.topSellers();
     this.Activeuser = response.msg.username;
     this.newseller = response2.data;
+    this.topseller = response4.data;
     this.newProducts = response3.data;
     },
 
