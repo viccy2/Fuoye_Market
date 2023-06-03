@@ -27,7 +27,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "dashboard" */ '../views/User/DashboardView.vue'),
     props: true,
     beforeEnter: requireAuth
-    // meta: { requiresAuth: true }
   },
   {
     path: '/dashboard-content',

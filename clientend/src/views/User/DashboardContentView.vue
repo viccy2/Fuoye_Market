@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard">
+    <div class="dashboard grey lighten-5">
        
         <!-- PROFILE SECTION -->
       <section>     
@@ -239,14 +239,14 @@
 
         <!-- FEATURED PRODUCTS SECTION -->
 
-            <div class="featured-products">
+            <!-- <div class="featured-products">
                 <v-card flat elevation=''>
                     <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Popular Brand : </v-card-title>
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Popular Brand : </v-card-title> -->
                 
 
         <!-- DISPLAY ON LARGE DEVICE -->
-            <div class="hidden-sm-and-down">
+            <!-- <div class="hidden-sm-and-down">
                 <v-row class="pa-2">
                     <v-col 
                         v-for="(item, i) in brand" :key="i" :to="item.to" router
@@ -274,11 +274,11 @@
                     </v-col>
                 </v-row><br><br>
              
-            </div>
+            </div> -->
         <!-- END DISPLAY ON LARGE DEVICE -->
 
         <!-- DISPLAY ON SMALL DEVICE -->
-            <div class="hidden-md-and-up">
+            <!-- <div class="hidden-md-and-up">
                 <v-row class="pa-2">
                     <v-col 
                         v-for="(item, i) in brand" :key="i" :to="item.to" router
@@ -304,12 +304,12 @@
                     </v-col>
                 </v-row>
              
-            </div>
+            </div> -->
         <!-- END DISPLAY ON SMALL DEVICE -->
                
-            </v-container>
+            <!-- </v-container>
             </v-card>
-        </div>
+        </div> -->
         <!-- END TOP FEATURED PRODUCTS SECTION -->
 
  <!-- NEW PRODUCTS SECTION -->
@@ -509,41 +509,7 @@ export default {
             name : true,
             show: false,
             loading: false,
-            items: [
-               
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                {
-                    title: 'Dan Photos',
-                    img: 'about-img-1.jpg',
-                    to: '/seller-page'
-                },
-                
-               
-            ],
+            
             brand: [
                 {
                     title: 'Samsung',
@@ -586,20 +552,33 @@ export default {
                     title: ' Gaming.',
                     img: 'img1.jpg',
                 },
-
                 {
-                    title: 'Fashion',
+                    title: 'Smart Device.',
+                    img: 'product-90.jpg',
+                },
+                {
+                    title: 'Fashion Wear',
                     img: 'product-11-1.jpg',
+                },
+               
+                {
+                    title: 'Foot Wear.',
+                    img: 'product-4.jpg',
                 },
                 {
                     title: 'Home & Office.',
                     img: 'product-3.jpg',
                 },
-               
-                 {
-                    title: ' Grocery.',
+                {
+                    title: 'Appliance.',
+                    img: 'img9.jpg',
+                },
+                {
+                    title: ' Grocery Items.',
                     img: 'img4.jpg',
                 },
+                
+                 
                 
             ],
             newseller: [],

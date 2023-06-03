@@ -808,7 +808,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayomide (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Bola (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -826,10 +826,11 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="../assets/images/product-11-2.jpg"> </v-img>
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ella(Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Doreen (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -845,10 +846,11 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg"></v-img>
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Mide (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayo (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                     </v-card-actions>
@@ -875,9 +877,10 @@
                       <v-list-item-avatar color="grey darken-3">
                         <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
                         </v-img>
+                        
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Dan (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Bola (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -893,11 +896,11 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="../assets/images/as.jpg">
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Ciara (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px"> Ayo (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -913,10 +916,11 @@
                   <v-card-actions>
                     <v-list-item class="grow">
                       <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="../assets/images/product-11-2.jpg"> </v-img>
+                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                        </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Ayomide (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Doreen (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -1217,14 +1221,12 @@
             <v-container>
               <center>
             <v-layout row wrap>
-              <v-flex sm4 xs4>
-               <img class="" src="../assets/images/pel.jpg" style="height:80px;width:80%;">
+              <v-flex sm6 xs6>
+               <img class="pa-3 " src="../assets/images/pel.jpg" style="height:130px;width:100%;">
               </v-flex>
-              <v-flex sm4 xs4>
-                <img class="" src="../assets/images/oriamo.png" style="height:80px;width:80%;">
-              </v-flex>
-              <v-flex sm4 xs4>
-                <img class="" src="../assets/images/ins.jpeg" style="height:80px;width:80%;">
+             
+              <v-flex sm6 xs6>
+                <img class="pa-3" src="../assets/images/ins.jpeg" style="height:130px;width:100%;">
               </v-flex>
              </v-layout>
               </center>
@@ -1233,7 +1235,7 @@
         </div>
       <!-- END DISPLAY ON SMALL DEVICES -->
       </v-container>
-    </section><br><br><br>
+    </section><br>
     <!-- END PARTNER SECTION  -->
 
 <!-- CONTACT SECTION  -->
@@ -1283,7 +1285,7 @@
             <v-layout row wrap>
               <v-flex md8 lg8 sm12 xs12>
                 <div>
-                  <img class="" src="../assets/images/logo1.png" style="height:75px; width:60%;">
+                  <img class="" src="../assets/images/logo1.png" style="height:80px; width:60%;">
                 </div>
                 <br>
                 <h2 id="h27" >Contact Us</h2><br>
@@ -1356,7 +1358,7 @@ export default {
 <style scoped>
 .rounded-circle-images1 {
   height: 70%;
-  width: 100%;
+  width: 93%;
   
   object-fit: cover;
  
