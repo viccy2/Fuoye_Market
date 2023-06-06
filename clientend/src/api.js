@@ -133,6 +133,26 @@ export default class API {
             console.log(err)
         }
     }
+     //edit product
+     static async editProduct(post){
+        try{
+            const response = await axios.post(`${API_URL}/seller/editProductService`, post);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
+    //edit service
+    static async editService(post){
+        try{
+            const response = await axios.post(`${API_URL}/seller/editProductService`, post);
+            return response.data;           
+        }
+        catch(err){
+            console.log(err)
+        }
+    }
 
     //fetch all categories
     static async getCategory(){

@@ -58,7 +58,7 @@
                                 <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
+                                <v-btn  :to="{ name: 'edit-product', params: { id : post.id }}" style="background-color:#673AB7;color:white"  tile >Edit</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>

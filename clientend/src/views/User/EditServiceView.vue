@@ -1,0 +1,128 @@
+<template>
+    <div class="edit-service">
+      <AppPagesNavbar />
+      <v-container>
+        <v-card flat>
+                    <v-card-title style="color:#673AB7;font-size:16px;" class="font-weight-bold">Edit Service</v-card-title>
+                    <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                          {{this.successMessage}}
+                    </v-alert>
+                    <v-divider></v-divider>
+
+                    <!-- Create New Product -->
+                    <v-form ref="form" @submit.prevent="createProduct" class="pa-5" enctype="multi-part/form-data">
+                   
+                    <v-text-field class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="rules" v-model="newService.name" color="#673AB7"></v-text-field><br>
+                    <v-row>
+                    <v-col cols="12" md="12">
+                      <v-select
+                        class="small"
+                        prepend-icon="mdi-list-box-outline" 
+                        v-model="selectedService"
+                        :items="services"
+                        item-text="name"
+                        item-value="id" 
+                        label="Select service category"
+                      ></v-select>
+                    </v-col>
+                    </v-row><br>
+                    <v-textarea
+                        class="small"
+                        v-model="newService.describtion"
+                        prepend-icon="mdi-information" 
+                        :rules="rules" 
+                        label="About company"
+                        rows="5"
+                        :counter="500"
+                        color="#673AB7"
+                    ></v-textarea>
+                    <v-text-field class="small" label="Number of happy clients" type="number" prepend-icon="mdi-account-group" :rules="rules" v-model="newService.no_of_clients" color="#673AB7"></v-text-field><br>
+                    <v-text-field class="small" label="Location" prepend-icon="mdi-map-marker" :rules="rules" v-model="newService.location" color="#673AB7"></v-text-field><br>
+                    <v-file-input
+                        class="small"
+                        label="Select company logo"
+                        accept="image/*"
+                        v-model="selectedFile"
+                        
+                    ></v-file-input>
+                    <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined>Update Changes</v-btn>
+                    </v-form>
+        </v-card>
+      </v-container>
+    
+    </div>
+  </template>
+  
+  <script>
+
+  import API from '../../api'
+  import 'animate.css'
+  import AppPagesNavbar from '../../components/AppPagesNavbar.vue'
+  export default {
+    name: 'edit-service',
+    components: {AppPagesNavbar },
+    data() {
+      return {
+        selectedFile: null,
+        successMessage:"",
+        rules : [(value) => !! value || 'This field is reuired'],
+        newService: {
+          token             : '',
+          name              : '',
+          describtion       : '',
+          no_of_clients     : '',
+          location          : '',
+          image             : '',
+          category_id       : '',
+          type              : '',
+        },
+        services: [],
+        selectedService: null
+      }
+    },
+
+    //fetching the seller token
+    async created(){
+        const response = await API.getSeller();
+        this.seller = response.msg;
+        const response2 = await API.getCategory();
+        this.services = response2.data.filter(product => product.type === 'Service');
+    },
+    methods: {
+     
+      async createProduct() {
+        try {
+          const formData = new FormData();
+          formData.append('image',          this.selectedFile);
+          formData.append("name",           this.newService.name);
+          formData.append("describtion",    this.newService.describtion);
+          formData.append("no_of_clients",  this.newService.no_of_clients);
+          formData.append("location",       this.newService.location);
+          formData.append("category_id",    this.selectedService);
+          formData.append("type",           'Service');
+          formData.append("token",          this.seller.token);
+
+                if(this.$refs.form.validate()){
+              
+                    const response =  await API.createService(formData);
+                    if(response.msg=='product  successfully created'){
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = 'edit-service';
+                        },3000);
+                    }
+                    else{
+                         console.log(response.msg);
+                    }
+                
+                }
+      }
+      catch(err){
+                console.log(err)
+            }
+      },
+   
+  }
+}
+  </script>
+  

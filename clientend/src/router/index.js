@@ -128,7 +128,20 @@ const routes = [
     props: true,
     beforeEnter: requireAuth
   },
-
+  {
+    path: '/edit-product',
+    name: 'edit-product',
+    component: () => import(/* webpackChunkName: "edit-product" */ '../views/User/EditProductView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
+    {
+    path: '/edit-service',
+    name: 'edit-service',
+    component: () => import(/* webpackChunkName: "edit-service" */ '../views/User/EditServiceView.vue'),
+    props: true,
+    beforeEnter: requireAuth
+  },
   {
     path: '/market-product',
     name: 'market-product',
