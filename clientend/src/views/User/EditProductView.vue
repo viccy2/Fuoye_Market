@@ -89,7 +89,7 @@
         const response = await API.getSeller();
         const response2 = await API.getCategory();
         const response3 = await API.productDetails(this.$route.params.id);
-        console.log(this.$route.params.id);
+        // console.log(this.$route.params.id);
         this.seller = response.msg;
         this.products = response2.data.filter(product => product.type === 'Product');
         this.newProduct = response3.msg;
