@@ -26,6 +26,7 @@
                         item-text="name"
                         item-value="id"
                         label="Select Product Category"
+                        :rules="rules"
                       ></v-select>
                     </v-col>
 
@@ -46,7 +47,7 @@
                         label="Select Product Image"
                         accept="image/*"
                         v-model="selectedFile"
-                        
+                        :rules="rules"
                     ></v-file-input>
                     <v-btn type="submit" class="mt-3" color="#673AB7" width="100%" rounded outlined>Update Changes</v-btn>
                     </v-form>
@@ -92,7 +93,7 @@
         // console.log(this.$route.params.id);
         this.seller = response.msg;
         this.products = response2.data.filter(product => product.type === 'Product');
-        this.newProduct = response3.msg;
+        this.newProduct = response3.data;
     },
    
     methods: {
@@ -108,20 +109,11 @@
           formData.append("category_id",    this.selectedProduct);
           formData.append("type",           'Product');
           formData.append("token",          this.seller.token);
+          formData.append("product_id",     this.$route.params.id);
 
                 if(this.$refs.form.validate()){
-                    const response =  await API.createProduct(formData);
-                   
-                    if(response.msg=='product  successfully created'){
-                        this.successMessage = response.msg;
-                        setTimeout(function(){
-                        window.location.href = 'edit-product';
-                        },3000);
-                    }
-                    else{
-                         console.log(response.msg);
-                    }
-
+                    const response =  await API.editProduct(formData);
+                    this.successMessage = response.msg;
                     // console.log(response);
                 
                 }

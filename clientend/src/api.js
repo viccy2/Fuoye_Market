@@ -136,7 +136,7 @@ export default class API {
      //edit product
      static async editProduct(post){
         try{
-            const response = await axios.post(`${API_URL}/seller/editProductService`, post);
+            const response = await axios.post(`${API_URL}/seller/edit-product-service`, post);
             return response.data;           
         }
         catch(err){
@@ -146,7 +146,7 @@ export default class API {
     //edit service
     static async editService(post){
         try{
-            const response = await axios.post(`${API_URL}/seller/editProductService`, post);
+            const response = await axios.post(`${API_URL}/seller/edit-product-service`, post);
             return response.data;           
         }
         catch(err){
