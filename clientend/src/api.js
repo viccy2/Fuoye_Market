@@ -144,9 +144,9 @@ export default class API {
         }
     }
     //edit service
-    static async editService(post){
+    static async deleteProduct(post){
         try{
-            const response = await axios.post(`${API_URL}/seller/edit-product-service`, post);
+            const response = await axios.post(`${API_URL}/seller/delete-product-service`, post);
             return response.data;           
         }
         catch(err){
