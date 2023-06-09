@@ -79,7 +79,7 @@
                         <p class="font-weight-bold ">
                             Location : {{ post.location }} 
                         </p><br>
-                       <center> <v-btn small outlined color ="red" style="width:100%;">Delete</v-btn></center>
+                       <center> <v-btn small outlined color ="red" style="width:100%;" @click="Delete()">Delete</v-btn></center>
                     </v-card-text>
                     
                 </v-card><br><br>
@@ -106,6 +106,8 @@ export default {
         }  
     },
     async created(){
+        const response = await API.getSeller();
+        this.seller = response.msg;
         try {
             const response = await API.productDetails(this.$route.params.id);
             // console.log(response)
@@ -117,6 +119,22 @@ export default {
         }
         
     },
+    methods:{
+       async Delete(){
+            try {
+                const formData = new FormData();
+                formData.append("product_id",     this.$route.params.id);
+                formData.append("token",          this.seller.token);
+                const response = await API.deleteProduct(formData);
+                console.log(response)
+            
+            
+        }
+        catch(err){
+            console.log(err)
+        }
+        }
+    }
     
 }
 </script>
