@@ -79,7 +79,7 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex><br>
+              </v-flex><br><br>
  
             </center>
 
@@ -176,7 +176,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up" style="margin-top:-80px;">
+          <div class="hidden-md-and-up" style="margin-top:-90px;">
             <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>

@@ -101,17 +101,17 @@
             <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
                 <v-card flat elevation=''>
-                 <v-container fluid>
+                
                 <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Top Sellers : </v-card-title> <br>
-                    <v-row class="" style="margin-top:-30px;">
+                    <v-row class="" style="margin-top:-40px;">
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
                         class = "d-flex child-flex"
-                        cols="4"
+                        cols="3"
                     
                     >
                     <center>
-                    <v-container fluid>
+                    
                     <template >                                    
                         <v-card
                         :disabled="loading"
@@ -146,13 +146,13 @@
                          </div>
                        
                     </template>
-                    </v-container>
+                   
                     </center>
 
                 </v-col>
                 </v-row>
-            </v-container>
-            </v-card>
+            
+            </v-card><br>
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                 
@@ -164,7 +164,7 @@
 
  <div class="featured-products">
                 <v-card flat elevation=''>
-                    <v-container fluid>
+                   
                     <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Popular Category : </v-card-title>
                 
 
@@ -202,7 +202,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2">
+                <v-row class="pa-2" style="margin-top:-40px;">
                     <v-col 
                         v-for="(item, i) in category" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
@@ -226,12 +226,12 @@
                                 
                         </center>
                     </v-col>
-                </v-row>
+                </v-row><br>
              
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                
-            </v-container>
+            
             </v-card>
         </div>
         <!-- END POPULAR CATEGORY SECTION -->
@@ -316,8 +316,8 @@
 
  <div class="featured-products">
                 <v-card flat elevation=''>
-                    <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> New Products : </v-card-title>
+                    
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-10px;"> New Products : </v-card-title>
                 
 
         <!-- DISPLAY ON LARGE DEVICE -->
@@ -386,7 +386,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2">
+                <v-row class="pa-2" style="margin-top:-20px;">
                     <v-col 
                         v-for="(product, i) in newProducts" :key="i" :to="product.to" router
                         class = "d-flex child-flex"
@@ -445,7 +445,7 @@
             </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
                
-            </v-container>
+           
             </v-card>
         </div>
 <!-- END NEW PRODUCTS SECTION -->
@@ -453,15 +453,15 @@
         <!-- NEW SELLER SECTION -->
         <div class="new-sellers">
             <v-card flat class="rounded-lg" elevation=''>
-                <v-container fluid>
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-20px;"> New sellers : </v-card-title>
+                
+                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-10px;"> New sellers : </v-card-title>
                     <v-row class="pa-2">
                         <v-col 
                             v-for="(item, i) in newseller" :key="i" :to="item.to" router
                             class = "d-flex child-flex"
                             cols="12"
                         >
-                            <v-card flat class="ma-1 " >
+                            <v-card flat class=" " >
                                     <v-layout row wrap>
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
@@ -488,7 +488,7 @@
                             </v-card>
                         </v-col>
                     </v-row>
-                            </v-container>
+                            
                         </v-card>
                 
         </div><br><br>

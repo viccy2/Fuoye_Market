@@ -5,9 +5,7 @@
          <!-- DISPLAY ON LARGE DEVICE -->
         <div class="details1 hidden-sm-and-down">
            <v-col sm="10" class="pa- mx-auto"><br><br>
-            <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
-                          {{this.successMessage}}
-            </v-alert>
+            
                 <v-card class="pa-2" flat>
                     <center>
                         <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:300px;"> 
@@ -21,7 +19,10 @@
                                 <v-btn style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
                             </v-col>
                         </v-row>
-                    </v-card-actions>
+                    </v-card-actions><br>
+                    <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                          {{this.successMessage}}
+                    </v-alert>
                     <v-card-subtitle class="headline">
                       <h3>{{ post.name }}</h3>
                     </v-card-subtitle>
@@ -64,7 +65,10 @@
                                 <v-btn  :to="{ name: 'edit-product', params: { id : post.id }}" style="background-color:#673AB7;color:white"  tile >Edit</v-btn>
                             </v-col>
                         </v-row>
-                    </v-card-actions>
+                    </v-card-actions><br>
+                    <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                          {{this.successMessage}}
+                    </v-alert>
                     <v-card-subtitle class="headline">
                       <h5>{{ post.name }}</h5>
                     </v-card-subtitle>
@@ -130,6 +134,7 @@ export default {
                 formData.append("product_id",     this.$route.params.id);
                 formData.append("token",          this.seller.token);
                 const response = await API.deleteProduct(formData);
+                // console.log(response)
                 this.successMessage = response.msg;
             
             
