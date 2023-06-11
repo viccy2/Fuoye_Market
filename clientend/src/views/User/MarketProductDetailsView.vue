@@ -5,6 +5,9 @@
          <!-- DISPLAY ON LARGE DEVICE -->
         <div class="details1 hidden-sm-and-down">
            <v-col sm="10" class="pa- mx-auto"><br><br>
+            <v-alert border="left" close-text="Close Alert" color="green accent-4" dark dismissible v-if="this.successMessage">
+                          {{this.successMessage}}
+            </v-alert>
                 <v-card class="pa-2" flat>
                     <center>
                         <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`" style="height:300px;"> 
@@ -99,6 +102,7 @@ export default {
     components:{AppPagesNavbar, Footers},
     data(){
         return {
+            successMessage:"",
             post : {},
             contact : '',
             seller : '',
@@ -126,7 +130,7 @@ export default {
                 formData.append("product_id",     this.$route.params.id);
                 formData.append("token",          this.seller.token);
                 const response = await API.deleteProduct(formData);
-                console.log(response)
+                this.successMessage = response.msg;
             
             
         }

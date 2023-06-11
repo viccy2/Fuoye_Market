@@ -79,7 +79,7 @@
                   </v-btn>
                   </router-link>
                 </center>
-              </v-flex><br><br>
+              </v-flex><br>
  
             </center>
 
@@ -176,7 +176,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up" style="margin-top:-50px;">
+          <div class="hidden-md-and-up" style="margin-top:-80px;">
             <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
               <center>
@@ -504,13 +504,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -532,13 +532,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -560,13 +560,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -588,13 +588,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -616,13 +616,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -643,13 +643,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -673,13 +673,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/phone.png"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -701,13 +701,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -729,13 +729,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="50px">
+                              height="70px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -1196,14 +1196,16 @@
               <v-flex sm4 xs4>
                <img class="pa-3 " src="../assets/images/pel.jpg" style="height:90px;width:100%;">
               </v-flex>
-             
+
+              <v-flex sm4 xs4>
+                <img class="pa-3" src="../assets/images/4.png" style="height:90px;width:100%;">
+              </v-flex>
+
               <v-flex sm4 xs4>
                 <img class="pa-3" src="../assets/images/ins.jpeg" style="height:90px;width:100%;">
               </v-flex>
 
-              <v-flex sm4 xs4>
-                <img class="pa-3" src="../assets/images/4.png" style="height:100px;width:100%;">
-              </v-flex>
+              
              </v-layout>
               </center>
             </v-container>
@@ -1333,7 +1335,7 @@ export default {
 
 <style scoped>
 .rounded-circle-images1 {
-  height: 70%;
+  height: 60%;
   width: 93%;
   
   object-fit: cover;
