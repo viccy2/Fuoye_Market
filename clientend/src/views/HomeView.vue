@@ -1,6 +1,6 @@
 <template>
   <!-- Landing Page Start  -->
-  <div class="home grey " style="width:100%">
+  <div class="home grey lighten-5" style="width:100%">
 
     <!-- NAVBAR SECTION  -->
     <HomeNavbar />
@@ -501,13 +501,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -529,13 +529,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -557,13 +557,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -585,13 +585,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -613,13 +613,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -640,13 +640,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -670,13 +670,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/phone.png"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -698,13 +698,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -726,13 +726,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="80px">
+                              height="85px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -1341,13 +1341,13 @@ export default {
 .rounded-circle-images2 {
  
   height: 80%;
-  width: 80%;
+  width: 100%;
   object-fit: cover;
 }
 .rounded-circle-images3 {
   
   height: 80%;
-  width: 80%;
+  width: 100%;
   object-fit: cover;
 }
 .rounded-circle-images {
