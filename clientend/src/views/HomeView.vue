@@ -228,7 +228,7 @@
       <section>
         <v-container >
 
-          <!-- DISPLAY ON LARGE DEVICES -->
+          <!-- DISPLAY ON LARGE DEVICES, -->
           <div class="hidden-sm-and-down" >
             <v-layout row wrap>
               <v-flex md5 lg5>
