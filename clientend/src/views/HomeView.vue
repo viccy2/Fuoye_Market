@@ -187,16 +187,16 @@
              </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex><br>
-
             <v-flex sm12 xs12>
-              
+              <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad3.jpg" 
+                   src="../assets/images/ad3.jpg" 
                     lazy-src="../assets/images/ad3.jpg"
                     class="rounded-circle-images2"
                     contain
-                    rounded-circle
+                    
+                    
                   >
                   <template v-slot:placeholder>
                           <v-row
@@ -213,8 +213,9 @@
                 </v-img>
                 </v-responsive>
                
-            
+              </center> 
             </v-flex>
+            
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
