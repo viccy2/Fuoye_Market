@@ -1,6 +1,6 @@
 <template>
   <!-- Landing Page Start  -->
-  <div class="home grey lighten-5" style="width:100%">
+  <div class="home grey " style="width:100%">
 
     <!-- NAVBAR SECTION  -->
     <HomeNavbar />
@@ -17,7 +17,7 @@
               <v-layout row wrap>
                 <v-flex md4 lg4 >
                   <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
-                  <p class="font-weight-bold text--black" style="font-size:12px;"> We're here to help you <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
+                  <p class="font-weight-bold text--black" style="font-size:12px;"> Let's <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
                   <router-link to="/new-account" style="text-decoration:none">
                   <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
                     <span style="font-size:12px;">Get Started </span>
@@ -69,7 +69,7 @@
 
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
-                    We're here to <span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
+                   Let's<span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
                   </p><br>
                 <center >
                   <router-link to="/new-account" style="text-decoration:none">
@@ -179,17 +179,14 @@
           <div class="hidden-md-and-up" style="margin-top:-90px;">
             <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
-              <center>
+              
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We provide a digital marketplace where students can buy and sell goods and services within their campus community.
-                We offer a user-friendly interface, secure transactions, and a wide range of products and services, including textbooks, electronics, clothing, and tutoring services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
-                We Design, Publicity & Marketing.ed a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.              </p>
-              <p id="txt7" class="animate__animated animate__fadeIn">
-                We give the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. 
-                Also, for users to create account and have medium to add their products and connect with the sellers.              </p>
-              </center>
+                We offer a user-friendly interface, secure transactions, and a wide range of products and services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
+                We Design, Publicity & Marketing a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.        
+             </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
-            </v-flex><br><br>
+            </v-flex><br>
 
             <v-flex sm12 xs12>
               <center>
@@ -504,13 +501,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3b.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n212.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -532,13 +529,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-10.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img10.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -560,13 +557,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img1.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img2.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -588,13 +585,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-11-1.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n35.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -616,13 +613,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-2-1.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-9.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -643,13 +640,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-3.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/n52.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -673,13 +670,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/phone.png"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/product-90.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -701,13 +698,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img3.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img9.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -729,13 +726,13 @@
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img4.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                         <v-carousel-item >
                             <v-img
                               src="../assets/images/img5.jpg"
-                              height="70px">
+                              height="80px">
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
@@ -1161,8 +1158,8 @@
         <v-container>
           <!-- DISPLAY ON LARGE DEVICE -->
           <div class="hidden-sm-and-down">
-            <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br>
-            <div>
+            <!-- <h2 id="h25" style="color:#673AB7">Our Partners</h2><br><br><br> -->
+            <!-- <div>
             <v-layout row wrap>
               <v-flex md4 lg4>
                 <center>
@@ -1182,12 +1179,12 @@
                 </center>
               </v-flex>
             </v-layout>
-          </div><br><br><br><br><br>
+          </div><br><br><br><br><br> -->
           </div>
         <!-- END DISPLAY ON LARGE DEVICE  -->
 
         <!-- DISPLAY ON SMALL DEVICES  -->
-        <div class="hidden-md-and-up" >
+        <!-- <div class="hidden-md-and-up" >
           <h2 id="h26"><span style="color:#673AB7">Our Partners.</span></h2><br><br>
             <div>
             <v-container>
@@ -1210,10 +1207,10 @@
               </center>
             </v-container>
             </div>
-        </div>
+        </div> -->
       <!-- END DISPLAY ON SMALL DEVICES -->
       </v-container>
-    </section><br>
+    </section>
     <!-- END PARTNER SECTION  -->
 
 <!-- CONTACT SECTION  -->
@@ -1342,13 +1339,13 @@ export default {
  
 }
 .rounded-circle-images2 {
-  border-radius: 50%;
+ 
   height: 80%;
   width: 80%;
   object-fit: cover;
 }
 .rounded-circle-images3 {
-  border-radius: 50%;
+  
   height: 80%;
   width: 80%;
   object-fit: cover;
