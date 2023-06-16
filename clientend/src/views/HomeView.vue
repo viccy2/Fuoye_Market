@@ -69,7 +69,7 @@
 
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
-                   Let's<span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
+                   Let's <span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
                   </p><br>
                 <center >
                   <router-link to="/new-account" style="text-decoration:none">
@@ -178,7 +178,7 @@
           <!-- DISPLAY ON SMALL DEVICES -->
           <div class="hidden-md-and-up" style="margin-top:-90px;">
             <v-flex sm12 xs12 id="">
-              <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span><br><br> Connect + <br><br> <span style="color:black">Sell.</span></h2><br>
+              <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span> Connect + <span style="color:black">Sell.</span></h2><br>
               
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We provide a digital marketplace where students can buy and sell goods and services within their campus community.
@@ -189,7 +189,7 @@
             </v-flex><br>
 
             <v-flex sm12 xs12>
-              <center>
+              
                 <v-responsive aspect-ratio="1">
                   <v-img
                     src="../assets/images/ad3.jpg" 
@@ -213,7 +213,7 @@
                 </v-img>
                 </v-responsive>
                
-              </center> 
+            
             </v-flex>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
