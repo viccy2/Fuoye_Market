@@ -187,14 +187,14 @@
              </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex><br>
-            <v-flex sm12 xs12>
-              <center>
+            <v-flex>
+              
                 <v-responsive aspect-ratio="1">
                   <v-img
                    src="../assets/images/ad3.jpg" 
                     lazy-src="../assets/images/ad3.jpg"
                     class="rounded-circle-images2"
-                    contain
+                   
                     
                     
                   >
@@ -213,7 +213,7 @@
                 </v-img>
                 </v-responsive>
                
-              </center> 
+             
             </v-flex>
             
           </div>
@@ -766,10 +766,9 @@
             <div>
               <v-layout row wrap>
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" color="" height="310" flat>
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" color="" height="250" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                     "I love using <span class="font-italic" style="color:black">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
-                     I've had great success selling on this site and plan to continue using it in the future."
+                     "I love using <span class="font-italic" style="color:black">FuoyeMarket</span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -788,10 +787,9 @@
               
 
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="250">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
-                     Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -808,9 +806,9 @@
               </v-flex>
 
               <v-flex md4 lg4>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="310">
+                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat height="250">
                   <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
-                    <span class="font-italic" style="color:black">"FuoyeMarket</span>is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
+                    <span class="font-italic" style="color:black">"FuoyeMarket</span>is a game-changer for me as a campus student 
                     It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
@@ -827,7 +825,7 @@
                 </v-card>
               </v-flex>
             </v-layout>
-          </div><br><br>
+          </div><br>
         </div> 
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
@@ -839,8 +837,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:black">"FuoyeMarket </span> is a game-changer for me as a campus student. I used to struggle to find affordable and convenient ways to sell items with my peers, but now I can easily connect with other students on this platform. 
-                    It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
+                    "<span class="font-italic" style="color:black">"FuoyeMarket </span> is a game-changer for me as a campus student. It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -860,8 +857,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "I love using <span class="font-italic" style="color:black">FuoyeMarket </span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers. Plus, I love that it's focused on the campus community, so I know that my items are being sold to other students who need them.
-                     I've had great success selling on this site and plan to continue using it in the future."
+                    "I love using <span class="font-italic" style="color:black">FuoyeMarket </span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -880,8 +876,7 @@
               <v-flex sm12 xs12>
                 <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
                   <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site. I appreciate that the platform is focused on the campus community, so I know that I'm supporting my peers when I make purchases.
-                     Overall, I highly recommend this site to other campus students who are looking for a convenient and affordable way to buy and sell items."
+                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site."
                   </v-card-text>
                   <v-card-actions>
                     <v-list-item class="grow">
@@ -890,7 +885,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Doreen (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Dora (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -1343,7 +1338,7 @@ export default {
  
   height: 80%;
   width: 100%;
-  object-fit: cover;
+ 
 }
 .rounded-circle-images3 {
   
