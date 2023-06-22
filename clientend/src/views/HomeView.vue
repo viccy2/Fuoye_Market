@@ -15,46 +15,40 @@
           <div class="head1 hidden-sm-and-down">
             <v-container>
               <v-layout row wrap>
-                <v-flex md4 lg4 >
-                  <h2 id="h21" class="animate__animated animate__bounceIn animate__slower"><span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span></h2><br>
-                  <p class="font-weight-bold text--black" style="font-size:12px;"> Let's <span style="color:#673AB7">connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. Welcome to FuoyeMarket!</p>
-                  <router-link to="/new-account" style="text-decoration:none">
-                  <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="font-size:12px;">Get Started </span>
-                    <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
-                  </v-btn>
-                  </router-link>
-                </v-flex> 
-                <v-flex md2 lg2>
-                </v-flex>
-                <v-flex md6 lg6>
-                 
-                <v-responsive aspect-ratio="1">
-                  <v-img
-                    src="../assets/images/land.jpg" 
-                    lazy-src="../assets/images/land.jpg"
-                    class="rounded-circle-images5"
-                
-                    style="margin-top:0px;"
-
-                  >
-                  <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
+                  <v-flex md4 lg4>
+                    <h2 id="h21" class="animate__animated animate__bounceIn animate__slower">
+                      <span style="color:#673AB7">Connect</span> with your choice <span style="color:#673AB7">Sellers & Buyers.</span>
+                    </h2>
+                    <br>
+                    <p class="font-weight-bold text--black" style="font-size:12px;">
+                      Join our vibrant community of <span style="color:#673AB7">Sellers and Buyers</span> in your area. Experience the power of <span style="color:#673AB7">FuoyeMarket</span>, where connections happen. <br>Welcome to <span style="color:#673AB7">FuoyeMarket</span>!
+                    </p>
+                    <router-link to="/new-account" style="text-decoration:none">
+                      <v-btn class="mt-1 text-capitalize" outlined color="#673AB7">
+                        <span style="font-size:12px;">Get Started</span>
+                        <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                      </v-btn>
+                    </router-link>
+                  </v-flex>
+                  <v-flex md2 lg2></v-flex>
+                  <v-flex md6 lg6>
+                    <v-responsive aspect-ratio="1">
+                      <v-img
+                        src="../assets/images/land.jpg"
+                        lazy-src="../assets/images/land.jpg"
+                        class="rounded-circle-images5"
+                        style="margin-top:0px;"
+                      >
+                        <template v-slot:placeholder>
+                          <v-row class="fill-height ma-0" align="center" justify="center">
+                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                           </v-row>
-                </template>
-                </v-img>
-                </v-responsive>
-            
-                </v-flex>
-              </v-layout>
+                        </template>
+                      </v-img>
+                    </v-responsive>
+                  </v-flex>
+                </v-layout>
+              
             </v-container>
           </div>
           <!-- END DISPLAY ON LARGER DEVICES -->
@@ -64,56 +58,50 @@
             <v-layout row wrap>
               <center>
                 <v-flex sm12 class="ma-3 text-center">
-                  <h2 class="text-center txt1 animate__animated animate__bounceIn animate__slower">Connect <span style="color:black">with your choice</span> Sellers & Buyers.</h2>
+                  <h2 class="text-center txt1 animate__animated animate__bounceIn animate__slower">
+                    Connect <span style="color:black">with your choice</span> Sellers & Buyers.
+                  </h2>
                 </v-flex>
 
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
-                   Let's <span style="color:#673AB7">connect</span> You with your choice <span style="color:#673AB7">Sellers & Buyers</span> around You. 
-                  </p><br>
-                <center >
-                  <router-link to="/new-account" style="text-decoration:none">
-                  <v-btn class="mt-1 text-capitalize" outlined color ="#673AB7">
-                    <span style="font-size:12px;">Get Started </span>
-                    <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
-                  </v-btn>
-                  </router-link>
+                    Join our vibrant community of <span style="color:#673AB7">Sellers and Buyers</span> in your area. Experience the power of <span style="color:#673AB7">FuoyeMarket</span>, where connections happen.
+                  </p>
+                  <center>
+                    <router-link to="/new-account" style="text-decoration:none">
+                      <v-btn class="mt-1 text-capitalize" outlined color="#673AB7">
+                        <span style="font-size:12px;">Get Started</span>
+                        <v-icon small class="pa-1" id="icon" right style="color:#673AB7">mdi-arrow-right-thick</v-icon>
+                      </v-btn>
+                    </router-link>
+                  </center>
+                </v-flex>
+                <br><br>
+              </center>
+
+              <v-flex sm12 xs12>
+                <center>
+                  <v-responsive aspect-ratio="1">
+                    <v-img
+                      src="../assets/images/land.jpg"
+                      lazy-src="../assets/images/land.jpg"
+                      class="rounded-circle-images1"
+                    >
+                      <template v-slot:placeholder>
+                        <v-row class="fill-height ma-0" align="center" justify="center">
+                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                        </v-row>
+                      </template>
+                    </v-img>
+                  </v-responsive>
                 </center>
-              </v-flex><br><br>
- 
-            </center>
-
-            <v-flex sm12 xs12>
-              <center>
-                <v-responsive aspect-ratio="1">
-                  <v-img
-                    src="../assets/images/land.jpg" 
-                    lazy-src="../assets/images/land.jpg"
-                    class="rounded-circle-images1"
-
-                  >
-                  <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                </template>
-                </v-img>
-                </v-responsive>
-               
-              </center> 
-            </v-flex>
+              </v-flex>
             </v-layout>
+          
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br>
+        </section><br><br><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -183,12 +171,12 @@
               <p id="txt7" class="animate__animated animate__fadeIn">
                 We provide a digital marketplace where students can buy and sell goods and services within their campus community.
                 We offer a user-friendly interface, secure transactions, and a wide range of products and services. Our platform facilitates a seamless buying and selling experience for students, enabling them to save time and money while also supporting the local campus economy.
-                We Design, Publicity & Marketing a platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.        
+                We Design the platform for the main pupose of connecting campus students to the sellers around them and sellers with their potential buyers.        
              </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
-            </v-flex><br>
+            </v-flex>
             <v-flex>
-              
+              <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
                    src="../assets/images/ad3.jpg" 
@@ -212,7 +200,7 @@
                 </template>
                 </v-img>
                 </v-responsive>
-               
+              </center>
              
             </v-flex>
             
@@ -835,62 +823,29 @@
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients"  flat >
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "<span class="font-italic" style="color:black">"FuoyeMarket </span> is a game-changer for me as a campus student. It's great to have a place where I can sell everything from textbooks to furniture, and I've saved so much money by using this platform!".
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-list-item class="grow">
-                      <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
+                <v-carousel height="230" hide-delimiters show-arrows-on-hover cycle>
+                <v-carousel-item v-for="item in carouselItems" :key="item.id">
+                  <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" color="" height="230" flat>
+                    <v-card-text class="font-weight-bold font-italic" style="font-size:13px;color:white">
+                      {{ item.text }}
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-list-item class="grow">
+                        <v-list-item-avatar color="grey darken-3">
+                          <v-img class="elevation-6" alt="" :src="item.avatarUrl"></v-img>
+                        </v-list-item-avatar>
+                        <v-card-text class="font-weight-bold font-italic" style="font-size:11px;color:white">
+                          {{ item.author }}
+                      </v-card-text>
                         
-                      </v-list-item-avatar>
-                      <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px;">Bola (Seller)</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-card-actions>
-                </v-card>
+                      </v-list-item>
+                    </v-card-actions>
+                  </v-card>
+                </v-carousel-item>
+              </v-carousel>
+           
               </v-flex>
-
-              <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat >
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    "I love using <span class="font-italic" style="color:black">FuoyeMarket </span> to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers."
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-list-item class="grow">
-                      <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
-                      </v-list-item-avatar>
-                      <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px"> Ayo (Seller)</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-
-              <v-flex sm12 xs12>
-                <v-card class="ma-3 animate__animated animate__fadeIn card-with-gradients" flat>
-                  <v-card-text class="font-weight-bold font-italic" style="font-size:12px;color:white">
-                    " As a campus student, I was hesitant to buy items from other students online, but <span class="font-italic" style="color:black">FuoyeMarket</span> changed my mind. The platform is secure and reliable, and I feel confident buying items from other students on the site."
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-list-item class="grow">
-                      <v-list-item-avatar color="grey darken-3">
-                        <v-img  class="elevation-6" alt=""  src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
-                        </v-img>
-                      </v-list-item-avatar>
-                      <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:white;font-size:11px">Dora (Buyer)</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
+           
             </v-layout>
           </div>
           </div>
@@ -1317,7 +1272,33 @@ export default {
   components: {HomeNavbar, Footers},
   data(){
     return{
-
+      carouselItems: [
+        {
+          id: 1,
+          text:
+            'I love using FuoyeMarket to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers.',
+          avatarUrl:
+            'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+          author: 'Bola (Seller)',
+        },
+        {
+          id: 2,
+          text:
+            'I love using FuoyeMarket to sell items to campus students. The platform is user-friendly and makes it easy to list items and communicate with potential buyers.',
+          avatarUrl:
+            'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+          author: 'Ayo (Seller)',
+        },
+        {
+          id: 3,
+          text:
+            'The platform is secure and reliable, and I feel confident buying items from other students on the site.',
+          avatarUrl:
+            'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+          author: 'Bella (Buyer)',
+        },
+        // Add more carousel items here...
+      ],
     }
   }
 }
@@ -1328,20 +1309,18 @@ export default {
 
 <style scoped>
 .rounded-circle-images1 {
-  height: 60%;
-  width: 93%;
-  
-  object-fit: cover;
- 
+  border-radius: 50%;
+  width: 85%;
+  height: 85%;
 }
 .rounded-circle-images2 {
- 
-  height: 80%;
-  width: 100%;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
  
 }
 .rounded-circle-images3 {
-  
+
   height: 80%;
   width: 100%;
   object-fit: cover;
@@ -1352,7 +1331,7 @@ export default {
   object-fit: cover;
 }
 .rounded-circle-images5 {
-  height: 50%;
+  height: 60%;
   width: 100%;
  
  
