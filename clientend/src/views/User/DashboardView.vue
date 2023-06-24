@@ -32,11 +32,11 @@
          <SideNavbar />
 
         <v-main>
-            <v-container fluid>
+          
               <!-- Dashboard page Content -->
               <DashboardContentView v-show="dashboard"/>
 
-            </v-container>
+           
             <!-- routes -->
             <router-view></router-view>
           <!-- FOOTER SECTION  -->

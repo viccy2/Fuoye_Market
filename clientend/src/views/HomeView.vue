@@ -101,7 +101,7 @@
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br><br><br>
+        </section><br><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -164,7 +164,7 @@
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
           <!-- DISPLAY ON SMALL DEVICES -->
-          <div class="hidden-md-and-up" style="margin-top:-90px;">
+          <div class="hidden-md-and-up" style="margin-top:-110px;">
             <v-flex sm12 xs12 id="">
               <h2 id="h23" class="animate__animated animate__fadeIn"><span style="color:black">Grow = </span> Connect + <span style="color:black">Sell.</span></h2><br>
               
@@ -175,7 +175,7 @@
              </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex>
-            <v-flex>
+            <v-flex><br><br>
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
@@ -265,7 +265,7 @@
           <!-- END DISPLAY ON LARGE DEVICES -->
 
           <!-- DISPLAY ON SMALL DEVICES  -->
-          <div class="hidden-md-and-up">
+          <div class="hidden-md-and-up" style="margin-top:-20px;">
             <v-flex sm12 xs12 >
               <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
               <p id="txt7">
@@ -1310,13 +1310,13 @@ export default {
 <style scoped>
 .rounded-circle-images1 {
   border-radius: 50%;
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 68%;
 }
 .rounded-circle-images2 {
   border-radius: 50%;
-  height: 90%;
-  width: 90%;
+  height: 75%;
+  width: 75%;
  
 }
 .rounded-circle-images3 {

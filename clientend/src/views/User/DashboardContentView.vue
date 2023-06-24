@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard grey lighten-5">
+    <div class="dashboard grey ">
        
         <!-- PROFILE SECTION -->
       <section>     
@@ -9,8 +9,9 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
-        
-            <v-card class="mx-auto"  flat  height="145" color="#673AB7" style="margin-top:-210px;">
+            <v-card flat style="margin-top:-210px;">
+                <v-container>
+            <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
                 
                 <v-list-item>
                     <v-list-item-avatar  height="55" width="55" color="grey darken-3">
@@ -32,6 +33,8 @@
                     </v-list-item-content>    
                 </v-list-item>
            
+            </v-card>
+        </v-container>
             </v-card>
      
         </div>
@@ -100,32 +103,35 @@
 
             <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-card flat elevation=''>
-                
-                <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Top Sellers : </v-card-title> <br>
-                    <v-row class="" style="margin-top:-40px;">
+                <v-container><p style="font-weight:bold;font-size:13px;margin-top:px;"> Top Sellers : </p></v-container> 
+                <v-card flat style="margin-top:-20px;">
+        
+                    <v-row class="" >
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
-                        class = "d-flex child-flex"
+                        class = ""
                         cols="3"
                     
                     >
                     <center>
                     
-                    <template >                                    
-                        <v-card
+                                                         
+                        <v-card flat
                         :disabled="loading"
-                        class="mx-auto grey lighten-4"
+                        class="grey lighten-4"
                         :to="{name : 'seller-page', params : { id : item.id }}"
-                        style="width:100%"
+                      
                         >
+                        
                         <v-img
                             :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"                                  
                             :lazy-src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"  
-                            aspect-ratio="1"
-                            class="grey lighten-2"
+                            
+                            class="ma-2 grey lighten-2"
+                            style="height:50px;width:100%"
                             
                         >
+                        
                         <template v-slot:placeholder>
                             <v-row
                             class="fill-height ma-0"
@@ -139,13 +145,13 @@
                             </v-row>
                         </template>
                         </v-img>
-
+                        
                         </v-card>
                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;margin-top:10px;">
                             {{item.company_name}}
                          </div>
                        
-                    </template>
+                       
                    
                     </center>
 
