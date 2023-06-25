@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard grey ">
+    <div class="dashboard grey lighten-5">
        
         <!-- PROFILE SECTION -->
       <section>     
@@ -9,8 +9,8 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
-            <v-card flat style="margin-top:-210px;">
-                <v-container>
+            <v-card flat class="white" style="margin-top:-240px;">
+                <v-container><br>
             <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
                 
                 <v-list-item>
@@ -34,10 +34,10 @@
                 </v-list-item>
            
             </v-card>
-        </v-container>
+            </v-container>
             </v-card>
      
-        </div>
+        </div><br>
          <!-- END DISPLAY ON SMALL DEVICE -->
 
         </section>
@@ -103,10 +103,10 @@
 
             <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-container><p style="font-weight:bold;font-size:13px;margin-top:px;"> Top Sellers : </p></v-container> 
-                <v-card flat style="margin-top:-20px;">
+                <v-container><p style="font-weight:bold;font-size:13px;margin-top:-20px;"> Top Sellers : </p></v-container> 
+                <v-card flat >
         
-                    <v-row class="" >
+                    <v-row class="" style="margin-top:-15px;">
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
                         class = ""
@@ -114,21 +114,20 @@
                     
                     >
                     <center>
-                    
-                                                         
+                                           
                         <v-card flat
                         :disabled="loading"
                         class="grey lighten-4"
                         :to="{name : 'seller-page', params : { id : item.id }}"
-                      
+                        style="width:100%;"
                         >
                         
                         <v-img
                             :src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"                                  
                             :lazy-src="`https://fuoyemarket.intellicsolutions.org/company_images/${item.company_logo}`"  
                             
-                            class="ma-2 grey lighten-2"
-                            style="height:50px;width:100%"
+                            class="pa-1 grey lighten-2"
+                            style="height:50px;width:100%;"
                             
                         >
                         
@@ -147,6 +146,7 @@
                         </v-img>
                         
                         </v-card>
+                      
                         <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;margin-top:10px;">
                             {{item.company_name}}
                          </div>
@@ -158,8 +158,8 @@
                 </v-col>
                 </v-row>
             
-            </v-card><br>
-            </div>
+            </v-card>
+            </div><br>
         <!-- END DISPLAY ON SMALL DEVICE -->
                 
         </div>
@@ -169,11 +169,9 @@
  <!-- POPULAR CATEGORY SECTION -->
 
  <div class="featured-products">
-                <v-card flat elevation=''>
-                   
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:0px;"> Popular Category : </v-card-title>
-                
-
+    <v-container><p style="font-weight:bold;font-size:13px;margin-top:-10px;"> Popular Category : </p></v-container>
+        <v-card flat elevation=''>
+   
         <!-- DISPLAY ON LARGE DEVICE -->
             <div class="hidden-sm-and-down">
                 <v-row class="pa-2">
@@ -208,7 +206,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2" style="margin-top:-40px;">
+                <v-row class="pa-2" style="margin-top:-15px;">
                     <v-col 
                         v-for="(item, i) in category" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
@@ -321,10 +319,8 @@
  <!-- NEW PRODUCTS SECTION -->
 
  <div class="featured-products">
-                <v-card flat elevation=''>
-                    
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-10px;"> New Products : </v-card-title>
-                
+    <v-container><p style="font-weight:bold;font-size:13px;margin-top:-0px;"> New Products : </p></v-container>
+    <v-card flat elevation=''>
 
         <!-- DISPLAY ON LARGE DEVICE -->
             <div class="hidden-sm-and-down">
@@ -392,7 +388,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2" style="margin-top:-20px;">
+                <v-row class="pa-2" style="margin-top:-15px;">
                     <v-col 
                         v-for="(product, i) in newProducts" :key="i" :to="product.to" router
                         class = "d-flex child-flex"
@@ -446,9 +442,9 @@
                                 
                        
                     </v-col>
-                </v-row><br>
+                </v-row>
              
-            </div>
+            </div><br>
         <!-- END DISPLAY ON SMALL DEVICE -->
                
            
@@ -458,16 +454,17 @@
     
         <!-- NEW SELLER SECTION -->
         <div class="new-sellers">
-            <v-card flat class="rounded-lg" elevation=''>
-                
-                    <v-card-title style="font-weight:bold;font-size:13px;margin-top:-10px;"> New sellers : </v-card-title>
-                    <v-row class="pa-2">
+            <v-container><p style="font-weight:bold;font-size:13px;margin-top:-0px;"> New Sellers : </p></v-container>
+            <v-card flat elevation='' style=" border-radius: 0; border: none; box-shadow: none;">
+
+                    <v-row class="pa-2" style="margin-top:-15px;">
                         <v-col 
                             v-for="(item, i) in newseller" :key="i" :to="item.to" router
-                            class = "d-flex child-flex"
+                            class = ""
                             cols="12"
                         >
-                            <v-card flat class=" " >
+                        <template>
+                            <v-card flat  >
                                     <v-layout row wrap>
                                         <v-flex lg2 md2 sm2 xs2>
                                             <v-list-item three-line style="margin-top:-10px">
@@ -492,6 +489,7 @@
                                         </v-flex>
                                     </v-layout>
                             </v-card>
+                        </template>
                         </v-col>
                     </v-row>
                             
@@ -621,5 +619,9 @@ export default {
 </script>
 
 <style scoped>
-
+.v-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
 </style>

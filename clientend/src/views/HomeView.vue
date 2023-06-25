@@ -96,12 +96,12 @@
                   </v-responsive>
                 </center>
               </v-flex>
-            </v-layout>
+            </v-layout><br>
           
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br><br>
+        </section><br><br><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -202,7 +202,7 @@
                 </v-responsive>
               </center>
              
-            </v-flex>
+            </v-flex><br><br>
             
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -302,7 +302,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex>
+            </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
@@ -737,7 +737,7 @@
 
               </v-container>
 
-            </div>
+            </div><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
         </v-container>
@@ -819,7 +819,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
-          <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br>
+          <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
               <v-flex sm12 xs12>
@@ -847,7 +847,7 @@
               </v-flex>
            
             </v-layout>
-          </div>
+          </div><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICE  -->
         </v-container>
@@ -1095,7 +1095,7 @@
             </v-layout>
               </center>
            
-            </div>
+            </div><br><br>
         </div>
         <!-- END DISPLAY ON SMALL DEVICE -->
           

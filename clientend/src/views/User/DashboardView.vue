@@ -32,9 +32,10 @@
          <SideNavbar />
 
         <v-main>
-          
+          <v-container >
               <!-- Dashboard page Content -->
               <DashboardContentView v-show="dashboard"/>
+              </v-container>
 
            
             <!-- routes -->
