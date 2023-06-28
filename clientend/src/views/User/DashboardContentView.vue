@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard grey lighten-4">
+    <div class="dashboard grey lighten-3">
        
         <!-- PROFILE SECTION -->
       <section>     
