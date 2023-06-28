@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard grey lighten-5">
+    <div class="dashboard grey lighten-4">
        
         <!-- PROFILE SECTION -->
       <section>     
@@ -9,7 +9,7 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
-            <v-card flat class="white" style="margin-top:-240px;">
+            <v-card flat class="grey lighten-5" style="margin-top:-240px;">
                 <v-container><br>
             <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
                 
@@ -48,9 +48,10 @@
         <div class="top-seller">
         <!-- DISPLAY ON LARGEDEVICE -->
             <div class="hidden-sm-and-down">
-                <v-card flat elevation='' style="margin-top:-220px;">
+                <v-container  style="margin-top:-220px;"><p style="font-weight:bold;font-size:13px;margin-top:-20px;"> Top Sellers : </p></v-container> 
+                <v-card flat elevation='' >
                     <v-container fluid>
-                        <v-card-title style="font-weight:bold;font-size:13px;"> Top Sellers : </v-card-title>  
+                         
                         <v-row class="" style="margin-top:0px;">
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
@@ -147,7 +148,7 @@
                         
                         </v-card>
                       
-                        <div class="items text-capitalize" style="font-size:10px;line-height: 1.2;margin-top:10px;">
+                        <div class="items text-capitalize" style="font-size:11px;line-height: 1.2;margin-top:10px;">
                             {{item.company_name}}
                          </div>
                        
