@@ -107,7 +107,7 @@
                 <v-container><p style="font-weight:bold;font-size:14px;margin-top:-20px;"> Top Sellers : </p></v-container> 
                 <v-card flat >
         
-                    <v-row class="" style="margin-top:-5px;">
+                    <v-row class="" style="margin-top:-15px;">
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
                         class = ""
@@ -207,7 +207,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2" style="margin-top:-5px;">
+                <v-row class="pa-2" style="margin-top:-13px;">
                     <v-col 
                         v-for="(item, i) in category" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
@@ -389,7 +389,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2" style="margin-top:-5px;">
+                <v-row class="pa-2" style="margin-top:-13px;">
                     <v-col 
                         v-for="(product, i) in newProducts" :key="i" :to="product.to" router
                         class = "d-flex child-flex"
@@ -458,7 +458,7 @@
             <v-container><p style="font-weight:bold;font-size:15px;margin-top:-0px;"> New Sellers : </p></v-container>
             <v-card flat elevation='' style=" border-radius: 0; border: none; box-shadow: none;">
 
-                    <v-row class="pa-2" style="margin-top:-10px;">
+                    <v-row class="pa-2" style="margin-top:-13px;">
                         <v-col 
                             v-for="(item, i) in newseller" :key="i" :to="item.to" router
                             class = ""
