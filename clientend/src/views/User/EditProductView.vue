@@ -113,8 +113,15 @@
 
                 if(this.$refs.form.validate()){
                     const response =  await API.editProduct(formData);
-                    this.successMessage = response.msg;
-                    // console.log(response);
+                    if(response.msg=='product  successfully updated'){
+                        this.successMessage = response.msg;
+                        setTimeout(function(){
+                        window.location.href = 'market-product';
+                        },3000);
+                    }
+                    else{
+                         console.log(response.msg);
+                    }
                 
                 }
       }

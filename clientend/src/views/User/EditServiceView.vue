@@ -86,7 +86,9 @@
         const response = await API.getSeller();
         this.seller = response.msg;
         const response2 = await API.getCategory();
+        const response3 = await API.productDetails(this.$route.params.id);
         this.services = response2.data.filter(product => product.type === 'Service');
+        this.newService = response3.data;
     },
     methods: {
      
@@ -104,11 +106,11 @@
 
                 if(this.$refs.form.validate()){
               
-                    const response =  await API.createService(formData);
-                    if(response.msg=='product  successfully created'){
+                    const response =  await API.editProduct(formData);
+                    if(response.msg=='product  successfully updated'){
                         this.successMessage = response.msg;
                         setTimeout(function(){
-                        window.location.href = 'edit-service';
+                        window.location.href = 'market-service';
                         },3000);
                     }
                     else{

@@ -48,7 +48,7 @@
         <div class="top-seller">
         <!-- DISPLAY ON LARGEDEVICE -->
             <div class="hidden-sm-and-down">
-                <v-container  style="margin-top:-220px;"><p style="font-weight:bold;font-size:13px;margin-top:-20px;"> Top Sellers : </p></v-container> 
+                <v-container  style="margin-top:-220px;"><p style="font-weight:bold;font-size:13px;margin-top:-23px;"> Top Sellers : </p></v-container> 
                 <v-card flat elevation='' >
                     <v-container fluid>
                          
@@ -104,7 +104,7 @@
 
             <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-container><p style="font-weight:bold;font-size:14px;margin-top:-20px;"> Top Sellers : </p></v-container> 
+                <v-container><p style="font-weight:bold;font-size:12px;margin-top:-20px;"> Top Sellers : </p></v-container> 
                 <v-card flat >
         
                     <v-row class="" style="margin-top:-15px;">
@@ -170,12 +170,14 @@
  <!-- POPULAR CATEGORY SECTION -->
 
  <div class="featured-products">
-    <v-container><p style="font-weight:bold;font-size:14px;margin-top:-0px;"> Popular Category : </p></v-container>
+    <v-container class="hidden-sm-and-down"><p style="font-weight:bold;font-size:12px;margin-top:-15px;"> Popular Category : </p></v-container>
+    <v-container class="hidden-md-and-up"><p style="font-weight:bold;font-size:12px;margin-top:-10px;"> Popular Category : </p></v-container>
+
         <v-card flat elevation=''>
    
         <!-- DISPLAY ON LARGE DEVICE -->
             <div class="hidden-sm-and-down">
-                <v-row class="pa-2">
+                <v-row class="pa-2" style="margin-top:-20px;">
                     <v-col 
                         v-for="(item, i) in category" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
@@ -192,7 +194,7 @@
                                 height="200px"
                                 ></v-img>
 
-                                <v-card-title style="font-size:14px;">
+                                <v-card-title style="font-size:12px;">
                                     {{item.title}}
                                 </v-card-title>
 
@@ -269,7 +271,7 @@
                                 height="200px"
                                 ></v-img>
 
-                                <v-card-title style="font-size:14px;">
+                                <v-card-title style="font-size:12px;">
                                     {{item.title}}
                                 </v-card-title>
 
@@ -320,7 +322,7 @@
  <!-- NEW PRODUCTS SECTION -->
 
  <div class="featured-products">
-    <v-container><p style="font-weight:bold;font-size:14px;margin-top:-0px;"> New Products : </p></v-container>
+    <v-container><p style="font-weight:bold;font-size:12px;margin-top:-0px;"> New Products : </p></v-container>
     <v-card flat elevation=''>
 
         <!-- DISPLAY ON LARGE DEVICE -->
@@ -455,7 +457,7 @@
     
         <!-- NEW SELLER SECTION -->
         <div class="new-sellers">
-            <v-container><p style="font-weight:bold;font-size:15px;margin-top:-0px;"> New Sellers : </p></v-container>
+            <v-container><p style="font-weight:bold;font-size:12px;margin-top:-0px;"> New Sellers : </p></v-container>
             <v-card flat elevation='' style=" border-radius: 0; border: none; box-shadow: none;">
 
                     <v-row class="pa-2" style="margin-top:-13px;">

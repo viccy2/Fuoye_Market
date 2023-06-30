@@ -15,7 +15,7 @@
                                 
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
+                                <v-btn :to="{ name: 'edit-service', params: { id : post.id }}" style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
@@ -38,7 +38,7 @@
                         </p>
                     </v-card-text><br>
                     
-                    <center> <v-btn small outlined color ="red" style="width:100%;">Delete</v-btn></center>
+                    <center> <v-btn small outlined color ="red" style="width:100%;" @click="Delete()">Delete</v-btn></center>
 
                 </v-card><br><br>
             </v-col>
@@ -52,13 +52,13 @@
                     <center>
                         <img :src="`https://fuoyemarket.intellicsolutions.org/images/${post.image_link}`"  style="width:100%;"> 
                     </center>
-                    <v-card-actions class="pb-0" style="margin-top:-150px;">
+                    <v-card-actions class="pb-0" style="margin-top:px;">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
                           
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
+                                <v-btn :to="{ name: 'edit-service', params: { id : post.id }}" style="background-color:#673AB7;color:white"  tile>Edit</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
@@ -79,7 +79,7 @@
                         <p class="font-weight-bold ">
                             Location : {{ post.location }} 
                         </p><br>
-                       <center> <v-btn small outlined color ="red" style="width:100%;">Delete</v-btn></center>
+                       <center> <v-btn small outlined color ="red" style="width:100%;" @click="Delete()">Delete</v-btn></center>
                     </v-card-text>
                     
                 </v-card><br><br>
@@ -117,6 +117,24 @@ export default {
         }
         
     },
+    methods:{
+       async Delete(){
+            try {
+                const formData = new FormData();
+                formData.append("product_id",     this.$route.params.id);
+                formData.append("token",          this.seller.token);
+                const response = await API.deleteProduct(formData);
+                // console.log(response)
+                this.successMessage = response.msg;
+            
+            
+        }
+        catch(err){
+            console.log(err)
+        }
+        }
+    }
+    
     
 }
 </script>
