@@ -49,7 +49,7 @@
                   </v-flex>
                 </v-layout>
               
-            </v-container>
+            </v-container><br><br>
           </div>
           <!-- END DISPLAY ON LARGER DEVICES -->
 
@@ -159,7 +159,7 @@
                 </v-flex>
 
               </v-layout>
-            </v-container><br><br>
+            </v-container><br><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
@@ -302,7 +302,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex><br><br>
+            </v-flex><br><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
@@ -468,7 +468,7 @@
               </v-flex>
 
             </v-layout>
-          </div>
+          </div><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICE -->
 
@@ -813,7 +813,7 @@
                 </v-card>
               </v-flex>
             </v-layout>
-          </div><br>
+          </div><br><br><br><br>
         </div> 
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 

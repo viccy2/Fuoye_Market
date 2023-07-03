@@ -46,10 +46,11 @@
                                 </v-text-field>
 
                                 <v-select prepend-icon="mdi-account-group-outline" class="small"
-                                :rules="[rules.required]"
-                                v-model="post.type"  color="#673AB7"
-                                label="Account type" :items="account">
+                                :rules="[rules.required]" color="#673AB7"  
+                                v-model="post.type" 
+                                label="Account type" :items="account"  @change="handleOptionChange">
                                 </v-select>
+
                                 <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase" :rules="[rules.required]" v-model="post.company_name" color="#673AB7"></v-text-field>
                                 <v-file-input
                                     class="small"
@@ -144,6 +145,7 @@
                                 v-model="post.type" 
                                 label="Account type" :items="account"  @change="handleOptionChange">
                                 </v-select>
+                                
                                 <v-text-field v-show="selectedOption" class="small" label="Company's name" prepend-icon="mdi-briefcase"  v-model="post.company_name" color="#673AB7"></v-text-field>
                                 <v-file-input
                                     class="small"
