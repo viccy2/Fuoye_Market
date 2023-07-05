@@ -10,7 +10,7 @@
 
          <!-- DISPLAY ON SMALL DEVICE -->
         <div class="hidden-md-and-up">
-            <v-card flat class="grey lighten-4" style="margin-top:-240px;">
+            <v-card flat class="grey lighten-5" style="margin-top:-240px;">
                 <v-container><br>
             <v-card class="mx-auto"  flat  height="145" color="#673AB7" >
                 
@@ -47,7 +47,7 @@
             
         <!-- TOP SELLER SECTION -->
         <div class="top-seller">
-            <v-container><p style="font-weight:bold;font-size:11px;margin-top:-26px;"> Top Sellers : </p></v-container>
+            <v-container><p style="font-weight:bold;font-size:11px;margin-top:-23px;color:grey" class="text-uppercase"> Top Sellers : </p></v-container>
             <v-card flat elevation=''>
         <!-- DISPLAY ON LARGEDEVICE -->
                     <div class="hidden-sm-and-down" style="margin-top:-11px;">
@@ -108,7 +108,7 @@
             
                 <v-card flat >
         
-                    <v-row class="" style="margin-top:-10px;">
+                    <v-row class="" style="margin-top:-13px;">
                     <v-col 
                         v-for="(item, index) in topseller" :key="index"
                         class = ""
@@ -170,7 +170,7 @@
 
  <!-- POPULAR CATEGORY SECTION -->
  <div class="popular-category">
-    <v-container><p style="font-weight:bold;font-size:11px;margin-top:-0px;"> Top Categories : </p></v-container>
+    <v-container><p style="font-weight:bold;font-size:11px;margin-top:1px;color:grey" class="text-uppercase"> Top Categories : </p></v-container>
     <v-card flat elevation=''>
    
         <!-- DISPLAY ON LARGE DEVICE -->
@@ -207,7 +207,7 @@
 
         <!-- DISPLAY ON SMALL DEVICE -->
             <div class="hidden-md-and-up">
-                <v-row class="pa-2" style="margin-top:-10px;">
+                <v-row class="pa-2" style="margin-top:-11px;">
                     <v-col 
                         v-for="(item, i) in category" :key="i" :to="item.to" router
                         class = "d-flex child-flex"
@@ -320,7 +320,7 @@
  <!-- NEW PRODUCTS SECTION -->
 
  <div class="new-products">
-    <v-container><p style="font-weight:bold;font-size:11px;margin-top:-0px;"> New Products : </p></v-container>
+    <v-container><p style="font-weight:bold;font-size:11px;margin-top:-0px;color:grey" class="text-uppercase"> New Products : </p></v-container>
     <v-card flat elevation=''>
 
         <!-- DISPLAY ON LARGE DEVICE -->
@@ -455,7 +455,7 @@
     
         <!-- NEW SELLER SECTION -->
         <div class="new-sellers">
-            <v-container><p style="font-weight:bold;font-size:11px;margin-top:-0px;"> New Sellers : </p></v-container>
+            <v-container><p style="font-weight:bold;font-size:11px;margin-top:-0px;color:grey" class="text-uppercase"> New Sellers : </p></v-container>
             <v-card flat elevation='' style=" border-radius: 0; border: none; box-shadow: none;">
 
                     <v-row class="pa-2" style="margin-top:-13px;">
