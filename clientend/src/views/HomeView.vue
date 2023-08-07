@@ -473,7 +473,7 @@
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
-          <div class="hidden-md-and-up"><br>
+          <div class="hidden-md-and-up">
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
 
@@ -500,7 +500,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Computing.
                         </v-card-title>
                     </v-card>
@@ -528,7 +528,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Electronics.
                         </v-card-title>
                     </v-card>
@@ -556,7 +556,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Gaming.
                         </v-card-title>
                     </v-card>
@@ -584,7 +584,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Fashion.
                         </v-card-title>
                     </v-card>
@@ -612,7 +612,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                          Shoes.
                         </v-card-title>
                     </v-card>
@@ -639,7 +639,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Home/Office
                         </v-card-title>
                     </v-card>
@@ -669,7 +669,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                           Smart device.
                         </v-card-title>
                     </v-card>
@@ -697,7 +697,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                            Appliance.
                         </v-card-title>
                     </v-card>
@@ -725,7 +725,7 @@
                             </v-img>
                         </v-carousel-item>
                       </v-carousel>
-                      <v-card-title style="font-size:10px;color:#673AB7;">
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
                          Grocery.
                         </v-card-title>
                     </v-card>
@@ -737,7 +737,7 @@
 
               </v-container>
 
-            </div><br><br>
+            </div><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
         </v-container>
@@ -749,7 +749,7 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICES  -->
-          <div class="hidden-sm-and-down"><br><br>
+          <!-- <div class="hidden-sm-and-down"><br><br>
             <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
@@ -765,7 +765,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Bola (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7; font-size:11px">Bola (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -786,7 +786,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Doreen (Buyer)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7; font-size:11px">Doreen (Buyer)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-card-actions>
@@ -806,7 +806,7 @@
                         </v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-italic" style="color:#673AB7;font-size:11px">Ayo (Seller)</v-list-item-title>
+                        <v-list-item-title class="font-italic" style="color:#673AB7; font-size:11px">Ayo (Seller)</v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                     </v-card-actions>
@@ -814,11 +814,11 @@
               </v-flex>
             </v-layout>
           </div><br><br><br><br>
-        </div> 
+        </div>  -->
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
         <!-- DISPLAY ON SMALL DEVICE -->
-        <div class="hidden-md-and-up">
+        <!-- <div class="hidden-md-and-up">
           <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
@@ -848,10 +848,10 @@
            
             </v-layout>
           </div><br><br>
-          </div>
+          </div> -->
           <!-- END DISPLAY ON SMALL DEVICE  -->
         </v-container>
-      </section><br><br><br>
+      </section>
       <!-- END CATEGORY SECTION  -->
 
       <!-- TEAM SECTION  -->
@@ -1312,11 +1312,13 @@ export default {
   border-radius: 50%;
   width: 70%;
   height: 68%;
+  object-fit: cover;
 }
 .rounded-circle-images2 {
   border-radius: 50%;
   height: 75%;
   width: 75%;
+  object-fit: cover;
  
 }
 .rounded-circle-images3 {
@@ -1340,13 +1342,13 @@ export default {
   color:black;font-weight:bold;font-size:32px;line-height:1.2;
 }
 #h22{
-  color:#673AB7;font-weight:bold;font-size:25px;line-height:1.2;
+  color:#673AB7; font-weight:bold;font-size:25px;line-height:1.2;
 }
 #h23{
-  color:#673AB7;font-weight:bold;font-size:25px;line-height:0.7;text-align:center;
+  color:#673AB7; font-weight:bold;font-size:25px;line-height:0.7;text-align:center;
 }
 #h24{
-  color:#673AB7;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
+  color:#673AB7; font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
 }
 #h25{
  color:black;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
@@ -1355,10 +1357,10 @@ export default {
   color:black;font-weight:bold;font-size:25px;line-height:1.5;text-align:center;
 }
 #h27{
-  color:#673AB7;font-size:18px;
+  color:#673AB7; font-size:18px;
 }
 #btn1{
-  background:#673AB7;color:white;
+  background:#673AB7; color:white;
 }
 .img1{
   width:100%;height:400px;margin-top:-80px;
@@ -1383,13 +1385,13 @@ height:100%;
 height:45px;
 }
 .txt1{
-  color:#673AB7;font-weight:bold;font-size:30px;line-height:1.5;
+  color:#673AB7; font-weight:bold;font-size:30px;line-height:1.5;
 }
 .txt2{
   font-size:13px;font-weight:500;
 }
 #txt3{
-  color:#673AB7; font-size:13px;font-weight:bold;
+  color:#673AB7;  font-size:13px;font-weight:bold;
 }
 #txt4{
 color:white; font-size:10px;font-weight:bold;
@@ -1398,16 +1400,16 @@ color:white; font-size:10px;font-weight:bold;
   font-size:13px;font-weight:normal;
 }
 #txt6{
-  text-decoration:underline;font-size:13px;font-weight:bold;color:#673AB7;
+  text-decoration:underline;font-size:13px;font-weight:bold;color:#673AB7; 
 }
 #txt7{
   font-size:12px;font-weight:normal;
 }
 #txt8{
-  text-decoration:underline;font-size:11px;font-weight:bold;color:#673AB7;text-align: center;
+  text-decoration:underline;font-size:11px;font-weight:bold;color:#673AB7; text-align: center;
 }
 #txt9{
-  text-decoration:underline;font-size:15px;font-weight:bold;color:#673AB7;text-align: center;
+  text-decoration:underline;font-size:15px;font-weight:bold;color:#673AB7; text-align: center;
 }
 .head1{
   margin-top:200px;
@@ -1422,9 +1424,9 @@ color:white; font-size:10px;font-weight:bold;
   font-size:12px; margin-top:-10px;
 }
 #icon{
-  color:#673AB7;
+  color:#673AB7; 
 }
 .card-with-gradients {
-  background-image: linear-gradient(135deg, #673AB7 0%, #673AB7 20%);
+  background-image: linear-gradient(135deg, green 0%, green 20%);
 }
 </style>

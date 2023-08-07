@@ -153,7 +153,7 @@ const routes = [
 {
   path: '/market-service',
   name: 'market-service',
-  component: () => import(/* webpackChunkName: "market-service */ '../views/User/MarketServiceView.vue'),
+  component: () => import(/* webpackChunkName: "market-service" */ '../views/User/MarketServiceView.vue'),
   props: true,
   beforeEnter: requireAuth
 },
