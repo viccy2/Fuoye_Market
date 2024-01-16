@@ -50,7 +50,7 @@
                 <div><br>
                     <v-row>
                             <v-col sm="3">  
-                                <a :href="`https://wa.me/${posts.whatsapp}`"  style="text-decoration:none;color: #673AB7;">
+                                <a @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I need your service.')"  style="text-decoration:none;color: #673AB7;">
                                 <v-btn fab  small color='grey lighten-5 ma-2'>
                                     <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
                                 </v-btn></a>
@@ -122,7 +122,7 @@
                 <div><br>
                     <v-row>
                             <v-col sm="3">  
-                                <a :href="`https://wa.me/${posts.whatsapp}`"  style="text-decoration:none;color: #673AB7;">
+                                <a @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I need your service.')"  style="text-decoration:none;color: #673AB7;">
                                 <v-btn fab  small color='grey lighten-5 ma-2'>
                                     <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
                                 </v-btn></a>
@@ -328,6 +328,20 @@ export default {
             console.log(err)
         }
    },
+   methods:{
+       sendWhatsAppMessage(phoneNumber, message) {
+            //alert(phoneNumber);
+            //alert(message);
+            // Replace 'YOUR_MESSAGE' with the content you want to send
+            var messages = encodeURIComponent(message);
+            //alert(messages);
+            // Construct the WhatsApp URL with the phone number and message
+            var url = 'https://wa.me/' + phoneNumber + '?text=' + messages;
 
+            // Open the WhatsApp URL in a new tab
+            window.open(url, '_blank');
+        }
+  
+    }
 }
 </script>
