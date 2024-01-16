@@ -15,7 +15,7 @@
                                 <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :href="`https://wa.me/${contact}`"  style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn @click="sendWhatsAppMessage(`${contact}`, 'Hello, I want to purchase a product.')"  style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
@@ -58,7 +58,7 @@
                                 <v-btn small outlined color ="#673AB7"> #{{ post.price }}</v-btn>
                             </v-col>
                             <v-col sm="10" class="d-flex justify-end">
-                                <v-btn  :href="`https://wa.me/${contact}`" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
+                                <v-btn  @click="sendWhatsAppMessage(`${contact}`, 'Hello, I want to purchase a product.')" style="background-color:#673AB7;color:white"  tile>Connect</v-btn>
                             </v-col>
                         </v-row>
                     </v-card-actions>
@@ -120,7 +120,21 @@ export default {
         }
         
     },
-    
+    methods: {
+       sendWhatsAppMessage(phoneNumber, message) {
+            // alert(phoneNumber);
+            // alert(message);
+            // Replace 'YOUR_MESSAGE' with the content you want to send
+            var messages = encodeURIComponent(message);
+            //alert(messages);
+            // Construct the WhatsApp URL with the phone number and message
+            var url = 'https://wa.me/' + phoneNumber + '?text=' + messages;
+
+            // Open the WhatsApp URL in a new tab
+            window.open(url, '_blank');
+        }
+  
+    }
 
     // mounted(){
     //     const id = this.$route.params.id;

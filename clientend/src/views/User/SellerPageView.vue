@@ -21,7 +21,7 @@
                                 <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
                                     {{username}}
                                 </div><br>
-                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7" :href="`https://wa.me/${post.whatsapp}`">Message</v-btn>
+                                <v-btn class="text-capitalize" small  outlined style="color: #673AB7" @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I want to purchase a product.')">Message</v-btn>
                             </v-col>
                         </v-row>
                         
@@ -50,7 +50,7 @@
                 <div class="container"><br>
                     <v-row >
                             <v-col md="3">  
-                                <a :href="`https://wa.me/${post.whatsapp}`"  style="text-decoration:none">
+                                <a @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I want to purchase a product.')"  style="text-decoration:none">
                                 <v-btn fab  small color='grey lighten-5 ma-2'>
                                     <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
                                 </v-btn></a>
@@ -96,7 +96,7 @@
                                     <div class="items text-capitalize font-weight-bold" style="font-size:12px;color:#673AB7;">
                                         {{username}}
                                     </div><br>
-                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7" :href="`https://wa.me/${post.whatsapp}`">Message</v-btn>
+                                    <v-btn class="text-capitalize" small  outlined style="color: #673AB7" @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I want to purchase a product.')">Message</v-btn>
                                 </v-col>
                             </v-row>
                             
@@ -126,7 +126,7 @@
                 <div><br>
                     <v-row>
                             <v-col sm="3">  
-                                <a :href="`https://wa.me/${post.whatsapp}`"  style="text-decoration:none">
+                                <a @click="sendWhatsAppMessage(`${post.whatsapp}`, 'Hello, I want to purchase a product.')"  style="text-decoration:none">
                                 <v-btn fab  small color='grey lighten-5 ma-2'>
                                     <v-icon small class="pa-3" id="icon"> mdi-whatsapp </v-icon>
                                 </v-btn></a>
@@ -479,6 +479,21 @@ export default {
             console.log(err)
         }
    },
+   methods:{
+       sendWhatsAppMessage(phoneNumber, message) {
+            //alert(phoneNumber);
+            //alert(message);
+            // Replace 'YOUR_MESSAGE' with the content you want to send
+            var messages = encodeURIComponent(message);
+            //alert(messages);
+            // Construct the WhatsApp URL with the phone number and message
+            var url = 'https://wa.me/' + phoneNumber + '?text=' + messages;
+
+            // Open the WhatsApp URL in a new tab
+            window.open(url, '_blank');
+        }
+  
+    }
 
 }
 </script>

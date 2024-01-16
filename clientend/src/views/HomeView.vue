@@ -373,6 +373,7 @@
           <!-- END DISPLAY ON LARGE DEVICE -->
 
           <!-- DISPLAY ON SMALL DEVICE -->
+          
           <div class="hidden-md-and-up">
             <h2 id="h26">Explore <span style="color:#673AB7">Popular Categories.</span></h2><br>
             <div>
