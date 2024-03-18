@@ -66,7 +66,7 @@
                 <v-flex sm12>
                   <p class="ma-3 text-center txt2 text--black">
                     Join our vibrant community of <span style="color:#673AB7">Sellers and Buyers</span> in your area. Experience the power of <span style="color:#673AB7">FuoyeMarket</span>, where connections happen.
-                  </p>
+                  </p><br>
                   <center>
                     <router-link to="/new-account" style="text-decoration:none">
                       <v-btn class="mt-1 text-capitalize" outlined color="#673AB7">
@@ -76,27 +76,38 @@
                     </router-link>
                   </center>
                 </v-flex>
-                <br><br>
+                
               </center>
 
               <v-flex sm12 xs12>
-                <center>
-                  <v-responsive aspect-ratio="1">
-                    <v-img
-                      src="../assets/images/land.jpg"
-                      lazy-src="../assets/images/land.jpg"
-                      class="rounded-circle-images1"
-                    >
-                      <template v-slot:placeholder>
-                        <v-row class="fill-height ma-0" align="center" justify="center">
-                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                        </v-row>
-                      </template>
-                    </v-img>
-                  </v-responsive>
-                </center>
-              </v-flex>
-            </v-layout><br>
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad2.jpg" 
+                    lazy-src="../assets/images/ad2.jpg"
+                    class="rounded-circle-images"
+                    contain
+                    
+                    
+                  >
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
+            </v-flex>
+            </v-layout><br><br><br>
           
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -211,6 +222,105 @@
       </section>
     <!-- END GROWTH SECTION  -->
 
+
+      <!-- ACCESS SECTION  -->
+      <section>
+        <v-container >
+
+          <!-- DISPLAY ON LARGE DEVICES, -->
+          <div class="hidden-sm-and-down" >
+            <v-layout row wrap>
+              <v-flex md5 lg5>
+                <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad2.jpg" 
+                    lazy-src="../assets/images/ad2.jpg"
+                    class="rounded-circle-images"
+                    contain
+                    rounded-circle
+                    style="margin-top:-100px;"
+                  >
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
+              </v-flex>
+              <v-flex md2 lg2>
+
+              </v-flex>
+              <v-flex md5 lg5 >
+                  <h2 id="h22"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
+                  <p id="txt5">
+                    We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
+                    We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
+                    Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+                  </p>
+                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
+              </v-flex>
+      
+              </v-layout>
+          </div>
+          <!-- END DISPLAY ON LARGE DEVICES -->
+
+          <!-- DISPLAY ON SMALL DEVICES  -->
+          <div class="hidden-md-and-up" style="margin-top:-20px;">
+            <v-flex sm12 xs12 >
+              <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
+              <p id="txt7">
+                We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
+                We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
+                <br><br>Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
+              </p>
+            </v-flex>
+
+            <v-flex sm12 xs12>
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/ad1.jpg" 
+                    lazy-src="../assets/images/ad1.jpg"
+                    class="rounded-circle-images"
+                    contain
+                    
+                    
+                  >
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
+            </v-flex><br><br><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES  -->
+
+        </v-container>
+      </section>
+
+      <!-- END ACCESS SECTION  -->
     
       <!-- CATEGORIES SECTION  -->
       <section>
@@ -638,110 +748,13 @@
 
               </v-container>
 
-            </div><br>
+            </div>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
         </v-container>
       </section><br><br><br>
 
-    <!-- ACCESS SECTION  -->
-      <section>
-        <v-container >
-
-          <!-- DISPLAY ON LARGE DEVICES, -->
-          <div class="hidden-sm-and-down" >
-            <v-layout row wrap>
-              <v-flex md5 lg5>
-                <center>
-                <v-responsive aspect-ratio="1">
-                  <v-img
-                    src="../assets/images/ad2.jpg" 
-                    lazy-src="../assets/images/ad2.jpg"
-                    class="rounded-circle-images"
-                    contain
-                    rounded-circle
-                    style="margin-top:-100px;"
-                  >
-                  <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                </template>
-                </v-img>
-                </v-responsive>
-               
-              </center> 
-              </v-flex>
-              <v-flex md2 lg2>
-
-              </v-flex>
-              <v-flex md5 lg5 >
-                  <h2 id="h22"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business</span>.</h2><br>
-                  <p id="txt5">
-                    We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
-                    We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
-                    Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
-                  </p>
-                  <router-link to="/dashboard" style="text-decoration:none"><p id="txt6">Create account with us ></p></router-link>
-              </v-flex>
-      
-              </v-layout>
-          </div>
-          <!-- END DISPLAY ON LARGE DEVICES -->
-
-          <!-- DISPLAY ON SMALL DEVICES  -->
-          <div class="hidden-md-and-up" style="margin-top:-20px;">
-            <v-flex sm12 xs12 >
-              <h2 id="h24"><span style="color:black">Get access to the</span> Best Sellers <span style="color:black">in the business.</span></h2><br>
-              <p id="txt7">
-                We offer access to the best sellers in the local community. Our platform provides a reliable and secure marketplace where buyers can easily find and purchase high-quality products and services from trusted sellers within the campus.
-                We curate our seller list to ensure that only the best vendors are featured on our platform, allowing students to shop with confidence and get access to the best deals and offerings available.
-                <br><br>Search for the best sellers on FuoyeMarket, get the access to sellers around you for your needed products...
-              </p>
-            </v-flex>
-
-            <v-flex sm12 xs12>
-              <center>
-                <v-responsive aspect-ratio="1">
-                  <v-img
-                    src="../assets/images/ad2.jpg" 
-                    lazy-src="../assets/images/ad2.jpg"
-                    class="rounded-circle-images"
-                    contain
-                    
-                    
-                  >
-                  <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                </template>
-                </v-img>
-                </v-responsive>
-               
-              </center> 
-            </v-flex><br><br><br>
-          </div>
-          <!-- END DISPLAY ON SMALL DEVICES  -->
-
-        </v-container>
-      </section>
-
-      <!-- END ACCESS SECTION  -->
+  
 
 
      
