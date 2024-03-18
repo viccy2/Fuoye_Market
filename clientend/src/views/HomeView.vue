@@ -75,16 +75,17 @@
                       </v-btn>
                     </router-link>
                   </center>
-                </v-flex>
+                </v-flex><br>
                 
               </center>
 
+              <v-container>
               <v-flex sm12 xs12>
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad2.jpg" 
-                    lazy-src="../assets/images/ad2.jpg"
+                    src="../assets/images/w7.jpeg" 
+                    lazy-src="../assets/images/w7.jpeg"
                     class="rounded-circle-images"
                     contain
                     
@@ -107,12 +108,13 @@
                
               </center> 
             </v-flex>
+            </v-container>
             </v-layout><br><br><br>
           
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
 
-        </section><br><br><br><br>
+        </section><br><br><br><br><br>
       <!-- END HEADER SECTION  -->
 
     <!--  BODY -->
@@ -190,9 +192,9 @@
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                   src="../assets/images/ad3.jpg" 
-                    lazy-src="../assets/images/ad3.jpg"
-                    class="rounded-circle-images2"
+                   src="../assets/images/w3.jpeg" 
+                    lazy-src="../assets/images/w3.jpeg"
+                    class="rounded-circle-images"
                    
                     
                     
@@ -213,7 +215,7 @@
                 </v-responsive>
               </center>
              
-            </v-flex><br><br>
+            </v-flex><br><br><br><br>
             
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -290,8 +292,8 @@
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad1.jpg" 
-                    lazy-src="../assets/images/ad1.jpg"
+                    src="../assets/images/w2.jpeg" 
+                    lazy-src="../assets/images/w2.jpeg"
                     class="rounded-circle-images"
                     contain
                     
@@ -313,7 +315,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex><br><br><br>
+            </v-flex><br><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
