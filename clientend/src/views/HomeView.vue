@@ -75,7 +75,7 @@
                       </v-btn>
                     </router-link>
                   </center>
-                </v-flex><br>
+                </v-flex><br><br>
                 
               </center>
 
@@ -109,7 +109,7 @@
               </center> 
             </v-flex>
             </v-container>
-            </v-layout><br><br><br>
+            </v-layout><br><br>
           
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -188,14 +188,14 @@
              </p>
               <router-link to="/dashboard" style="text-decoration:none"><p id="txt8">Create account with us ></p></router-link>
             </v-flex>
-            <v-flex><br><br>
+            <v-flex sm12 xs12>
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                   src="../assets/images/w3.jpeg" 
-                    lazy-src="../assets/images/w3.jpeg"
+                    src="../assets/images/w9.jpeg" 
+                    lazy-src="../assets/images/w9.jpeg"
                     class="rounded-circle-images"
-                   
+                    contain
                     
                     
                   >
@@ -213,9 +213,10 @@
                 </template>
                 </v-img>
                 </v-responsive>
-              </center>
+               
+              </center> 
              
-            </v-flex><br><br><br><br>
+            </v-flex><br><br>
             
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -292,8 +293,8 @@
               <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/w2.jpeg" 
-                    lazy-src="../assets/images/w2.jpeg"
+                    src="../assets/images/w6.jpeg" 
+                    lazy-src="../assets/images/w6.jpeg"
                     class="rounded-circle-images"
                     contain
                     
@@ -315,7 +316,7 @@
                 </v-responsive>
                
               </center> 
-            </v-flex><br><br>
+            </v-flex><br>
           </div>
           <!-- END DISPLAY ON SMALL DEVICES  -->
 
@@ -759,6 +760,334 @@
   
 
 
+      <!-- CATEGORIES SECTION  -->
+      <section>
+        <v-container>
+
+          <!-- DISPLAY ON LARGE DEVICE -->
+          <div class="hidden-sm-and-down" >
+            <h2 id="h25" >Popular <span style="color:#673AB7">Available Services</span></h2><br><br><br>
+
+          <div>
+            <v-layout row wrap>
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                
+                <h2 id="h26" style="font-size:11px;"> Fashion. </h2><br><br>
+              </v-card>
+                </center> <br><br><br><br>
+              
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                
+                <h2 id="h26" style="font-size:11px;"> Catering. </h2><br><br>
+                </v-card>
+                </center><br><br><br><br>
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-161.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Fashion.</h2><br><br>
+                </v-card>
+                </center> <br><br><br><br>
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/img1.jpg" style="height:70%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/img2.jpg" style="height:70%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Gaming.</h2><br><br>
+                </v-card>
+                </center> <br><br><br><br>
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/product-14-1.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Home & Offices.</h2><br><br>
+                </v-card>
+                </center> 
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/n33.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/img6.jpg" style="height:100%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2><br><br>
+                </v-card>
+                </center>  
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/img3.jpg" style="height:80%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/img9.jpg" style="height:80%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Appliances.  </h2><br><br>
+                </v-card>
+                </center>  
+              </v-flex>
+
+              <v-flex md3 lg3 class="pa-1">
+                <center>
+                  <v-card
+                      class="mx-auto grey lighten-5"
+                      max-width="300">
+                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
+                  <v-carousel-item >
+                    <img src="../assets/images/img4.jpg" style="height:80%;margin-top:px;" >
+                  </v-carousel-item>
+                  <v-carousel-item >
+                    <img src="../assets/images/img5.jpg" style="height:80%;margin-top:px;" >
+                  </v-carousel-item>
+                </v-carousel><br>
+                <h2 id="h26" style="font-size:11px;">Grocery.  </h2><br><br>
+                </v-card>
+                </center>  
+              </v-flex>
+
+            </v-layout>
+          </div><br><br><br><br>
+          </div>
+          <!-- END DISPLAY ON LARGE DEVICE -->
+
+          <!-- DISPLAY ON SMALL DEVICE -->
+          
+          <div class="hidden-md-and-up" style="margin-top:-40px;">
+            
+        <v-flex sm12 xs12 >
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/w5.jpeg" 
+                    lazy-src="../assets/images/w5.jpeg"
+                    class="rounded-circle-images"
+                    contain
+                    
+                    
+                  >
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
+            </v-flex><br><br><br>
+            <h2 id="h26">Explore <span style="color:#673AB7">Available Services.</span></h2><br>
+            <div>
+
+              <v-container class="animate__animated animate__zoomIn animate__slower">
+
+                  <v-layout row wrap>
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                      >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                          Catering
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                          Computing
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                          Crypto
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                          Fashion
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                         Healthcare
+                        </v-card-title>
+                    </v-card>
+
+                    </center> 
+                    </v-flex>
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                          Construction
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                   
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                         Barbing
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                           Furniture
+                        </v-card-title>
+                    </v-card>
+
+                    </center> <br><br>
+                    </v-flex>
+
+                    <v-flex sm4 xs4 class="pa-1">
+                    <center>
+                    <v-card
+                      class="mx-auto grey lighten-5"
+                  >
+
+                      <v-card-title style="font-size:10px;color:#673AB7; ">
+                        Automobile
+                        </v-card-title>
+                    </v-card>
+
+                    </center> 
+                    </v-flex>
+
+                  </v-layout>
+
+              </v-container>
+
+            </div><br>
+          </div>
+          <!-- END DISPLAY ON SMALL DEVICES -->
+        </v-container>
+      </section><br><br><br>
      
 
       <!-- TESTIMOLIAL  SECTION  -->
@@ -766,7 +1095,7 @@
         <v-container>
 
           <!-- DISPLAY ON LARGE DEVICES  -->
-          <!-- <div class="hidden-sm-and-down"><br><br>
+          <div class="hidden-sm-and-down"><br><br>
             <h2 id="h25">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
@@ -831,11 +1160,11 @@
               </v-flex>
             </v-layout>
           </div><br><br><br><br>
-        </div>  -->
+        </div>
         <!-- END DISPLAY ON LARGE DEVICE  --> 
 
         <!-- DISPLAY ON SMALL DEVICE -->
-        <!-- <div class="hidden-md-and-up">
+       <div class="hidden-md-and-up" style="margin-top:-50px;">
           <h2 id="h26">Don’t just take <span style="color:#673AB7"> Our Words</span> for it! </h2><br><br>
             <div>
               <v-layout row wrap>
@@ -862,14 +1191,43 @@
               </v-carousel>
            
               </v-flex>
-           
+              
             </v-layout>
-          </div><br><br>
-          </div> -->
+          </div><br>
+          </div> 
           <!-- END DISPLAY ON SMALL DEVICE  -->
         </v-container>
       </section>
       <!-- END CATEGORY SECTION  -->
+      
+      <v-flex sm12 xs12 >
+              <center>
+                <v-responsive aspect-ratio="1">
+                  <v-img
+                    src="../assets/images/w10.jpeg" 
+                    lazy-src="../assets/images/w10.jpeg"
+                    class="rounded-circle-images"
+                    contain
+                    
+                    
+                  >
+                  <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                </template>
+                </v-img>
+                </v-responsive>
+               
+              </center> 
+            </v-flex><br>
 
       <!-- TEAM SECTION  -->
       <section id="team">
@@ -1444,6 +1802,6 @@ color:white; font-size:10px;font-weight:bold;
   color:#673AB7; 
 }
 .card-with-gradients {
-  background-image: linear-gradient(135deg, green 0%, green 20%);
+  background-image: linear-gradient(135deg, #673AB7 0%, #673AB7 20%);
 }
 </style>
