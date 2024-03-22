@@ -1090,35 +1090,6 @@
       </section><br><br><br>
      
 
-      <v-flex sm12 xs12 >
-              <center>
-                <v-responsive aspect-ratio="1">
-                  <v-img
-                    src="../assets/images/w10.jpeg" 
-                    lazy-src="../assets/images/w10.jpeg"
-                    class="rounded-circle-images"
-                    contain
-                    
-                    
-                  >
-                  <template v-slot:placeholder>
-                          <v-row
-                            class="fill-height ma-0"
-                            align="center"
-                            justify="center"
-                          >
-                            <v-progress-circular
-                              indeterminate
-                              color="grey lighten-5"
-                            ></v-progress-circular>
-                          </v-row>
-                </template>
-                </v-img>
-                </v-responsive>
-               
-              </center> 
-            </v-flex><br>
-
       <!-- TEAM SECTION  -->
       <section id="team">
         <!-- <v-container>
