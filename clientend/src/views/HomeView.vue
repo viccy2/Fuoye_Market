@@ -109,7 +109,7 @@
               </center> 
             </v-flex>
             </v-container>
-            </v-layout><br><br>
+            </v-layout><br><br><br>
           
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
@@ -755,7 +755,7 @@
           </div>
           <!-- END DISPLAY ON SMALL DEVICES -->
         </v-container>
-      </section><br><br><br>
+      </section><br><br>
 
   
 
