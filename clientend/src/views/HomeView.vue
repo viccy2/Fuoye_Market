@@ -34,10 +34,10 @@
                   <v-flex md6 lg6>
                     <v-responsive aspect-ratio="1">
                       <v-img
-                        src="../assets/images/land.jpg"
-                        lazy-src="../assets/images/land.jpg"
+                        src="../assets/images/w7.jpeg"
+                        lazy-src="../assets/images/w7.jpeg"
                         class="rounded-circle-images5"
-                        style="margin-top:0px;"
+                        style="margin-top:-0px;"
                       >
                         <template v-slot:placeholder>
                           <v-row class="fill-height ma-0" align="center" justify="center">
@@ -49,7 +49,7 @@
                   </v-flex>
                 </v-layout>
               
-            </v-container><br><br>
+            </v-container><br><br><br><br><br><br>
           </div>
           <!-- END DISPLAY ON LARGER DEVICES -->
 
@@ -146,8 +146,8 @@
                   <center>
                   <v-responsive aspect-ratio="1">
                     <v-img
-                      src="../assets/images/ad3.jpg" 
-                      lazy-src="../assets/images/ad3.jpg"
+                      src="../assets/images/w9.jpeg" 
+                      lazy-src="../assets/images/w9.jpeg"
                       class="rounded-circle-images3"
                       contain
                       rounded-circle
@@ -172,7 +172,7 @@
                 </v-flex>
 
               </v-layout>
-            </v-container><br><br><br><br>
+            </v-container><br><br>
           </div>
           <!-- END DISPLAY ON LARGE DEVICES  -->
 
@@ -237,8 +237,8 @@
                 <center>
                 <v-responsive aspect-ratio="1">
                   <v-img
-                    src="../assets/images/ad2.jpg" 
-                    lazy-src="../assets/images/ad2.jpg"
+                    src="../assets/images/w6.jpeg" 
+                    lazy-src="../assets/images/w6.jpeg"
                     class="rounded-circle-images"
                     contain
                     rounded-circle
@@ -798,14 +798,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/product-41.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-161.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Fashion.</h2><br><br>
                 </v-card>
                 </center> <br><br><br><br>
@@ -816,14 +809,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/img1.jpg" style="height:70%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/img2.jpg" style="height:70%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Gaming.</h2><br><br>
                 </v-card>
                 </center> <br><br><br><br>
@@ -834,14 +820,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/product-3.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/product-14-1.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Home & Offices.</h2><br><br>
                 </v-card>
                 </center> 
@@ -852,14 +831,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/n33.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/img6.jpg" style="height:100%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Phones / Smart watches.  </h2><br><br>
                 </v-card>
                 </center>  
@@ -870,14 +842,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/img3.jpg" style="height:80%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/img9.jpg" style="height:80%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Appliances.  </h2><br><br>
                 </v-card>
                 </center>  
@@ -888,14 +853,7 @@
                   <v-card
                       class="mx-auto grey lighten-5"
                       max-width="300">
-                <v-carousel  height="100" cycle hide-delimiters :show-arrows="false">
-                  <v-carousel-item >
-                    <img src="../assets/images/img4.jpg" style="height:80%;margin-top:px;" >
-                  </v-carousel-item>
-                  <v-carousel-item >
-                    <img src="../assets/images/img5.jpg" style="height:80%;margin-top:px;" >
-                  </v-carousel-item>
-                </v-carousel><br>
+                
                 <h2 id="h26" style="font-size:11px;">Grocery.  </h2><br><br>
                 </v-card>
                 </center>  
@@ -1569,9 +1527,9 @@ export default {
   object-fit: cover;
 }
 .rounded-circle-images5 {
-  height: 60%;
+  height: 90%;
   width: 100%;
- 
+  object-fit: cover;
  
 }
 #h21{
