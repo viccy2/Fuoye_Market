@@ -16,7 +16,7 @@ const requireAuth = (to, from, next) => {
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: () => import(/* webpackChunkName: "home" */ '../views/HomeView.vue'),
     props: true
@@ -179,7 +179,7 @@ const routes = [
     props: true
   },
   {
-    path: '/sign-in',
+    path: '/',
     name: 'sign-in',
     component: () => import(/* webpackChunkName: "sign-in" */ '../views/Account/SignInView.vue'),
     props: true
