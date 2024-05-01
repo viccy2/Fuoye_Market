@@ -43,6 +43,7 @@
                                 </v-btn>
 
                              </v-form>
+                             <p class="container pa-5" style="font-size:11px">Create account <a href="/new-account">Here</a></p>
                              <p class="container pa-5" style="font-size:11px">Forgot Password ? <a href="/reset-password">Here</a></p>
 
                         </v-card>
@@ -103,6 +104,17 @@
                                 sign in
                     </v-btn>
             <v-container fluid>
+                <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
+                        <a
+                        class="text-caption text-decoration-none small"
+                        href="new-account"
+                        style="color:#673AB7"
+                        rel="noopener noreferrer"
+                        target="reset-password"
+                        >
+                        Create account
+                        </a>
+                </div>
                 <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
                         <a
                         class="text-caption text-decoration-none small"
